@@ -16,36 +16,39 @@
     START OF NAV1
     --------- -->
     <nav class="nav1 navbar navbar-expand-lg navbar-light nav-row sticky-top" id="nav1">
-      <a class="navbar-brand" href="#"><img class="nav-logo small-logo" src="./assets/images/altmobility2.png" alt=""></a>
+      <div class="col-sm-3 col-auto mr-auto">
+        
+      <a class="navbar-brand" href="#"><img class="nav-logo small-logo mr-5" src="./assets/images/altmobility2.png" alt=""></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+      </div>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
+<!--       <div class="collapse navbar-collapse col-sm-6" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto container-fluid">
           <li class="nav-item active">
-            <a class="nav-link" href="#home">Home<span class="sr-only">(current)</span></a>
+            <a class="nav-link hdrlink-text mx-2" href="#home">Home<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#quote">Why We Lobby?</a>
+            <a class="nav-link hdrlink-text mx-2" href="#quote">Why We Lobby?</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#billofrights">Bill of Rights</a>
+            <a class="nav-link hdrlink-text mx-2" href="#billofrights">Bill of Rights</a>
           </li>
            <li class="nav-item">
-            <a class="nav-link" href="#history">Mass Transport History</a>
+            <a class="nav-link hdrlink-text mx-2" href="#history">Mass Transport History</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#joinus">Join Us!</a>
+            <a class="nav-link hdrlink-text mx-2" href="#joinus">Join Us!</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            <a class="nav-link hdrlink-text ml-2" href="#contact">Contact</a>
           </li>
         </ul>
-        <form class="form-inline my-2 my-lg-0">
+        </div> -->
+        <div class="col-sm-3 col-auto ml-auto">
+          
+        <form class="form-inline my-2 my-lg-0 ml-auto">
           <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
         </form>
@@ -128,8 +131,30 @@
     <!-- --------
     START OF HOME
     --------- -->
-
-    <section class="home" >
+     <nav class="container-fluid sticky-top nav1">
+       
+        <ul class="mr-auto container-fluid nav-on-home d-flex justify-content-center align-items-center">
+            <li class="nav-item active">
+              <a class="nav-link hdrlink-text mx-2 mt-4" href="#home">Home<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link hdrlink-text mx-2 mt-4" href="#quote">Why We Lobby?</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link hdrlink-text mx-2 mt-4" href="#billofrights">Bill of Rights</a>
+            </li>
+             <li class="nav-item">
+              <a class="nav-link hdrlink-text mx-2 mt-4" href="#history">Mass Transport History</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link hdrlink-text mx-2 mt-4" href="#joinus">Join Us!</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link hdrlink-text ml-2 mt-4" href="#contact">Contact</a>
+            </li>
+        </ul>
+     </nav>
+    <section class="home" id="home">
       <div class="bd-example container-fluid">
       <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -191,15 +216,48 @@
     <!-- ------------------
     START OF BILL OF RIGHTS
     ------------------- -->
-    <section class="billofrights bg-primary" id="billofrights">
-      <!-- <div class="container-fluid">
-        
-      </div> -->
+    <section class="billofrights bg-light" id="billofrights">
+      <div class="bor-card-container  billofrights-container container-fluid">
+        <img class="billsofrightslogo" src="assets/images/billofrightslogo.png" alt="">
+        <p class="billofrights-hdr small-text1">A COMMUTER'S BILL OF RIGHTS</p>
+        <p class="small-text2 pb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis recusandae iste qui, sint porro doloribus eos. Est libero adipisci culpa incidunt ea, voluptatum deleniti quam illum expedita inventore, itaque facere!</p>
+        <div class="d-flex flex-wrap justify-content-center bg-info">
+          <div class="col-sm-3 billofrights-card mx-1">  
+            <h3 id="smallheader">IT MANAGEMENT SOLUTIONS</h3>
+            <img class="billofrights-icons" src="assets/images/bikeorange.png" alt="">
+            <div>
+              <p class="small-text3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis recusandae iste qui, sint porro doloribus eos. Est libero adipisci culpa incidunt ea, voluptatum deleniti quam illum expedita inventore, itaque facere!</p>
+            </div>
+          </div>
+         <div class="col-sm-3 billofrights-card mx-1">  
+            <h3 id="smallheader">IT MANAGEMENT SOLUTIONS</h3>
+            <img class="billofrights-icons" src="assets/images/bikeorange.png" alt="">
+            <div>
+              <p class="small-text3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis recusandae iste qui, sint porro doloribus eos. Est libero adipisci culpa incidunt ea, voluptatum deleniti quam illum expedita inventore, itaque facere!</p>
+            </div>
+          </div>
+          <div class="col-sm-3 billofrights-card mx-1">  
+            <h3 id="smallheader">IT MANAGEMENT SOLUTIONS</h3>
+            <img class="billofrights-icons" src="assets/images/bikeorange.png" alt="">
+            <div>
+              <p class="small-text3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis recusandae iste qui, sint porro doloribus eos. Est libero adipisci culpa incidunt ea, voluptatum deleniti quam illum expedita inventore, itaque facere!</p>
+            </div>
+          </div>
+          <div class="col-sm-3 billofrights-card mx-1">  
+            <h3 id="smallheader">IT MANAGEMENT SOLUTIONS</h3>
+            <img class="billofrights-icons" src="assets/images/bikeorange.png" alt="">
+            <div>
+              <p class="small-text3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis recusandae iste qui, sint porro doloribus eos. Est libero adipisci culpa incidunt ea, voluptatum deleniti quam illum expedita inventore, itaque facere!</p>
+            </div>
+          </div>
+        </div>    
+        <button class="billofrights-btn mb-3" id="btn-billofrights">Know more about A Commuter's Bill of Rights</button>
+      </div>
     </section>
-    <!-- ------------------
-    START OF BILL OF RIGHTS
-    ------------------- -->
-	
+    <!-- ----------------
+    END OF BILL OF RIGHTS
+    ----------------- -->
+
     <!-- ------------------
     START OF BRIEF HISTORY
     ------------------- -->
@@ -261,7 +319,7 @@
     <!-- ----------
     START OF FOOTER
     ----------- -->
-    <footer class="ftr bg-primary" id="footer">
+    <footer class="ftr" id="footer">
       <!-- <div class="container-fluid">
         
       </div> -->
@@ -299,7 +357,39 @@
   $("#wrapper").toggleClass("toggled");
   });
   </script>
+  <script>
 
+    // language="javascript"
+    
+  var slideIndex = 1;
+  showSlides(slideIndex);
+
+  // Next/previous controls
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  // Thumbnail image controls
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += "active";
+  }
+  </script>
  
 </body>
 </html>

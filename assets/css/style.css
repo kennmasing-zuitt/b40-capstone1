@@ -17,13 +17,25 @@
 	background: #30506e !important;
 }
 .nav-logo {
-  width: 320px;
-  height: 94px;
+  width: 240px;
+  height: 71px;
 
 }
 ul li a{
 	color:white !important;
 }
+a.hdrlink-text {
+
+/*  background: rgba(250, 233, 15, .5);*/
+  transition: transform .2s;
+}
+ a.hdrlink-text:hover {
+  border-radius: 50px;
+  background-color: rgba(255,255,255,0.75);
+  -ms-transform: scale(1.15); /* IE 9 */
+  -webkit-transform: scale(1.15); /* Safari 3-8 */
+  transform: scale(1.15); 
+ }
 
 /* --------
  SEARCH BAR
@@ -36,6 +48,11 @@ ul li a{
 /* ----------------------
 H  O  M  E     P  A  G  E
 ----------------------- */
+ul.nav-on-home {
+	position:absolute;
+	/*top: 12.5%;*/
+	z-index: 2000;
+}
 
 
 
@@ -65,11 +82,104 @@ p.sub {
 	height: 60vh;
 }
 
+/* -----------------------
+ COMMUTER'S BILL OF RIGHTS
+ ---------------------- */
+
+.billsofrightslogo {
+  display:flex;
+  justify-content: center;
+  width: 150px;
+  height: 150px;
+  margin: 20px auto 0 auto;
+}
+.small-text1 {
+  margin: 10px auto;
+  padding: 0px 0 0px 0px;
+  color: #5f7053;
+  font-size: 2.5rem;
+  font-family: oswald;
+  font-weight: bold;
+  text-align: center;
+}
+.small-text2 {
+  text-align: center;
+  width: 300px;
+  height: 75px;
+  margin: 0 auto 20px auto;
+  font-size: .9rem;
+  font-family: arial;
+  color: #5f7053;
+}
+
+/*CARD CONTAINER*/
+.bor-card-container {
+	width: 90%;
+}
+.billofrights-card {
+	display: block;
+	border-radius: 5px;
+/*	width: 350px;
+	height: 400px;*/
+/*	margin: 12px 12px 0px 12px;*/
+	background: #72A1B4;
+	transition: transform .2s;
+}
+.billofrights-icons {
+	display:flex;
+	justify-content: center;
+	width: 200px;
+	height: 200px;
+	margin: 0px auto 0 auto;
+}
+.billofrights-btn {	
+	display: flex;
+	justify-content: center;
+	border: 1.5px solid rgba(148, 148, 148, .5);
+	border-radius: 5px;
+	margin: 20px auto 0px auto;
+	padding: 10px 20px;
+	background: none;
+	color:#949494;
+	font-size: 1rem;
+	font-family: arial;
+	transition: transform .2s;
+}
+h3#smallheader {
+  text-align: center;
+  line-height: 50px;
+  margin: 20px auto 0px auto;
+  color:white;
+  font-family: arial;
+  font-size: .85rem;
+}
+.small-text3 {
+  text-align: center;
+  margin: 0 10px 0 10px;
+  font-size: .85rem;
+  font-family: arial;
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
 /* ---------------
  SECTION VIEWPORTS
  -------------- */
-
-.home, .quote, .billofrights, .history, .joinus {
+.quote, .billofrights, .history, .joinus {
 	height: 100vh;
 }
 .contact {
@@ -98,6 +208,10 @@ DEKSTOP VIEW
 	.nav2 {
 		display: none;
 	}
+	.container-fluid {
+	padding-right: 0 !important;
+	padding-left: 0 !important;
+	}
 }
 /* ---------
 TABLET VIEW
@@ -121,12 +235,14 @@ TABLET VIEW
 	}
 
 	.container-fluid {
-		padding-right: 0;
-		padding-left: 0;
+		padding-right: 0 !important;
+		padding-left: 0 !important;
 	}
 	nav.sticky-top {
 		transition: top 0.3s; /* Transition effect when sliding down (and up) */
 	}
+
+
 
 }
 /* ---------
@@ -161,9 +277,12 @@ MOBILE VIEW
 	.img-hold {
 		height: 30vh;
 	}
+	.container-fluid {
+	padding-right: 0 !important;
+	padding-left: 0 !important;
 
 
-
+}
 /*S I D E  B A R*/
   #wrapper {
     padding-left: 250px;
@@ -196,8 +315,12 @@ MOBILE VIEW
 
 
 
-
-
+/* ------------
+FOOTER
+ ----------- */
+	footer {
+		background: #30506e !important;
+	}
 
 
 
