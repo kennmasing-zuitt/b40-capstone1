@@ -4,9 +4,11 @@
   box-sizing:border-box
 }
 
-/*.navbar {
-	padding: 0 0 !important;
-}*/
+
+/* ------------
+ NAVIGATION BAR
+ ----------- */
+
 .nav-btn {
 	border: 1px solid white;
 }
@@ -17,22 +19,122 @@
 .nav-logo {
   width: 320px;
   height: 94px;
-  /*margin: auto 375px auto 0;*/
-  /*float:left;*/
+
 }
 ul li a{
 	color:white !important;
 }
+
+/* --------
+ SEARCH BAR
+ -------- */
+
 .search-wid {
 	width: 300px !important;
 }
-.section2 .carousel-caption {
+
+/* ----------------------
+H  O  M  E     P  A  G  E
+----------------------- */
+
+
+
+
+/* -----------------------------------
+COMMUTERSNAMAN & JOIN THE CONVERSATION
+----------------------------------- */
+.home .carousel-caption {
 	position: absolute;
 	top: 35%;
 }
+h5.main {
+	color:white;
+	font-size: 7.5rem;
+	font-weight: bold;
+	font-family:oswald;
+}
+p.sub {
+	margin-top: -50px;
+	color:white;
+	font-size: 4rem;
+	font-weight: bold;
+	font-family:ostrich sans medium;
+}
+.img-hold {
+	border: 1px solid blue;
+	height: 60vh;
+}
+
+/* ---------------
+ SECTION VIEWPORTS
+ -------------- */
+
+.home, .quote, .billofrights, .history, .joinus {
+	height: 100vh;
+}
+.contact {
+	height: 85vh;
+}
+.ftr {
+	height:15vh;
+}
+
+/* ---------------
+ SMOOTH SCROLLING
+ -------------- */
+
+html {
+	scroll-behavior: smooth;
+}
+
+/* ----------------------------------
+M  E  D  I  A     Q  U  E  R  I  E  S
+ --------------------------------- */
+
+/* ---------
+DEKSTOP VIEW
+--------- */
+@media(min-width: 961px) {
+	.nav2 {
+		display: none;
+	}
+}
+/* ---------
+TABLET VIEW
+--------- */
+@media(min-width: 451px) and (max-width: 960px) {
+	.nav2 {
+		display: none;
+	}
+	div h5.maintitle-tab {
+		color: white;
+		font-size: 4.5rem;
+		font-weight: bold;
+		font-family:oswald;
+  	}
+  	div p.subtitle-tab {
+		margin-top: -30px;
+		color: white;
+		font-size: 2.5rem;
+		font-weight: bold;
+		font-family:ostrich sans medium;
+	}
+
+	.container-fluid {
+		padding-right: 0;
+		padding-left: 0;
+	}
+	nav.sticky-top {
+		transition: top 0.3s; /* Transition effect when sliding down (and up) */
+	}
+
+}
+/* ---------
+MOBILE VIEW
+--------- */
 @media(max-width:450px) {
-	section.section2 {
-	/*height: 100%;*/
+	.nav1 {
+		display: none;
 	}
 	.small-logo {
 		width: 160px;
@@ -56,44 +158,69 @@ ul li a{
 		font-weight: bold;
 		font-family:ostrich sans medium;
 	}
-
- }
-@media(min-width: 451px) and (max-width: 960px) {
-	div h5.maintitle-tab {
-		color: white;
-		font-size: 4.5rem;
-		font-weight: bold;
-		font-family:oswald;
-  	}
-  	div p.subtitle-tab {
-		margin-top: -30px;
-		color: white;
-		font-size: 2.5rem;
-		font-weight: bold;
-		font-family:ostrich sans medium;
+	.img-hold {
+		height: 30vh;
 	}
+
+
+
+/*S I D E  B A R*/
+  #wrapper {
+    padding-left: 250px;
+  }
+  #wrapper.toggled {
+    padding-left: 0;
+  }
+  #sidebar-wrapper {
+  	height: 100vh;
+    width: 250px;
+  }
+  #wrapper.toggled #sidebar-wrapper {
+    width: 0;
+  }
+  #page-content-wrapper {
+    padding: 20px;
+    position: relative;
+  }
+  #wrapper.toggled #page-content-wrapper {
+    position: relative;
+    margin-right: 0;
+  }
+
+
+.search-wid2 {
+	width: 180px !important;
+ }
 }
 
-h5.main {
-	color:white;
-	font-size: 7.5rem;
-	font-weight: bold;
-	font-family:oswald;
-}
-p.sub {
-	margin-top: -50px;
-	color:white;
-	font-size: 4rem;
-	font-weight: bold;
-	font-family:ostrich sans medium;
-}
-.img-hold {
-	border: 1px solid blue;
-	height: 60vh;
-}
-.sectionvh1 {
-	height: 100vh;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*U T I L I T I E S*/
 /*@media(min-width: 961px) {
 	.col-lg-1 { width: 8.33%; }
@@ -138,12 +265,99 @@ p.sub {
 	.col-sm-11 { width: 91.66%; }
 	.col-sm-12 { width: 100%; }
 }*/
-@media(max-width:450px) {
-	
-	}
-}
-/*A O S*/
-.aos-init {
 
+
+/*---
+A O S
+---*/
+
+
+/*--------------
+S I D E    B A R 
+--------------*/
+/*!
+ * Start Bootstrap - Simple Sidebar HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+/* Toggle Styles */
+
+#wrapper {
+  padding-left: 0;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
-.aos-animate
+#wrapper.toggled {
+  padding-left: 250px;
+}
+#sidebar-wrapper {
+  z-index: 1000;
+  position: fixed;
+  left: 250px;
+  width: 0;
+  height: 100%;
+  margin-left: -250px;
+  overflow-y: auto;
+  background: #000;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+#wrapper.toggled #sidebar-wrapper {
+  width: 250px;
+}
+#page-content-wrapper {
+  width: 100%;
+  position: absolute;
+  padding: 15px;
+}
+#wrapper.toggled #page-content-wrapper {
+  position: absolute;
+  margin-right: -250px;
+}
+
+
+/* Sidebar Styles */
+
+.sidebar-nav {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.sidebar-nav li {
+  text-indent: 20px;
+  line-height: 40px;
+}
+.sidebar-nav li a {
+  display: block;
+  text-decoration: none;
+  color: #999999;
+}
+.sidebar-nav li a:hover {
+  text-decoration: none;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.2);
+}
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+  text-decoration: none;
+}
+.sidebar-nav > .sidebar-brand {
+  height: 65px;
+  font-size: 18px;
+  line-height: 60px;
+}
+.sidebar-nav > .sidebar-brand a {
+  color: #999999;
+}
+.sidebar-nav > .sidebar-brand a:hover {
+  color: #fff;
+  background: none;
+}
