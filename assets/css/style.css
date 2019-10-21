@@ -218,7 +218,10 @@ h3#smallheader {
   transform: scale(1.075); 
 }
 
-
+#pnr {
+	background: orange;
+	border:none;
+}
 
 
 
@@ -298,11 +301,11 @@ DEKSTOP VIEW
 /* ---------
 TABLET VIEW
 --------- */
-@media(min-width: 451px) and (max-width: 991px) {
-	.nav-desktop {
+@media(min-width: 577px) and (max-width: 991px) {
+	.nav-desktop1 {
 		display: none !important;
 	}
-	.nav-mobile {
+	.nav-desktop2 {
 		display: none !important;
 	}
 	.tablet-logo {
@@ -339,8 +342,11 @@ TABLET VIEW
 /* ---------
 MOBILE VIEW
 --------- */
-@media(max-width:450px) {
-	.nav-desktop {
+@media(max-width:576px) {
+	.nav-desktop1 {
+		display: none !important;
+	}
+	.nav-desktop2 {
 		display: none !important;
 	}
 /*	.nav-tablet {
@@ -385,7 +391,7 @@ MOBILE VIEW
 	footer.ftr1 {
 	display:none !important;
 	}
-}
+
 
 /*S I D E  B A R*/
   #wrapper {
@@ -446,12 +452,28 @@ CONTACT
  	position: relative;
  	top: 15%;
  }
-/* .formborder {
- 	border: none;
- }*/
+
+#socialmedia a i {
+	color: white !important;
+}
+a.socialmedia {
+	text-decoration: none;
+}
+#socialmediaicons {
+	height: 50px;
+	width: 50px;
+  transition: transform .1s;
+}
+
+#socialmediaicons:hover {
+  border-radius: 100px;
+  background-color: rgba(255,255,255,0.75);
+  -ms-transform: scale(1.25); 
+  -webkit-transform: scale(1.25);
+  transform: scale(1.25);
 
 
-
+}
 /* ------------
 JOIN US
  ----------- */
@@ -472,6 +494,7 @@ h5 {
 }
 
 div .joinus-cto {
+	margin-top: 50px;
 	background: none !important;
 	border: none !important;
 }
