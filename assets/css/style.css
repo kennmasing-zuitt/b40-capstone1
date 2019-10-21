@@ -431,12 +431,17 @@ MOBILE VIEW
 /* ------------
 CONTACT
  ----------- */
- #newsletter, #contactus, #followus, #message {
+ #newsletter, #contactus, #followus {
  	font-size: 1.5rem;
 	font-family: oswald;
 	color:white;
 	/*font-weight: bold;*/
  }
+#message {
+	font-size: 1.2rem;
+	font-family: oswald;
+	color:white;
+}
  .contactrow {
  	position: relative;
  	top: 15%;
