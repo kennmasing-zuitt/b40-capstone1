@@ -222,6 +222,10 @@ h3#smallheader {
 	background: orange;
 	border:none;
 }
+#subway {
+	background: gray;
+	border:none;
+}
 #lrt-1 {
 	background: yellow;
 	border:none;
@@ -266,7 +270,7 @@ h3#smallheader {
 	padding-top: 87px;
 }
 .history {
-	height: 250vh;
+	height: 320vh;
 	padding-top: 87px;
 }
 .joinus {
@@ -465,7 +469,7 @@ CONTACT
 }
  .contactrow {
  	position: relative;
- 	top: 15%;
+ 	top: 25%;
  }
 
 #socialmedia a i {
