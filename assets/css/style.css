@@ -222,6 +222,21 @@ h3#smallheader {
 	background: orange;
 	border:none;
 }
+#lrt-1 {
+	background: yellow;
+	border:none;
+}
+#mrt {
+	background: blue;
+	border:none;
+}
+#lrt-2 {
+	background: #5a1585;
+	border:none;
+}
+
+
+
 
 
 
@@ -251,7 +266,7 @@ h3#smallheader {
 	padding-top: 87px;
 }
 .history {
-	height: 100vh;
+	height: 250vh;
 	padding-top: 87px;
 }
 .joinus {
