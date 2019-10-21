@@ -4,8 +4,6 @@
   box-sizing:border-box
 }
 
-@import url(//db.onlinewebfonts.com/c/60eb852ee4209a8ae6bcc604198de68f?family=Ostrich+Sans);
-
 /* ------------
  NAVIGATION BAR
  ----------- */
@@ -101,7 +99,7 @@ p.sub {
 	color:white;
 	font-size: 4rem;
 	font-weight: bold;
-	font-family:ostrich sans medium;
+	font-family:Saira Extra Condensed;
 }
 .img-hold {
 	border: 1px solid blue;
@@ -343,7 +341,7 @@ TABLET VIEW
 		color: white;
 		font-size: 2.5rem;
 		font-weight: bold;
-		font-family:ostrich sans medium;
+		font-family:Saira Extra Condensed;
 	}
 
 	.container-fluid {
@@ -392,7 +390,7 @@ MOBILE VIEW
 		color: white;
 		font-size: 1.5rem;
 		font-weight: bold;
-		font-family:ostrich sans medium;
+		font-family:Saira Extra Condensed;
 	}
 	.img-hold {
 		height: 30vh;
@@ -546,7 +544,7 @@ h5.halalan {
 }
 p.halalan {
 	font-size: 3.5rem;
-	font-family: ostrich sans medium;
+	font-family: Saira Extra Condensed;
 	color:white;
 	font-weight: bold;
 }
@@ -598,7 +596,7 @@ FOOTER
 	.calltoaction {
 		color:white;
 		font-size: 1.5rem;
-		font-family: ostrich sans;
+		font-family: Saira Extra Condensed;
 	} 
 	a.calltoaction {
 		text-decoration: none;
