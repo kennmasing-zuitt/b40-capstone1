@@ -31,46 +31,59 @@
 	
 
 
-<nav class="navbar navbar-expand-lg sticky-top navbar-desktop mb-0" id="nav-home">
-	<a class="navbar-brand" href="#"><img class="nav-logo img-fluid" src="./assets/images/altmobility2.png" alt="" id="#nav"></a>
-	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-	<span class="navbar-toggler-icon"></span>
-	</button>
+<nav class="navbar navbar-expand-lg sticky-top navbar-desktop mb-0 d-flex justify-content-between" id="nav-home">
+	
+	<div class="col-lg-3">
+		
+		<a class="navbar-brand" href="#">
+			<img class="nav-logo img-fluid" src="./assets/images/altmobility2.png" alt="" id="#nav">
+		</a>
+	</div>
 
-	<div class="collapse navbar-collapse" id="navbarSupportedContent">
-		<ul class="navbar-nav mr-auto">
-<!-- 			<li class="">
-					<a class="nav-link" href="#home">Home </a>
-			</li> -->
-			<li class="nav-item active">
-					<a class="nav-link" href="#billofrights">Commuter's Bill of Rights <span class="sr-only">(current)</span></a>
-			</li>
-			<li class="nav-item">
-					<a class="nav-link" href="#history">Mass Transport</a>
-			</li>	
-			<li class="nav-item">
-					<a class="nav-link" href="#joinus">Halalan 2022</a>
-			</li>
-			<li class="nav-item">
-					<a class="nav-link" href="#nacto-desktop">Nacto</a>
-			</li>
-			<li class="nav-item">
-					<a class="nav-link" href="#contact">Contact</a>
-			</li>
-	<!-- 		<li class="nav-item">
-					<a class="nav-link disabled" href="#history">Mass Transport</a>
-			</li> -->
-		</ul>
-		<form class="form-inline my-2 my-lg-0">
-				<input class="form-control mr-sm-2 searchbar" type="text" placeholder="Search" aria-label="Search">
-				<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+	<div class="col-lg-6">
+		
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto d-flex justify-content-center">
+	<!-- 			<li class="">
+						<a class="nav-link" href="#home">Home </a>
+				</li> -->
+				<li class="nav-item active">
+					<a class="nav-link px-3 nav-txt-hdr text-center" href="#billofrights">Commuter's Bill of Rights <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+						<a class="nav-link px-3  nav-txt-hdr text-center" href="#history">Mass Transport</a>
+				</li>	
+				<li class="nav-item">
+						<a class="nav-link px-3  nav-txt-hdr text-center" href="#joinus">Halalan 2022</a>
+				</li>
+				<li class="nav-item">
+						<a class="nav-link px-3  nav-txt-hdr text-center" href="#nacto-desktop">Nacto</a>
+				</li>
+				<li class="nav-item">
+						<a class="nav-link px-3  nav-txt-hdr text-center" href="#contact">Contact</a>
+				</li>
+		<!-- 		<li class="nav-item">
+						<a class="nav-link disabled" href="#history">Mass Transport</a>
+				</li> -->
+			</ul>
+		</div>
+	</div>
+	<div class="col-lg-3 ">
+		
+		<form class="form-inline my-1 my-lg-0 d-flex justify-content-end">
+				<input class="form-control mr-sm-2 searchbar btn btn-outline-light rounded-pill" type="text" placeholder="Search" aria-label="Search">
+				<button class="btn my-2 my-sm-0 " type="submit"><i class="fas fa-search fa-2x search-btn"></i></button>
 		</form>
 	</div>
 </nav>
 
 
 
-<section class="home">
+<section class="home" id="home">
 
 		
 <div class="d-flex justify-content-center">
@@ -113,12 +126,12 @@
             </div>
 
             <div class="sidebar-header">
-                <h3>Bootstrap Sidebar</h3>
+                <h4><img class="img-fluid sidebar-logo w-75" src="./assets/images/altmobility2.png" alt="" id="#nav"></h4>
             </div>
 
             <ul class="list-unstyled components">
-                <p>Dummy Heading</p>
-                <li class="active">
+                <p></p>
+                <!-- <li class="active">
                     <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Home</a>
                     <ul class="collapse list-unstyled" id="homeSubmenu">
                         <li>
@@ -131,9 +144,9 @@
                             <a href="#history" id="dismiss2">History</a>
                         </li>
                     </ul>
-                </li>
-                <li>
-                    <a href="#joinus" id="dismiss2">Join Us!</a>
+                </li> -->
+<!--                 <li>
+                    <a href="#history" id="dismiss2">Mass Transport</a>
                     <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">Pages</a>
                     <ul class="collapse list-unstyled" id="pageSubmenu">
                         <li>
@@ -146,36 +159,61 @@
                             <a href="#" id="dismiss2">Page 3</a>
                         </li>
                     </ul>
+                </li> -->
+                <li>
+                    <a href="#home" id="dismiss2">Home</a>
+                </li>               
+                <li>
+                    <a href="#billofrights" id="dismiss2">Bill of Rights</a>
                 </li>
                 <li>
-                    <a href="#" id="dismiss2">Portfolio</a>
+                    <a href="#history" id="dismiss2">Mass Transport</a>
                 </li>
                 <li>
-                    <a href="#" id="dismiss2">Contact</a>
+                    <a href="#joinus" id="dismiss2">Halalan 2022</a>
+                </li>
+                <li>
+                    <a href="#nacto" id="dismiss2">Nacto</a>
+                </li>
+
+
+                <li>
+                    <a href="#contact" id="dismiss2">Contact</a>
                 </li>
             </ul>
 
             <ul class="list-unstyled CTAs">
                 <li>
+					<form class="form-inline col-12 col-sm card-body2 pb-5">
+						<input class="form-control mr-sm-2 btn btn-outline-light rounded-pill col-9 col-sm-9" type="text" placeholder="Search" aria-label="Search">
+						<button class="btn my-2 my-sm-0 col-2 col-sm-2" type="submit" data-z-index="10"><i class="fas fa-search fa-2x search-btn"></i></button>
+					</form>
+                </li>
+
+<!--                 <li>
                     <a href="https://bootstrapious.com/tutorial/files/sidebar.zip" class="download">Download source</a>
                 </li>
                 <li>
                     <a href="https://bootstrapious.com/p/bootstrap-sidebar" class="article">Back to article</a>
-                </li>
+                </li> -->
+
             </ul>
         </nav>
 
         <!-- Page Content  -->
-        <div class="" id="content">
+        <div class="card-body2" id="content">
 
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <nav class="navbar navbar-expand-lg nav-mobile-pg ">
                 <div class="container-fluid ">
-
-                    <button type="button" id="sidebarCollapse" class="btn btn-info">
-                        <i class="fas fa-align-left"></i>
-                        <span>Toggle Sidebar</span>
-                    </button>
-                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<div class="col-1 col-sm-1">
+						
+	                    <button type="button" id="sidebarCollapse" class="btn btn-outline-light">
+	                        <i class="fas fa-align-left"></i>
+	                        <span></span>
+	                    </button>
+					</div>
+					
+                    <!-- <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <i class="fas fa-align-justify"></i>
                     </button>
 
@@ -194,6 +232,12 @@
                                 <a class="nav-link" href="#">Page</a>
                             </li>
                         </ul>
+                    </div> -->
+                    <div class="col-11 col-sm-11 d-flex justify-content-center ml-n5">
+                    <img src="./assets/images/altmobility2.png" class="img-fluid w-50 ml-n5 nav-logo-lg" alt="">
+                    <img src="./assets/images/altmobility2.png" class="img-fluid w-25 ml-n5 nav-logo-md" alt="">
+                    <img src="./assets/images/altmobility2.png" class="img-fluid w-50 ml-n1 nav-logo-xs" alt="">
+
                     </div>
                 </div>
             </nav>

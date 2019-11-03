@@ -83,8 +83,19 @@ NAVBAR
     .nav-link {
         color: white !important;
     }
+    .search-btn {
+        color: white !important;
+    }
+    .searchbar {
+        color: white !important;
+    }
+    input::placeholder {
+        color: white !important;
+    }
 
-
+.sidebar-searchbar {
+    width: 100px !important;
+}
 
 
 
@@ -256,14 +267,62 @@ h5#smallheader-his {
     padding: 0 !important;
 }
 
-@media(min-width:992px) and (max-width:1141px) {
+@media(min-width:1218px) and (max-width:1361px) {
         a img.nav-logo {
         width: 180px;
          height: 53px;
     }
     .searchbar {
-        width: 20px;
+        width: 175px !important;
     }
+    .nav-txt-hdr {
+        font-size: .85rem;
+    }
+        input::placeholder {
+        font-size: .85rem;
+        color: white !important;
+    }
+
+
+}
+
+@media(min-width:1121px) and (max-width:1217px) {
+        a img.nav-logo {
+        width: 180px;
+         height: 53px;
+    }
+    .searchbar {
+        width: 175px !important;
+    }
+    .nav-txt-hdr {
+        font-size: .75rem;
+    }
+            input::placeholder {
+        font-size: .75rem;
+        color: white !important;
+    }
+
+
+
+}
+@media(min-width:992px) and (max-width:1120px) {
+        a img.nav-logo {
+        width: 180px;
+         height: 53px;
+    }
+    .searchbar {
+        width: 125px !important;
+    }
+    .nav-txt-hdr {
+        font-size: .6rem;
+    }
+            input::placeholder {
+        font-size: .6rem;
+        color: white !important;
+    }
+
+
+
 }
 
 @media(min-width:992px) {
@@ -282,7 +341,9 @@ h5#smallheader-his {
     .cto-mobile,
     .nacto-desc-mobile,
     .nacto-mobile,
-    .footer-mobile {
+    .footer-mobile,
+    .nav-logo-xs,
+    .nav-logo-md {
         display: none !important;
     }
     .sm-txt-md-his,
@@ -370,7 +431,9 @@ h4#smallheader-bor {
     .footer-desktop,
     .nacto-desc-mobile,
     .nacto-mobile,
-    .footer-desktop {
+    .footer-desktop,
+    .nav-logo-xs,
+    .nav-logo-lg {
         display: none !important;
     }
     .sm-txt-lg-his,
@@ -463,7 +526,9 @@ h4#smallheader-bor {
     .sm-txt-sm-his,
     .joinus-mobile,
     .railnetwork,
-    .footer-desktop   {
+    .footer-desktop,
+    .nav-logo-xs,
+    .nav-logo-lg   {
         display: none !important;
     }    
     .sm-txt-md-bor {
@@ -541,7 +606,9 @@ h4#smallheader-bor {
     .navbar-desktop,
     .footer-desktop,
     .nacto-desc-desktop,
-    .nacto-desktop {
+    .nacto-desktop,
+    .nav-logo-md, 
+    .nav-logo-lg {
         display: none !important;
     }
     .sm-txt-lg-his,
@@ -600,6 +667,10 @@ h4#smallheader-bor {
         color: white;
         font-family: OSWALD;
         font-size: 1rem;
+    }
+    img.sidebar-logo {
+        height: 36 !important;
+        width: 123 !important;
     }
 
 
@@ -1015,7 +1086,7 @@ a:focus {
     height: 35px;
     line-height: 35px;
     text-align: center;
-    background: #7386D5;
+    background: #30506e;
     position: absolute;
     top: 10px;
     right: 10px;
@@ -1059,7 +1130,7 @@ a:focus {
 
 #sidebar .sidebar-header {
     padding: 20px;
-    background: #6d7fcc;
+    background: #30506e;
 }
 
 #sidebar ul.components {
@@ -1086,7 +1157,7 @@ a:focus {
 #sidebar ul li.active>a,
 a[aria-expanded="true"] {
     color: #fff;
-    background: #6d7fcc;
+    background: #30506e;
 }
 
 a[data-toggle="collapse"] {
@@ -1104,7 +1175,7 @@ a[data-toggle="collapse"] {
 ul ul a {
     font-size: 0.9em !important;
     padding-left: 30px !important;
-    background: #6d7fcc;
+    background: #30506e;
 }
 
 ul.CTAs {
@@ -1126,7 +1197,7 @@ a.download {
 
 a.article,
 a.article:hover {
-    background: #6d7fcc !important;
+    background: #30506e !important;
     color: #fff !important;
 }
 
@@ -1142,4 +1213,7 @@ a.article:hover {
     position: absolute;
     top: 0;
     right: 0;
+}
+.nav-mobile-pg {
+    background: #30506e;
 }
