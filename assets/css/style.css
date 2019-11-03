@@ -42,7 +42,6 @@ div.inner-container {
     height: auto;
     padding-top: 87px !important;
 }
-/*DON'T ASSIGN*/
 .history {
     height: auto;
     padding-top: 87px !important;
@@ -89,7 +88,7 @@ NAVBAR
     .searchbar {
         color: white !important;
     }
-    input::placeholder {
+    input.searchbar::placeholder {
         color: white !important;
     }
 
@@ -416,6 +415,21 @@ h4#smallheader-bor {
 
     padding-top: 87px !important;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 @media(min-width:769px) and (max-width:991px) {
@@ -505,6 +519,22 @@ h4#smallheader-bor {
         font-family: oswald !important;
         font-size: 1rem !important;
     }
+    .billofrights {
+    height: auto;
+    padding-top: 0px !important;
+}
+.history {
+    height: auto;
+    padding-top: 0px !important;
+}
+.joinus {
+    height: 100vh;
+    padding-top: 0px;
+}
+.nacto-desktop {
+    height: auto;
+    padding-top: 0px !important;
+}
 
 
 }
@@ -588,6 +618,22 @@ h4#smallheader-bor {
         font-family: oswald !important;
         font-size: 1rem !important;
     }
+    .billofrights {
+    height: auto;
+    padding-top: 0px !important;
+}
+.history {
+    height: auto;
+    padding-top: 0px !important;
+}
+.joinus {
+    height: 100vh;
+    padding-top: 0px;
+}
+.nacto-desktop {
+    height: auto;
+    padding-top: 0px !important;
+}
 
 
 
@@ -681,6 +727,22 @@ h4#smallheader-bor {
         height: 36 !important;
         width: 123 !important;
     }
+    .billofrights {
+    height: auto;
+    padding-top: 0px !important;
+}
+.history {
+    height: auto;
+    padding-top: 0px !important;
+}
+.joinus {
+    height: 100vh;
+    padding-top: 0px;
+}
+.nacto-desktop {
+    height: auto;
+    padding-top: 0px !important;
+}
 
 
 }
