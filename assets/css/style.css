@@ -96,6 +96,11 @@ NAVBAR
 .sidebar-searchbar {
     width: 100px !important;
 }
+.smalltxt-ftr-mobile{
+    font-size: .5rem;
+    color: white;
+    font-family: oswald;
+}
 
 
 
@@ -343,7 +348,8 @@ h5#smallheader-his {
     .nacto-mobile,
     .footer-mobile,
     .nav-logo-xs,
-    .nav-logo-md {
+    .nav-logo-md,
+    .copyright-nextline  {
         display: none !important;
     }
     .sm-txt-md-his,
@@ -433,7 +439,8 @@ h4#smallheader-bor {
     .nacto-mobile,
     .footer-desktop,
     .nav-logo-xs,
-    .nav-logo-lg {
+    .nav-logo-lg,
+    .copyright-nextline  {
         display: none !important;
     }
     .sm-txt-lg-his,
@@ -494,9 +501,9 @@ h4#smallheader-bor {
         height: 50px;
     }
      h6.smallheader-footer {
-        color: white;
-        font-family: OSWALD;
-        font-size: 1rem;
+        color: white !important;
+        font-family: oswald !important;
+        font-size: 1rem !important;
     }
 
 
@@ -528,7 +535,8 @@ h4#smallheader-bor {
     .railnetwork,
     .footer-desktop,
     .nav-logo-xs,
-    .nav-logo-lg   {
+    .nav-logo-lg,
+    .copyright-sameline  {
         display: none !important;
     }    
     .sm-txt-md-bor {
@@ -575,10 +583,10 @@ h4#smallheader-bor {
         width: 50px;
         height: 50px;
     }
-        h6.smallheader-footer {
-        color: white;
-        font-family: OSWALD;
-        font-size: 1rem;
+     h6.smallheader-footer {
+        color: white !important;
+        font-family: oswald !important;
+        font-size: 1rem !important;
     }
 
 
@@ -608,7 +616,8 @@ h4#smallheader-bor {
     .nacto-desc-desktop,
     .nacto-desktop,
     .nav-logo-md, 
-    .nav-logo-lg {
+    .nav-logo-lg,
+    .copyright-sameline {
         display: none !important;
     }
     .sm-txt-lg-his,
@@ -663,10 +672,10 @@ h4#smallheader-bor {
         height: 53px !important;  
         background: #30506e !important
     }
-    h6.smallheader-footer {
-        color: white;
-        font-family: OSWALD;
-        font-size: 1rem;
+     h6.smallheader-footer {
+        color: white !important;
+        font-family: oswald !important;
+        font-size: 1rem !important;
     }
     img.sidebar-logo {
         height: 36 !important;
