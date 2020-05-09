@@ -10,6 +10,9 @@ html {
   margin: 0 0 0 0 !important;
   padding: 0 0 0 0 !important; }
 
+body {
+  background-color: #30506e; }
+
 @media(min-width:992px) {
   nav#nav-home {
     padding: 15px 10px;
@@ -539,10 +542,11 @@ html {
         display: none !important;
         height: 0vh !important; } }
 section.billofrights {
-  height: 100vh; }
+  height: 100vh;
+  background-color: white; }
 @media(min-width:992px) {
   section.billofrights div.card-body-desktop {
-    padding: 12vh 0 0 0; }
+    padding: 15vh 0 0 0; }
     section.billofrights div.card-body-desktop div.bor-title div.card-body div div img.billsofrightslogo {
       width: 150px !important;
       height: 150px !important; }
@@ -651,7 +655,8 @@ section.billofrights {
 @media(min-width:577px) and (max-width:991px) {
   section.billofrights div.card-body-desktop {
     display: none !important;
-    height: 0vh; }
+    height: 0vh;
+    background-color: white; }
     section.billofrights div.card-body-desktop div.bor-title div.card-body div div img.billsofrightslogo {
       display: none !important;
       height: 0vh; }
@@ -737,7 +742,8 @@ section.billofrights {
 @media(min-width:412px) and (max-width:576px) {
   section.billofrights div.card-body-desktop {
     display: none !important;
-    height: 0vh; }
+    height: 0vh;
+    background-color: white; }
     section.billofrights div.card-body-desktop div.bor-title div.card-body div div img.billsofrightslogo {
       display: none !important;
       height: 0vh; }
@@ -787,9 +793,9 @@ section.billofrights {
       display: none !important;
       height: 0vh !important; }
   section.billofrights div.card-body-mobile {
-    padding: 5vh 0 0 0; }
+    padding: 0 0 0 0; }
     section.billofrights div.card-body-mobile div.bor-title-mobile {
-      padding: 12vh 0 0 0; }
+      padding: 0 5vh 0 7vh; }
       section.billofrights div.card-body-mobile div.bor-title-mobile div div img.billsofrightslogo-mobile {
         width: 100px !important;
         height: 100px !important; }
@@ -816,7 +822,7 @@ section.billofrights {
     border: 1.5px solid rgba(148, 148, 148, 0.5);
     border-radius: 5px;
     margin: 20px auto 0px auto;
-    padding: 10px 20px;
+    padding: 10px 10px 10px 10px;
     background: none;
     font-size: 1rem;
     font-family: arial;
@@ -825,106 +831,103 @@ section.billofrights {
     section.billofrights button.billofrights-btn-mobile a {
       color: #5C6B73; } }
 @media(min-width:375px) and (max-width:411px) {
-  div.card-body-desktop {
+  section.billofrights div.card-body-desktop {
+    display: none !important;
+    height: 0vh;
+    background-color: white; }
+    section.billofrights div.card-body-desktop div.bor-title div.card-body div div img.billsofrightslogo {
+      display: none !important;
+      height: 0vh; }
+    section.billofrights div.card-body-desktop div.bor-title div.card-body div p.billofrights-hdr {
+      display: none !important;
+      height: 0vh; }
+    section.billofrights div.card-body-desktop div.bor-title div.card-body div div.bor-desc-tablet div p.sm-txt2 {
+      display: none !important;
+      height: 0vh; }
+    section.billofrights div.card-body-desktop div.bor-card-container div.row div.billofrights-card div h4#smallheader-bor {
+      display: none !important;
+      height: 0vh; }
+    section.billofrights div.card-body-desktop div.bor-card-container div.row div.billofrights-card div p.sm-txt-lg-bor {
+      display: none !important;
+      height: 0vh; }
+  section.billofrights button.billofrights-btn {
     display: none !important;
     height: 0vh; }
-    div.card-body-desktop div.bor-title div.card-body div div img.billsofrightslogo {
+    section.billofrights button.billofrights-btn a {
       display: none !important;
       height: 0vh; }
-    div.card-body-desktop div.bor-title div.card-body div p.billofrights-hdr {
-      display: none !important;
-      height: 0vh; }
-    div.card-body-desktop div.bor-title div.card-body div div.bor-desc-tablet div p.sm-txt2 {
-      display: none !important;
-      height: 0vh; }
-    div.card-body-desktop div.bor-card-container div.row div.billofrights-card div h4#smallheader-bor {
-      display: none !important;
-      height: 0vh; }
-    div.card-body-desktop div.bor-card-container div.row div.billofrights-card div p.sm-txt-lg-bor {
-      display: none !important;
-      height: 0vh; }
-
-  button.billofrights-btn {
-    display: none !important;
-    height: 0vh; }
-    button.billofrights-btn a {
-      display: none !important;
-      height: 0vh; }
-
-  div.card-body-tablet {
+  section.billofrights div.card-body-tablet {
     display: none !important;
     height: 0vh !important; }
-    div.card-body-tablet div.bor-title-tab {
+    section.billofrights div.card-body-tablet div.bor-title-tab {
       display: none !important;
       height: 0vh !important; }
-      div.card-body-tablet div.bor-title-tab div div img.billsofrightslogo {
+      section.billofrights div.card-body-tablet div.bor-title-tab div div img.billsofrightslogo {
         display: none !important;
         height: 0vh !important; }
-      div.card-body-tablet div.bor-title-tab div div.tablet div.tablet p.sm-txt1-tab {
+      section.billofrights div.card-body-tablet div.bor-title-tab div div.tablet div.tablet p.sm-txt1-tab {
         display: none !important;
         height: 0vh !important; }
-    div.card-body-tablet div.bor-card-container div.row div.billofrights-card {
+    section.billofrights div.card-body-tablet div.bor-card-container div.row div.billofrights-card {
       display: none !important;
       height: 0vh !important; }
-      div.card-body-tablet div.bor-card-container div.row div.billofrights-card div h6.card-title-mobile {
+      section.billofrights div.card-body-tablet div.bor-card-container div.row div.billofrights-card div h6.card-title-mobile {
         display: none !important;
         height: 0vh !important; }
-      div.card-body-tablet div.bor-card-container div.row div.billofrights-card div p.sm-txt-lg-bor {
+      section.billofrights div.card-body-tablet div.bor-card-container div.row div.billofrights-card div p.sm-txt-lg-bor {
         display: none !important;
         height: 0vh !important; }
-
-  button.billofrights-btn-tablet {
+  section.billofrights button.billofrights-btn-tablet {
     display: none !important;
     height: 0vh !important; }
-    button.billofrights-btn-tablet a {
+    section.billofrights button.billofrights-btn-tablet a {
       display: none !important;
       height: 0vh !important; }
-
-  div.card-body-mobile {
-    padding: 5vh 0 0 0; }
-    div.card-body-mobile div.bor-title-mobile {
-      padding: 12vh 0 0 0; }
-      div.card-body-mobile div.bor-title-mobile div div img.billsofrightslogo-mobile {
+  section.billofrights div.card-body-mobile {
+    padding: 0 0 0 0; }
+    section.billofrights div.card-body-mobile div.bor-title-mobile {
+      padding: 0 4vh 0 5vh; }
+      section.billofrights div.card-body-mobile div.bor-title-mobile div div img.billsofrightslogo-mobile {
         width: 100px !important;
         height: 100px !important; }
-      div.card-body-mobile div.bor-title-mobile div div.mobile div.mobile p.sm-txt1-mobile {
+      section.billofrights div.card-body-mobile div.bor-title-mobile div div.mobile div.mobile p.sm-txt1-mobile {
         text-align: center;
         font-size: 1.5rem;
         font-family: Oswald;
         color: #5f7053; }
-    div.card-body-mobile div.bor-card-container div.row div.billofrights-card {
+    section.billofrights div.card-body-mobile div.bor-card-container div.row div.billofrights-card {
       transition-timing-function: ease-in;
       transition: 0.3s;
       display: block;
       background: #72A1B4; }
-      div.card-body-mobile div.bor-card-container div.row div.billofrights-card div h6.card-title-mobile {
+      section.billofrights div.card-body-mobile div.bor-card-container div.row div.billofrights-card div h6.card-title-mobile {
         text-align: center;
         color: white !important;
         font-family: Oswald;
         font-size: 1rem; }
-      div.card-body-mobile div.bor-card-container div.row div.billofrights-card div img.bor-icon-sm {
+      section.billofrights div.card-body-mobile div.bor-card-container div.row div.billofrights-card div img.bor-icon-sm {
         padding: 0 0 1rem 0; }
-
-  button.billofrights-btn-mobile {
+  section.billofrights button.billofrights-btn-mobile {
     display: flex;
     justify-content: center;
     border: 1.5px solid rgba(148, 148, 148, 0.5);
     border-radius: 5px;
     margin: 20px auto 0px auto;
-    padding: 10px 20px;
+    padding: 10px 10px 10px 10px;
     background: none;
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-family: arial;
     transition-timing-function: ease-in;
     transition: 0.3s; }
-    button.billofrights-btn-mobile a {
+    section.billofrights button.billofrights-btn-mobile a {
       color: #5C6B73; } }
 @media(min-width:992px) {
   section.history {
     height: 100vh;
-    padding: 12vh 0 0 0 !important; }
+    padding: 12vh 0 0 0 !important;
+    background-color: white; }
     section.history div.card-body div.history-card-container {
-      margin: 0 0 -5vh 0 !important; }
+      margin: 0 0 0 0 !important; }
       section.history div.card-body div.history-card-container div.history-title div p.history-hdr {
         color: #666666;
         font-size: 2.5rem;
@@ -1004,9 +1007,10 @@ section.billofrights {
       transform: scale(1.05); } }
 @media(min-width:577px) and (max-width:991px) {
   section.history {
-    height: 200vh; }
+    height: 200vh;
+    background-color: white; }
     section.history div.card-body div.history-card-container {
-      margin: -10vh 0 -5vh 0 !important; }
+      margin: -10vh 0 0vh 0 !important; }
       section.history div.card-body div.history-card-container div.history-title div p.history-hdr {
         color: #666666;
         font-size: 2.5rem;
@@ -1094,7 +1098,8 @@ section.billofrights {
         height: 0vh; } }
 @media(min-width:412px) and (max-width:576px) {
   section.history {
-    height: 150vh; }
+    height: 150vh;
+    background-color: white; }
   @media(min-width:992px) {}
     section.history div.card-body div.history-card-container {
       display: none !important;
@@ -1165,7 +1170,7 @@ section.billofrights {
       border: 1.5px solid rgba(148, 148, 148, 0.5);
       border-radius: 5px;
       margin: 0.5rem auto 0px auto;
-      padding: 10px 20px;
+      padding: 10px 10px 10px 10px;
       background: none;
       font-size: 1rem;
       font-family: arial;
@@ -1185,7 +1190,8 @@ section.billofrights {
         height: 0vh; } }
 @media(min-width:375px) and (max-width:411px) {
   section.history {
-    height: 150vh; }
+    height: 150vh;
+    background-color: white; }
   @media(min-width:992px) {}
     section.history div.card-body div.history-card-container {
       display: none !important;
@@ -1198,7 +1204,7 @@ section.billofrights {
           height: 0vh; }
     section.history div.card-body div.history-title-mobile div div span.sm-txt1-mobile {
       color: #666666;
-      font-size: 1.75rem;
+      font-size: 1.5rem;
       font-family: oswald;
       font-weight: bold;
       text-align: center; }
@@ -1209,7 +1215,7 @@ section.billofrights {
     section.history div.card-body div div.card-group div h3.history-hdr-2 {
       font-family: arial narrow;
       color: #666666;
-      font-size: 1.75rem; }
+      font-size: 1.5rem; }
     section.history div.card-body div div.card-group div.row div.card {
       transition-timing-function: ease-in;
       transition: 0.3s; }
@@ -1218,7 +1224,7 @@ section.billofrights {
         line-height: 50px;
         color: #43454a;
         font-family: Oswald;
-        font-size: 1.2rem;
+        font-size: 1rem;
         font-weight: bold; }
         section.history div.card-body div div.card-group div.row div.card div.card-body h5.card-title span.ticker-pnr {
           border-left: 5px solid orange; }
@@ -1256,9 +1262,9 @@ section.billofrights {
       border: 1.5px solid rgba(148, 148, 148, 0.5);
       border-radius: 5px;
       margin: 0.5rem auto 0px auto;
-      padding: 10px 20px;
+      padding: 10px 10px 10px 10px;
       background: none;
-      font-size: 1rem;
+      font-size: 0.8rem;
       font-family: arial;
       transition-timing-function: ease-in;
       transition: 0.3s; }
@@ -1571,7 +1577,8 @@ section.joinus {
         color: white; } }
 @media(min-width:992px) {
   section.nacto-desktop {
-    height: 100vh !important; }
+    height: 100vh !important;
+    background-color: white; }
     section.nacto-desktop div.card-body2 {
       margin: 10vh 0 0 -10vh; }
       section.nacto-desktop div.card-body2 div div div.d-block h5#smallheader-nacto {
@@ -1592,7 +1599,8 @@ section.joinus {
 @media(min-width:577px) and (max-width:991px) {
   section.nacto-desktop {
     display: none !important;
-    height: 0vh !important; }
+    height: 0vh !important;
+    background-color: white; }
     section.nacto-desktop div.card-body2 {
       display: none !important;
       height: 0vh !important; }
@@ -1608,7 +1616,8 @@ section.joinus {
 @media(min-width:412px) and (max-width:576px) {
   section.nacto-desktop {
     display: none !important;
-    height: 0vh !important; }
+    height: 0vh !important;
+    background-color: white; }
     section.nacto-desktop div.card-body2 {
       display: none !important;
       height: 0vh !important; }
@@ -1624,7 +1633,8 @@ section.joinus {
 @media(min-width:375px) and (max-width:411px) {
   section.nacto-desktop {
     display: none !important;
-    height: 0vh !important; }
+    height: 0vh !important;
+    background-color: white; }
     section.nacto-desktop div.card-body2 {
       display: none !important;
       height: 0vh !important; }
@@ -1640,7 +1650,8 @@ section.joinus {
 @media(min-width:992px) {
   section.nacto-mobile {
     display: none !important;
-    height: 0vh !important; }
+    height: 0vh !important;
+    background-color: white; }
     section.nacto-mobile div.nacto-title-mobile div p.sm-txt1-mobile {
       display: none !important;
       height: 0vh !important; }
@@ -1655,7 +1666,8 @@ section.joinus {
       height: 0vh !important; } }
 @media(min-width:577px) and (max-width:991px) {
   section.nacto-mobile {
-    height: 100vh; }
+    height: 100vh;
+    background-color: white; }
     section.nacto-mobile div.nacto-title-mobile div p.sm-txt1-mobile {
       color: #666666;
       font-size: 2rem;
@@ -1678,7 +1690,8 @@ section.joinus {
       text-align: center; } }
 @media(min-width:412px) and (max-width:576px) {
   section.nacto-mobile {
-    height: 100vh; }
+    height: 100vh;
+    background-color: white; }
     section.nacto-mobile div.nacto-title-mobile div p.sm-txt1-mobile {
       color: #666666;
       font-size: 2rem;
@@ -1701,7 +1714,8 @@ section.joinus {
       text-align: center; } }
 @media(min-width:375px) and (max-width:411px) {
   section.nacto-mobile {
-    height: 100vh; }
+    height: 100vh;
+    background-color: white; }
     section.nacto-mobile div.nacto-title-mobile div p.sm-txt1-mobile {
       color: #666666;
       font-size: 1.5rem;
@@ -1729,7 +1743,7 @@ section.joinus {
     padding-right: 0px !important;
     padding-top: 0px !important;
     padding-bottom: 0px !important;
-    height: 100vh; }
+    height: 80vh; }
     section.contact div div.parallax-window {
       height: auto;
       background: transparent;
@@ -1761,26 +1775,26 @@ section.joinus {
         font-size: 1rem;
         font-family: arial;
         color: white; }
-      section.contact div div.parallax-window div div form.d-block h5.contact-hdr {
+      section.contact div div.parallax-window div div.contact-form form.d-block h5.contact-hdr {
         font-size: 2rem !important;
         font-family: Oswald;
         color: white; }
-      section.contact div div.parallax-window div div form.d-block h5.contact-sub {
+      section.contact div div.parallax-window div div.contact-form form.d-block h5.contact-sub {
         font-size: 1.5rem;
         font-family: Saira Extra Condensed;
         font-weight: normal;
         color: white; }
-      section.contact div div.parallax-window div div form.d-block h5.captcha-hdr {
+      section.contact div div.parallax-window div div.contact-form form.d-block h5.captcha-hdr {
         font-size: 1.5rem;
         font-family: arial;
         font-weight: normal;
         color: white; }
-      section.contact div div.parallax-window div div form.d-block h6.captcha-sub {
+      section.contact div div.parallax-window div div.contact-form form.d-block h6.captcha-sub {
         font-size: 1rem;
         font-family: arial narrow;
         font-weight: normal;
         color: white; }
-      section.contact div div.parallax-window div div form.d-block div.form-group div.card-body div img.captcha-img {
+      section.contact div div.parallax-window div div.contact-form form.d-block div.form-group div.card-body div img.captcha-img {
         width: 50px;
         height: 50px; } }
 @media(min-width:577px) and (max-width:991px) {
@@ -1790,54 +1804,55 @@ section.joinus {
     padding-right: 0px !important;
     padding-top: 0px !important;
     padding-bottom: 0px !important;
-    height: 100vh; }
+    height: 70vh; }
     section.contact div div.parallax-window {
       height: auto;
       background: transparent;
-      position: relative; }
+      position: relative;
+      height: 70vh; }
       section.contact div div.parallax-window div div.contact-desktop div form div.form-row div.form-group h5.contact-hdr {
-        font-size: 2rem !important;
+        font-size: 1.5rem !important;
         font-family: Oswald;
         color: white; }
       section.contact div div.parallax-window div div.contact-desktop div form div.form-row div.form-group h5.contact-sub {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         font-family: Saira Extra Condensed;
         font-weight: normal;
         color: white; }
       section.contact div div.parallax-window div div.contact-desktop div div.row div.form-group h3.contact-hdr {
-        font-size: 1.25rem;
+        font-size: 1rem;
         font-family: oswald;
         color: white; }
       section.contact div div.parallax-window div div.contact-desktop div div.row div.form-group div#socialmedia a {
         color: white; }
       section.contact div div.parallax-window div div.contact-desktop div div.row div h3.contact-hdr {
-        font-size: 1.25rem;
+        font-size: 1rem;
         font-family: oswald;
         color: white; }
       section.contact div div.parallax-window div div.contact-desktop div div.row div p.contact-txt {
-        font-size: 1rem;
+        font-size: 0.7rem;
         font-family: arial;
         color: white; }
       section.contact div div.parallax-window div div.contact-desktop div div.row div p.contact-txt {
-        font-size: 1rem;
+        font-size: 0.7rem;
         font-family: arial;
         color: white; }
       section.contact div div.parallax-window div div form.d-block h5.contact-hdr {
-        font-size: 2rem !important;
+        font-size: 1.5rem !important;
         font-family: Oswald;
         color: white; }
       section.contact div div.parallax-window div div form.d-block h5.contact-sub {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         font-family: Saira Extra Condensed;
         font-weight: normal;
         color: white; }
       section.contact div div.parallax-window div div form.d-block h5.captcha-hdr {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         font-family: arial;
         font-weight: normal;
         color: white; }
       section.contact div div.parallax-window div div form.d-block h6.captcha-sub {
-        font-size: 1rem;
+        font-size: 0.7rem;
         font-family: arial narrow;
         font-weight: normal;
         color: white; }
@@ -1851,7 +1866,7 @@ section.joinus {
     padding-right: 0px !important;
     padding-top: 0px !important;
     padding-bottom: 0px !important;
-    height: 100vh; }
+    height: 150vh; }
     section.contact div div.parallax-window {
       height: auto;
       background: transparent;
@@ -1912,7 +1927,7 @@ section.joinus {
     padding-right: 0px !important;
     padding-top: 0px !important;
     padding-bottom: 0px !important;
-    height: 100vh; }
+    height: 160vh; }
     section.contact div div.parallax-window {
       height: auto;
       background: transparent;
@@ -1966,6 +1981,362 @@ section.joinus {
       section.contact div div.parallax-window div div form.d-block div.form-group div.card-body div img.captcha-img {
         width: 50px;
         height: 50px; } }
+@media(min-width:992px) {
+  section.footer-desktop {
+    height: 20vh;
+    background-color: #30506e; }
+    section.footer-desktop div div div a img.nav-logo {
+      width: 240px;
+      height: 71px; }
+    section.footer-desktop div div a.calltoaction {
+      font-family: Oswald;
+      font-size: 1.2rem;
+      color: white; }
+    section.footer-desktop div hr.hrcolor {
+      border: 0.5px solid white;
+      width: 95%; }
+    section.footer-desktop div div small {
+      color: white;
+      font-size: 0.8rem; }
+    section.footer-desktop div div ul li {
+      color: white; }
+      section.footer-desktop div div ul li a {
+        color: white;
+        font-family: Oswald;
+        font-size: 0.9rem; }
+
+  section.footer-mobile {
+    display: none !important;
+    height: 0vh !important; }
+    section.footer-mobile div div.footer-container {
+      display: none !important;
+      height: 0vh !important; }
+      section.footer-mobile div div.footer-container a img.footer-logo {
+        display: none !important;
+        height: 0vh !important; }
+    section.footer-mobile div.footer-mobile div.row h6.smallheader-footer {
+      display: none !important;
+      height: 0vh !important; }
+    section.footer-mobile div.footer-mobile div.row a {
+      display: none !important;
+      height: 0vh !important; }
+    section.footer-mobile div {
+      display: none !important;
+      height: 0vh !important; }
+      section.footer-mobile div div.card-body2 hr.hrcolor {
+        display: none !important;
+        height: 0vh !important; }
+      section.footer-mobile div div.copyright-nextline ul.card-body2 li {
+        display: none !important;
+        height: 0vh !important; }
+        section.footer-mobile div div.copyright-nextline ul.card-body2 li a {
+          display: none !important;
+          height: 0vh !important; }
+      section.footer-mobile div div.copyright-nextline small {
+        display: none !important;
+        height: 0vh !important; }
+        section.footer-mobile div div.copyright-nextline small strong {
+          display: none !important;
+          height: 0vh !important; }
+        section.footer-mobile div div.copyright-nextline small span {
+          display: none !important;
+          height: 0vh !important; } }
+@media(min-width:577px) and (max-width:991px) {}
+@media(min-width:412px) and (max-width:576px) {}
+@media(min-width:375px) and (max-width:411px) {}
+@media(min-width:992px) {}
+@media(min-width:577px) and (max-width:991px) {
+  section.footer-desktop {
+    display: none !important;
+    height: 0vh !important; }
+    section.footer-desktop div {
+      display: none !important;
+      height: 0vh !important; }
+      section.footer-desktop div div {
+        display: none !important;
+        height: 0vh !important; }
+        section.footer-desktop div div div {
+          display: none !important;
+          height: 0vh !important; }
+          section.footer-desktop div div div a {
+            display: none !important;
+            height: 0vh !important; }
+            section.footer-desktop div div div a img.nav-logo {
+              display: none !important;
+              height: 0vh !important; }
+      section.footer-desktop div div {
+        display: none !important;
+        height: 0vh !important; }
+        section.footer-desktop div div a.calltoaction {
+          display: none !important;
+          height: 0vh !important; }
+      section.footer-desktop div div {
+        display: none !important;
+        height: 0vh !important; }
+        section.footer-desktop div div button {
+          display: none !important;
+          height: 0vh !important; }
+    section.footer-desktop div {
+      display: none !important;
+      height: 0vh !important; }
+      section.footer-desktop div hr.hrcolor {
+        display: none !important;
+        height: 0vh !important; }
+    section.footer-desktop div {
+      display: none !important;
+      height: 0vh !important; }
+      section.footer-desktop div div {
+        display: none !important;
+        height: 0vh !important; }
+        section.footer-desktop div div small {
+          display: none !important;
+          height: 0vh !important; }
+          section.footer-desktop div div small strong {
+            display: none !important;
+            height: 0vh !important; }
+          section.footer-desktop div div small span {
+            display: none !important;
+            height: 0vh !important; }
+      section.footer-desktop div div {
+        display: none !important;
+        height: 0vh !important; }
+        section.footer-desktop div div ul {
+          display: none !important;
+          height: 0vh !important; }
+          section.footer-desktop div div ul li {
+            display: none !important;
+            height: 0vh !important; }
+            section.footer-desktop div div ul li a {
+              display: none !important;
+              height: 0vh !important; }
+
+  section.footer-mobile {
+    height: 30vh;
+    margin: 0vh 0 0 0 !important;
+    background-color: #30506e; }
+    section.footer-mobile div div.footer-container {
+      background: #30506e !important; }
+      section.footer-mobile div div.footer-container a img.footer-logo {
+        width: 240px;
+        height: 71px;
+        background: #30506e !important; }
+    section.footer-mobile div.footer-mobile div.row h6.smallheader-footer {
+      color: white;
+      font-family: Oswald; }
+    section.footer-mobile div.footer-mobile div.row a {
+      color: white; }
+    section.footer-mobile div {
+      background-color: #30506e;
+      border: none; }
+      section.footer-mobile div div.card-body2 hr.hrcolor {
+        border: 0.5px solid white;
+        width: 95%; }
+      section.footer-mobile div div.copyright-nextline ul.card-body2 li {
+        color: white;
+        font-size: 0.8rem; }
+        section.footer-mobile div div.copyright-nextline ul.card-body2 li a {
+          color: white;
+          font-size: 0.8rem; }
+      section.footer-mobile div div.copyright-nextline small {
+        color: white; }
+        section.footer-mobile div div.copyright-nextline small strong {
+          color: white; }
+        section.footer-mobile div div.copyright-nextline small span {
+          color: white; } }
+@media(min-width:412px) and (max-width:576px) {
+  section.footer-desktop {
+    display: none !important;
+    height: 0vh !important; }
+    section.footer-desktop div {
+      display: none !important;
+      height: 0vh !important; }
+      section.footer-desktop div div {
+        display: none !important;
+        height: 0vh !important; }
+        section.footer-desktop div div div {
+          display: none !important;
+          height: 0vh !important; }
+          section.footer-desktop div div div a {
+            display: none !important;
+            height: 0vh !important; }
+            section.footer-desktop div div div a img.nav-logo {
+              display: none !important;
+              height: 0vh !important; }
+      section.footer-desktop div div {
+        display: none !important;
+        height: 0vh !important; }
+        section.footer-desktop div div a.calltoaction {
+          display: none !important;
+          height: 0vh !important; }
+      section.footer-desktop div div {
+        display: none !important;
+        height: 0vh !important; }
+        section.footer-desktop div div button {
+          display: none !important;
+          height: 0vh !important; }
+    section.footer-desktop div {
+      display: none !important;
+      height: 0vh !important; }
+      section.footer-desktop div hr.hrcolor {
+        display: none !important;
+        height: 0vh !important; }
+    section.footer-desktop div {
+      display: none !important;
+      height: 0vh !important; }
+      section.footer-desktop div div {
+        display: none !important;
+        height: 0vh !important; }
+        section.footer-desktop div div small {
+          display: none !important;
+          height: 0vh !important; }
+          section.footer-desktop div div small strong {
+            display: none !important;
+            height: 0vh !important; }
+          section.footer-desktop div div small span {
+            display: none !important;
+            height: 0vh !important; }
+      section.footer-desktop div div {
+        display: none !important;
+        height: 0vh !important; }
+        section.footer-desktop div div ul {
+          display: none !important;
+          height: 0vh !important; }
+          section.footer-desktop div div ul li {
+            display: none !important;
+            height: 0vh !important; }
+            section.footer-desktop div div ul li a {
+              display: none !important;
+              height: 0vh !important; }
+
+  section.footer-mobile {
+    height: 30vh;
+    background-color: #30506e; }
+    section.footer-mobile div div.footer-container {
+      background: #30506e !important; }
+      section.footer-mobile div div.footer-container a img.footer-logo {
+        width: 180px;
+        height: 53px;
+        background: #30506e !important; }
+    section.footer-mobile div.footer-mobile div.row h6.smallheader-footer {
+      color: white;
+      font-family: Oswald; }
+    section.footer-mobile div.footer-mobile div.row a {
+      color: white; }
+    section.footer-mobile div {
+      background-color: #30506e;
+      border: none; }
+      section.footer-mobile div div.card-body2 hr.hrcolor {
+        border: 0.5px solid white;
+        width: 95%; }
+      section.footer-mobile div div.copyright-nextline ul.card-body2 li {
+        color: white;
+        font-size: 0.5rem; }
+        section.footer-mobile div div.copyright-nextline ul.card-body2 li a {
+          color: white;
+          font-size: 0.5rem; }
+      section.footer-mobile div div.copyright-nextline small {
+        color: white; }
+        section.footer-mobile div div.copyright-nextline small strong {
+          color: white; }
+        section.footer-mobile div div.copyright-nextline small span {
+          color: white; } }
+@media(min-width:375px) and (max-width:411px) {
+  section.footer-desktop {
+    display: none !important;
+    height: 0vh !important; }
+    section.footer-desktop div {
+      display: none !important;
+      height: 0vh !important; }
+      section.footer-desktop div div {
+        display: none !important;
+        height: 0vh !important; }
+        section.footer-desktop div div div {
+          display: none !important;
+          height: 0vh !important; }
+          section.footer-desktop div div div a {
+            display: none !important;
+            height: 0vh !important; }
+            section.footer-desktop div div div a img.nav-logo {
+              display: none !important;
+              height: 0vh !important; }
+      section.footer-desktop div div {
+        display: none !important;
+        height: 0vh !important; }
+        section.footer-desktop div div a.calltoaction {
+          display: none !important;
+          height: 0vh !important; }
+      section.footer-desktop div div {
+        display: none !important;
+        height: 0vh !important; }
+        section.footer-desktop div div button {
+          display: none !important;
+          height: 0vh !important; }
+    section.footer-desktop div {
+      display: none !important;
+      height: 0vh !important; }
+      section.footer-desktop div hr.hrcolor {
+        display: none !important;
+        height: 0vh !important; }
+    section.footer-desktop div {
+      display: none !important;
+      height: 0vh !important; }
+      section.footer-desktop div div {
+        display: none !important;
+        height: 0vh !important; }
+        section.footer-desktop div div small {
+          display: none !important;
+          height: 0vh !important; }
+          section.footer-desktop div div small strong {
+            display: none !important;
+            height: 0vh !important; }
+          section.footer-desktop div div small span {
+            display: none !important;
+            height: 0vh !important; }
+      section.footer-desktop div div {
+        display: none !important;
+        height: 0vh !important; }
+        section.footer-desktop div div ul {
+          display: none !important;
+          height: 0vh !important; }
+          section.footer-desktop div div ul li {
+            display: none !important;
+            height: 0vh !important; }
+            section.footer-desktop div div ul li a {
+              display: none !important;
+              height: 0vh !important; }
+
+  section.footer-mobile {
+    height: 30vh;
+    background-color: #30506e; }
+    section.footer-mobile div div.footer-container {
+      background: #30506e !important; }
+      section.footer-mobile div div.footer-container a img.footer-logo {
+        width: 180px;
+        height: 53px;
+        background: #30506e !important; }
+    section.footer-mobile div.footer-mobile div.row h6.smallheader-footer {
+      color: white;
+      font-family: Oswald; }
+    section.footer-mobile div.footer-mobile div.row a {
+      color: white; }
+    section.footer-mobile div {
+      background-color: #30506e;
+      border: none; }
+      section.footer-mobile div div.card-body2 hr.hrcolor {
+        border: 0.5px solid white;
+        width: 95%; }
+      section.footer-mobile div div.copyright-nextline ul.card-body2 li {
+        color: white;
+        font-size: 0.5rem; }
+        section.footer-mobile div div.copyright-nextline ul.card-body2 li a {
+          color: white;
+          font-size: 0.5rem; }
+      section.footer-mobile div div.copyright-nextline small {
+        color: white; }
+        section.footer-mobile div div.copyright-nextline small strong {
+          color: white; }
+        section.footer-mobile div div.copyright-nextline small span {
+          color: white; } }
 section.navbar-ender div.overlay {
   display: none;
   position: fixed;

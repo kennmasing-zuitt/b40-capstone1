@@ -356,27 +356,27 @@ h5#smallheader-his {
         display: none !important;
     }
     .sm-txt-lg-bor {
-      text-align: center;
-      font-size: 1rem;
-      font-family: arial;
-      color: white;
+        text-align: center;
+        font-size: 1rem;
+        font-family: arial;
+        color: white;
     }
 
     .sm-txt-lg-his {
-      text-align: center;
-      font-size: 1rem;
-      font-family: arial;
-      color: #43454a;
+        text-align: center;
+        font-size: 1rem;
+        font-family: arial;
+        color: #43454a;
     }
     .billsofrightslogo {
-      width: 150px;
-      height: 150px;
+        width: 150px;
+        height: 150px;
     }
-    .billofrights {
-    height: 100vh;
+        .billofrights {
+        height: 100vh;
     }
-    .history {
-    height: 100vh;
+        .history {
+        height: 100vh;
     }
 /*    h2.cto-desktop {
     font-size: 7rem;
@@ -388,15 +388,12 @@ h5#smallheader-his {
         height: 100vh;
     }
     h5#smallheader-nacto {
-     font-size: 1.25rem;
-      color:#43454a;
-  font-family: OSWALD;
-
-}
-h4#smallheader-bor {
-  font-size: 1.5rem;
-
-
+        font-size: 1.25rem;
+        color:#43454a;
+        font-family: OSWALD;
+    }
+    h4#smallheader-bor {
+      font-size: 1.5rem;
     }
     p.robot-disclaimer {
         font-size: 1rem;
@@ -405,14 +402,13 @@ h4#smallheader-bor {
         width: 50px;
         height: 50px;
     }
-     .footer-desktop {
+    .footer-desktop {
         position: relative;
         z-index: 3;
-     }
-     .joinus {
-
-    padding-top: 87px !important;
-}
+    }
+    .joinus {
+        padding-top: 87px !important;
+    }
 
 
 
