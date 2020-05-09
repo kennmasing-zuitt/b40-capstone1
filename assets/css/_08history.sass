@@ -1,0 +1,532 @@
+@include desktop
+	section.history
+		height: 100vh
+		padding: 12vh 0 0 0 !important
+
+		div.card-body
+
+			div.history-card-container
+				margin: 0 0 -5vh 0 !important
+
+				div.history-title
+					div
+						p.history-hdr
+							color: #666666
+							font-size: 2.5rem
+							font-family: oswald
+							font-weight: bold
+							text-align: center
+
+			@include desktop			
+			div.history-title-mobile
+				div
+					div
+						span.sm-txt1-mobile
+							display: none !important
+							height: 0vh
+			
+			div
+				padding: -10vh 0 0 0 !important
+
+				div.card-group
+					div
+						h3.history-hdr-1
+							font-family: arial narrow
+							color: #666666
+
+					@include desktop
+					div
+						h3.history-hdr-2
+							display: none !important
+							height: 0vh
+
+					div.row
+						div.card
+							transition-timing-function: ease-in
+							transition: 0.3s
+
+							div.card-body
+								h5.card-title
+									text-align: center
+									line-height: 50px
+									color: #43454a
+									font-family: Oswald
+									font-size: 1.5rem
+									font-weight: bold
+
+									span.ticker-pnr
+										border-left: 5px solid orange
+
+									span.ticker-subway 
+										border-left: 5px solid gray
+
+									span.ticker-lrt1 
+										border-left: 5px solid #fff23b
+
+									span.ticker-mrt3 
+										border-left: 5px solid #3f94fc
+									
+									span.ticker-lrt2 
+										border-left: 5px solid #924ac2
+
+									span.ticker-line4 
+										border-left: 5px solid #fa66fa
+									
+									span.ticker-line5 
+										border-left: 5px solid #7acc54
+
+									span.ticker-line6 
+										border-left: 5px solid #eb9d31
+									
+									span.ticker-line7 
+										border-left: 5px solid #963d27
+
+									span.ticker-line8 
+										border-left: 5px solid #754e1b
+								
+									span.ticker-line9 
+										border-left: 5px solid #db0000
+
+									span.ticker-pnr-north 
+										border-left: 5px solid #126e3d
+
+									span.ticker-pnr-south 
+										border-left: 5px solid #0c5b82
+
+
+						div.card:hover
+							transition-timing-function: ease-out
+							transition: 0.3s
+							transform: scale(1.1)
+
+			button.billofrights-btn
+				display: flex
+				justify-content: center
+				border: 1.5px solid rgba(148, 148, 148, .5)
+				border-radius: 5px
+				margin: .5rem auto 0px auto
+				padding: 10px 20px
+				background: none
+				font-size: 1rem
+				font-family: arial
+				transition-timing-function: ease-in
+				transition: 0.3s
+
+				a
+					color: $darkGray
+
+			button.billofrights-btn:hover
+				transition-timing-function: ease-out
+				transition: 0.3s
+				transform: scale(1.05)
+
+
+		div.railnetwork
+			img.railnetwork-map
+
+@include tablet
+	section.history
+		height: 200vh
+
+		div.card-body
+
+			div.history-card-container
+				margin: -10vh 0 -5vh 0 !important
+
+				div.history-title
+					div
+						p.history-hdr
+							color: #666666
+							font-size: 2.5rem
+							font-family: oswald
+							font-weight: bold
+							text-align: center
+
+			@include desktop			
+			div.history-title-mobile
+				div
+					div
+						span.sm-txt1-mobile
+							display: none !important
+							height: 0vh
+
+			div
+				padding: -10vh 0 0 0 !important
+
+				div.card-group
+
+					@include tablet
+					div
+						h3.history-hdr-1
+							display: none !important
+							height: 0vh
+
+					div
+						h3.history-hdr-2
+							font-family: arial narrow
+							color: #666666
+							font-size: 1.75rem
+							margin: 0 0 0 2rem
+
+					div.row
+						div.card
+							transition-timing-function: ease-in
+							transition: 0.3s
+
+							div.card-body
+								h5.card-title
+									text-align: center
+									line-height: 50px
+									color: #43454a
+									font-family: Oswald
+									font-size: 1.5rem
+									font-weight: bold
+
+									span.ticker-pnr
+										border-left: 5px solid orange
+
+									span.ticker-subway 
+										border-left: 5px solid gray
+
+									span.ticker-lrt1 
+										border-left: 5px solid #fff23b
+
+									span.ticker-mrt3 
+										border-left: 5px solid #3f94fc
+									
+									span.ticker-lrt2 
+										border-left: 5px solid #924ac2
+
+									span.ticker-line4 
+										border-left: 5px solid #fa66fa
+									
+									span.ticker-line5 
+										border-left: 5px solid #7acc54
+
+									span.ticker-line6 
+										border-left: 5px solid #eb9d31
+									
+									span.ticker-line7 
+										border-left: 5px solid #963d27
+
+									span.ticker-line8 
+										border-left: 5px solid #754e1b
+								
+									span.ticker-line9 
+										border-left: 5px solid #db0000
+
+									span.ticker-pnr-north 
+										border-left: 5px solid #126e3d
+
+									span.ticker-pnr-south 
+										border-left: 5px solid #0c5b82
+
+
+						div.card:hover
+							transition-timing-function: ease-out
+							transition: 0.3s
+							transform: scale(1.1)
+
+			button.billofrights-btn
+				display: flex
+				justify-content: center
+				border: 1.5px solid rgba(148, 148, 148, .5)
+				border-radius: 5px
+				margin: .5rem auto 0px auto
+				padding: 10px 20px
+				background: none
+				font-size: 1rem
+				font-family: arial
+				transition-timing-function: ease-in
+				transition: 0.3s
+
+				a
+					color: $darkGray
+
+			button.billofrights-btn:hover
+				transition-timing-function: ease-out
+				transition: 0.3s
+				transform: scale(1.05)
+
+
+		div.railnetwork
+			display: none !important
+			height: 0vh
+
+			img.railnetwork-map
+				display: none !important
+				height: 0vh
+
+@include phone
+	section.history
+		height: 150vh
+
+		div.card-body
+
+			@include desktop
+			div.history-card-container
+				display: none !important
+				height: 0vh
+
+				div.history-title
+					display: none !important
+					height: 0vh
+
+					div
+						p.history-hdr
+							display: none !important
+							height: 0vh
+
+			div.history-title-mobile
+				div
+					div
+						span.sm-txt1-mobile
+							color: #666666
+							font-size: 1.75rem
+							font-family: oswald
+							font-weight: bold
+							text-align: center
+
+			div
+				// padding: -10vh 0 0 0 !important
+
+				div.card-group
+
+					@include tablet
+					div
+						h3.history-hdr-1
+							display: none !important
+							height: 0vh
+
+					div
+						h3.history-hdr-2
+							font-family: arial narrow
+							color: #666666
+							font-size: 1.75rem
+							// margin: 0 0 0 2rem
+
+					div.row
+						div.card
+							transition-timing-function: ease-in
+							transition: 0.3s
+
+							div.card-body
+								h5.card-title
+									text-align: center
+									line-height: 50px
+									color: #43454a
+									font-family: Oswald
+									font-size: 1.5rem
+									font-weight: bold
+
+									span.ticker-pnr
+										border-left: 5px solid orange
+
+									span.ticker-subway 
+										border-left: 5px solid gray
+
+									span.ticker-lrt1 
+										border-left: 5px solid #fff23b
+
+									span.ticker-mrt3 
+										border-left: 5px solid #3f94fc
+									
+									span.ticker-lrt2 
+										border-left: 5px solid #924ac2
+
+									span.ticker-line4 
+										border-left: 5px solid #fa66fa
+									
+									span.ticker-line5 
+										border-left: 5px solid #7acc54
+
+									span.ticker-line6 
+										border-left: 5px solid #eb9d31
+									
+									span.ticker-line7 
+										border-left: 5px solid #963d27
+
+									span.ticker-line8 
+										border-left: 5px solid #754e1b
+								
+									span.ticker-line9 
+										border-left: 5px solid #db0000
+
+									span.ticker-pnr-north 
+										border-left: 5px solid #126e3d
+
+									span.ticker-pnr-south 
+										border-left: 5px solid #0c5b82
+
+
+						div.card:hover
+							transition-timing-function: ease-out
+							transition: 0.3s
+							transform: scale(1.1)
+
+			button.billofrights-btn
+				display: flex
+				justify-content: center
+				border: 1.5px solid rgba(148, 148, 148, .5)
+				border-radius: 5px
+				margin: .5rem auto 0px auto
+				padding: 10px 20px
+				background: none
+				font-size: 1rem
+				font-family: arial
+				transition-timing-function: ease-in
+				transition: 0.3s
+
+				a
+					color: $darkGray
+
+			button.billofrights-btn:hover
+				transition-timing-function: ease-out
+				transition: 0.3s
+				transform: scale(1.05)
+
+
+		div.railnetwork
+			display: none !important
+			height: 0vh
+
+			img.railnetwork-map
+				display: none !important
+				height: 0vh
+
+@include small-phone
+	section.history
+		height: 150vh
+
+		div.card-body
+
+			@include desktop
+			div.history-card-container
+				display: none !important
+				height: 0vh
+
+				div.history-title
+					display: none !important
+					height: 0vh
+
+					div
+						p.history-hdr
+							display: none !important
+							height: 0vh
+
+			div.history-title-mobile
+				div
+					div
+						span.sm-txt1-mobile
+							color: #666666
+							font-size: 1.75rem
+							font-family: oswald
+							font-weight: bold
+							text-align: center
+
+			div
+				// padding: -10vh 0 0 0 !important
+
+				div.card-group
+
+					@include tablet
+					div
+						h3.history-hdr-1
+							display: none !important
+							height: 0vh
+
+					div
+						h3.history-hdr-2
+							font-family: arial narrow
+							color: #666666
+							font-size: 1.75rem
+							// margin: 0 0 0 2rem
+
+					div.row
+						div.card
+							transition-timing-function: ease-in
+							transition: 0.3s
+
+							div.card-body
+								h5.card-title
+									text-align: center
+									line-height: 50px
+									color: #43454a
+									font-family: Oswald
+									font-size: 1.2rem
+									font-weight: bold
+
+									span.ticker-pnr
+										border-left: 5px solid orange
+
+									span.ticker-subway 
+										border-left: 5px solid gray
+
+									span.ticker-lrt1 
+										border-left: 5px solid #fff23b
+
+									span.ticker-mrt3 
+										border-left: 5px solid #3f94fc
+									
+									span.ticker-lrt2 
+										border-left: 5px solid #924ac2
+
+									span.ticker-line4 
+										border-left: 5px solid #fa66fa
+									
+									span.ticker-line5 
+										border-left: 5px solid #7acc54
+
+									span.ticker-line6 
+										border-left: 5px solid #eb9d31
+									
+									span.ticker-line7 
+										border-left: 5px solid #963d27
+
+									span.ticker-line8 
+										border-left: 5px solid #754e1b
+								
+									span.ticker-line9 
+										border-left: 5px solid #db0000
+
+									span.ticker-pnr-north 
+										border-left: 5px solid #126e3d
+
+									span.ticker-pnr-south 
+										border-left: 5px solid #0c5b82
+
+
+						div.card:hover
+							transition-timing-function: ease-out
+							transition: 0.3s
+							transform: scale(1.1)
+
+			button.billofrights-btn
+				display: flex
+				justify-content: center
+				border: 1.5px solid rgba(148, 148, 148, .5)
+				border-radius: 5px
+				margin: .5rem auto 0px auto
+				padding: 10px 20px
+				background: none
+				font-size: 1rem
+				font-family: arial
+				transition-timing-function: ease-in
+				transition: 0.3s
+
+				a
+					color: $darkGray
+
+			button.billofrights-btn:hover
+				transition-timing-function: ease-out
+				transition: 0.3s
+				transform: scale(1.05)
+
+
+		div.railnetwork
+			display: none !important
+			height: 0vh
+
+			img.railnetwork-map
+				display: none !important
+				height: 0vh

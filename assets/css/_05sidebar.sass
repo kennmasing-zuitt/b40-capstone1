@@ -1,0 +1,509 @@
+@include desktop
+	section.navbar-mobile#home
+		div.wrapper
+			nav#sidebar
+				display: none !important
+				height: 0vh !important
+
+			nav#sidebar.active
+				display: none !important
+				height: 0vh !important
+
+				div#dismiss
+					display: none !important
+					height: 0vh !important
+
+				div#dismiss:hover
+					display: none !important
+					height: 0vh !important		
+
+				div.sidebar-header
+					display: none !important
+					height: 0vh !important
+
+					h4
+						img.sidebar-logo
+
+				ul.components
+					display: none !important
+					height: 0vh !important
+
+					p
+						display: none !important
+						height: 0vh !important
+
+					li
+						display: none !important
+						height: 0vh !important
+
+						a#dismiss2
+							display: none !important
+							height: 0vh !important
+
+						a#dismiss:hover
+							display: none !important
+							height: 0vh !important
+
+					li.active
+						>a
+						a[aria-expanded="true"]
+							display: none !important
+							height: 0vh !important
+
+						a[data-toggle="collapse"]
+							display: none !important
+							height: 0vh !important
+
+						a#dismiss:hover
+							display: none !important
+							height: 0vh !important				
+
+				ul.CTAs
+					display: none !important
+					height: 0vh !important
+
+					li
+						form.form-inline
+
+							input.searchbar
+								// width: 120vh !important
+
+							input.searchbar::placeholder
+								display: none !important
+								height: 0vh !important
+
+							button.search-btn
+								display: none !important
+								height: 0vh !important
+		
+		div#content
+			display: none !important
+			height: 0vh !important
+
+			nav.nav-mobile-pg
+				display: none !important
+				height: 0vh !important
+
+				div
+					div
+						button#sidebarCollapse
+							i
+
+					div
+						img.nav-logo-lg
+							display: none !important
+							height: 0vh !important
+
+						img.nav-logo-md
+							display: none !important
+							height: 0vh !important
+
+						img.nav-logo-xs
+							display: none !important
+							height: 0vh !important
+
+
+@include tablet
+	section.navbar-mobile#home
+		div.wrapper
+			nav#sidebar
+				width: 250px
+				position: fixed
+				top: 0
+				left: -250px
+				height: 100vh
+				z-index: 999
+				background: rgba(0, 0, 0, .75)
+				color: #fff
+				transition: all 0.3s
+				overflow-y: scroll
+				box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2)
+
+			nav#sidebar.active
+				left: 0
+
+				div#dismiss
+					width: 35px
+					height: 35px
+					line-height: 35px
+					text-align: center
+					background: #30506e
+					position: absolute
+					top: 10px
+					right: 10px
+					cursor: pointer
+					-webkit-transition: all 0.3s
+					-o-transition: all 0.3s
+					transition: all 0.3s
+
+				div#dismiss:hover
+					background: #fff
+					color: #7386D5				
+
+				div.sidebar-header
+					padding: 20px
+					background: #30506e
+
+					h4
+						img.sidebar-logo
+
+				ul.components
+					padding: 20px 0
+					border-bottom: 1px solid #47748b
+
+					p
+						color: #fff
+						padding: 10px
+
+					li
+						// background: rgba(0, 0, 0, 0.7)
+						padding: .5rem
+
+						a#dismiss2
+							cursor: pointer
+							-webkit-transition: all 0.3s
+							-o-transition: all 0.3s
+							transition: all 0.3s
+							// padding: 10px
+							font-size: 1.1em
+							// display: block
+							// font-size: 0.9em !important
+							padding-left: 15px !important
+							// background: #30506e
+							color: white
+
+						a#dismiss:hover
+							color: #7386D5
+							background: #fff
+
+					li.active
+						>a
+						a[aria-expanded="true"]
+							color: #fff
+							background: #30506e
+							font-size: 0.9em !important
+							padding-left: 30px !important
+							background: #30506e
+
+						a[data-toggle="collapse"]
+							position: relative
+
+
+						a#dismiss:hover
+							color: #7386D5
+							background: #fff					
+
+				ul.CTAs
+					padding: 20px
+
+					li
+						form.form-inline
+
+							input.searchbar
+								// width: 120vh !important
+
+							input.searchbar::placeholder
+								color: white !important
+
+							button.search-btn
+								color: white !important
+		
+		div#content
+			width: 100%
+			// padding: 20px
+			min-height: 100vh
+			transition: all 0.3s
+			position: absolute
+			top: 0
+			right: 0
+
+			nav.nav-mobile-pg
+				background: #30506e
+
+				div
+					div
+						button#sidebarCollapse
+							i
+
+					div
+						img.nav-logo-lg
+							display: none !important
+							height: 0vh
+
+						img.nav-logo-md
+							// display: none !important
+							// height: 0vh
+
+						img.nav-logo-xs
+							display: none !important
+							height: 0vh
+
+@include phone
+	section.navbar-mobile#home
+		div.wrapper
+			nav#sidebar
+				width: 250px
+				position: fixed
+				top: 0
+				left: -250px
+				height: 100vh
+				z-index: 999
+				background: rgba(0, 0, 0, .75)
+				color: #fff
+				transition: all 0.3s
+				overflow-y: scroll
+				box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2)
+
+			nav#sidebar.active
+				left: 0
+
+				div#dismiss
+					width: 35px
+					height: 35px
+					line-height: 35px
+					text-align: center
+					background: #30506e
+					position: absolute
+					top: 10px
+					right: 10px
+					cursor: pointer
+					-webkit-transition: all 0.3s
+					-o-transition: all 0.3s
+					transition: all 0.3s
+
+				div#dismiss:hover
+					background: #fff
+					color: #7386D5				
+
+				div.sidebar-header
+					padding: 20px
+					background: #30506e
+
+					h4
+						img.sidebar-logo
+
+				ul.components
+					padding: 20px 0
+					border-bottom: 1px solid #47748b
+
+					p
+						color: #fff
+						padding: 10px
+
+					li
+						// background: rgba(0, 0, 0, 0.7)
+						padding: .5rem
+
+						a#dismiss2
+							cursor: pointer
+							-webkit-transition: all 0.3s
+							-o-transition: all 0.3s
+							transition: all 0.3s
+							// padding: 10px
+							font-size: 1.1em
+							// display: block
+							// font-size: 0.9em !important
+							padding-left: 15px !important
+							// background: #30506e
+							color: white
+
+						a#dismiss:hover
+							color: #7386D5
+							background: #fff
+
+					li.active
+						>a
+						a[aria-expanded="true"]
+							color: #fff
+							background: #30506e
+							font-size: 0.9em !important
+							padding-left: 30px !important
+							background: #30506e
+
+						a[data-toggle="collapse"]
+							position: relative
+
+
+						a#dismiss:hover
+							color: #7386D5
+							background: #fff					
+
+				ul.CTAs
+					padding: 20px
+
+					li
+						form.form-inline
+
+							input.searchbar
+								// width: 120vh !important
+
+							input.searchbar::placeholder
+								color: white !important
+
+							button.search-btn
+								color: white !important
+		
+		div#content
+			width: 100%
+			// padding: 20px
+			min-height: 100vh
+			transition: all 0.3s
+			position: absolute
+			top: 0
+			right: 0
+
+			nav.nav-mobile-pg
+				background: #30506e
+
+				div
+					div
+						button#sidebarCollapse
+							i
+
+					div
+						img.nav-logo-lg
+							display: none !important
+							height: 0vh
+
+						img.nav-logo-md
+							display: none !important
+							height: 0vh
+
+						img.nav-logo-xs
+							// display: none !important
+							// height: 0vh
+
+@include small-phone
+	section.navbar-mobile#home
+		div.wrapper
+			nav#sidebar
+				width: 250px
+				position: fixed
+				top: 0
+				left: -250px
+				height: 100vh
+				z-index: 999
+				background: rgba(0, 0, 0, .75)
+				color: #fff
+				transition: all 0.3s
+				overflow-y: scroll
+				box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2)
+
+			nav#sidebar.active
+				left: 0
+
+				div#dismiss
+					width: 35px
+					height: 35px
+					line-height: 35px
+					text-align: center
+					background: #30506e
+					position: absolute
+					top: 10px
+					right: 10px
+					cursor: pointer
+					-webkit-transition: all 0.3s
+					-o-transition: all 0.3s
+					transition: all 0.3s
+
+				div#dismiss:hover
+					background: #fff
+					color: #7386D5				
+
+				div.sidebar-header
+					padding: 20px
+					background: #30506e
+
+					h4
+						img.sidebar-logo
+
+				ul.components
+					padding: 20px 0
+					border-bottom: 1px solid #47748b
+
+					p
+						color: #fff
+						padding: 10px
+
+					li
+						// background: rgba(0, 0, 0, 0.7)
+						padding: .5rem
+
+						a#dismiss2
+							cursor: pointer
+							-webkit-transition: all 0.3s
+							-o-transition: all 0.3s
+							transition: all 0.3s
+							// padding: 10px
+							font-size: 1.1em
+							// display: block
+							// font-size: 0.9em !important
+							padding-left: 15px !important
+							// background: #30506e
+							color: white
+
+						a#dismiss:hover
+							color: #7386D5
+							background: #fff
+
+					li.active
+						>a
+						a[aria-expanded="true"]
+							color: #fff
+							background: #30506e
+							font-size: 0.9em !important
+							padding-left: 30px !important
+							background: #30506e
+
+						a[data-toggle="collapse"]
+							position: relative
+
+
+						a#dismiss:hover
+							color: #7386D5
+							background: #fff					
+
+				ul.CTAs
+					padding: 20px
+
+					li
+						form.form-inline
+
+							input.searchbar
+								// width: 120vh !important
+
+							input.searchbar::placeholder
+								color: white !important
+
+							button.search-btn
+								color: white !important
+		
+		div#content
+			width: 100%
+			// padding: 20px
+			min-height: 100vh
+			transition: all 0.3s
+			position: absolute
+			top: 0
+			right: 0
+
+			nav.nav-mobile-pg
+				background: #30506e
+
+				div
+					div
+						button#sidebarCollapse
+							i
+
+					div
+						img.nav-logo-lg
+							display: none !important
+							height: 0vh
+
+						img.nav-logo-md
+							display: none !important
+							height: 0vh
+
+						img.nav-logo-xs
+							// display: none !important
+							// height: 0vh
