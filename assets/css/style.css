@@ -6,6 +6,10 @@
 html {
   scroll-behavior: smooth; }
 
+.no-gutters {
+  margin: 0 0 0 0 !important;
+  padding: 0 0 0 0 !important; }
+
 @media(min-width:992px) {
   nav#nav-home {
     padding: 15px 10px;
@@ -1718,10 +1722,250 @@ section.joinus {
       font-family: oswald;
       font-weight: bold;
       text-align: center; } }
-@media(min-width:992px) {}
-@media(min-width:577px) and (max-width:991px) {}
-@media(min-width:412px) and (max-width:576px) {}
-@media(min-width:375px) and (max-width:411px) {}
+@media(min-width:992px) {
+  section.contact {
+    height: auto;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+    height: 100vh; }
+    section.contact div div.parallax-window {
+      height: auto;
+      background: transparent;
+      position: relative; }
+      section.contact div div.parallax-window div div.contact-desktop div form div.form-row div.form-group h5.contact-hdr {
+        font-size: 2rem !important;
+        font-family: Oswald;
+        color: white; }
+      section.contact div div.parallax-window div div.contact-desktop div form div.form-row div.form-group h5.contact-sub {
+        font-size: 1.5rem;
+        font-family: Saira Extra Condensed;
+        font-weight: normal;
+        color: white; }
+      section.contact div div.parallax-window div div.contact-desktop div div.row div.form-group h3.contact-hdr {
+        font-size: 1.25rem;
+        font-family: oswald;
+        color: white; }
+      section.contact div div.parallax-window div div.contact-desktop div div.row div.form-group div#socialmedia a {
+        color: white; }
+      section.contact div div.parallax-window div div.contact-desktop div div.row div h3.contact-hdr {
+        font-size: 1.25rem;
+        font-family: oswald;
+        color: white; }
+      section.contact div div.parallax-window div div.contact-desktop div div.row div p.contact-txt {
+        font-size: 1rem;
+        font-family: arial;
+        color: white; }
+      section.contact div div.parallax-window div div.contact-desktop div div.row div p.contact-txt {
+        font-size: 1rem;
+        font-family: arial;
+        color: white; }
+      section.contact div div.parallax-window div div form.d-block h5.contact-hdr {
+        font-size: 2rem !important;
+        font-family: Oswald;
+        color: white; }
+      section.contact div div.parallax-window div div form.d-block h5.contact-sub {
+        font-size: 1.5rem;
+        font-family: Saira Extra Condensed;
+        font-weight: normal;
+        color: white; }
+      section.contact div div.parallax-window div div form.d-block h5.captcha-hdr {
+        font-size: 1.5rem;
+        font-family: arial;
+        font-weight: normal;
+        color: white; }
+      section.contact div div.parallax-window div div form.d-block h6.captcha-sub {
+        font-size: 1rem;
+        font-family: arial narrow;
+        font-weight: normal;
+        color: white; }
+      section.contact div div.parallax-window div div form.d-block div.form-group div.card-body div img.captcha-img {
+        width: 50px;
+        height: 50px; } }
+@media(min-width:577px) and (max-width:991px) {
+  section.contact {
+    height: auto;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+    height: 100vh; }
+    section.contact div div.parallax-window {
+      height: auto;
+      background: transparent;
+      position: relative; }
+      section.contact div div.parallax-window div div.contact-desktop div form div.form-row div.form-group h5.contact-hdr {
+        font-size: 2rem !important;
+        font-family: Oswald;
+        color: white; }
+      section.contact div div.parallax-window div div.contact-desktop div form div.form-row div.form-group h5.contact-sub {
+        font-size: 1.5rem;
+        font-family: Saira Extra Condensed;
+        font-weight: normal;
+        color: white; }
+      section.contact div div.parallax-window div div.contact-desktop div div.row div.form-group h3.contact-hdr {
+        font-size: 1.25rem;
+        font-family: oswald;
+        color: white; }
+      section.contact div div.parallax-window div div.contact-desktop div div.row div.form-group div#socialmedia a {
+        color: white; }
+      section.contact div div.parallax-window div div.contact-desktop div div.row div h3.contact-hdr {
+        font-size: 1.25rem;
+        font-family: oswald;
+        color: white; }
+      section.contact div div.parallax-window div div.contact-desktop div div.row div p.contact-txt {
+        font-size: 1rem;
+        font-family: arial;
+        color: white; }
+      section.contact div div.parallax-window div div.contact-desktop div div.row div p.contact-txt {
+        font-size: 1rem;
+        font-family: arial;
+        color: white; }
+      section.contact div div.parallax-window div div form.d-block h5.contact-hdr {
+        font-size: 2rem !important;
+        font-family: Oswald;
+        color: white; }
+      section.contact div div.parallax-window div div form.d-block h5.contact-sub {
+        font-size: 1.5rem;
+        font-family: Saira Extra Condensed;
+        font-weight: normal;
+        color: white; }
+      section.contact div div.parallax-window div div form.d-block h5.captcha-hdr {
+        font-size: 1.5rem;
+        font-family: arial;
+        font-weight: normal;
+        color: white; }
+      section.contact div div.parallax-window div div form.d-block h6.captcha-sub {
+        font-size: 1rem;
+        font-family: arial narrow;
+        font-weight: normal;
+        color: white; }
+      section.contact div div.parallax-window div div form.d-block div.form-group div.card-body div img.captcha-img {
+        width: 50px;
+        height: 50px; } }
+@media(min-width:412px) and (max-width:576px) {
+  section.contact {
+    height: auto;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+    height: 100vh; }
+    section.contact div div.parallax-window {
+      height: auto;
+      background: transparent;
+      position: relative; }
+      section.contact div div.parallax-window div div.contact-desktop div form div.form-row div.form-group h5.contact-hdr {
+        font-size: 2rem !important;
+        font-family: Oswald;
+        color: white; }
+      section.contact div div.parallax-window div div.contact-desktop div form div.form-row div.form-group h5.contact-sub {
+        font-size: 1.5rem;
+        font-family: Saira Extra Condensed;
+        font-weight: normal;
+        color: white; }
+      section.contact div div.parallax-window div div.contact-desktop div div.row div.form-group h3.contact-hdr {
+        font-size: 1.25rem;
+        font-family: oswald;
+        color: white; }
+      section.contact div div.parallax-window div div.contact-desktop div div.row div.form-group div#socialmedia a {
+        color: white; }
+      section.contact div div.parallax-window div div.contact-desktop div div.row div h3.contact-hdr {
+        font-size: 1.25rem;
+        font-family: oswald;
+        color: white; }
+      section.contact div div.parallax-window div div.contact-desktop div div.row div p.contact-txt {
+        font-size: 1rem;
+        font-family: arial;
+        color: white; }
+      section.contact div div.parallax-window div div.contact-desktop div div.row div p.contact-txt {
+        font-size: 1rem;
+        font-family: arial;
+        color: white; }
+      section.contact div div.parallax-window div div form.d-block h5.contact-hdr {
+        font-size: 2rem !important;
+        font-family: Oswald;
+        color: white; }
+      section.contact div div.parallax-window div div form.d-block h5.contact-sub {
+        font-size: 1.5rem;
+        font-family: Saira Extra Condensed;
+        font-weight: normal;
+        color: white; }
+      section.contact div div.parallax-window div div form.d-block h5.captcha-hdr {
+        font-size: 1.5rem;
+        font-family: arial;
+        font-weight: normal;
+        color: white; }
+      section.contact div div.parallax-window div div form.d-block h6.captcha-sub {
+        font-size: 1rem;
+        font-family: arial narrow;
+        font-weight: normal;
+        color: white; }
+      section.contact div div.parallax-window div div form.d-block div.form-group div.card-body div img.captcha-img {
+        width: 50px;
+        height: 50px; } }
+@media(min-width:375px) and (max-width:411px) {
+  section.contact {
+    height: auto;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+    height: 100vh; }
+    section.contact div div.parallax-window {
+      height: auto;
+      background: transparent;
+      position: relative; }
+      section.contact div div.parallax-window div div.contact-desktop div form div.form-row div.form-group h5.contact-hdr {
+        font-size: 2rem !important;
+        font-family: Oswald;
+        color: white; }
+      section.contact div div.parallax-window div div.contact-desktop div form div.form-row div.form-group h5.contact-sub {
+        font-size: 1.5rem;
+        font-family: Saira Extra Condensed;
+        font-weight: normal;
+        color: white; }
+      section.contact div div.parallax-window div div.contact-desktop div div.row div.form-group h3.contact-hdr {
+        font-size: 1.25rem;
+        font-family: oswald;
+        color: white; }
+      section.contact div div.parallax-window div div.contact-desktop div div.row div.form-group div#socialmedia a {
+        color: white; }
+      section.contact div div.parallax-window div div.contact-desktop div div.row div h3.contact-hdr {
+        font-size: 1.25rem;
+        font-family: oswald;
+        color: white; }
+      section.contact div div.parallax-window div div.contact-desktop div div.row div p.contact-txt {
+        font-size: 1rem;
+        font-family: arial;
+        color: white; }
+      section.contact div div.parallax-window div div.contact-desktop div div.row div p.contact-txt {
+        font-size: 1rem;
+        font-family: arial;
+        color: white; }
+      section.contact div div.parallax-window div div form.d-block h5.contact-hdr {
+        font-size: 2rem !important;
+        font-family: Oswald;
+        color: white; }
+      section.contact div div.parallax-window div div form.d-block h5.contact-sub {
+        font-size: 1.5rem;
+        font-family: Saira Extra Condensed;
+        font-weight: normal;
+        color: white; }
+      section.contact div div.parallax-window div div form.d-block h5.captcha-hdr {
+        font-size: 1.5rem;
+        font-family: arial;
+        font-weight: normal;
+        color: white; }
+      section.contact div div.parallax-window div div form.d-block h6.captcha-sub {
+        font-size: 1rem;
+        font-family: arial narrow;
+        font-weight: normal;
+        color: white; }
+      section.contact div div.parallax-window div div form.d-block div.form-group div.card-body div img.captcha-img {
+        width: 50px;
+        height: 50px; } }
 section.navbar-ender div.overlay {
   display: none;
   position: fixed;
