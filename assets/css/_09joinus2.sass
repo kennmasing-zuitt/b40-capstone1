@@ -62,6 +62,10 @@ section.joinus
 										color: white
 										font-weight: bold
 
+									hr.hrcolor
+										border: .5px solid white
+										width: 95%
+
 									p
 										small.halalan
 											color: white
@@ -178,6 +182,10 @@ section.joinus
 										color: white
 										font-weight: bold
 
+									hr.hrcolor
+										border: .5px solid white
+										width: 95%
+
 									p
 										small.halalan
 											color: white
@@ -237,6 +245,130 @@ section.joinus
 										small.halalan
 											display: none !important
 											height: 0vh !important
+
+@include small-tablet
+	div.joinus-desktop
+		display: none !important
+		height: 0vh !important
+
+		div.row
+			div
+				div.d-block
+					div.joinus-cto
+						display: none !important
+						height: 0vh !important
+
+						div.card-header
+							small
+								display: none !important
+								height: 0vh !important
+
+						div.text-success
+							h5.card-title
+								display: none !important
+								height: 0vh !important
+
+						div.card-footer
+							small
+								a#readmore
+									display: none !important
+									height: 0vh !important
+
+			div.halalanrow
+				div.halalan
+					display: none !important
+					height: 0vh !important
+
+					div.row
+						div
+							div.card-body2
+								display: none !important
+								height: 0vh !important
+
+								img.fingerprint
+									display: none !important
+									height: 0vh !important
+
+							div
+								div.halalan-container
+									display: none !important
+									height: 0vh !important
+
+									h5.halalan-desktop
+										display: none !important
+										height: 0vh !important
+
+									p.halalan-desktop
+										display: none !important
+										height: 0vh !important
+
+									p
+										small.halalan
+											display: none !important
+											height: 0vh !important
+
+	div.joinus-mobile
+		div.row
+			display: flex
+			justify-content: center
+			align-items: center
+			div
+				div.d-block
+					div.joinus-cto
+						margin-top: 5vh
+						background: none !important
+						border: none !important
+
+						div.card-header
+							small
+								color: white
+
+						div.text-success
+							h5
+								font-size: 1.5rem !important
+								font-family: arial
+								color: white !important
+								font-weight: bold
+
+						div.card-footer
+							small
+								a#readmore
+									color: white
+
+			div.halalanrow
+				div.halalan
+					background: none !important
+					border: none !important
+
+					div.row
+						div
+							div.card-body2
+								padding: 0 !important
+
+								img.fingerprint
+									width: 175px
+									height: 175px
+
+							div
+								div.halalan-container
+									padding: 0 !important
+
+									h6.halalan-mobile
+										font-size: 2rem
+										font-family: oswald
+										color: white
+										font-weight: bold
+
+									p.halalan-mobile
+										font-size: 2rem
+										font-family: Saira Extra Condensed
+										color: white
+										font-weight: bold
+
+									p
+										small.halalan-mobile
+											font-size: .5rem
+											color: white
 
 @include phone
 	div.joinus-desktop

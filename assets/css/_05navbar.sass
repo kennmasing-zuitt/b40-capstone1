@@ -26,11 +26,45 @@
 			form
 				input.searchbar::placeholder
 					color: white !important
+
+				input.searchbar:hover::placeholder
+					color: gray !important
 			
 				button.search-btn
 					color: white !important
 
 @include tablet
+	nav#nav-home
+		display: none !important
+		height: 0vh
+
+		div
+			a
+				img.nav-logo
+					display: none !important
+					height: 0vh
+
+		div
+			button
+
+			div
+				ul
+					li 
+						a.nav-link
+							display: none !important
+							height: 0vh
+
+		div
+			form
+				input.searchbar::placeholder
+					display: none !important
+					height: 0vh
+			
+				button.search-btn
+					display: none !important
+					height: 0vh
+
+@include small-tablet
 	nav#nav-home
 		display: none !important
 		height: 0vh

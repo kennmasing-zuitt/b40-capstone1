@@ -219,6 +219,8 @@ section.billofrights
 								height: 0vh
 						div
 							img.bor-icon-lg
+								width: 100px !important
+								height: 100px !important
 
 						div
 							p.sm-txt-lg-bor
@@ -273,7 +275,172 @@ section.billofrights
 								font-size: 2rem
 
 						div
+							img.bor-icon-md
+
+						div
+							p.sm-txt-lg-bor
+								text-align: center
+								font-size: .9rem
+								font-family: arial
+								color: white
+								padding: 1rem 0 1rem 0 !important
+
+		button.billofrights-btn-tablet
+			display: flex
+			justify-content: center
+			border: 1.5px solid rgba(148, 148, 148, .5)
+			border-radius: 5px
+			margin: 20px auto 0px auto
+			padding: 10px 20px
+			background: none
+			font-size: 1rem
+			font-family: arial
+			transition-timing-function: ease-in
+			transition: 0.3s
+
+			a
+				color: $darkGray
+
+		//------------ MOBILE -------------
+		div.card-body-mobile
+			div.bor-title-mobile
+				display: none !important
+				height: 0vh !important
+
+				div.card-body
+					div
+						div
+							img.billsofrightslogo
+								display: none !important
+								height: 0vh !important
+
+						div.bor-desc.mobile
+							div
+								p.sm-txt2
+									display: none !important
+									height: 0vh !important
+
+			div.bor-card-container
+				div.row
+					div.billofrights-card
+						display: none !important
+						height: 0vh !important				
+
+						div
+							h4.card-title-lg #smallheader-bor
+
+						div
 							img.bor-icon-lg
+
+						div
+							p.sm-txt-lg-bor
+								display: none !important
+								height: 0vh !important
+
+		button.billofrights-btn-mobile
+			display: none !important
+			height: 0vh !important
+
+	@include small-tablet
+		div.card-body-desktop
+			display: none !important
+			height: 0vh
+			background-color: white
+
+			div.bor-title
+
+				div.card-body
+					div
+						div
+							img.billsofrightslogo
+								display: none !important
+								height: 0vh
+
+						p.billofrights-hdr
+								display: none !important
+								height: 0vh
+
+						div.bor-desc-tablet
+							div
+								p.sm-txt2
+									display: none !important
+									height: 0vh
+
+			div.bor-card-container
+				div.row
+					div.billofrights-card
+							display: none !important
+							height: 0vh				
+
+						div
+							h4#smallheader-bor
+								display: none !important
+								height: 0vh
+						div
+							img.bor-icon-lg
+
+						div
+							p.sm-txt-lg-bor
+								display: none !important
+								height: 0vh
+
+
+		button.billofrights-btn
+			display: none !important
+			height: 0vh
+
+			a
+				display: none !important
+				height: 0vh
+
+
+		//------------ TABLET -------------
+		div.card-body-tablet
+			padding: 5vh 0 0 0
+
+			div.bor-title-tab
+				padding: 12vh 0 0 0
+
+				div
+					div
+						img.billsofrightslogo
+							width: 100px !important
+							height: 100px !important
+
+					div.tablet
+						div.tablet
+							p.sm-txt1-tab
+								text-align: center
+								font-size: 2rem
+								font-family: Oswald
+								color: #5f7053
+
+			div.bor-card-container
+				display: flex
+				justify-content: center
+				align-items: center
+				div.row
+					width: 60vh
+					div.billofrights-card
+						transition-timing-function: ease-in
+						transition: 0.3s
+						display: block
+						background: #72A1B4
+						height: 150px !important
+						width: 100px !important	
+
+						div
+							h6.card-title-mobile
+								text-align: center
+								line-height: 50px
+								color: white !important
+								font-family: Oswald
+								font-size: 1.5rem
+
+						div
+							img.bor-icon-md
+								width: 75px !important
+								height: 75px !important
 
 						div
 							p.sm-txt-lg-bor

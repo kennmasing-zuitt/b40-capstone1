@@ -28,9 +28,27 @@ body {
       font-family: Calibri; }
     nav#nav-home div form input.searchbar::placeholder {
       color: white !important; }
+    nav#nav-home div form input.searchbar:hover::placeholder {
+      color: gray !important; }
     nav#nav-home div form button.search-btn {
       color: white !important; } }
-@media(min-width:577px) and (max-width:991px) {
+@media(min-width:768px) and (max-width:991px) {
+  nav#nav-home {
+    display: none !important;
+    height: 0vh; }
+    nav#nav-home div a img.nav-logo {
+      display: none !important;
+      height: 0vh; }
+    nav#nav-home div div ul li a.nav-link {
+      display: none !important;
+      height: 0vh; }
+    nav#nav-home div form input.searchbar::placeholder {
+      display: none !important;
+      height: 0vh; }
+    nav#nav-home div form button.search-btn {
+      display: none !important;
+      height: 0vh; } }
+@media(min-width:577px) and (max-width:767px) {
   nav#nav-home {
     display: none !important;
     height: 0vh; }
@@ -142,7 +160,92 @@ body {
       section.navbar-mobile#home div#content nav.nav-mobile-pg div div img.nav-logo-xs {
         display: none !important;
         height: 0vh !important; } }
-@media(min-width:577px) and (max-width:991px) {
+@media(min-width:768px) and (max-width:991px) {
+  section.navbar-mobile#home div.wrapper nav#sidebar {
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    height: 100vh;
+    z-index: 999;
+    background: rgba(0, 0, 0, 0.75);
+    color: #fff;
+    transition: all 0.3s;
+    overflow-y: scroll;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2); }
+  section.navbar-mobile#home div.wrapper nav#sidebar.active {
+    left: 0; }
+    section.navbar-mobile#home div.wrapper nav#sidebar.active div#dismiss {
+      width: 35px;
+      height: 35px;
+      line-height: 35px;
+      text-align: center;
+      background: #30506e;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+      -webkit-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s; }
+    section.navbar-mobile#home div.wrapper nav#sidebar.active div#dismiss:hover {
+      background: #fff;
+      color: #7386D5; }
+    section.navbar-mobile#home div.wrapper nav#sidebar.active div.sidebar-header {
+      padding: 20px;
+      background: #30506e; }
+    section.navbar-mobile#home div.wrapper nav#sidebar.active ul.components {
+      padding: 20px 0;
+      border-bottom: 1px solid #47748b; }
+      section.navbar-mobile#home div.wrapper nav#sidebar.active ul.components p {
+        color: #fff;
+        padding: 10px; }
+      section.navbar-mobile#home div.wrapper nav#sidebar.active ul.components li {
+        padding: 0.5rem; }
+        section.navbar-mobile#home div.wrapper nav#sidebar.active ul.components li a#dismiss2 {
+          cursor: pointer;
+          -webkit-transition: all 0.3s;
+          -o-transition: all 0.3s;
+          transition: all 0.3s;
+          font-size: 1.1em;
+          padding-left: 15px !important;
+          color: white; }
+        section.navbar-mobile#home div.wrapper nav#sidebar.active ul.components li a#dismiss:hover {
+          color: #7386D5;
+          background: #fff; }
+      section.navbar-mobile#home div.wrapper nav#sidebar.active ul.components li.active a[aria-expanded="true"] {
+        color: #fff;
+        background: #30506e;
+        font-size: 0.9em !important;
+        padding-left: 30px !important;
+        background: #30506e; }
+      section.navbar-mobile#home div.wrapper nav#sidebar.active ul.components li.active a[data-toggle="collapse"] {
+        position: relative; }
+      section.navbar-mobile#home div.wrapper nav#sidebar.active ul.components li.active a#dismiss:hover {
+        color: #7386D5;
+        background: #fff; }
+    section.navbar-mobile#home div.wrapper nav#sidebar.active ul.CTAs {
+      padding: 20px; }
+      section.navbar-mobile#home div.wrapper nav#sidebar.active ul.CTAs li form.form-inline input.searchbar::placeholder {
+        color: white !important; }
+      section.navbar-mobile#home div.wrapper nav#sidebar.active ul.CTAs li form.form-inline button.search-btn {
+        color: white !important; }
+  section.navbar-mobile#home div#content {
+    width: 100%;
+    min-height: 100vh;
+    transition: all 0.3s;
+    position: absolute;
+    top: 0;
+    right: 0; }
+    section.navbar-mobile#home div#content nav.nav-mobile-pg {
+      background: #30506e; }
+      section.navbar-mobile#home div#content nav.nav-mobile-pg div div img.nav-logo-lg {
+        display: none !important;
+        height: 0vh; }
+      section.navbar-mobile#home div#content nav.nav-mobile-pg div div img.nav-logo-xs {
+        display: none !important;
+        height: 0vh; } }
+@media(min-width:577px) and (max-width:767px) {
   section.navbar-mobile#home div.wrapper nav#sidebar {
     width: 250px;
     position: fixed;
@@ -433,7 +536,7 @@ body {
       section.home div div.cto-mobile div p.cto-mobile {
         display: none !important;
         height: 0vh !important; } }
-@media(min-width:577px) and (max-width:991px) {
+@media(min-width:768px) and (max-width:991px) {
   section.home {
     margin: 0;
     padding: 0;
@@ -459,6 +562,42 @@ body {
       section.home div div.cto-tab div p.cto-tab {
         color: white;
         font-size: 2rem;
+        font-family: Saira Extra Condensed; }
+    section.home div div.cto-mobile {
+      display: none !important;
+      height: 0vh !important; }
+      section.home div div.cto-mobile div h2.cto-mobile {
+        display: none !important;
+        height: 0vh !important; }
+      section.home div div.cto-mobile div p.cto-mobile {
+        display: none !important;
+        height: 0vh !important; } }
+@media(min-width:577px) and (max-width:767px) {
+  section.home {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: url(../images/homecover.png) center center;
+    background-size: cover; }
+    section.home div div.cto-desktop {
+      display: none !important;
+      height: 0vh !important; }
+      section.home div div.cto-desktop div h2.cto-desktop {
+        display: none !important;
+        height: 0vh !important; }
+      section.home div div.cto-desktop div p.cto-desktop {
+        display: none !important;
+        height: 0vh !important; }
+    section.home div div.cto-tab {
+      position: absolute;
+      top: 45%; }
+      section.home div div.cto-tab div h2.cto-tab {
+        color: white;
+        font-size: 4rem !important;
+        font-family: Oswald; }
+      section.home div div.cto-tab div p.cto-tab {
+        color: white;
+        font-size: 2rem !important;
         font-family: Saira Extra Condensed; }
     section.home div div.cto-mobile {
       display: none !important;
@@ -652,7 +791,7 @@ section.billofrights {
   section.billofrights button.billofrights-btn-mobile {
     display: none !important;
     height: 0vh !important; } }
-@media(min-width:577px) and (max-width:991px) {
+@media(min-width:768px) and (max-width:991px) {
   section.billofrights div.card-body-desktop {
     display: none !important;
     height: 0vh;
@@ -669,6 +808,9 @@ section.billofrights {
     section.billofrights div.card-body-desktop div.bor-card-container div.row div.billofrights-card div h4#smallheader-bor {
       display: none !important;
       height: 0vh; }
+    section.billofrights div.card-body-desktop div.bor-card-container div.row div.billofrights-card div img.bor-icon-lg {
+      width: 100px !important;
+      height: 100px !important; }
     section.billofrights div.card-body-desktop div.bor-card-container div.row div.billofrights-card div p.sm-txt-lg-bor {
       display: none !important;
       height: 0vh; }
@@ -707,6 +849,104 @@ section.billofrights {
         font-family: arial;
         color: white;
         padding: 1rem 0 1rem 0 !important; }
+  section.billofrights button.billofrights-btn-tablet {
+    display: flex;
+    justify-content: center;
+    border: 1.5px solid rgba(148, 148, 148, 0.5);
+    border-radius: 5px;
+    margin: 20px auto 0px auto;
+    padding: 10px 20px;
+    background: none;
+    font-size: 1rem;
+    font-family: arial;
+    transition-timing-function: ease-in;
+    transition: 0.3s; }
+    section.billofrights button.billofrights-btn-tablet a {
+      color: #5C6B73; }
+  section.billofrights div.card-body-mobile div.bor-title-mobile {
+    display: none !important;
+    height: 0vh !important; }
+    section.billofrights div.card-body-mobile div.bor-title-mobile div.card-body div div img.billsofrightslogo {
+      display: none !important;
+      height: 0vh !important; }
+    section.billofrights div.card-body-mobile div.bor-title-mobile div.card-body div div.bor-desc.mobile div p.sm-txt2 {
+      display: none !important;
+      height: 0vh !important; }
+  section.billofrights div.card-body-mobile div.bor-card-container div.row div.billofrights-card {
+    display: none !important;
+    height: 0vh !important; }
+    section.billofrights div.card-body-mobile div.bor-card-container div.row div.billofrights-card div p.sm-txt-lg-bor {
+      display: none !important;
+      height: 0vh !important; }
+  section.billofrights button.billofrights-btn-mobile {
+    display: none !important;
+    height: 0vh !important; } }
+@media(min-width:577px) and (max-width:767px) {
+  section.billofrights div.card-body-desktop {
+    display: none !important;
+    height: 0vh;
+    background-color: white; }
+    section.billofrights div.card-body-desktop div.bor-title div.card-body div div img.billsofrightslogo {
+      display: none !important;
+      height: 0vh; }
+    section.billofrights div.card-body-desktop div.bor-title div.card-body div p.billofrights-hdr {
+      display: none !important;
+      height: 0vh; }
+    section.billofrights div.card-body-desktop div.bor-title div.card-body div div.bor-desc-tablet div p.sm-txt2 {
+      display: none !important;
+      height: 0vh; }
+    section.billofrights div.card-body-desktop div.bor-card-container div.row div.billofrights-card div h4#smallheader-bor {
+      display: none !important;
+      height: 0vh; }
+    section.billofrights div.card-body-desktop div.bor-card-container div.row div.billofrights-card div p.sm-txt-lg-bor {
+      display: none !important;
+      height: 0vh; }
+  section.billofrights button.billofrights-btn {
+    display: none !important;
+    height: 0vh; }
+    section.billofrights button.billofrights-btn a {
+      display: none !important;
+      height: 0vh; }
+  section.billofrights div.card-body-tablet {
+    padding: 5vh 0 0 0; }
+    section.billofrights div.card-body-tablet div.bor-title-tab {
+      padding: 12vh 0 0 0; }
+      section.billofrights div.card-body-tablet div.bor-title-tab div div img.billsofrightslogo {
+        width: 100px !important;
+        height: 100px !important; }
+      section.billofrights div.card-body-tablet div.bor-title-tab div div.tablet div.tablet p.sm-txt1-tab {
+        text-align: center;
+        font-size: 2rem;
+        font-family: Oswald;
+        color: #5f7053; }
+    section.billofrights div.card-body-tablet div.bor-card-container {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      section.billofrights div.card-body-tablet div.bor-card-container div.row {
+        width: 60vh; }
+        section.billofrights div.card-body-tablet div.bor-card-container div.row div.billofrights-card {
+          transition-timing-function: ease-in;
+          transition: 0.3s;
+          display: block;
+          background: #72A1B4;
+          height: 150px !important;
+          width: 100px !important; }
+          section.billofrights div.card-body-tablet div.bor-card-container div.row div.billofrights-card div h6.card-title-mobile {
+            text-align: center;
+            line-height: 50px;
+            color: white !important;
+            font-family: Oswald;
+            font-size: 1.5rem; }
+          section.billofrights div.card-body-tablet div.bor-card-container div.row div.billofrights-card div img.bor-icon-md {
+            width: 75px !important;
+            height: 75px !important; }
+          section.billofrights div.card-body-tablet div.bor-card-container div.row div.billofrights-card div p.sm-txt-lg-bor {
+            text-align: center;
+            font-size: 0.9rem;
+            font-family: arial;
+            color: white;
+            padding: 1rem 0 1rem 0 !important; }
   section.billofrights button.billofrights-btn-tablet {
     display: flex;
     justify-content: center;
@@ -1005,7 +1245,7 @@ section.billofrights {
       transition-timing-function: ease-out;
       transition: 0.3s;
       transform: scale(1.05); } }
-@media(min-width:577px) and (max-width:991px) {
+@media(min-width:768px) and (max-width:991px) {
   section.history {
     height: 200vh;
     background-color: white; }
@@ -1023,7 +1263,7 @@ section.billofrights {
       height: 0vh; }
     section.history div.card-body div {
       padding: -10vh 0 0 0 !important; }
-  @media(min-width:577px) and (max-width:991px) {}
+  @media(min-width:768px) and (max-width:991px) {}
       section.history div.card-body div div.card-group div h3.history-hdr-1 {
         display: none !important;
         height: 0vh; }
@@ -1096,6 +1336,103 @@ section.billofrights {
       section.history div.railnetwork img.railnetwork-map {
         display: none !important;
         height: 0vh; } }
+@media(min-width:577px) and (max-width:767px) {
+  section.history {
+    height: 200vh;
+    background-color: white; }
+    section.history div.card-body div.history-card-container {
+      margin: -10vh 0 0vh 0 !important; }
+      section.history div.card-body div.history-card-container div.history-title div p.history-hdr {
+        color: #666666;
+        font-size: 2.5rem;
+        font-family: oswald;
+        font-weight: bold;
+        text-align: center; }
+  @media(min-width:992px) {}
+    section.history div.card-body div.history-title-mobile div div span.sm-txt1-mobile {
+      display: none !important;
+      height: 0vh; }
+    section.history div.card-body div {
+      padding: -10vh 0 0 0 !important; }
+      section.history div.card-body div div.card-group {
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+  @media(min-width:577px) and (max-width:767px) {}
+        section.history div.card-body div div.card-group div h3.history-hdr-1 {
+          display: none !important;
+          height: 0vh; }
+        section.history div.card-body div div.card-group div h3.history-hdr-2 {
+          font-family: arial narrow;
+          color: #666666;
+          font-size: 1.75rem;
+          margin: 0 0 0 2rem; }
+        section.history div.card-body div div.card-group div.row {
+          width: 60vh; }
+          section.history div.card-body div div.card-group div.row div.card {
+            transition-timing-function: ease-in;
+            transition: 0.3s; }
+            section.history div.card-body div div.card-group div.row div.card div.card-body h5.card-title {
+              text-align: center;
+              line-height: 50px;
+              color: #43454a;
+              font-family: Oswald;
+              font-size: 1.5rem;
+              font-weight: bold; }
+              section.history div.card-body div div.card-group div.row div.card div.card-body h5.card-title span.ticker-pnr {
+                border-left: 5px solid orange; }
+              section.history div.card-body div div.card-group div.row div.card div.card-body h5.card-title span.ticker-subway {
+                border-left: 5px solid gray; }
+              section.history div.card-body div div.card-group div.row div.card div.card-body h5.card-title span.ticker-lrt1 {
+                border-left: 5px solid #fff23b; }
+              section.history div.card-body div div.card-group div.row div.card div.card-body h5.card-title span.ticker-mrt3 {
+                border-left: 5px solid #3f94fc; }
+              section.history div.card-body div div.card-group div.row div.card div.card-body h5.card-title span.ticker-lrt2 {
+                border-left: 5px solid #924ac2; }
+              section.history div.card-body div div.card-group div.row div.card div.card-body h5.card-title span.ticker-line4 {
+                border-left: 5px solid #fa66fa; }
+              section.history div.card-body div div.card-group div.row div.card div.card-body h5.card-title span.ticker-line5 {
+                border-left: 5px solid #7acc54; }
+              section.history div.card-body div div.card-group div.row div.card div.card-body h5.card-title span.ticker-line6 {
+                border-left: 5px solid #eb9d31; }
+              section.history div.card-body div div.card-group div.row div.card div.card-body h5.card-title span.ticker-line7 {
+                border-left: 5px solid #963d27; }
+              section.history div.card-body div div.card-group div.row div.card div.card-body h5.card-title span.ticker-line8 {
+                border-left: 5px solid #754e1b; }
+              section.history div.card-body div div.card-group div.row div.card div.card-body h5.card-title span.ticker-line9 {
+                border-left: 5px solid #db0000; }
+              section.history div.card-body div div.card-group div.row div.card div.card-body h5.card-title span.ticker-pnr-north {
+                border-left: 5px solid #126e3d; }
+              section.history div.card-body div div.card-group div.row div.card div.card-body h5.card-title span.ticker-pnr-south {
+                border-left: 5px solid #0c5b82; }
+          section.history div.card-body div div.card-group div.row div.card:hover {
+            transition-timing-function: ease-out;
+            transition: 0.3s;
+            transform: scale(1.1); }
+    section.history div.card-body button.billofrights-btn {
+      display: flex;
+      justify-content: center;
+      border: 1.5px solid rgba(148, 148, 148, 0.5);
+      border-radius: 5px;
+      margin: 0.5rem auto 0px auto;
+      padding: 10px 20px;
+      background: none;
+      font-size: 1rem;
+      font-family: arial;
+      transition-timing-function: ease-in;
+      transition: 0.3s; }
+      section.history div.card-body button.billofrights-btn a {
+        color: #5C6B73; }
+    section.history div.card-body button.billofrights-btn:hover {
+      transition-timing-function: ease-out;
+      transition: 0.3s;
+      transform: scale(1.05); }
+    section.history div.railnetwork {
+      display: none !important;
+      height: 0vh; }
+      section.history div.railnetwork img.railnetwork-map {
+        display: none !important;
+        height: 0vh; } }
 @media(min-width:412px) and (max-width:576px) {
   section.history {
     height: 150vh;
@@ -1116,7 +1453,7 @@ section.billofrights {
       font-family: oswald;
       font-weight: bold;
       text-align: center; }
-  @media(min-width:577px) and (max-width:991px) {}
+  @media(min-width:768px) and (max-width:991px) {}
     section.history div.card-body div div.card-group div h3.history-hdr-1 {
       display: none !important;
       height: 0vh; }
@@ -1208,7 +1545,7 @@ section.billofrights {
       font-family: oswald;
       font-weight: bold;
       text-align: center; }
-  @media(min-width:577px) and (max-width:991px) {}
+  @media(min-width:768px) and (max-width:991px) {}
     section.history div.card-body div div.card-group div h3.history-hdr-1 {
       display: none !important;
       height: 0vh; }
@@ -1321,6 +1658,9 @@ section.joinus {
         font-family: Saira Extra Condensed;
         color: white;
         font-weight: bold; }
+      div.joinus-desktop div.row div.halalanrow div.halalan div.row div div div.halalan-container hr.hrcolor {
+        border: 0.5px solid white;
+        width: 95%; }
       div.joinus-desktop div.row div.halalanrow div.halalan div.row div div div.halalan-container p small.halalan {
         color: white; }
 
@@ -1357,7 +1697,7 @@ section.joinus {
       div.joinus-mobile div.row div.halalanrow div.halalan div.row div div div.halalan-container p small.halalan {
         display: none !important;
         height: 0vh !important; } }
-@media(min-width:577px) and (max-width:991px) {
+@media(min-width:768px) and (max-width:991px) {
   div.joinus-desktop div.row div div.d-block div.joinus-cto {
     margin-top: 5vh;
     background: none !important;
@@ -1391,6 +1731,9 @@ section.joinus {
         font-family: Saira Extra Condensed;
         color: white;
         font-weight: bold; }
+      div.joinus-desktop div.row div.halalanrow div.halalan div.row div div div.halalan-container hr.hrcolor {
+        border: 0.5px solid white;
+        width: 95%; }
       div.joinus-desktop div.row div.halalanrow div.halalan div.row div div div.halalan-container p small.halalan {
         color: white; }
 
@@ -1427,6 +1770,84 @@ section.joinus {
       div.joinus-mobile div.row div.halalanrow div.halalan div.row div div div.halalan-container p small.halalan {
         display: none !important;
         height: 0vh !important; } }
+@media(min-width:577px) and (max-width:767px) {
+  div.joinus-desktop {
+    display: none !important;
+    height: 0vh !important; }
+    div.joinus-desktop div.row div div.d-block div.joinus-cto {
+      display: none !important;
+      height: 0vh !important; }
+      div.joinus-desktop div.row div div.d-block div.joinus-cto div.card-header small {
+        display: none !important;
+        height: 0vh !important; }
+      div.joinus-desktop div.row div div.d-block div.joinus-cto div.text-success h5.card-title {
+        display: none !important;
+        height: 0vh !important; }
+      div.joinus-desktop div.row div div.d-block div.joinus-cto div.card-footer small a#readmore {
+        display: none !important;
+        height: 0vh !important; }
+    div.joinus-desktop div.row div.halalanrow div.halalan {
+      display: none !important;
+      height: 0vh !important; }
+      div.joinus-desktop div.row div.halalanrow div.halalan div.row div div.card-body2 {
+        display: none !important;
+        height: 0vh !important; }
+        div.joinus-desktop div.row div.halalanrow div.halalan div.row div div.card-body2 img.fingerprint {
+          display: none !important;
+          height: 0vh !important; }
+      div.joinus-desktop div.row div.halalanrow div.halalan div.row div div div.halalan-container {
+        display: none !important;
+        height: 0vh !important; }
+        div.joinus-desktop div.row div.halalanrow div.halalan div.row div div div.halalan-container h5.halalan-desktop {
+          display: none !important;
+          height: 0vh !important; }
+        div.joinus-desktop div.row div.halalanrow div.halalan div.row div div div.halalan-container p.halalan-desktop {
+          display: none !important;
+          height: 0vh !important; }
+        div.joinus-desktop div.row div.halalanrow div.halalan div.row div div div.halalan-container p small.halalan {
+          display: none !important;
+          height: 0vh !important; }
+
+  div.joinus-mobile div.row {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    div.joinus-mobile div.row div div.d-block div.joinus-cto {
+      margin-top: 5vh;
+      background: none !important;
+      border: none !important; }
+      div.joinus-mobile div.row div div.d-block div.joinus-cto div.card-header small {
+        color: white; }
+      div.joinus-mobile div.row div div.d-block div.joinus-cto div.text-success h5 {
+        font-size: 1.5rem !important;
+        font-family: arial;
+        color: white !important;
+        font-weight: bold; }
+      div.joinus-mobile div.row div div.d-block div.joinus-cto div.card-footer small a#readmore {
+        color: white; }
+    div.joinus-mobile div.row div.halalanrow div.halalan {
+      background: none !important;
+      border: none !important; }
+      div.joinus-mobile div.row div.halalanrow div.halalan div.row div div.card-body2 {
+        padding: 0 !important; }
+        div.joinus-mobile div.row div.halalanrow div.halalan div.row div div.card-body2 img.fingerprint {
+          width: 175px;
+          height: 175px; }
+      div.joinus-mobile div.row div.halalanrow div.halalan div.row div div div.halalan-container {
+        padding: 0 !important; }
+        div.joinus-mobile div.row div.halalanrow div.halalan div.row div div div.halalan-container h6.halalan-mobile {
+          font-size: 2rem;
+          font-family: oswald;
+          color: white;
+          font-weight: bold; }
+        div.joinus-mobile div.row div.halalanrow div.halalan div.row div div div.halalan-container p.halalan-mobile {
+          font-size: 2rem;
+          font-family: Saira Extra Condensed;
+          color: white;
+          font-weight: bold; }
+        div.joinus-mobile div.row div.halalanrow div.halalan div.row div div div.halalan-container p small.halalan-mobile {
+          font-size: 0.5rem;
+          color: white; } }
 @media(min-width:412px) and (max-width:576px) {
   div.joinus-desktop {
     display: none !important;
@@ -1596,7 +2017,24 @@ section.joinus {
         color: #5f7053;
         font-family: Arial;
         text-align: center; } }
-@media(min-width:577px) and (max-width:991px) {
+@media(min-width:768px) and (max-width:991px) {
+  section.nacto-desktop {
+    display: none !important;
+    height: 0vh !important;
+    background-color: white; }
+    section.nacto-desktop div.card-body2 {
+      display: none !important;
+      height: 0vh !important; }
+      section.nacto-desktop div.card-body2 div div div.d-block h5#smallheader-nacto {
+        display: none !important;
+        height: 0vh !important; }
+      section.nacto-desktop div.card-body2 div div.history-card-container div.card-body div p.nacto-hdr {
+        display: none !important;
+        height: 0vh !important; }
+      section.nacto-desktop div.card-body2 div div.history-card-container div div p.sm-txt2 {
+        display: none !important;
+        height: 0vh !important; } }
+@media(min-width:577px) and (max-width:767px) {
   section.nacto-desktop {
     display: none !important;
     height: 0vh !important;
@@ -1664,7 +2102,31 @@ section.joinus {
     section.nacto-mobile div div div h6.card-title {
       display: none !important;
       height: 0vh !important; } }
-@media(min-width:577px) and (max-width:991px) {
+@media(min-width:768px) and (max-width:991px) {
+  section.nacto-mobile {
+    height: 100vh;
+    background-color: white; }
+    section.nacto-mobile div.nacto-title-mobile div p.sm-txt1-mobile {
+      color: #666666;
+      font-size: 2rem;
+      font-family: oswald;
+      font-weight: bold;
+      text-align: center; }
+    section.nacto-mobile div div div h6.card-title {
+      color: #666666;
+      font-size: 1.75rem;
+      font-family: oswald;
+      font-weight: bold;
+      text-align: center; }
+    section.nacto-mobile div div div div img {
+      height: 35vh; }
+    section.nacto-mobile div div div h6.card-title {
+      color: #666666;
+      font-size: 1rem;
+      font-family: oswald;
+      font-weight: bold;
+      text-align: center; } }
+@media(min-width:577px) and (max-width:767px) {
   section.nacto-mobile {
     height: 100vh;
     background-color: white; }
@@ -1797,7 +2259,7 @@ section.joinus {
       section.contact div div.parallax-window div div.contact-form form.d-block div.form-group div.card-body div img.captcha-img {
         width: 50px;
         height: 50px; } }
-@media(min-width:577px) and (max-width:991px) {
+@media(min-width:768px) and (max-width:991px) {
   section.contact {
     height: auto;
     padding-left: 0px !important;
@@ -1810,6 +2272,68 @@ section.joinus {
       background: transparent;
       position: relative;
       height: 70vh; }
+      section.contact div div.parallax-window div div.contact-desktop div form div.form-row div.form-group h5.contact-hdr {
+        font-size: 1.5rem !important;
+        font-family: Oswald;
+        color: white; }
+      section.contact div div.parallax-window div div.contact-desktop div form div.form-row div.form-group h5.contact-sub {
+        font-size: 1.2rem;
+        font-family: Saira Extra Condensed;
+        font-weight: normal;
+        color: white; }
+      section.contact div div.parallax-window div div.contact-desktop div div.row div.form-group h3.contact-hdr {
+        font-size: 1rem;
+        font-family: oswald;
+        color: white; }
+      section.contact div div.parallax-window div div.contact-desktop div div.row div.form-group div#socialmedia a {
+        color: white; }
+      section.contact div div.parallax-window div div.contact-desktop div div.row div h3.contact-hdr {
+        font-size: 1rem;
+        font-family: oswald;
+        color: white; }
+      section.contact div div.parallax-window div div.contact-desktop div div.row div p.contact-txt {
+        font-size: 0.7rem;
+        font-family: arial;
+        color: white; }
+      section.contact div div.parallax-window div div.contact-desktop div div.row div p.contact-txt {
+        font-size: 0.7rem;
+        font-family: arial;
+        color: white; }
+      section.contact div div.parallax-window div div form.d-block h5.contact-hdr {
+        font-size: 1.5rem !important;
+        font-family: Oswald;
+        color: white; }
+      section.contact div div.parallax-window div div form.d-block h5.contact-sub {
+        font-size: 1.2rem;
+        font-family: Saira Extra Condensed;
+        font-weight: normal;
+        color: white; }
+      section.contact div div.parallax-window div div form.d-block h5.captcha-hdr {
+        font-size: 1.2rem;
+        font-family: arial;
+        font-weight: normal;
+        color: white; }
+      section.contact div div.parallax-window div div form.d-block h6.captcha-sub {
+        font-size: 0.7rem;
+        font-family: arial narrow;
+        font-weight: normal;
+        color: white; }
+      section.contact div div.parallax-window div div form.d-block div.form-group div.card-body div img.captcha-img {
+        width: 50px;
+        height: 50px; } }
+@media(min-width:577px) and (max-width:767px) {
+  section.contact {
+    height: auto;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+    height: 100vh; }
+    section.contact div div.parallax-window {
+      height: auto;
+      background: transparent;
+      position: relative;
+      height: 100vh; }
       section.contact div div.parallax-window div div.contact-desktop div form div.form-row div.form-group h5.contact-hdr {
         font-size: 1.5rem !important;
         font-family: Oswald;
@@ -2041,11 +2565,109 @@ section.joinus {
         section.footer-mobile div div.copyright-nextline small span {
           display: none !important;
           height: 0vh !important; } }
-@media(min-width:577px) and (max-width:991px) {}
+@media(min-width:768px) and (max-width:991px) {}
 @media(min-width:412px) and (max-width:576px) {}
 @media(min-width:375px) and (max-width:411px) {}
 @media(min-width:992px) {}
-@media(min-width:577px) and (max-width:991px) {
+@media(min-width:768px) and (max-width:991px) {
+  section.footer-desktop {
+    display: none !important;
+    height: 0vh !important; }
+    section.footer-desktop div {
+      display: none !important;
+      height: 0vh !important; }
+      section.footer-desktop div div {
+        display: none !important;
+        height: 0vh !important; }
+        section.footer-desktop div div div {
+          display: none !important;
+          height: 0vh !important; }
+          section.footer-desktop div div div a {
+            display: none !important;
+            height: 0vh !important; }
+            section.footer-desktop div div div a img.nav-logo {
+              display: none !important;
+              height: 0vh !important; }
+      section.footer-desktop div div {
+        display: none !important;
+        height: 0vh !important; }
+        section.footer-desktop div div a.calltoaction {
+          display: none !important;
+          height: 0vh !important; }
+      section.footer-desktop div div {
+        display: none !important;
+        height: 0vh !important; }
+        section.footer-desktop div div button {
+          display: none !important;
+          height: 0vh !important; }
+    section.footer-desktop div {
+      display: none !important;
+      height: 0vh !important; }
+      section.footer-desktop div hr.hrcolor {
+        display: none !important;
+        height: 0vh !important; }
+    section.footer-desktop div {
+      display: none !important;
+      height: 0vh !important; }
+      section.footer-desktop div div {
+        display: none !important;
+        height: 0vh !important; }
+        section.footer-desktop div div small {
+          display: none !important;
+          height: 0vh !important; }
+          section.footer-desktop div div small strong {
+            display: none !important;
+            height: 0vh !important; }
+          section.footer-desktop div div small span {
+            display: none !important;
+            height: 0vh !important; }
+      section.footer-desktop div div {
+        display: none !important;
+        height: 0vh !important; }
+        section.footer-desktop div div ul {
+          display: none !important;
+          height: 0vh !important; }
+          section.footer-desktop div div ul li {
+            display: none !important;
+            height: 0vh !important; }
+            section.footer-desktop div div ul li a {
+              display: none !important;
+              height: 0vh !important; }
+
+  section.footer-mobile {
+    height: 30vh;
+    margin: 0vh 0 0 0 !important;
+    background-color: #30506e; }
+    section.footer-mobile div div.footer-container {
+      background: #30506e !important; }
+      section.footer-mobile div div.footer-container a img.footer-logo {
+        width: 240px;
+        height: 71px;
+        background: #30506e !important; }
+    section.footer-mobile div.footer-mobile div.row h6.smallheader-footer {
+      color: white;
+      font-family: Oswald; }
+    section.footer-mobile div.footer-mobile div.row a {
+      color: white; }
+    section.footer-mobile div {
+      background-color: #30506e;
+      border: none; }
+      section.footer-mobile div div.card-body2 hr.hrcolor {
+        border: 0.5px solid white;
+        width: 95%; }
+      section.footer-mobile div div.copyright-nextline ul.card-body2 li {
+        color: white;
+        font-size: 0.8rem; }
+        section.footer-mobile div div.copyright-nextline ul.card-body2 li a {
+          color: white;
+          font-size: 0.8rem; }
+      section.footer-mobile div div.copyright-nextline small {
+        color: white; }
+        section.footer-mobile div div.copyright-nextline small strong {
+          color: white; }
+        section.footer-mobile div div.copyright-nextline small span {
+          color: white; } }
+@media(min-width:577px) and (max-width:767px) {
   section.footer-desktop {
     display: none !important;
     height: 0vh !important; }
