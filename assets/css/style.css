@@ -755,39 +755,114 @@ section.billofrights {
     transition-timing-function: ease-out;
     transition: 0.3s;
     transform: scale(1.05); }
-  section.billofrights div.card-body-tablet div.bor-title-tab {
+  section.billofrights div.card-body-tablet {
     display: none !important;
     height: 0vh !important; }
-    section.billofrights div.card-body-tablet div.bor-title-tab div.card-body div div img.billsofrightslogo {
+    section.billofrights div.card-body-tablet div.bor-title-tab {
       display: none !important;
       height: 0vh !important; }
-    section.billofrights div.card-body-tablet div.bor-title-tab div.card-body div div.bor-desc.tablet div p.sm-txt2 {
+      section.billofrights div.card-body-tablet div.bor-title-tab div.card-body {
+        display: none !important;
+        height: 0vh !important; }
+        section.billofrights div.card-body-tablet div.bor-title-tab div.card-body div {
+          display: none !important;
+          height: 0vh !important; }
+          section.billofrights div.card-body-tablet div.bor-title-tab div.card-body div div {
+            display: none !important;
+            height: 0vh !important; }
+            section.billofrights div.card-body-tablet div.bor-title-tab div.card-body div div img.billsofrightslogo {
+              display: none !important;
+              height: 0vh !important; }
+          section.billofrights div.card-body-tablet div.bor-title-tab div.card-body div div.bor-desc.tablet {
+            display: none !important;
+            height: 0vh !important; }
+            section.billofrights div.card-body-tablet div.bor-title-tab div.card-body div div.bor-desc.tablet div {
+              display: none !important;
+              height: 0vh !important; }
+              section.billofrights div.card-body-tablet div.bor-title-tab div.card-body div div.bor-desc.tablet div p.sm-txt2 {
+                display: none !important;
+                height: 0vh !important; }
+    section.billofrights div.card-body-tablet div.bor-card-container {
       display: none !important;
       height: 0vh !important; }
-  section.billofrights div.card-body-tablet div.bor-card-container div.row div.billofrights-card {
-    display: none !important;
-    height: 0vh !important; }
-    section.billofrights div.card-body-tablet div.bor-card-container div.row div.billofrights-card div p.sm-txt-lg-bor {
-      display: none !important;
-      height: 0vh !important; }
+      section.billofrights div.card-body-tablet div.bor-card-container div.row {
+        display: none !important;
+        height: 0vh !important; }
+        section.billofrights div.card-body-tablet div.bor-card-container div.row div.billofrights-card {
+          display: none !important;
+          height: 0vh !important; }
+          section.billofrights div.card-body-tablet div.bor-card-container div.row div.billofrights-card div {
+            display: none !important;
+            height: 0vh !important; }
+            section.billofrights div.card-body-tablet div.bor-card-container div.row div.billofrights-card div h4.card-title-lg #smallheader-bor {
+              display: none !important;
+              height: 0vh !important; }
+          section.billofrights div.card-body-tablet div.bor-card-container div.row div.billofrights-card div {
+            display: none !important;
+            height: 0vh !important; }
+            section.billofrights div.card-body-tablet div.bor-card-container div.row div.billofrights-card div img.bor-icon-lg {
+              display: none !important;
+              height: 0vh !important; }
+          section.billofrights div.card-body-tablet div.bor-card-container div.row div.billofrights-card div {
+            display: none !important;
+            height: 0vh !important; }
+            section.billofrights div.card-body-tablet div.bor-card-container div.row div.billofrights-card div p.sm-txt-lg-bor {
+              display: none !important;
+              height: 0vh !important; }
   section.billofrights button.billofrights-btn-tablet {
     display: none !important;
     height: 0vh !important; }
   section.billofrights div.card-body-mobile div.bor-title-mobile {
     display: none !important;
     height: 0vh !important; }
-    section.billofrights div.card-body-mobile div.bor-title-mobile div.card-body div div img.billsofrightslogo {
+    section.billofrights div.card-body-mobile div.bor-title-mobile div.card-body {
       display: none !important;
       height: 0vh !important; }
-    section.billofrights div.card-body-mobile div.bor-title-mobile div.card-body div div.bor-desc.mobile div p.sm-txt2 {
-      display: none !important;
-      height: 0vh !important; }
-  section.billofrights div.card-body-mobile div.bor-card-container div.row div.billofrights-card {
+      section.billofrights div.card-body-mobile div.bor-title-mobile div.card-body div {
+        display: none !important;
+        height: 0vh !important; }
+        section.billofrights div.card-body-mobile div.bor-title-mobile div.card-body div div {
+          display: none !important;
+          height: 0vh !important; }
+          section.billofrights div.card-body-mobile div.bor-title-mobile div.card-body div div img.billsofrightslogo {
+            display: none !important;
+            height: 0vh !important; }
+        section.billofrights div.card-body-mobile div.bor-title-mobile div.card-body div div.bor-desc.mobile {
+          display: none !important;
+          height: 0vh !important; }
+          section.billofrights div.card-body-mobile div.bor-title-mobile div.card-body div div.bor-desc.mobile div {
+            display: none !important;
+            height: 0vh !important; }
+            section.billofrights div.card-body-mobile div.bor-title-mobile div.card-body div div.bor-desc.mobile div p.sm-txt2 {
+              display: none !important;
+              height: 0vh !important; }
+  section.billofrights div.card-body-mobile div.bor-card-container {
     display: none !important;
     height: 0vh !important; }
-    section.billofrights div.card-body-mobile div.bor-card-container div.row div.billofrights-card div p.sm-txt-lg-bor {
+    section.billofrights div.card-body-mobile div.bor-card-container div.row {
       display: none !important;
       height: 0vh !important; }
+      section.billofrights div.card-body-mobile div.bor-card-container div.row div.billofrights-card {
+        display: none !important;
+        height: 0vh !important; }
+        section.billofrights div.card-body-mobile div.bor-card-container div.row div.billofrights-card div {
+          display: none !important;
+          height: 0vh !important; }
+          section.billofrights div.card-body-mobile div.bor-card-container div.row div.billofrights-card div h4.card-title-lg #smallheader-bor {
+            display: none !important;
+            height: 0vh !important; }
+        section.billofrights div.card-body-mobile div.bor-card-container div.row div.billofrights-card div {
+          display: none !important;
+          height: 0vh !important; }
+          section.billofrights div.card-body-mobile div.bor-card-container div.row div.billofrights-card div img.bor-icon-lg {
+            display: none !important;
+            height: 0vh !important; }
+        section.billofrights div.card-body-mobile div.bor-card-container div.row div.billofrights-card div {
+          display: none !important;
+          height: 0vh !important; }
+          section.billofrights div.card-body-mobile div.bor-card-container div.row div.billofrights-card div p.sm-txt-lg-bor {
+            display: none !important;
+            height: 0vh !important; }
   section.billofrights button.billofrights-btn-mobile {
     display: none !important;
     height: 0vh !important; } }
