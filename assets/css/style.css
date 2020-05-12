@@ -754,210 +754,38 @@ section.billofrights {
   section.billofrights button.billofrights-btn:hover {
     transition-timing-function: ease-out;
     transition: 0.3s;
-    transform: scale(1.05); }
-  section.billofrights div.card-body-tablet {
-    display: none !important;
-    height: 0vh !important; }
-    section.billofrights div.card-body-tablet div.bor-title-tab {
-      display: none !important;
-      height: 0vh !important; }
-      section.billofrights div.card-body-tablet div.bor-title-tab div.card-body {
-        display: none !important;
-        height: 0vh !important; }
-        section.billofrights div.card-body-tablet div.bor-title-tab div.card-body div {
-          display: none !important;
-          height: 0vh !important; }
-          section.billofrights div.card-body-tablet div.bor-title-tab div.card-body div div {
-            display: none !important;
-            height: 0vh !important; }
-            section.billofrights div.card-body-tablet div.bor-title-tab div.card-body div div img.billsofrightslogo {
-              display: none !important;
-              height: 0vh !important; }
-          section.billofrights div.card-body-tablet div.bor-title-tab div.card-body div div.bor-desc.tablet {
-            display: none !important;
-            height: 0vh !important; }
-            section.billofrights div.card-body-tablet div.bor-title-tab div.card-body div div.bor-desc.tablet div {
-              display: none !important;
-              height: 0vh !important; }
-              section.billofrights div.card-body-tablet div.bor-title-tab div.card-body div div.bor-desc.tablet div p.sm-txt2 {
-                display: none !important;
-                height: 0vh !important; }
-    section.billofrights div.card-body-tablet div.bor-card-container {
-      display: none !important;
-      height: 0vh !important; }
-      section.billofrights div.card-body-tablet div.bor-card-container div.row {
-        display: none !important;
-        height: 0vh !important; }
-        section.billofrights div.card-body-tablet div.bor-card-container div.row div.billofrights-card {
-          display: none !important;
-          height: 0vh !important; }
-          section.billofrights div.card-body-tablet div.bor-card-container div.row div.billofrights-card div {
-            display: none !important;
-            height: 0vh !important; }
-            section.billofrights div.card-body-tablet div.bor-card-container div.row div.billofrights-card div h4.card-title-lg #smallheader-bor {
-              display: none !important;
-              height: 0vh !important; }
-          section.billofrights div.card-body-tablet div.bor-card-container div.row div.billofrights-card div {
-            display: none !important;
-            height: 0vh !important; }
-            section.billofrights div.card-body-tablet div.bor-card-container div.row div.billofrights-card div img.bor-icon-lg {
-              display: none !important;
-              height: 0vh !important; }
-          section.billofrights div.card-body-tablet div.bor-card-container div.row div.billofrights-card div {
-            display: none !important;
-            height: 0vh !important; }
-            section.billofrights div.card-body-tablet div.bor-card-container div.row div.billofrights-card div p.sm-txt-lg-bor {
-              display: none !important;
-              height: 0vh !important; }
-  section.billofrights button.billofrights-btn-tablet {
-    display: none !important;
-    height: 0vh !important; }
-  section.billofrights div.card-body-mobile div.bor-title-mobile {
-    display: none !important;
-    height: 0vh !important; }
-    section.billofrights div.card-body-mobile div.bor-title-mobile div.card-body {
-      display: none !important;
-      height: 0vh !important; }
-      section.billofrights div.card-body-mobile div.bor-title-mobile div.card-body div {
-        display: none !important;
-        height: 0vh !important; }
-        section.billofrights div.card-body-mobile div.bor-title-mobile div.card-body div div {
-          display: none !important;
-          height: 0vh !important; }
-          section.billofrights div.card-body-mobile div.bor-title-mobile div.card-body div div img.billsofrightslogo {
-            display: none !important;
-            height: 0vh !important; }
-        section.billofrights div.card-body-mobile div.bor-title-mobile div.card-body div div.bor-desc.mobile {
-          display: none !important;
-          height: 0vh !important; }
-          section.billofrights div.card-body-mobile div.bor-title-mobile div.card-body div div.bor-desc.mobile div {
-            display: none !important;
-            height: 0vh !important; }
-            section.billofrights div.card-body-mobile div.bor-title-mobile div.card-body div div.bor-desc.mobile div p.sm-txt2 {
-              display: none !important;
-              height: 0vh !important; }
-  section.billofrights div.card-body-mobile div.bor-card-container {
-    display: none !important;
-    height: 0vh !important; }
-    section.billofrights div.card-body-mobile div.bor-card-container div.row {
-      display: none !important;
-      height: 0vh !important; }
-      section.billofrights div.card-body-mobile div.bor-card-container div.row div.billofrights-card {
-        display: none !important;
-        height: 0vh !important; }
-        section.billofrights div.card-body-mobile div.bor-card-container div.row div.billofrights-card div {
-          display: none !important;
-          height: 0vh !important; }
-          section.billofrights div.card-body-mobile div.bor-card-container div.row div.billofrights-card div h4.card-title-lg #smallheader-bor {
-            display: none !important;
-            height: 0vh !important; }
-        section.billofrights div.card-body-mobile div.bor-card-container div.row div.billofrights-card div {
-          display: none !important;
-          height: 0vh !important; }
-          section.billofrights div.card-body-mobile div.bor-card-container div.row div.billofrights-card div img.bor-icon-lg {
-            display: none !important;
-            height: 0vh !important; }
-        section.billofrights div.card-body-mobile div.bor-card-container div.row div.billofrights-card div {
-          display: none !important;
-          height: 0vh !important; }
-          section.billofrights div.card-body-mobile div.bor-card-container div.row div.billofrights-card div p.sm-txt-lg-bor {
-            display: none !important;
-            height: 0vh !important; }
-  section.billofrights button.billofrights-btn-mobile {
-    display: none !important;
-    height: 0vh !important; } }
+    transform: scale(1.05); } }
 @media(min-width:768px) and (max-width:991px) {
   section.billofrights div.card-body-desktop {
-    display: none !important;
-    height: 0vh;
-    background-color: white; }
-    section.billofrights div.card-body-desktop div.bor-title {
-      display: none !important;
-      height: 0vh; }
-      section.billofrights div.card-body-desktop div.bor-title div.card-body {
-        display: none !important;
-        height: 0vh; }
-        section.billofrights div.card-body-desktop div.bor-title div.card-body div {
-          display: none !important;
-          height: 0vh; }
-          section.billofrights div.card-body-desktop div.bor-title div.card-body div div {
-            display: none !important;
-            height: 0vh; }
-            section.billofrights div.card-body-desktop div.bor-title div.card-body div div img.billsofrightslogo {
-              display: none !important;
-              height: 0vh; }
-          section.billofrights div.card-body-desktop div.bor-title div.card-body div p.billofrights-hdr {
-            display: none !important;
-            height: 0vh; }
-          section.billofrights div.card-body-desktop div.bor-title div.card-body div div.bor-desc-tablet {
-            display: none !important;
-            height: 0vh; }
-            section.billofrights div.card-body-desktop div.bor-title div.card-body div div.bor-desc-tablet div {
-              display: none !important;
-              height: 0vh; }
-              section.billofrights div.card-body-desktop div.bor-title div.card-body div div.bor-desc-tablet div p.sm-txt2 {
-                display: none !important;
-                height: 0vh; }
-    section.billofrights div.card-body-desktop div.bor-card-container {
-      display: none !important;
-      height: 0vh; }
-      section.billofrights div.card-body-desktop div.bor-card-container div.row {
-        display: none !important;
-        height: 0vh; }
-        section.billofrights div.card-body-desktop div.bor-card-container div.row div.billofrights-card div {
-          display: none !important;
-          height: 0vh; }
-          section.billofrights div.card-body-desktop div.bor-card-container div.row div.billofrights-card div h4#smallheader-bor {
-            display: none !important;
-            height: 0vh; }
-        section.billofrights div.card-body-desktop div.bor-card-container div.row div.billofrights-card div {
-          display: none !important;
-          height: 0vh; }
-          section.billofrights div.card-body-desktop div.bor-card-container div.row div.billofrights-card div img.bor-icon-lg {
-            width: 100px !important;
-            height: 100px !important; }
-        section.billofrights div.card-body-desktop div.bor-card-container div.row div.billofrights-card div {
-          display: none !important;
-          height: 0vh; }
-          section.billofrights div.card-body-desktop div.bor-card-container div.row div.billofrights-card div p.sm-txt-lg-bor {
-            display: none !important;
-            height: 0vh; }
-  section.billofrights button.billofrights-btn {
-    display: none !important;
-    height: 0vh; }
-    section.billofrights button.billofrights-btn a {
-      display: none !important;
-      height: 0vh; }
-  section.billofrights div.card-body-tablet {
     padding: 5vh 0 0 0; }
-    section.billofrights div.card-body-tablet div.bor-title-tab {
-      padding: 12vh 0 0 0; }
-      section.billofrights div.card-body-tablet div.bor-title-tab div div img.billsofrightslogo {
+    section.billofrights div.card-body-desktop div.bor-title {
+      padding: 0vh 0 2vh 0; }
+      section.billofrights div.card-body-desktop div.bor-title div.card-body div div img.billsofrightslogo {
         width: 150px !important;
         height: 150px !important; }
-      section.billofrights div.card-body-tablet div.bor-title-tab div div.tablet div.tablet p.sm-txt1-tab {
-        text-align: center;
-        font-size: 2rem;
-        font-family: Oswald;
-        color: #5f7053; }
-    section.billofrights div.card-body-tablet div.bor-card-container div.row div.billofrights-card {
+      section.billofrights div.card-body-desktop div.bor-title div.card-body div p.billofrights-hdr {
+        color: #666666;
+        font-size: 2.5rem;
+        font-family: oswald;
+        font-weight: bold;
+        text-align: center; }
+      section.billofrights div.card-body-desktop div.bor-title div.card-body div div.bor-desc-tablet div {
+        display: none !important;
+        height: 0vh !important; }
+    section.billofrights div.card-body-desktop div.bor-card-container div.row div.billofrights-card {
       transition-timing-function: ease-in;
       transition: 0.3s;
       display: block;
       background: #72A1B4; }
-      section.billofrights div.card-body-tablet div.bor-card-container div.row div.billofrights-card div h6.card-title-mobile {
+      section.billofrights div.card-body-desktop div.bor-card-container div.row div.billofrights-card div h4#smallheader-bor {
         text-align: center;
-        line-height: 50px;
         color: white !important;
         font-family: Oswald;
         font-size: 2rem; }
-      section.billofrights div.card-body-tablet div.bor-card-container div.row div.billofrights-card div p.sm-txt-lg-bor {
-        text-align: center;
-        font-size: 0.9rem;
-        font-family: arial;
-        color: white;
-        padding: 1rem 0 1rem 0 !important; }
-  section.billofrights button.billofrights-btn-tablet {
+      section.billofrights div.card-body-desktop div.bor-card-container div.row div.billofrights-card div p.sm-txt-lg-bor {
+        display: none !important;
+        height: 0vh !important; }
+  section.billofrights button.billofrights-btn {
     display: flex;
     justify-content: center;
     border: 1.5px solid rgba(148, 148, 148, 0.5);
@@ -969,305 +797,148 @@ section.billofrights {
     font-family: arial;
     transition-timing-function: ease-in;
     transition: 0.3s; }
-    section.billofrights button.billofrights-btn-tablet a {
-      color: #5C6B73; }
-  section.billofrights div.card-body-mobile div.bor-title-mobile {
-    display: none !important;
-    height: 0vh !important; }
-    section.billofrights div.card-body-mobile div.bor-title-mobile div.card-body div div img.billsofrightslogo {
-      display: none !important;
-      height: 0vh !important; }
-    section.billofrights div.card-body-mobile div.bor-title-mobile div.card-body div div.bor-desc.mobile div p.sm-txt2 {
-      display: none !important;
-      height: 0vh !important; }
-  section.billofrights div.card-body-mobile div.bor-card-container div.row div.billofrights-card {
-    display: none !important;
-    height: 0vh !important; }
-    section.billofrights div.card-body-mobile div.bor-card-container div.row div.billofrights-card div p.sm-txt-lg-bor {
-      display: none !important;
-      height: 0vh !important; }
-  section.billofrights button.billofrights-btn-mobile {
-    display: none !important;
-    height: 0vh !important; } }
+    section.billofrights button.billofrights-btn a {
+      color: #5C6B73; } }
 @media(min-width:577px) and (max-width:767px) {
   section.billofrights div.card-body-desktop {
-    display: none !important;
-    height: 0vh;
-    background-color: white; }
-    section.billofrights div.card-body-desktop div.bor-title div.card-body div div img.billsofrightslogo {
-      display: none !important;
-      height: 0vh; }
-    section.billofrights div.card-body-desktop div.bor-title div.card-body div p.billofrights-hdr {
-      display: none !important;
-      height: 0vh; }
-    section.billofrights div.card-body-desktop div.bor-title div.card-body div div.bor-desc-tablet div p.sm-txt2 {
-      display: none !important;
-      height: 0vh; }
-    section.billofrights div.card-body-desktop div.bor-card-container div.row div.billofrights-card div h4#smallheader-bor {
-      display: none !important;
-      height: 0vh; }
-    section.billofrights div.card-body-desktop div.bor-card-container div.row div.billofrights-card div p.sm-txt-lg-bor {
-      display: none !important;
-      height: 0vh; }
-  section.billofrights button.billofrights-btn {
-    display: none !important;
-    height: 0vh; }
-    section.billofrights button.billofrights-btn a {
-      display: none !important;
-      height: 0vh; }
-  section.billofrights div.card-body-tablet {
-    padding: 5vh 0 0 0; }
-    section.billofrights div.card-body-tablet div.bor-title-tab {
-      padding: 12vh 0 0 0; }
-      section.billofrights div.card-body-tablet div.bor-title-tab div div img.billsofrightslogo {
+    padding: 2vh 0 0 0; }
+    section.billofrights div.card-body-desktop div.bor-title {
+      padding: 0vh 0 2vh 0; }
+      section.billofrights div.card-body-desktop div.bor-title div.card-body div div img.billsofrightslogo {
         width: 100px !important;
-        height: 100px !important; }
-      section.billofrights div.card-body-tablet div.bor-title-tab div div.tablet div.tablet p.sm-txt1-tab {
-        text-align: center;
-        font-size: 2rem;
-        font-family: Oswald;
-        color: #5f7053; }
-    section.billofrights div.card-body-tablet div.bor-card-container {
-      display: flex;
-      justify-content: center;
-      align-items: center; }
-      section.billofrights div.card-body-tablet div.bor-card-container div.row {
-        width: 60vh; }
-        section.billofrights div.card-body-tablet div.bor-card-container div.row div.billofrights-card {
-          transition-timing-function: ease-in;
-          transition: 0.3s;
-          display: block;
-          background: #72A1B4;
-          height: 150px !important;
-          width: 100px !important; }
-          section.billofrights div.card-body-tablet div.bor-card-container div.row div.billofrights-card div h6.card-title-mobile {
-            text-align: center;
-            line-height: 50px;
-            color: white !important;
-            font-family: Oswald;
-            font-size: 1.5rem; }
-          section.billofrights div.card-body-tablet div.bor-card-container div.row div.billofrights-card div img.bor-icon-md {
-            width: 75px !important;
-            height: 75px !important; }
-          section.billofrights div.card-body-tablet div.bor-card-container div.row div.billofrights-card div p.sm-txt-lg-bor {
-            text-align: center;
-            font-size: 0.9rem;
-            font-family: arial;
-            color: white;
-            padding: 1rem 0 1rem 0 !important; }
-  section.billofrights button.billofrights-btn-tablet {
-    display: flex;
-    justify-content: center;
-    border: 1.5px solid rgba(148, 148, 148, 0.5);
-    border-radius: 5px;
-    margin: 20px auto 0px auto;
-    padding: 10px 20px;
-    background: none;
-    font-size: 1rem;
-    font-family: arial;
-    transition-timing-function: ease-in;
-    transition: 0.3s; }
-    section.billofrights button.billofrights-btn-tablet a {
-      color: #5C6B73; }
-  section.billofrights div.card-body-mobile div.bor-title-mobile {
-    display: none !important;
-    height: 0vh !important; }
-    section.billofrights div.card-body-mobile div.bor-title-mobile div.card-body div div img.billsofrightslogo {
-      display: none !important;
-      height: 0vh !important; }
-    section.billofrights div.card-body-mobile div.bor-title-mobile div.card-body div div.bor-desc.mobile div p.sm-txt2 {
-      display: none !important;
-      height: 0vh !important; }
-  section.billofrights div.card-body-mobile div.bor-card-container div.row div.billofrights-card {
-    display: none !important;
-    height: 0vh !important; }
-    section.billofrights div.card-body-mobile div.bor-card-container div.row div.billofrights-card div p.sm-txt-lg-bor {
-      display: none !important;
-      height: 0vh !important; }
-  section.billofrights button.billofrights-btn-mobile {
-    display: none !important;
-    height: 0vh !important; } }
-@media(min-width:412px) and (max-width:576px) {
-  section.billofrights div.card-body-desktop {
-    display: none !important;
-    height: 0vh;
-    background-color: white; }
-    section.billofrights div.card-body-desktop div.bor-title div.card-body div div img.billsofrightslogo {
-      display: none !important;
-      height: 0vh; }
-    section.billofrights div.card-body-desktop div.bor-title div.card-body div p.billofrights-hdr {
-      display: none !important;
-      height: 0vh; }
-    section.billofrights div.card-body-desktop div.bor-title div.card-body div div.bor-desc-tablet div p.sm-txt2 {
-      display: none !important;
-      height: 0vh; }
-    section.billofrights div.card-body-desktop div.bor-card-container div.row div.billofrights-card div h4#smallheader-bor {
-      display: none !important;
-      height: 0vh; }
-    section.billofrights div.card-body-desktop div.bor-card-container div.row div.billofrights-card div p.sm-txt-lg-bor {
-      display: none !important;
-      height: 0vh; }
-  section.billofrights button.billofrights-btn {
-    display: none !important;
-    height: 0vh; }
-    section.billofrights button.billofrights-btn a {
-      display: none !important;
-      height: 0vh; }
-  section.billofrights div.card-body-tablet {
-    display: none !important;
-    height: 0vh !important; }
-    section.billofrights div.card-body-tablet div.bor-title-tab {
-      display: none !important;
-      height: 0vh !important; }
-      section.billofrights div.card-body-tablet div.bor-title-tab div div img.billsofrightslogo {
-        display: none !important;
-        height: 0vh !important; }
-      section.billofrights div.card-body-tablet div.bor-title-tab div div.tablet div.tablet p.sm-txt1-tab {
-        display: none !important;
-        height: 0vh !important; }
-    section.billofrights div.card-body-tablet div.bor-card-container div.row div.billofrights-card {
-      display: none !important;
-      height: 0vh !important; }
-      section.billofrights div.card-body-tablet div.bor-card-container div.row div.billofrights-card div h6.card-title-mobile {
-        display: none !important;
-        height: 0vh !important; }
-      section.billofrights div.card-body-tablet div.bor-card-container div.row div.billofrights-card div p.sm-txt-lg-bor {
-        display: none !important;
-        height: 0vh !important; }
-  section.billofrights button.billofrights-btn-tablet {
-    display: none !important;
-    height: 0vh !important; }
-    section.billofrights button.billofrights-btn-tablet a {
-      display: none !important;
-      height: 0vh !important; }
-  section.billofrights div.card-body-mobile {
-    padding: 0 0 0 0; }
-    section.billofrights div.card-body-mobile div.bor-title-mobile {
-      padding: 0 5vh 0 7vh; }
-      section.billofrights div.card-body-mobile div.bor-title-mobile div div img.billsofrightslogo-mobile {
-        width: 100px !important;
-        height: 100px !important; }
-      section.billofrights div.card-body-mobile div.bor-title-mobile div div.mobile div.mobile p.sm-txt1-mobile {
-        text-align: center;
+        height: 100px !important;
+        margin: 0 0 2vh 0; }
+      section.billofrights div.card-body-desktop div.bor-title div.card-body div p.billofrights-hdr {
+        color: #666666;
         font-size: 1.5rem;
-        font-family: Oswald;
-        color: #5f7053; }
-    section.billofrights div.card-body-mobile div.bor-card-container div.row div.billofrights-card {
+        font-family: oswald;
+        font-weight: bold;
+        text-align: center; }
+      section.billofrights div.card-body-desktop div.bor-title div.card-body div div.bor-desc-tablet div {
+        display: none !important;
+        height: 0vh !important; }
+    section.billofrights div.card-body-desktop div.bor-card-container div.row div.billofrights-card {
       transition-timing-function: ease-in;
       transition: 0.3s;
       display: block;
       background: #72A1B4; }
-      section.billofrights div.card-body-mobile div.bor-card-container div.row div.billofrights-card div h6.card-title-mobile {
+      section.billofrights div.card-body-desktop div.bor-card-container div.row div.billofrights-card div h4#smallheader-bor {
         text-align: center;
         color: white !important;
         font-family: Oswald;
-        font-size: 1rem; }
-      section.billofrights div.card-body-mobile div.bor-card-container div.row div.billofrights-card div img.bor-icon-sm {
-        padding: 0 0 1rem 0; }
-  section.billofrights button.billofrights-btn-mobile {
+        font-size: 1.5rem; }
+      section.billofrights div.card-body-desktop div.bor-card-container div.row div.billofrights-card div p.sm-txt-lg-bor {
+        display: none !important;
+        height: 0vh !important; }
+  section.billofrights button.billofrights-btn {
     display: flex;
     justify-content: center;
     border: 1.5px solid rgba(148, 148, 148, 0.5);
     border-radius: 5px;
     margin: 20px auto 0px auto;
-    padding: 10px 10px 10px 10px;
+    padding: 10px 20px;
     background: none;
     font-size: 1rem;
     font-family: arial;
     transition-timing-function: ease-in;
     transition: 0.3s; }
-    section.billofrights button.billofrights-btn-mobile a {
+    section.billofrights button.billofrights-btn a {
+      color: #5C6B73; } }
+@media(min-width:412px) and (max-width:576px) {
+  section.billofrights div.card-body-desktop {
+    padding: 5vh 0 0 0; }
+    section.billofrights div.card-body-desktop div.bor-title {
+      padding: 0vh 0 2vh 0; }
+      section.billofrights div.card-body-desktop div.bor-title div.card-body div div img.billsofrightslogo {
+        width: 100px !important;
+        height: 100px !important;
+        margin: 0 0 2vh 0; }
+      section.billofrights div.card-body-desktop div.bor-title div.card-body div p.billofrights-hdr {
+        color: #666666;
+        font-size: 2rem;
+        font-family: oswald;
+        font-weight: bold;
+        text-align: center; }
+      section.billofrights div.card-body-desktop div.bor-title div.card-body div div.bor-desc-tablet div {
+        display: none !important;
+        height: 0vh !important; }
+    section.billofrights div.card-body-desktop div.bor-card-container div.row div.billofrights-card {
+      transition-timing-function: ease-in;
+      transition: 0.3s;
+      display: block;
+      background: #72A1B4; }
+      section.billofrights div.card-body-desktop div.bor-card-container div.row div.billofrights-card div h4#smallheader-bor {
+        text-align: center;
+        color: white !important;
+        font-family: Oswald;
+        font-size: 1.5rem; }
+      section.billofrights div.card-body-desktop div.bor-card-container div.row div.billofrights-card div img.bor-icon-lg {
+        width: 100px !important;
+        height: 100px !important; }
+      section.billofrights div.card-body-desktop div.bor-card-container div.row div.billofrights-card div p.sm-txt-lg-bor {
+        display: none !important;
+        height: 0vh !important; }
+  section.billofrights button.billofrights-btn {
+    display: flex;
+    justify-content: center;
+    border: 1.5px solid rgba(148, 148, 148, 0.5);
+    border-radius: 5px;
+    margin: 20px auto 0px auto;
+    padding: 10px 20px;
+    background: none;
+    font-size: 1rem;
+    font-family: arial;
+    transition-timing-function: ease-in;
+    transition: 0.3s; }
+    section.billofrights button.billofrights-btn a {
       color: #5C6B73; } }
 @media(min-width:375px) and (max-width:411px) {
   section.billofrights div.card-body-desktop {
-    display: none !important;
-    height: 0vh;
-    background-color: white; }
-    section.billofrights div.card-body-desktop div.bor-title div.card-body div div img.billsofrightslogo {
-      display: none !important;
-      height: 0vh; }
-    section.billofrights div.card-body-desktop div.bor-title div.card-body div p.billofrights-hdr {
-      display: none !important;
-      height: 0vh; }
-    section.billofrights div.card-body-desktop div.bor-title div.card-body div div.bor-desc-tablet div p.sm-txt2 {
-      display: none !important;
-      height: 0vh; }
-    section.billofrights div.card-body-desktop div.bor-card-container div.row div.billofrights-card div h4#smallheader-bor {
-      display: none !important;
-      height: 0vh; }
-    section.billofrights div.card-body-desktop div.bor-card-container div.row div.billofrights-card div p.sm-txt-lg-bor {
-      display: none !important;
-      height: 0vh; }
-  section.billofrights button.billofrights-btn {
-    display: none !important;
-    height: 0vh; }
-    section.billofrights button.billofrights-btn a {
-      display: none !important;
-      height: 0vh; }
-  section.billofrights div.card-body-tablet {
-    display: none !important;
-    height: 0vh !important; }
-    section.billofrights div.card-body-tablet div.bor-title-tab {
-      display: none !important;
-      height: 0vh !important; }
-      section.billofrights div.card-body-tablet div.bor-title-tab div div img.billsofrightslogo {
-        display: none !important;
-        height: 0vh !important; }
-      section.billofrights div.card-body-tablet div.bor-title-tab div div.tablet div.tablet p.sm-txt1-tab {
-        display: none !important;
-        height: 0vh !important; }
-    section.billofrights div.card-body-tablet div.bor-card-container div.row div.billofrights-card {
-      display: none !important;
-      height: 0vh !important; }
-      section.billofrights div.card-body-tablet div.bor-card-container div.row div.billofrights-card div h6.card-title-mobile {
-        display: none !important;
-        height: 0vh !important; }
-      section.billofrights div.card-body-tablet div.bor-card-container div.row div.billofrights-card div p.sm-txt-lg-bor {
-        display: none !important;
-        height: 0vh !important; }
-  section.billofrights button.billofrights-btn-tablet {
-    display: none !important;
-    height: 0vh !important; }
-    section.billofrights button.billofrights-btn-tablet a {
-      display: none !important;
-      height: 0vh !important; }
-  section.billofrights div.card-body-mobile {
-    padding: 0 0 0 0; }
-    section.billofrights div.card-body-mobile div.bor-title-mobile {
-      padding: 0 4vh 0 5vh; }
-      section.billofrights div.card-body-mobile div.bor-title-mobile div div img.billsofrightslogo-mobile {
+    padding: 5vh 0 0 0; }
+    section.billofrights div.card-body-desktop div.bor-title {
+      padding: 0vh 0 2vh 0; }
+      section.billofrights div.card-body-desktop div.bor-title div.card-body div div img.billsofrightslogo {
         width: 100px !important;
-        height: 100px !important; }
-      section.billofrights div.card-body-mobile div.bor-title-mobile div div.mobile div.mobile p.sm-txt1-mobile {
-        text-align: center;
-        font-size: 1.5rem;
-        font-family: Oswald;
-        color: #5f7053; }
-    section.billofrights div.card-body-mobile div.bor-card-container div.row div.billofrights-card {
+        height: 100px !important;
+        margin: 0 0 2vh 0; }
+      section.billofrights div.card-body-desktop div.bor-title div.card-body div p.billofrights-hdr {
+        color: #666666;
+        font-size: 1.75rem;
+        font-family: oswald;
+        font-weight: bold;
+        text-align: center; }
+      section.billofrights div.card-body-desktop div.bor-title div.card-body div div.bor-desc-tablet div {
+        display: none !important;
+        height: 0vh !important; }
+    section.billofrights div.card-body-desktop div.bor-card-container div.row div.billofrights-card {
       transition-timing-function: ease-in;
       transition: 0.3s;
       display: block;
       background: #72A1B4; }
-      section.billofrights div.card-body-mobile div.bor-card-container div.row div.billofrights-card div h6.card-title-mobile {
+      section.billofrights div.card-body-desktop div.bor-card-container div.row div.billofrights-card div h4#smallheader-bor {
         text-align: center;
         color: white !important;
         font-family: Oswald;
-        font-size: 1rem; }
-      section.billofrights div.card-body-mobile div.bor-card-container div.row div.billofrights-card div img.bor-icon-sm {
-        padding: 0 0 1rem 0; }
-  section.billofrights button.billofrights-btn-mobile {
+        font-size: 1.2rem; }
+      section.billofrights div.card-body-desktop div.bor-card-container div.row div.billofrights-card div img.bor-icon-lg {
+        width: 100px !important;
+        height: 100px !important; }
+      section.billofrights div.card-body-desktop div.bor-card-container div.row div.billofrights-card div p.sm-txt-lg-bor {
+        display: none !important;
+        height: 0vh !important; }
+  section.billofrights button.billofrights-btn {
     display: flex;
     justify-content: center;
     border: 1.5px solid rgba(148, 148, 148, 0.5);
     border-radius: 5px;
     margin: 20px auto 0px auto;
-    padding: 10px 10px 10px 10px;
+    padding: 10px 20px;
     background: none;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     font-family: arial;
     transition-timing-function: ease-in;
     transition: 0.3s; }
-    section.billofrights button.billofrights-btn-mobile a {
+    section.billofrights button.billofrights-btn a {
       color: #5C6B73; } }
 @media(min-width:992px) {
   section.history {
