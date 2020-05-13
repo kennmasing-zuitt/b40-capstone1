@@ -846,7 +846,7 @@ section.billofrights {
       color: #5C6B73; } }
 @media(min-width:412px) and (max-width:576px) {
   section.billofrights div.card-body-desktop {
-    padding: 5vh 0 0 0; }
+    padding: 2vh 0 0 0; }
     section.billofrights div.card-body-desktop div.bor-title {
       padding: 0vh 0 2vh 0; }
       section.billofrights div.card-body-desktop div.bor-title div.card-body div div img.billsofrightslogo {
@@ -894,7 +894,7 @@ section.billofrights {
       color: #5C6B73; } }
 @media(min-width:375px) and (max-width:411px) {
   section.billofrights div.card-body-desktop {
-    padding: 5vh 0 0 0; }
+    padding: 2vh 0 0 0; }
     section.billofrights div.card-body-desktop div.bor-title {
       padding: 0vh 0 2vh 0; }
       section.billofrights div.card-body-desktop div.bor-title div.card-body div div img.billsofrightslogo {
@@ -921,8 +921,8 @@ section.billofrights {
         font-family: Oswald;
         font-size: 1.2rem; }
       section.billofrights div.card-body-desktop div.bor-card-container div.row div.billofrights-card div img.bor-icon-lg {
-        width: 100px !important;
-        height: 100px !important; }
+        width: 80px !important;
+        height: 90px !important; }
       section.billofrights div.card-body-desktop div.bor-card-container div.row div.billofrights-card div p.sm-txt-lg-bor {
         display: none !important;
         height: 0vh !important; }
@@ -1214,7 +1214,7 @@ section.billofrights {
         height: 0vh; } }
 @media(min-width:412px) and (max-width:576px) {
   section.history {
-    height: 150vh;
+    height: 170vh;
     background-color: white; }
   @media(min-width:992px) {}
     section.history div.card-body div.history-card-container {
@@ -1228,7 +1228,7 @@ section.billofrights {
           height: 0vh; }
     section.history div.card-body div.history-title-mobile div div span.sm-txt1-mobile {
       color: #666666;
-      font-size: 1.75rem;
+      font-size: 1.5rem;
       font-family: oswald;
       font-weight: bold;
       text-align: center; }
@@ -1306,7 +1306,7 @@ section.billofrights {
         height: 0vh; } }
 @media(min-width:375px) and (max-width:411px) {
   section.history {
-    height: 150vh;
+    height: 170vh;
     background-color: white; }
   @media(min-width:992px) {}
     section.history div.card-body div.history-card-container {
@@ -2169,9 +2169,9 @@ section.joinus {
     padding-right: 0px !important;
     padding-top: 0px !important;
     padding-bottom: 0px !important;
-    height: 150vh; }
+    height: 170vh; }
     section.contact div div.parallax-window {
-      height: auto;
+      height: 170vh;
       background: transparent;
       position: relative; }
       section.contact div div.parallax-window div div.contact-desktop div form div.form-row div.form-group h5.contact-hdr {
@@ -2230,9 +2230,9 @@ section.joinus {
     padding-right: 0px !important;
     padding-top: 0px !important;
     padding-bottom: 0px !important;
-    height: 160vh; }
+    height: 180vh; }
     section.contact div div.parallax-window {
-      height: auto;
+      height: 180vh;
       background: transparent;
       position: relative; }
       section.contact div div.parallax-window div div.contact-desktop div form div.form-row div.form-group h5.contact-hdr {
