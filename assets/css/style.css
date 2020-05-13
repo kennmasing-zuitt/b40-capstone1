@@ -80,7 +80,7 @@ body {
     nav#nav-home div form button.search-btn {
       display: none !important;
       height: 0vh; } }
-@media(min-width:375px) and (max-width:411px) {
+@media(max-width:411px) {
   nav#nav-home {
     display: none !important;
     height: 0vh; }
@@ -415,7 +415,7 @@ body {
       section.navbar-mobile#home div#content nav.nav-mobile-pg div div img.nav-logo-md {
         display: none !important;
         height: 0vh; } }
-@media(min-width:375px) and (max-width:411px) {
+@media(max-width:411px) {
   section.navbar-mobile#home div.wrapper nav#sidebar {
     width: 250px;
     position: fixed;
@@ -644,7 +644,7 @@ body {
       section.home div div.cto-tab div p.cto-tab {
         display: none !important;
         height: 0vh !important; } }
-@media(min-width:375px) and (max-width:411px) {
+@media(max-width:411px) {
   section.home {
     margin: 0;
     padding: 0;
@@ -892,7 +892,7 @@ section.billofrights {
     transition: 0.3s; }
     section.billofrights button.billofrights-btn a {
       color: #5C6B73; } }
-@media(min-width:375px) and (max-width:411px) {
+@media(max-width:411px) {
   section.billofrights div.card-body-desktop {
     padding: 2vh 0 0 0; }
     section.billofrights div.card-body-desktop div.bor-title {
@@ -1304,7 +1304,7 @@ section.billofrights {
       section.history div.railnetwork img.railnetwork-map {
         display: none !important;
         height: 0vh; } }
-@media(min-width:375px) and (max-width:411px) {
+@media(max-width:411px) {
   section.history {
     height: 170vh;
     background-color: white; }
@@ -1701,7 +1701,7 @@ section.joinus {
       div.joinus-mobile div.row div.halalanrow div.halalan div.row div div div.halalan-container p small.halalan-mobile {
         font-size: 0.5rem;
         color: white; } }
-@media(min-width:375px) and (max-width:411px) {
+@media(max-width:411px) {
   div.joinus-desktop {
     display: none !important;
     height: 0vh !important; }
@@ -1847,7 +1847,7 @@ section.joinus {
       section.nacto-desktop div.card-body2 div div.history-card-container div div p.sm-txt2 {
         display: none !important;
         height: 0vh !important; } }
-@media(min-width:375px) and (max-width:411px) {
+@media(max-width:411px) {
   section.nacto-desktop {
     display: none !important;
     height: 0vh !important;
@@ -1953,7 +1953,7 @@ section.joinus {
       font-family: oswald;
       font-weight: bold;
       text-align: center; } }
-@media(min-width:375px) and (max-width:411px) {
+@media(max-width:411px) {
   section.nacto-mobile {
     height: 100vh;
     background-color: white; }
@@ -2223,7 +2223,7 @@ section.joinus {
       section.contact div div.parallax-window div div form.d-block div.form-group div.card-body div img.captcha-img {
         width: 50px;
         height: 50px; } }
-@media(min-width:375px) and (max-width:411px) {
+@media(max-width:411px) {
   section.contact {
     height: auto;
     padding-left: 0px !important;
@@ -2346,7 +2346,7 @@ section.joinus {
           height: 0vh !important; } }
 @media(min-width:768px) and (max-width:991px) {}
 @media(min-width:412px) and (max-width:576px) {}
-@media(min-width:375px) and (max-width:411px) {}
+@media(max-width:411px) {}
 @media(min-width:992px) {}
 @media(min-width:768px) and (max-width:991px) {
   section.footer-desktop {
@@ -2641,7 +2641,7 @@ section.joinus {
           color: white; }
         section.footer-mobile div div.copyright-nextline small span {
           color: white; } }
-@media(min-width:375px) and (max-width:411px) {
+@media(max-width:411px) {
   section.footer-desktop {
     display: none !important;
     height: 0vh !important; }
