@@ -12,7 +12,6 @@
     --color-sidebar-panel: rgba(0, 0, 0, 0.75);
     --color-overlay: rgba(0, 0, 0, 0.7);
     --line-pnr: orange;
-    --line-subway: gray;
     --line-lrt1: #fff23b;
     --line-lrt2: #924ac2;
     --line-mrt3: #3f94fc;
@@ -57,10 +56,16 @@ a {
     text-align: center;
 }
 
-.section-text {
-    color: var(--color-body-olive);
+/* Small body text */
+.section-text,
+.more-btn,
+.rights-text {
     font-family: var(--font-body);
     font-size: 0.9rem;
+}
+
+.section-text {
+    color: var(--color-body-olive);
     text-align: center;
 }
 
@@ -73,8 +78,6 @@ a {
     border: 1.5px solid var(--color-button-border);
     border-radius: 5px;
     color: var(--color-dark-gray);
-    font-family: var(--font-body);
-    font-size: 0.9rem;
     text-align: center;
     transition: transform 0.3s ease-in;
 }
@@ -129,12 +132,14 @@ a {
 }
 
 .site-links .nav-link {
-    padding: 8px 16px;
     color: var(--color-white);
     font-family: Calibri, var(--font-body);
 }
 
-.site-links .nav-link:hover {
+/* Text links: white, underlined on hover */
+.site-links .nav-link:hover,
+.article-link:hover,
+.footer-cta:hover {
     color: var(--color-white);
     text-decoration: underline;
 }
@@ -145,7 +150,6 @@ a {
 }
 
 .search-input {
-    width: 233px;
     max-width: 100%;
     padding: 6px 12px;
     border: 1px solid var(--bs-light);
@@ -288,12 +292,8 @@ a {
 .rights-logo {
     display: block;
     width: 100px;
+    height: auto;
     margin: 0 auto 1rem;
-}
-
-.rights-intro {
-    max-width: 705px;
-    margin: 0 auto 1.5rem;
 }
 
 .rights-row {
@@ -317,6 +317,7 @@ a {
 .rights-icon {
     display: block;
     width: 80px;
+    height: auto;
     margin: 0 auto;
     padding: 0 0 1rem;
 }
@@ -324,8 +325,6 @@ a {
 .rights-text {
     padding: 1rem 0;
     color: var(--color-white);
-    font-family: var(--font-body);
-    font-size: 0.9rem;
 }
 
 /* ==================== MASS TRANSPORT ==================== */
@@ -374,6 +373,7 @@ a {
 .line-icon {
     display: block;
     width: 75%;
+    height: auto;
     margin: 0 auto;
 }
 
@@ -416,11 +416,6 @@ a {
     border-top: 1px solid var(--bs-light);
 }
 
-.article-link:hover {
-    color: var(--color-white);
-    text-decoration: underline;
-}
-
 .article-quote {
     margin: 0;
     padding: 20px;
@@ -439,6 +434,7 @@ a {
 
 .halalan-icon {
     width: 86px;
+    height: auto;
 }
 
 .halalan-text {
@@ -617,11 +613,6 @@ a {
     font-family: var(--font-display);
     font-size: 1rem;
     font-weight: 500;
-}
-
-.footer-cta:hover {
-    color: var(--color-white);
-    text-decoration: underline;
 }
 
 .footer-btn {
