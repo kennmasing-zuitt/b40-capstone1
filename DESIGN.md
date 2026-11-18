@@ -132,18 +132,18 @@ The look is a **campaign poster on a calm blue base**:
 - **Rights Blue (`#72a1b4`):** Fill of the five Commuter's Bill of Rights cards, with white text. It only reaches 2.81:1 contrast with white, which is below WCAG AA; fix it before relying on it for body text.
 - **Text Gray (`#666666`) and Charcoal (`#43454a`):** Headings inside white sections. Gray: section titles, rail-network headings and the mobile NACTO captions. Charcoal: rail-line card titles, the desktop NACTO title and its captions.
 - **Body Olive (`#5f7053`):** Description paragraphs in the white sections.
-- **Dark Gray (`#5c6b73`):** The "Know more" button links. Other links keep Bootstrap's default blue (`#007bff`).
+- **Dark Gray (`#5c6b73`):** The "Know more" button links. Navbar, sidebar, "Read more", social and footer links are white; the few unstyled links keep Bootstrap's default blue.
 - **Sidebar Accent (`#47748b`) and Sidebar Hover (`#7386d5`):** Mobile sidebar list rules and the close-button hover.
 - **Rail line colours (`--line-*`):** Each line card has a 5px left marker in that line's colour, for example LRT-1 yellow `#fff23b`, LRT-2 purple `#924ac2` and MRT-3 blue `#3f94fc`. They identify lines only; don't reuse them for UI.
 - **Button Border (`rgba(148, 148, 148, 0.5)`):** Outline of the "Know more" buttons.
 - **Sidebar Panel (`rgba(0, 0, 0, 0.75)`):** Background of the mobile sidebar's link list.
 - **Overlay (`rgba(0, 0, 0, 0.7)`):** Dims the page while the mobile sidebar is open.
 
-Every colour above is a custom property in the `:root` block of `index.css` (`--color-*` and `--line-*`). Use the variable, not the literal, when adding rules. Shadows and a few one-off greys stay literal.
+Every site colour above is a custom property in the `:root` block of `index.css` (`--color-*` and `--line-*`). Use the variable, not the literal, when adding rules. Shadows and a few one-off greys stay literal.
 
 ## Typography
 
-- **Display & Section Titles (Oswald):** The hero headline is 112px on desktop, 80px on tablets (768–991px), 48px at 412–576px and 40px at 411px and below. Section titles are 40px bold on desktop. On phones the Bill of Rights title is 32px (412–576px) or 28px (411px and below), the NACTO title 32px or 24px, and the rail title 24px. Mostly uppercase in the markup.
+- **Display & Section Titles (Oswald):** The hero headline is 112px on desktop, 80px at 768–991px, 64px at 577–767px, 48px at 412–576px and 40px at 411px and below. Section titles are 40px bold on desktop. On phones the Bill of Rights title is 32px (412–576px) or 28px (411px and below), the NACTO title 32px or 24px, and the rail title 24px. Mostly uppercase in the markup.
 - **Condensed Subheads (Saira Extra Condensed):** Letter-spaced hero subtitles, the `2 0 2 2` Halalan year and contact subheads. The spacing is typed into the text, so keep it when editing copy.
 - **Body (Arial):** Descriptions, card text, the "Know more" buttons and the featured quote (40px bold on desktop).
 - **List Headings (Arial Narrow):** "EXISTING LINES"-style headings in the rail section.
@@ -155,7 +155,7 @@ Fonts load from one Google Fonts stylesheet (`Oswald` and `Saira Extra Condensed
 ## Layout & Spacing
 
 - **Fixed section heights:** on desktop most sections are `100vh`, contact is `80vh` and the footer `20vh`. Below desktop some sections grow to fixed heights instead of sizing to content: the rail section is `200vh` at 577–991px and `170vh` on phones, and contact is `170vh`–`180vh` on phones.
-- **Bootstrap 4 grid:** the Bill of Rights and rail cards are Bootstrap `card` elements in rows (`col-5 col-lg`), wrapping two per row below desktop, with a `1rem` gap (`mx-2 my-2` on each card).
+- **Bootstrap 4 grid:** the Bill of Rights and rail cards are Bootstrap `card` elements in rows (`col-5 col-lg`), wrapping to two per row below desktop where the row is wide enough (one per row otherwise), with a `1rem` gap (`mx-2 my-2` on each card).
 - **Breakpoints:** `index.css` uses its own closed ranges: ≤411px, 412–576px, 577–767px, 768–991px and ≥992px. They don't match Bootstrap's breakpoints.
 - **Copies per screen size:** `index.html` has a desktop navbar plus a mobile sidebar, three versions of the hero text, desktop and mobile versions of the Join Us cards (inside one section), two NACTO sections and two footers. CSS hides the copies that don't fit the screen. Edit every copy until they are merged.
 - **Hidden below desktop:** the Bill of Rights card descriptions and the rail network map.
