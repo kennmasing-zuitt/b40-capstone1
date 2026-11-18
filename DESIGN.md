@@ -71,7 +71,7 @@ typography:
     fontFamily: Oswald
     fontSize: 20px
     fontWeight: '700'
-    lineHeight: 24px
+    lineHeight: 30px
   quote:
     fontFamily: Arial
     fontSize: 40px
@@ -103,7 +103,7 @@ typography:
     fontWeight: '400'
     lineHeight: 24px
 rounded:
-  DEFAULT: 0.25rem
+  DEFAULT: 0.375rem
   button: 5px
   full: 50rem
 spacing:
@@ -111,6 +111,7 @@ spacing:
   card-gap: 1rem
   nav-height: 60px
   nav-height-desktop: 94px
+  breakpoint-photo: 576px
   breakpoint-tablet: 768px
   breakpoint-desktop: 992px
   breakpoint-wide: 1400px
@@ -129,35 +130,35 @@ The look is a **campaign poster on a calm blue base**:
 
 - **Base Blue (`#30506e`):** Page background, the navbar, the footer, and the mobile menu's header and close button. The single brand colour; every dark band on the page uses it.
 - **White (`#ffffff`):** Display type over photos, text on blue, and the background of the fact sections.
-- **Rights Blue (`#72a1b4`):** Fill of the five Commuter's Bill of Rights cards, with white text. It only reaches 2.81:1 contrast with white, which is below WCAG AA; fix it before relying on it for body text.
+- **Rights Blue (`#72a1b4`):** Fill of the five Commuter's Bill of Rights cards, with white titles and text. White on it is only 2.81:1, below WCAG AA for both normal (4.5:1) and large text (3:1), so the card titles fail too. Kept as is to preserve the look; darken it before relying on it for readable text.
 - **Text Gray (`#666666`) and Charcoal (`#43454a`):** Headings inside white sections. Gray: section titles, rail line-group headings, and the NACTO title and captions below desktop. Charcoal: rail-line card titles, and the NACTO title and captions on desktop.
 - **Body Olive (`#5f7053`):** Description paragraphs in the white sections.
-- **Dark Gray (`#5c6b73`):** The "Know more" buttons. Every other link is white; links have no underline.
+- **Dark Gray (`#5c6b73`):** The "Know more" buttons. Every other link is white. Links have no underline, except on hover for the navbar, article and footer call-to-action links.
 - **Sidebar Accent (`#47748b`) and Sidebar Hover (`#7386d5`):** The rule under the mobile menu links, and the hover colour of its links and close button.
 - **Rail line colours (`--line-*`):** Each line card has a 5px left marker in that line's colour, for example LRT-1 yellow `#fff23b`, LRT-2 purple `#924ac2` and MRT-3 blue `#3f94fc`. They identify lines only; don't reuse them for UI.
 - **Button Border (`rgba(148, 148, 148, 0.5)`):** Outline of the "Know more" buttons.
 - **Sidebar Panel (`rgba(0, 0, 0, 0.75)`):** Background of the mobile menu.
-- **Overlay (`rgba(0, 0, 0, 0.7)`):** The value of `--color-overlay`; the open mobile menu dims the page with Bootstrap's backdrop set to the same 70% black.
+- **Overlay (`rgba(0, 0, 0, 0.7)`):** Bootstrap's backdrop behind the open mobile menu (`--bs-backdrop-bg: var(--color-overlay)`).
 
 Every site colour above is a custom property in the `:root` block of `index.css` (`--color-*` and `--line-*`). Use the variable, not the literal, when adding rules. Shadows and a few one-off greys stay literal.
 
 ## Typography
 
-- **Display & Section Titles (Oswald):** Sizes scale with the screen width (`clamp()`). The hero headline goes from 40px on phones to 112px at 1440px and wider (62px at 800px). Section titles go from 24px (390px) to 40px bold from about 1150px (33px at 800px). Mostly uppercase in the markup.
+- **Display & Section Titles (Oswald):** Sizes scale with the screen width (`clamp()`). The hero headline goes from 40px on phones to 62px at 800px, and is 112px on desktop (from 992px). Section titles go from 24px (390px) to 33px at 800px and 40px bold from about 1150px. Card titles: Bill of Rights 19.2px below desktop and 24px on desktop; rail lines 16px and 24px; NACTO captions 14.4px and 20px. Long words wrap rather than overflow if the web font hasn't loaded. Mostly uppercase in the markup.
 - **Condensed Subheads (Saira Extra Condensed):** Letter-spaced hero subtitles, the `2 0 2 2` Halalan year and contact subheads. The spacing is typed into the text, so keep it when editing copy.
 - **Body (Arial):** Descriptions, card text, the "Know more" buttons and the featured quote (40px bold on desktop, 32px below).
 - **List Headings (Arial Narrow):** "EXISTING LINES"-style headings in the rail section.
 - **Navigation (Calibri):** Desktop navbar links.
-- **System font (Bootstrap default):** Forms, the pill buttons, the Halalan call to action, the article labels and small print.
+- **System font (Bootstrap default):** Forms, the pill buttons, the Halalan call to action, the article labels, the copyright line and, below desktop, the legal links (Oswald on desktop).
 
 The font stacks are `--font-display`, `--font-condensed`, `--font-body` and `--font-narrow` in `:root`. Fonts load from one Google Fonts stylesheet (`Oswald` and `Saira Extra Condensed`, `display=swap`), which then fetches the font files. Arial, Arial Narrow and Calibri are system fonts.
 
 ## Layout & Spacing
 
 - **One page for every screen:** each section exists once in `index.html` and adapts with Bootstrap 5 classes (`d-none d-lg-block`, `col-5 col-lg`) plus mobile-first media queries in `index.css`.
-- **Section heights follow content:** desktop sections have `min-height: 100vh` (contact `80vh`) and grow when their content needs more room. Nothing has a fixed height.
-- **Breakpoints:** Bootstrap's, mobile first: tablet from `768px` (desktop hero photo), desktop from `992px` (full navbar, side-by-side layouts), wide from `1400px` (roomier navbar).
-- **Sticky navbar:** anchor links scroll the section to just under the navbar (`scroll-padding-top: var(--nav-height)`, 60px below desktop and 94px on desktop).
+- **Section heights follow content:** desktop sections have `min-height: 100vh` (contact `80vh`) and grow when their content needs more room. No section has a fixed height; only images and controls do (for example the NACTO GIFs are `35vh` tall below desktop).
+- **Breakpoints:** Bootstrap's, mobile first: `576px` (desktop hero photo), `768px` (wider Halalan panel), `992px` desktop (full navbar, side-by-side layouts), `1400px` wide (roomier navbar).
+- **Sticky navbar:** anchor links scroll the section to just under the navbar (`scroll-padding-top: var(--nav-height)`, 60px below desktop and 94px on desktop, where the logo is a fixed 64px tall).
 - **Grid:** the Bill of Rights and rail cards sit in Bootstrap rows (`col-5 col-lg`): one row on desktop, two per row below, with a `1rem` gap (`0.5rem` margin on each card). The NACTO GIFs are four columns on desktop and two below (`col-6 col-lg-3`).
 - **Hidden below desktop:** the Bill of Rights intro and card descriptions, the NACTO description and the rail network map.
 
@@ -167,7 +168,7 @@ The site is flat. Depth comes from photography, not shadows: on desktop the cont
 
 ## Shapes
 
-- **Cards:** Bootstrap's default `0.25rem` corners.
+- **Cards:** Bootstrap 5's default `0.375rem` corners.
 - **Buttons:** "Know more" buttons use `5px` corners with a `1.5px solid rgba(148, 148, 148, 0.5)` border on a transparent background.
 - **Pills:** the search field and the outline buttons (Submit, Send Message, Contribute) are fully rounded with a light outline.
 
@@ -177,7 +178,7 @@ The site is flat. Depth comes from photography, not shadows: on desktop the cont
 - Sticky Base Blue bar. Desktop: the AltMobility logo on the left, Calibri links to each section in the middle and a pill search field on the right. Below desktop: a menu button on the left and the logo centred.
 
 ### Mobile Menu
-- Bootstrap's offcanvas panel (`#sidebar`, 250px) slides in from the left: a Base Blue header with the logo and close button, the section links and a search field on a 75% black panel. Tapping a link closes the menu and then scrolls to the section; the close button, the backdrop and Esc also close it. No jQuery.
+- Bootstrap's offcanvas panel (`#sidebar`, 250px) slides in from the left: a Base Blue header with the logo and close button, the section links and a search field on a 75% black panel. Tapping a link closes the menu and then follows the link (the URL and Back button update); the close button, the backdrop and Esc also close it. The panel scrolls when it is taller than the screen. No jQuery.
 
 ### Hero
 - Full-screen photo with the `#COMMUTERSNAMAN` headline in Oswald and a spaced-out Saira subtitle.

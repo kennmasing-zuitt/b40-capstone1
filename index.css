@@ -148,7 +148,7 @@ a {
     width: 233px;
     max-width: 100%;
     padding: 6px 12px;
-    border: 1px solid #f8f9fa;
+    border: 1px solid var(--bs-light);
     border-radius: 50rem;
     background: transparent;
     color: var(--color-white);
@@ -174,14 +174,15 @@ a {
 
 .sidebar {
     --bs-offcanvas-width: 250px;
+    overflow-y: auto;
     background: var(--color-sidebar-panel);
     color: var(--color-white);
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
 }
 
 .offcanvas-backdrop {
-    --bs-backdrop-bg: #000000;
-    --bs-backdrop-opacity: 0.7;
+    --bs-backdrop-bg: var(--color-overlay);
+    --bs-backdrop-opacity: 1;
 }
 
 .sidebar-header {
@@ -266,6 +267,7 @@ a {
     font-size: var(--hero-size);
     font-weight: 500;
     line-height: 1.2;
+    overflow-wrap: anywhere;
 }
 
 .hero-sub {
@@ -305,6 +307,7 @@ a {
 
 .rights-title {
     margin: 1rem 0 0.75rem;
+    overflow-wrap: anywhere;
     color: var(--color-white);
     font-family: var(--font-display);
     font-size: 1.2rem;
@@ -387,6 +390,7 @@ a {
     justify-content: space-between;
     gap: 3rem;
     min-height: 100vh;
+    overflow-x: clip;
     padding: 5vh 15px 2rem;
     background: url(https://res.cloudinary.com/kennmasing/image/upload/v1589305564/capstone1/edsatraffic_c5exgh.jpg) center / cover;
     color: var(--color-white);
@@ -405,11 +409,11 @@ a {
 }
 
 .article-label {
-    border-bottom: 1px solid #f8f9fa;
+    border-bottom: 1px solid var(--bs-light);
 }
 
 .article-link {
-    border-top: 1px solid #f8f9fa;
+    border-top: 1px solid var(--bs-light);
 }
 
 .article-link:hover {
@@ -484,6 +488,7 @@ a {
 }
 
 .nacto-caption {
+    margin: 0;
     color: var(--color-text-gray);
     font-family: var(--font-display);
     font-size: 0.9rem;
@@ -665,14 +670,16 @@ a {
     color: var(--color-white);
 }
 
-/* ==================== TABLET (768px and up) ==================== */
+/* ==================== TABLET (576px / 768px and up) ==================== */
 
-@media (min-width: 768px) {
+@media (min-width: 576px) {
     .hero {
         background-image: url(https://res.cloudinary.com/kennmasing/image/upload/v1589305510/capstone1/homecover_xnerzl.png);
         background-position: center;
     }
+}
 
+@media (min-width: 768px) {
     .halalan {
         max-width: 540px;
     }
@@ -701,8 +708,7 @@ a {
     }
 
     .site-logo {
-        height: 8vh;
-        min-height: 56px;
+        height: 64px;
     }
 
     .site-links {
@@ -726,12 +732,25 @@ a {
     }
 
     .hero {
+        --hero-size: 7rem;
         min-height: 100vh;
+    }
+
+    .hero-sub {
+        font-size: 3rem;
     }
 
     .rights {
         min-height: 100vh;
         padding-top: 15vh;
+    }
+
+    .rights-intro {
+        max-width: 705px;
+    }
+
+    .nacto .section-text {
+        font-size: 1rem;
     }
 
     .rights-logo {
