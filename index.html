@@ -1,858 +1,364 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-	<head>
-	    <meta charset="utf-8">
-	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>AltMobility Philippines</title>
-		<link rel="shortcut icon" type="image/png" href="favicon.ico">
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" integrity="sha384-/rJKQnzOkEo+daG0jMjU1IwwY9unxt1NBw3Ef2fmOJ3PW/TfAg2KXVoWwMZQZtw9" crossorigin="anonymous">
-		<!-- Fonts -->
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald&amp;family=Saira+Extra+Condensed&amp;display=swap">
-	  	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-	  	
-		<!-- SIDEBAR LINKS -->
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	    <!-- Our Custom CSS -->
-	    <link rel="stylesheet" href="./index.css?v=e26c7353">
-	    <!-- Scrollbar Custom CSS -->
-	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css" integrity="sha384-2Eef5h4vdx01fD0i6qvkDNrCPXRXiKc1D1fF12tgo1LvtNdDCWOOSJo2cgc0zivP" crossorigin="anonymous">
-	</head>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>AltMobility Philippines</title>
+        <link rel="icon" type="image/png" href="favicon.ico" />
+        <!-- Bootstrap 5 CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" integrity="sha384-/rJKQnzOkEo+daG0jMjU1IwwY9unxt1NBw3Ef2fmOJ3PW/TfAg2KXVoWwMZQZtw9" crossorigin="anonymous" />
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald&amp;family=Saira+Extra+Condensed&amp;display=swap" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
+        <link rel="stylesheet" href="./index.css?v=60e9b6f2" />
+    </head>
+    <body>
+        <!-- ==================== NAVIGATION ==================== -->
+        <nav class="site-nav sticky-top">
+            <div class="container-fluid d-flex align-items-center">
+                <button class="btn btn-outline-light menu-btn d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar" aria-controls="sidebar" aria-label="Open menu">
+                    <i class="fas fa-align-left"></i>
+                </button>
+                <a class="site-brand" href="#home">
+                    <img class="site-logo" src="https://res.cloudinary.com/kennmasing/image/upload/v1589304754/capstone1/altmobility2_j1errk.png" alt="AltMobility Philippines" />
+                </a>
+                <ul class="nav site-links d-none d-lg-flex">
+                    <li class="nav-item"><a class="nav-link" href="#billofrights">Commuter's Bill of Rights</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#history">Mass Transport</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#joinus">Halalan 2022</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#nacto">Nacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+                <form class="search-form d-none d-lg-flex" role="search">
+                    <input class="search-input" type="search" placeholder="Search" aria-label="Search" />
+                    <button class="search-btn" type="submit" aria-label="Search"><i class="fas fa-search fa-2x"></i></button>
+                </form>
+            </div>
+        </nav>
 
-	<body>
-		<!-------- B O D Y  S E C T I O N  S T A R T --------->
-		<section class="navbar-ender" data-z-index="1">
-			<!------------------------------------------------------- N A V B A R ------------------------------------------------------------->
-			<nav class="navbar navbar-expand-lg sticky-top navbar-desktop mb-0 d-flex justify-content-between" id="nav-home">
-				<div class="col-lg-3">
-					<a class="navbar-brand" href="#">
-						<img class="nav-logo img-fluid" src="https://res.cloudinary.com/kennmasing/image/upload/v1589304754/capstone1/altmobility2_j1errk.png" alt="AltMobility Philippines">
-					</a>
-				</div>
-				<div class="col-lg-6">
-					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon"></span>
-					</button>
-					<div class="collapse navbar-collapse" id="navbarSupportedContent">
-						<ul class="navbar-nav mr-auto d-flex justify-content-center">
-							<li class="nav-item active">
-								<a class="nav-link px-3 nav-txt-hdr text-center" href="#billofrights">Commuter's Bill of Rights <span class="sr-only">(current)</span></a>
-							</li>
-							<li class="nav-item">
-									<a class="nav-link px-3  nav-txt-hdr text-center" href="#history">Mass Transport</a>
-							</li>	
-							<li class="nav-item">
-									<a class="nav-link px-3  nav-txt-hdr text-center" href="#joinus">Halalan 2022</a>
-							</li>
-							<li class="nav-item">
-									<a class="nav-link px-3  nav-txt-hdr text-center" href="#nacto-desktop">Nacto</a>
-							</li>
-							<li class="nav-item">
-									<a class="nav-link px-3  nav-txt-hdr text-center" href="#contact">Contact</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-lg-3 ">
-					<form class="form-inline my-1 my-lg-0 d-flex justify-content-end">
-						<input class="form-control mr-sm-2 searchbar btn btn-outline-light rounded-pill" type="text" placeholder="Search" aria-label="Search">
-						<button class="btn my-2 my-sm-0 search-btn" type="submit"><i class="fas fa-search fa-2x"></i></button>
-					</form>
-				</div>
-			</nav>
+        <!-- ==================== MOBILE MENU ==================== -->
+        <div class="offcanvas offcanvas-start sidebar" tabindex="-1" id="sidebar" aria-label="Menu">
+            <div class="sidebar-header">
+                <img class="sidebar-logo" src="https://res.cloudinary.com/kennmasing/image/upload/v1589304754/capstone1/altmobility2_j1errk.png" alt="AltMobility Philippines" />
+                <button class="sidebar-close" type="button" data-bs-dismiss="offcanvas" aria-label="Close menu"><i class="fas fa-arrow-left"></i></button>
+            </div>
+            <ul class="sidebar-links list-unstyled">
+                <li><a class="sidebar-link" href="#home">Home</a></li>
+                <li><a class="sidebar-link" href="#billofrights">Bill of Rights</a></li>
+                <li><a class="sidebar-link" href="#history">Mass Transport</a></li>
+                <li><a class="sidebar-link" href="#joinus">Halalan 2022</a></li>
+                <li><a class="sidebar-link" href="#nacto">Nacto</a></li>
+                <li><a class="sidebar-link" href="#contact">Contact</a></li>
+            </ul>
+            <form class="search-form sidebar-search" role="search">
+                <input class="search-input" type="search" placeholder="Search" aria-label="Search" />
+                <button class="search-btn" type="submit" aria-label="Search"><i class="fas fa-search fa-2x"></i></button>
+            </form>
+        </div>
 
-			<!------------------------------------------------------- H O M E ------------------------------------------------------------->
-			<section class="home" id="home">
-				<!-- DESKTOP -->
-				<div class="d-flex justify-content-center align-items-center" >
-					<div class="container-fluid cto-desktop d-flex justify-content-center">
-						<div class="row d-block" data-aos="zoom-in" data-aos-delay="50">
-							<h2 class="commutersnaman text-center text-truncate cto-desktop">#COMMUTERSNAMAN</h2>
-							<p class="commutersnaman-sub mt-n5 pt-2 text-center text-truncate cto-desktop">J O I N &nbsp; T H E &nbsp; C O N V E R S A T I O N</p>
-						</div>
-					</div>
-				</div>
-				<!-- TABLET -->
-				<div class="d-flex justify-content-center align-items-center">
-					<div class="container-fluid cto-tab d-flex justify-content-center">
-						<div class="row d-block" data-aos="zoom-in" data-aos-delay="400">
-							<h2 class="commutersnaman text-center text-truncate cto-tab">#COMMUTERSNAMAN</h2>
-							<p class="commutersnaman-sub mt-n5 pt-4 text-center cto-tab">J O I N &nbsp; T H E &nbsp; C O N V E R S A T I O N</p>
-						</div>
-					</div>
-				</div>
-				<!-- MOBILE -->
-				<div class="cto-mobile d-flex justify-content-center align-items-center">
-					<div class="container-fluid cto-mobile d-flex justify-content-center">
-						<div class="row d-block" data-aos="zoom-in" data-aos-delay="400">
-							<h2 class="commutersnaman text-center text-truncate cto-mobile">#COMMUTERSNAMAN</h2>
-							<p class="commutersnaman-sub mt-n4 pt-1 text-center cto-mobile">J O I N &nbsp; T H E &nbsp; C O N V E R S A T I O N</p>
-						</div>
-					</div>
-				</div>
-			</section>
-			
-			<!------------------------------------------------------- S I D E B A R  M O B I L E ------------------------------------------------------------->
-		    <section class="container-fluid navbar-mobile" id="home-mobile">
-			    <div class="wrapper">
+        <main>
+            <!-- ==================== HOME ==================== -->
+            <section class="hero" id="home">
+                <div data-aos="zoom-in" data-aos-delay="50">
+                    <h1 class="hero-title">#COMMUTERSNAMAN</h1>
+                    <p class="hero-sub">J O I N &nbsp; T H E &nbsp; C O N V E R S A T I O N</p>
+                </div>
+            </section>
 
-			        <nav class="" id="sidebar">
-			            <div id="dismiss">
-			                <i class="fas fa-arrow-left"></i>
-			            </div>
-			            <div class="sidebar-header">
-			                <h4><img class="img-fluid sidebar-logo w-75" src="https://res.cloudinary.com/kennmasing/image/upload/v1589304754/capstone1/altmobility2_j1errk.png" alt="AltMobility Philippines"></h4>
-			            </div>
-			            <ul class="list-unstyled components">
-			                <p></p>
-			                <li>
-			                    <a class="dismiss2" href="#home">Home</a>
-			                </li>               
-			                <li>
-			                    <a class="dismiss2" href="#billofrights">Bill of Rights</a>
-			                </li>
-			                <li>
-			                    <a class="dismiss2" href="#history">Mass Transport</a>
-			                </li>
-			                <li>
-			                    <a class="dismiss2" href="#joinus">Halalan 2022</a>
-			                </li>
-			                <li>
-			                    <a class="dismiss2" href="#nacto-mobile">Nacto</a>
-			                </li>
-			                <li>
-			                    <a class="dismiss2" href="#contact">Contact</a>
-			                </li>
-			            </ul>
-			            <ul class="list-unstyled CTAs">
-			                <li>
-								<form class="form-inline col-12 col-sm card-body2 pb-5 ml-n3">
-									<input class="form-control mr-sm-2 btn btn-outline-light rounded-pill col-9 col-sm-9 searchbar" type="text" placeholder="Search" aria-label="Search">
-									<button class="btn my-2 my-sm-0 col-2 col-sm-2 search-btn" type="submit" data-z-index="10" ><i class="fas fa-search fa-2x"></i></button>
-								</form>
-			                </li>
-			            </ul>
-			        </nav>
+            <!-- ==================== BILL OF RIGHTS ==================== -->
+            <section class="rights" id="billofrights">
+                <img class="rights-logo" src="https://res.cloudinary.com/kennmasing/image/upload/v1589305389/capstone1/billofrightslogo_k1hiuv.png" alt="A Commuter's Bill of Rights" width="600" height="600" loading="lazy" />
+                <h2 class="section-title">A COMMUTER'S BILL OF RIGHTS</h2>
+                <p class="section-text rights-intro d-none d-lg-block">“The Magna Carta of Dignified Commuting”. The proposed bill fights for the rights of the daily commuter defined as someone who travels from one point to another using a combination of transport modes other than private vehicles. Everyone is a pedestrian at some point in the day. We want a life in the Philippines where the streets are for people to walk on, bike, and have a chat with acquaintances we meet along the way.</p>
+                <div class="row justify-content-center g-0 rights-row">
+                    <div class="card col-5 col-lg rights-card" data-aos="flip-left" data-aos-delay="400">
+                        <h3 class="rights-title">SAFE</h3>
+                        <img class="rights-icon" src="https://res.cloudinary.com/kennmasing/image/upload/v1589305363/capstone1/bikehelmet_wzhm6t.png" alt="" width="623" height="492" loading="lazy" />
+                        <p class="rights-text d-none d-lg-block">The safety of Filipino commuters and dedicated pedestrian infrastructure should be the top priority of the local transport authorities in Metro Manila.</p>
+                    </div>
+                    <div class="card col-5 col-lg rights-card" data-aos="flip-left" data-aos-delay="800">
+                        <h3 class="rights-title">RELIABLE</h3>
+                        <img class="rights-icon" src="https://res.cloudinary.com/kennmasing/image/upload/v1589305340/capstone1/reliable_ujuefh.png" alt="" width="623" height="492" loading="lazy" />
+                        <p class="rights-text d-none d-lg-block">Public transport operators should be as easy as possible for travellers. Facilities that are able provide up-to-date travel information should be made accessible.</p>
+                    </div>
+                    <div class="card col-5 col-lg rights-card" data-aos="flip-left" data-aos-delay="1200">
+                        <h3 class="rights-title">ACCESSIBLE</h3>
+                        <img class="rights-icon" src="https://res.cloudinary.com/kennmasing/image/upload/v1589305323/capstone1/accessible_b6lh0p.png" alt="" width="623" height="492" loading="lazy" />
+                        <p class="rights-text d-none d-lg-block">Public transport operators should be as easy as possible for travellers. Facilities that are able provide up-to-date travel information should be made accessible.</p>
+                    </div>
+                    <div class="card col-5 col-lg rights-card" data-aos="flip-left" data-aos-delay="1600">
+                        <h3 class="rights-title">COMFORTABLE</h3>
+                        <img class="rights-icon" src="https://res.cloudinary.com/kennmasing/image/upload/v1589305323/capstone1/comfortable_ufuasa.png" alt="" width="623" height="492" loading="lazy" />
+                        <p class="rights-text d-none d-lg-block">Recommendations to make rides more comfortable and less daunting for everyone, including families, seniors and wheelchair users.</p>
+                    </div>
+                    <div class="card col-5 col-lg rights-card" data-aos="flip-left" data-aos-delay="2000">
+                        <h3 class="rights-title">SUSTAINABLE</h3>
+                        <img class="rights-icon" src="https://res.cloudinary.com/kennmasing/image/upload/v1589305309/capstone1/environmentallysound_tyd3bs.png" alt="" width="623" height="492" loading="lazy" />
+                        <p class="rights-text d-none d-lg-block">Opt out of driving private vehicles and start encouraging Filipino commuters, from whichever walk-of-life, to take the public transport and have less carbon footprint.</p>
+                    </div>
+                </div>
+                <a class="more-btn" href="https://www.rappler.com/nation/237849-interview-senator-francis-pangilinan-commuters-rights-bill" target="_blank" rel="noopener">Know more about <strong>A Commuter's Bill of Rights</strong></a>
+            </section>
 
-			        <div class="card-body2" id="content">
-			            <nav class="navbar navbar-expand-lg nav-mobile-pg ">
-			                <div class="container-fluid ">
-								<div class="col-1 col-sm-1">
-				                    <button type="button" id="sidebarCollapse" class="btn btn-outline-light">
-				                        <i class="fas fa-align-left"></i>
-				                        <span></span>
-				                    </button>
-								</div>
-			                    <div class="col-11 col-sm-11 d-flex justify-content-center ml-n5">
-				                    <img src="https://res.cloudinary.com/kennmasing/image/upload/v1589304754/capstone1/altmobility2_j1errk.png" class="img-fluid w-50 ml-n5 nav-logo-lg" alt="AltMobility Philippines">
-				                    <img src="https://res.cloudinary.com/kennmasing/image/upload/v1589304754/capstone1/altmobility2_j1errk.png" class="img-fluid w-25 ml-n5 nav-logo-md" alt="AltMobility Philippines">
-				                    <img src="https://res.cloudinary.com/kennmasing/image/upload/v1589304754/capstone1/altmobility2_j1errk.png" class="img-fluid w-50 ml-n1 nav-logo-xs" alt="AltMobility Philippines">
-			                    </div>
-			                </div>
-			            </nav>
-			        </div>
-			    </div>
-		    </section>
-			
-			<!------------------------------------------------------- B I L L  O F  R I G H T S ------------------------------------------------------------->
-			<section class="card-body billofrights container-fluid no-gutters col-12" id="billofrights">	
-				<div class="card-body-desktop">
-					<div class="container-fluid bor-title">
-						<div class="card-body d-flex justify-content-center container-fluid col-12 p-0">
-							<div class="" >
-								<div class="d-flex justify-content-center mb-n3">
-									<img class="billsofrightslogo img-fluid" src="https://res.cloudinary.com/kennmasing/image/upload/v1589305389/capstone1/billofrightslogo_k1hiuv.png" alt="A Commuter's Bill of Rights">
-								</div>
-								<p class="billofrights-hdr sm-txt1 my-0">A COMMUTER'S BILL OF RIGHTS</p>
-								<div class="d-flex justify-content-center bor-desc-tablet">
-									<div class="w-50">
-										<p class="sm-txt2 mb-4 text-center">“The Magna Carta of Dignified Commuting”. The proposed bill fights for the rights of the daily commuter defined as someone who travels from one point to another using a combination of transport modes other than private vehicles. Everyone is a pedestrian at some point in the day. We want a life in the Philippines where the streets are for people to walk on, bike, and have a chat with acquaintances we meet along the way.</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					
-					<div class="card-group container-fluid bor-card-container mb-0 mt-n3 col-10">
-						<div class="row d-flex flex-wrap justify-content-center">
-							
-							<div class="card col-5 col-lg billofrights-card mx-2 my-2" data-aos="flip-left" data-aos-delay="400">
-								<div class="card-body d-flex justify-content-center p-0" >
-									<h4 class="smallheader-bor card-title mt-3 card-title-lg">SAFE</h4>
-								</div>
-								<div class="d-flex justify-content-center">
-									<img src="https://res.cloudinary.com/kennmasing/image/upload/v1589305363/capstone1/bikehelmet_wzhm6t.png" class="card-img-top img-fluid w-50 bor-icon-lg py-3" alt="">
-								</div>
-								<div class="card-body d-flex justify-content-center p-0">
-									<p class="card-text text-center sm-txt-lg-bor">The safety of Filipino commuters and dedicated pedestrian infrastructure should be the top priority of the local transport authorities in Metro Manila.</p>								
-								</div>
-							</div>
+            <!-- ==================== MASS TRANSPORT ==================== -->
+            <section class="rail" id="history">
+                <div class="row g-0 justify-content-center">
+                    <div class="col-12 col-lg-7 rail-main">
+                        <h2 class="section-title">MANILA METRO RAIL NETWORK</h2>
+                        <h3 class="line-group">EXISTING LINES</h3>
+                        <div class="row justify-content-center g-0">
+                            <div class="card col-5 col-lg line-card" data-aos="flip-left" data-aos-delay="400">
+                                <h4 class="line-title"><span class="line-marker" style="--line: var(--line-pnr)"></span>PNR</h4>
+                                <img class="line-icon" src="https://res.cloudinary.com/kennmasing/image/upload/v1589305098/capstone1/pnr_n5peao.png" alt="" width="600" height="600" loading="lazy" />
+                            </div>
+                            <div class="card col-5 col-lg line-card" data-aos="flip-left" data-aos-delay="450">
+                                <h4 class="line-title"><span class="line-marker" style="--line: var(--line-lrt1)"></span>LRT-1</h4>
+                                <img class="line-icon" src="https://res.cloudinary.com/kennmasing/image/upload/v1589305095/capstone1/lrt1_vf85gv.png" alt="" width="600" height="600" loading="lazy" />
+                            </div>
+                            <div class="card col-5 col-lg line-card" data-aos="flip-left" data-aos-delay="550">
+                                <h4 class="line-title"><span class="line-marker" style="--line: var(--line-lrt2)"></span>LRT-2</h4>
+                                <img class="line-icon" src="https://res.cloudinary.com/kennmasing/image/upload/v1589305097/capstone1/lrt2_ncvuf0.png" alt="" width="600" height="600" loading="lazy" />
+                            </div>
+                            <div class="card col-5 col-lg line-card" data-aos="flip-left" data-aos-delay="500">
+                                <h4 class="line-title"><span class="line-marker" style="--line: var(--line-mrt3)"></span>MRT-3</h4>
+                                <img class="line-icon" src="https://res.cloudinary.com/kennmasing/image/upload/v1589305092/capstone1/mrt3_ksdivy.png" alt="" width="600" height="600" loading="lazy" />
+                            </div>
+                        </div>
+                        <h3 class="line-group">PROPOSED LINES</h3>
+                        <div class="row justify-content-center g-0">
+                            <div class="card col-5 col-lg line-card" data-aos="flip-left" data-aos-delay="600">
+                                <h4 class="line-title"><span class="line-marker" style="--line: var(--line-4)"></span>LINE 4</h4>
+                                <img class="line-icon" src="https://res.cloudinary.com/kennmasing/image/upload/v1589305098/capstone1/mrt4_kph6bl.png" alt="" width="600" height="600" loading="lazy" />
+                            </div>
+                            <div class="card col-5 col-lg line-card" data-aos="flip-left" data-aos-delay="650">
+                                <h4 class="line-title"><span class="line-marker" style="--line: var(--line-5)"></span>LINE 5</h4>
+                                <img class="line-icon" src="https://res.cloudinary.com/kennmasing/image/upload/v1589305094/capstone1/mrt5_mqgt2m.png" alt="" width="600" height="600" loading="lazy" />
+                            </div>
+                            <div class="card col-5 col-lg line-card" data-aos="flip-left" data-aos-delay="700">
+                                <h4 class="line-title"><span class="line-marker" style="--line: var(--line-6)"></span>LINE 6</h4>
+                                <img class="line-icon" src="https://res.cloudinary.com/kennmasing/image/upload/v1589305097/capstone1/mrt6_idfupu.png" alt="" width="600" height="600" loading="lazy" />
+                            </div>
+                            <div class="card col-5 col-lg line-card" data-aos="flip-left" data-aos-delay="750">
+                                <h4 class="line-title"><span class="line-marker" style="--line: var(--line-7)"></span>LINE 7</h4>
+                                <img class="line-icon" src="https://res.cloudinary.com/kennmasing/image/upload/v1589305095/capstone1/mrt7_au9azo.png" alt="" width="600" height="600" loading="lazy" />
+                            </div>
+                        </div>
+                        <div class="row justify-content-center g-0">
+                            <div class="card col-5 col-lg line-card" data-aos="flip-left" data-aos-delay="800">
+                                <h4 class="line-title"><span class="line-marker" style="--line: var(--line-8)"></span>LINE 8</h4>
+                                <img class="line-icon" src="https://res.cloudinary.com/kennmasing/image/upload/v1589305100/capstone1/mrt8_fijo6a.png" alt="" width="600" height="600" loading="lazy" />
+                            </div>
+                            <div class="card col-5 col-lg line-card" data-aos="flip-left" data-aos-delay="850">
+                                <h4 class="line-title"><span class="line-marker" style="--line: var(--line-9)"></span>LINE 9</h4>
+                                <img class="line-icon" src="https://res.cloudinary.com/kennmasing/image/upload/v1589305101/capstone1/mrt9_dqjyhb.png" alt="" width="600" height="600" loading="lazy" />
+                            </div>
+                            <div class="card col-5 col-lg line-card" data-aos="flip-left" data-aos-delay="900">
+                                <h4 class="line-title"><span class="line-marker" style="--line: var(--line-pnr-north)"></span>PNR NORTH</h4>
+                                <img class="line-icon" src="https://res.cloudinary.com/kennmasing/image/upload/v1589305099/capstone1/pnr-north_xbkx0l.png" alt="" width="600" height="600" loading="lazy" />
+                            </div>
+                            <div class="card col-5 col-lg line-card" data-aos="flip-left" data-aos-delay="950">
+                                <h4 class="line-title"><span class="line-marker" style="--line: var(--line-pnr-south)"></span>PNR SOUTH</h4>
+                                <img class="line-icon" src="https://res.cloudinary.com/kennmasing/image/upload/v1589305100/capstone1/pnr-south_sjbrgk.png" alt="" width="600" height="600" loading="lazy" />
+                            </div>
+                        </div>
+                        <a class="more-btn" href="https://www.youtube.com/watch?v=CJ9F2Fnweuo&amp;feature=youtu.be" target="_blank" rel="noopener">Know more about the <strong>JICA Dream Plan</strong></a>
+                    </div>
+                    <div class="col-lg-4 d-none d-lg-block rail-map" data-aos="flip-right" data-aos-delay="100">
+                        <img class="img-fluid" src="https://res.cloudinary.com/kennmasing/image/upload/v1589305049/capstone1/railnetwork_n36i54.jpg" alt="Metro Manila rail network map" width="893" height="1434" loading="lazy" />
+                    </div>
+                </div>
+            </section>
 
-							<div class="card col-5 col-md-5 col-lg billofrights-card mx-2 my-2" data-aos="flip-left" data-aos-delay="800">
-								<div class="card-body d-flex justify-content-center p-0">
-									<h4 class="smallheader-bor card-title mt-3 card-title-lg">RELIABLE</h4>
-								</div>
-								<div class="d-flex justify-content-center">
-									<img src="https://res.cloudinary.com/kennmasing/image/upload/v1589305340/capstone1/reliable_ujuefh.png" class="card-img-top img-fluid w-50 bor-icon-lg py-3" alt="">
-								</div>	
-								<div class="card-body d-flex justify-content-center p-0">
-									<p class="card-text text-center sm-txt-lg-bor">Public transport operators should be as easy as possible for travellers. Facilities that are able provide up-to-date travel information should be made accessible.</p>
-								</div>
-							</div>
+            <!-- ==================== JOIN US / HALALAN 2022 ==================== -->
+            <section class="joinus" id="joinus">
+                <div class="row g-0">
+                    <div class="col-12 col-md-8 offset-md-2" data-aos="fade-right" data-aos-delay="200">
+                        <article class="article-card">
+                            <small class="article-label">FEATURED ARTICLE</small>
+                            <h2 class="article-quote">"Every empty seat in a moving vehicle is a wasted resource."</h2>
+                            <a class="article-link" href="https://web.facebook.com/notes/ang-pahayagang-plaridel/ibat-ibang-kwento-ng-mga-komyuter-pinakinggan-sa-usapang-commuters-naman/2435969669772322/?__tn__=H-R" target="_blank" rel="noopener">READ MORE</a>
+                        </article>
+                    </div>
+                </div>
+                <div class="row g-0">
+                    <div class="col-12 col-md-8 offset-md-2 d-flex justify-content-end" data-aos="fade-left" data-aos-delay="200">
+                        <div class="halalan">
+                            <img class="halalan-icon" src="https://res.cloudinary.com/kennmasing/image/upload/v1589304996/capstone1/fingerprintwhite_wefl6b.png" alt="" width="1583" height="2277" loading="lazy" />
+                            <div class="halalan-text">
+                                <h2 class="halalan-title">H A L A L A N</h2>
+                                <p class="halalan-year">2 0 2 2</p>
+                                <hr class="halalan-rule" />
+                                <p class="halalan-cta">MAGPA-REHISTRO, BUMOTO!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-							<div class="card col-5 col-md-5 col-lg billofrights-card mx-2 my-2" data-aos="flip-left" data-aos-delay="1200">
-								<div class="card-body d-flex justify-content-center p-0">
-									<h4 class="smallheader-bor card-title mt-3 card-title-lg">ACCESSIBLE</h4>
-								</div>
-								<div class="d-flex justify-content-center">
-									<img src="https://res.cloudinary.com/kennmasing/image/upload/v1589305323/capstone1/accessible_b6lh0p.png" class="card-img-top img-fluid w-50 bor-icon-lg py-3" alt="">
-								</div>	
-								<div class="card-body d-flex justify-content-center p-0">
-									<p class="card-text text-center sm-txt-lg-bor">Public transport operators should be as easy as possible for travellers. Facilities that are able provide up-to-date travel information should be made accessible.</p>								
-								</div>
-							</div>
+            <!-- ==================== NACTO ==================== -->
+            <section class="nacto" id="nacto">
+                <div class="row g-0 justify-content-center align-items-center">
+                    <div class="col-12 col-lg-3 order-lg-last">
+                        <h2 class="section-title nacto-title">DESIGNING TO MOVE PEOPLE</h2>
+                        <p class="section-text d-none d-lg-block">Transit streets are designed to move people, and should be evaluated in part by their ability to do so. Whether in dense urban cores, on conventional arterials, or along neighborhood spines, transit is the most spatially efficient mode.</p>
+                    </div>
+                    <div class="col-12 col-lg-8 row g-0">
+                        <div class="col-6 col-lg-3 nacto-item">
+                            <p class="nacto-caption">CAR LANE</p>
+                            <img class="nacto-gif" src="https://res.cloudinary.com/kennmasing/image/upload/v1589304907/capstone1/nacto-car_t6wnpf.gif" alt="Car Lane animation" width="126" height="400" loading="lazy" />
+                            <p class="nacto-caption">1600 PEOPLE PER HOUR</p>
+                        </div>
+                        <div class="col-6 col-lg-3 nacto-item">
+                            <p class="nacto-caption">BIKE LANE</p>
+                            <img class="nacto-gif" src="https://res.cloudinary.com/kennmasing/image/upload/v1589304906/capstone1/nacto-bike_ospf0e.gif" alt="Bike Lane animation" width="126" height="400" loading="lazy" />
+                            <p class="nacto-caption">7500 PEOPLE PER HOUR</p>
+                        </div>
+                        <div class="col-6 col-lg-3 nacto-item">
+                            <p class="nacto-caption">SIDEWALK</p>
+                            <img class="nacto-gif" src="https://res.cloudinary.com/kennmasing/image/upload/v1589304928/capstone1/nacto-pedestrian_o8gaml.gif" alt="Sidewalk animation" width="126" height="400" loading="lazy" />
+                            <p class="nacto-caption">9000 PEOPLE PER HOUR</p>
+                        </div>
+                        <div class="col-6 col-lg-3 nacto-item">
+                            <p class="nacto-caption">TRANSITWAY</p>
+                            <img class="nacto-gif" src="https://res.cloudinary.com/kennmasing/image/upload/v1589304884/capstone1/nacto-transit_r9f14m.gif" alt="Transitway animation" width="126" height="400" loading="lazy" />
+                            <p class="nacto-caption">25000 PEOPLE PER HOUR</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-							<div class="card col-5 col-md-5 col-lg billofrights-card mx-2 my-2" data-aos="flip-left" data-aos-delay="1600">
-								<div class="card-body d-flex justify-content-center p-0">
-									<h4 class="smallheader-bor card-title mt-3 card-title-lg">COMFORTABLE</h4>
-								</div>
-								<div class="d-flex justify-content-center">
-									<img src="https://res.cloudinary.com/kennmasing/image/upload/v1589305323/capstone1/comfortable_ufuasa.png" class="card-img-top img-fluid w-50 bor-icon-lg py-3" alt="">
-								</div>	
+            <!-- ==================== CONTACT ==================== -->
+            <section class="contact" id="contact">
+                <div class="row g-0">
+                    <div class="col-12 col-lg-6 contact-col">
+                        <form class="contact-block">
+                            <h2 class="contact-title">SIGN-UP FOR OUR NEWSLETTER</h2>
+                            <p class="contact-sub">Be updated on all our events.</p>
+                            <input type="email" class="form-control mb-3" placeholder="Email *" aria-label="Email" />
+                            <button type="submit" class="btn btn-outline-light rounded-pill px-5">Submit</button>
+                        </form>
+                        <div class="contact-block">
+                            <h3 class="contact-heading">FOLLOW-US!</h3>
+                            <div class="social">
+                                <a class="social-link" href="https://www.facebook.com/AltMobilityPH/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                                <a class="social-link" href="https://twitter.com/AltMobilityPH" target="_blank" rel="noopener" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                                <a class="social-link" href="https://www.instagram.com/explore/tags/altmobilityph/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                                <a class="social-link" href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                        <div class="contact-block">
+                            <h3 class="contact-heading">ENQUIRIES</h3>
+                            <p class="contact-text">For Business Enquiries</p>
+                            <p class="contact-text">cd_bd@altmobility.com.ph</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 contact-col">
+                        <form class="contact-block">
+                            <h2 class="contact-title">SEND US A MESSAGE</h2>
+                            <p class="contact-sub">We'd love to hear from you.</p>
+                            <div class="row g-2 mb-3">
+                                <div class="col-md-6"><input type="text" class="form-control" placeholder="First Name *" aria-label="First name" /></div>
+                                <div class="col-md-6"><input type="text" class="form-control" placeholder="Last Name *" aria-label="Last name" /></div>
+                            </div>
+                            <select class="form-select mb-3" aria-label="Affiliation">
+                                <option selected>Affiliation *</option>
+                                <option value="1">Civil Society or non-government organization</option>
+                                <option value="2">Government</option>
+                                <option value="3">Media</option>
+                                <option value="4">Private sector enterprise/business</option>
+                                <option value="5">Student/Academic/Research organization</option>
+                                <option value="6">Multilateral organization or development agency</option>
+                                <option value="7">Others</option>
+                            </select>
+                            <input type="email" class="form-control mb-3" placeholder="Email *" aria-label="Email" />
+                            <textarea class="form-control mb-3" rows="6" placeholder="Message *" aria-label="Message"></textarea>
+                            <h3 class="captcha-title">CAPTCHA</h3>
+                            <p class="captcha-text">This question is for testing whether or not you are a human visitor and to prevent automated spam submissions.</p>
+                            <div class="card captcha-card mb-3">
+                                <div class="form-check mb-0">
+                                    <input class="form-check-input" type="checkbox" id="captcha-check" />
+                                    <label class="form-check-label" for="captcha-check">I'm not a robot</label>
+                                </div>
+                                <img class="captcha-img" src="https://res.cloudinary.com/kennmasing/image/upload/v1589304809/capstone1/captcha_ssudqu.png" alt="CAPTCHA (demo)" width="1024" height="1024" loading="lazy" />
+                            </div>
+                            <button type="submit" class="btn btn-outline-light rounded-pill px-5">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
 
-								<div class="card-body d-flex justify-content-center p-0">
-									<p class="card-text text-center sm-txt-lg-bor">Recommendations to make rides more comfortable and less daunting for everyone, including families, seniors and wheelchair users.</p>								
-								</div>
-							</div>
+        <!-- ==================== FOOTER ==================== -->
+        <footer class="site-footer">
+            <div class="footer-top">
+                <a href="#home"><img class="footer-logo" src="https://res.cloudinary.com/kennmasing/image/upload/v1589304754/capstone1/altmobility2_j1errk.png" alt="AltMobility Philippines" /></a>
+                <a class="footer-cta" href="https://twitter.com/hashtag/commutersnaman?lang=en" target="_blank" rel="noopener">J O I N &nbsp; T H E &nbsp; C O N V E R S A T I O N</a>
+                <button class="btn btn-outline-light rounded-pill footer-btn" type="button">Contribute</button>
+            </div>
+            <div class="social footer-social d-lg-none">
+                <a class="social-link" href="https://www.facebook.com/AltMobilityPH/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a class="social-link" href="https://twitter.com/AltMobilityPH" target="_blank" rel="noopener" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a class="social-link" href="https://www.instagram.com/explore/tags/altmobilityph/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a class="social-link" href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <hr class="footer-rule" />
+            <div class="footer-bottom">
+                <small class="footer-copy">&copy; 2019 <strong>AltMobility Philippines</strong> | All rights reserved</small>
+                <ul class="footer-legal list-unstyled">
+                    <li><a href="#">A-Z-SITE INDEX</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="#">COPYRIGHT</a></li>
+                    <li><a href="#">PRIVACY NOTICE</a></li>
+                    <li><a href="#">TERMS OF USE</a></li>
+                </ul>
+            </div>
+        </footer>
 
-							<div class="card col-5 col-md-5 col-lg billofrights-card mx-2 my-2" data-aos="flip-left" data-aos-delay="2000">
-								<div class="card-body d-flex justify-content-center p-0">
-									<h4 class="smallheader-bor card-title mt-3 card-title-lg">SUSTAINABLE</h4>
-								</div>
-								<div class="d-flex justify-content-center">
-									<img src="https://res.cloudinary.com/kennmasing/image/upload/v1589305309/capstone1/environmentallysound_tyd3bs.png" class="card-img-top img-fluid w-50 bor-icon-lg py-3" alt="">
-								</div>	
-								<div class="card-body d-flex justify-content-center p-0">
-									<p class="card-text text-center sm-txt-lg-bor">Opt out of driving private vehicles and start encouraging Filipino commuters, from whichever walk-of-life, to take the public transport and have less carbon footprint.</p>
-								</div>
-							</div>
-						</div>
-						
-					</div>  
-
-			        <button class="billofrights-btn mt-2"><a class="knowmore" href="https://www.rappler.com/nation/237849-interview-senator-francis-pangilinan-commuters-rights-bill" target="_blank" rel="noopener" >Know more about <strong>A Commuter's Bill of Rights</strong></a></button>
-				</div>
-		    </section>
-
-			<!------------------------------------------------------- H I S T O R Y ------------------------------------------------------------->
-			<section class="history d-flex justify-content-center align-items-center" id="history">	
-				<div class="card-body col-lg-7 offset-lg-l">
-					<div class="history-card-container history-container container-fluid">
-						<div class="card-body d-flex justify-content-center container-fluid col-10 col-md-5 col-lg p-0 history-title">
-							<div class="">
-								<p class="history-hdr sm-txt1 my-1">MANILA METRO RAIL NETWORK</p>
-							</div>
-						</div>
-					</div>
-
-					<div class="history-title-mobile d-flex justify-content-center">
-						<div class="px-0 d-flex justify-content-center">
-							<div class="d-flex align-items-center">	
-								<span class="sm-txt1-mobile p-0">MANILA COMPREHENSIVE RAILWAY NETWORK</span>
-							</div>
-						</div>
-					</div>
-				
-					<div class="mb-4">
-						<div class="card-group container-fluid">
-							<div>
-								<h3 class="pl-2 font-weight-bold history-hdr-1 mb-n2">EXISTING LINES</h3>
-							</div>
-							<div class="d-flex justify-content-center">
-								<h3 class="pl-2 font-weight-bold history-hdr-2 pt-3">EXISTING LINES</h3>
-							</div>
-
-							<div class="row d-flex flex-wrap justify-content-center">
-
-								<div class="card col-5 col-md-5 col-lg history-card mx-2 my-2" data-aos="flip-left" data-aos-delay="400">
-									<div class="card-body d-flex justify-content-center p-0">
-										<h5 class="card-title my-0 p-0"><span class="ticker-pnr mr-3"></span>PNR</h5>
-									</div>
-									<div class="d-flex justify-content-center">
-										<img src="https://res.cloudinary.com/kennmasing/image/upload/v1589305098/capstone1/pnr_n5peao.png" class="card-img-top img-fluid pnr-icon w-75" alt="">
-									</div>
-								</div>
-								<div class="card col-5 col-md-5 col-lg history-card mx-2 my-2" data-aos="flip-left" data-aos-delay="450">
-									<div class="card-body d-flex justify-content-center p-0">
-										<h5 class="card-title my-0 p-0"><span class="ticker-lrt1 mr-3"></span>LRT-1</h5>
-									</div>
-									<div class="d-flex justify-content-center">
-										<img src="https://res.cloudinary.com/kennmasing/image/upload/v1589305095/capstone1/lrt1_vf85gv.png" class="card-img-top img-fluid lrt1-icon w-75" alt="">
-									</div>
-								</div>
-								<div class="card col-5 col-md-5 col-lg history-card mx-2 my-2" data-aos="flip-left" data-aos-delay="550">
-									<div class="card-body d-flex justify-content-center p-0">
-										<h5 class="card-title my-0 p-0"><span class="ticker-lrt2 mr-3"></span>LRT-2</h5>
-									</div>
-									<div class="d-flex justify-content-center">
-										<img src="https://res.cloudinary.com/kennmasing/image/upload/v1589305097/capstone1/lrt2_ncvuf0.png" class="card-img-top img-fluid lrt2-icon w-75" alt="">
-									</div>
-								</div>
-								<div class="card col-5 col-md-5 col-lg history-card mx-2 my-2" data-aos="flip-left" data-aos-delay="500">
-									<div class="card-body d-flex justify-content-center p-0">
-										<h5 class="card-title my-0 p-0"><span class="ticker-mrt3 mr-3"></span>MRT-3</h5>
-									</div>
-									<div class="d-flex justify-content-center">
-										<img src="https://res.cloudinary.com/kennmasing/image/upload/v1589305092/capstone1/mrt3_ksdivy.png" class="card-img-top img-fluid mrt3-icon w-75" alt="">
-									</div>
-								</div>
-
-							</div> 
-						</div>
-					</div>
-
-					<div>
-						<div class="card-group container-fluid">
-							<div>
-								<h3 class="pl-2 font-weight-bold history-hdr-1 mb-n2">PROPOSED LINES</h3>
-							</div>
-
-							<div class="d-flex justify-content-center">
-								<h3 class="font-weight-bold history-hdr-2"> PROPOSED LINES </h3>
-							</div>
-
-							<div class="row d-flex flex-wrap justify-content-center">
-								<div class="container-fluid">
-									<div class="row d-flex flex-wrap justify-content-center">
-										<div class="card col-5 col-md-5 col-lg history-card mx-2 my-2" data-aos="flip-left" data-aos-delay="600">
-											<div class="card-body d-flex justify-content-center p-0">
-												<h5 class="card-title my-0 p-0"><span class="ticker-line4 mr-3"></span>LINE 4</h5>
-											</div>
-											<div class="d-flex justify-content-center">
-												<img src="https://res.cloudinary.com/kennmasing/image/upload/v1589305098/capstone1/mrt4_kph6bl.png" class="card-img-top img-fluid pnr-icon w-75" alt="">
-											</div>
-										</div>
-
-										<div class="card col-5 col-md-5 col-lg history-card mx-2 my-2" data-aos="flip-left" data-aos-delay="650">
-											<div class="card-body d-flex justify-content-center p-0">
-												<h5 class="card-title my-0 p-0"><span class="ticker-line5 mr-3"></span>LINE 5</h5>
-											</div>
-											<div class="d-flex justify-content-center">
-												<img src="https://res.cloudinary.com/kennmasing/image/upload/v1589305094/capstone1/mrt5_mqgt2m.png" class="card-img-top img-fluid cancelledline-icon w-75" alt="">
-											</div>
-										</div>
-
-										<div class="card col-5 col-md-5 col-lg history-card mx-2 my-2" data-aos="flip-left" data-aos-delay="700">
-											<div class="card-body d-flex justify-content-center p-0">
-												<h5 class="card-title my-0 p-0"><span class="ticker-line6 mr-3"></span>LINE 6</h5>
-											</div>
-											<div class="d-flex justify-content-center">
-												<img src="https://res.cloudinary.com/kennmasing/image/upload/v1589305097/capstone1/mrt6_idfupu.png" class="card-img-top img-fluid lrt1-icon w-75" alt="">
-											</div>
-										</div>
-
-										<div class="card col-5 col-md-5 col-lg history-card mx-2 my-2" data-aos="flip-left" data-aos-delay="750">
-											<div class="card-body d-flex justify-content-center p-0">
-												<h5 class="card-title my-0 p-0"><span class="ticker-line7 mr-3"></span>LINE 7</h5>
-											</div>
-											<div class="d-flex justify-content-center">
-												<img src="https://res.cloudinary.com/kennmasing/image/upload/v1589305095/capstone1/mrt7_au9azo.png" class="card-img-top img-fluid mrt3-icon w-75" alt="">
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div class="container-fluid">
-									<div class="row d-flex flex-wrap justify-content-center">	
-
-										<div class="card col-5 col-md-5 col-lg history-card mx-2 my-2" data-aos="flip-left" data-aos-delay="800">
-											<div class="card-body d-flex justify-content-center p-0">
-												<h5 class="card-title my-0 p-0"><span class="ticker-line8 mr-3"></span>LINE 8</h5>
-											</div>
-											<div class="d-flex justify-content-center">
-												
-												<img src="https://res.cloudinary.com/kennmasing/image/upload/v1589305100/capstone1/mrt8_fijo6a.png" class="card-img-top img-fluid lrt2-icon w-75" alt="">
-											</div>
-										</div>
-
-										<div class="card col-5 col-md-5 col-lg history-card mx-2 my-2" data-aos="flip-left" data-aos-delay="850">
-											<div class="card-body d-flex justify-content-center p-0">
-												<h5 class="card-title my-0 p-0"><span class="ticker-line9 mr-3"></span>LINE 9</h5>
-											</div>
-											<div class="d-flex justify-content-center">
-												<img src="https://res.cloudinary.com/kennmasing/image/upload/v1589305101/capstone1/mrt9_dqjyhb.png" class="card-img-top img-fluid lrt1-icon w-75" alt="">
-											</div>
-										</div>
-
-										<div class="card col-5 col-md-5 col-lg history-card mx-2 my-2" data-aos="flip-left" data-aos-delay="900">
-											<div class="card-body d-flex justify-content-center p-0">
-												<h5 class="card-title my-0 p-0"><span class="ticker-pnr-north mr-1"></span>PNR NORTH</h5>
-											</div>
-											<div class="d-flex justify-content-center">
-												<img src="https://res.cloudinary.com/kennmasing/image/upload/v1589305099/capstone1/pnr-north_xbkx0l.png" class="card-img-top img-fluid mrt3-icon w-75" alt="">
-											</div>
-										</div>
-
-										<div class="card col-5 col-md-5 col-lg history-card mx-2 my-2" data-aos="flip-left" data-aos-delay="950">
-											<div class="card-body d-flex justify-content-center p-0">
-												<h5 class="card-title my-0 p-0"><span class="ticker-pnr-south mr-1"></span>PNR SOUTH</h5>
-											</div>
-											<div class="d-flex justify-content-center">
-												<img src="https://res.cloudinary.com/kennmasing/image/upload/v1589305100/capstone1/pnr-south_sjbrgk.png" class="card-img-top img-fluid lrt2-icon w-75" alt="">
-											</div>
-										</div>
-									</div>  
-								</div>
-							</div>
-						</div>
-					</div>
-
-			        <button class="billofrights-btn mb-1" ><a class="knowmore" href="https://www.youtube.com/watch?v=CJ9F2Fnweuo&feature=youtu.be" target="_blank" rel="noopener">Know more about the <strong>JICA Dream Plan</strong></a></button>
-				</div>
-				
-				<div class="col-lg-4 ml-0 railnetwork" data-aos="flip-right" data-aos-delay="100">
-					<img src="https://res.cloudinary.com/kennmasing/image/upload/v1589305049/capstone1/railnetwork_n36i54.jpg" class="card-img-top img-fluid railnetwork-map h-75" alt="Metro Manila rail network map">
-				</div>
-		    </section>
-		    <!-- data-aos="zoom-in" data-aos-delay="50" -->
-
-
-		   <!-------------------------------------------------- S T A R T   O F   J O I N    U S ---------------------------------------------------->
-		    <section class="joinus container-fluid d-flex justify-content-center" id="joinus" data-z-index="2">
-				<div class="d-flex justify-content-center align-items-top joinus-desktop" >
-					<div class="row h-95 w-100" >
-						<div class="col-md-8 col-lg-8 offset-md-2 offset-lg-2 d-block justify-content-start" data-aos="fade-right" data-aos-delay="200"> 
-							<div class="d-block">
-								<div class="card col-sm-8 d-flex justify-content-start joinus-cto"  style="max-width: 55rem;">
-									<div class="card-header bg-transparent border-light">
-										<small>FEATURED ARTICLE</small>
-									</div>
-									<div class="card-body text-success">
-										<h5 class="card-title">"Every empty seat in a moving vehicle is a wasted resource."</h5>
-									</div>
-									<div class="card-footer bg-transparent border-light">
-										<small><a class="readmore" href="https://web.facebook.com/notes/ang-pahayagang-plaridel/ibat-ibang-kwento-ng-mga-komyuter-pinakinggan-sa-usapang-commuters-naman/2435969669772322/?__tn__=H-R" target="_blank" rel="noopener">READ MORE</a></small>
-									</div>
-								</div>
-							</div>
-						</div>	
-
-						<div class="col-md-8 col-lg-8 offset-md-2 offset-lg-2 d-flex align-items-end d-block justify-content-end halalanrow" data-aos="fade-left" data-aos-delay="200">
-							<div class="card halalan" style="max-width: 540px;"> 
-								<div class="row no-gutters d-flex justify-content-center">
-									<div class="d-flex justify-content-center">	
-										<div class="card-body2 mr-0 col-md-4 col-lg-4 d-flex justify-content-end mt-2">
-											<img src="https://res.cloudinary.com/kennmasing/image/upload/v1589304996/capstone1/fingerprintwhite_wefl6b.png" class="card-img fingerprint img-fluid w-50 h-75" alt="">
-										</div>
-										<div class="col-md-8 col-lg-8 d-flex justify-content-start mb-5">
-											<div class="card-body2 halalan-container">
-												<h5 class="card-title halalan-desktop text-center">H A L A L A N</h5>
-												<p class="card-text text-center halalan-desktop mt-n3">2 0 2 2</p>
-												<hr class="hrcolor mt-n2">
-												<p class="card-text text-center card-footer mt-n4"><small class="halalan">MAGPA-REHISTRO, BUMOTO!</small></p>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="d-flex justify-content-center align-items-top joinus-mobile" data-aos="zoom-in-up" data-aos-delay="200">
-					<div class="row w-100">
-						
-						<div class="col-sm-8 col-md-8 col-lg-8 offset-md-2 offset-lg-2 d-flex"> 
-							<div class="d-block">
-								<div class="card col-sm-8 d-flex justify-content-start joinus-cto">
-									<div class="card-header bg-transparent border-light">
-										<small>FEATURED ARTICLE</small>
-									</div>
-									<div class="card-body text-success">
-										<h5 class="card-title">"Every empty seat in a moving vehicle is a wasted resource."</h5>
-									</div>
-									<div class="card-footer bg-transparent border-light">
-										<small><a class="readmore" href="https://web.facebook.com/notes/ang-pahayagang-plaridel/ibat-ibang-kwento-ng-mga-komyuter-pinakinggan-sa-usapang-commuters-naman/2435969669772322/?__tn__=H-R" target="_blank" rel="noopener">READ MORE</a></small>
-									</div>
-								</div>
-							</div>
-						</div>	
-						
-
-						<div class="col-sm-8 col-md-8 col-lg-8 offset-md-2 offset-lg-2 d-flex align-items-end d-block justify-content-end halalanrow">
-							<div class="card halalan" style="max-width: 360px;"> 
-								<div class="row no-gutters d-flex justify-content-center">
-									<div class="d-flex justify-content-center">
-										<div class="card-body2 mr-0 col-sm-4 col-md-4 col-lg-4 d-flex justify-content-end mt-0">
-											<img src="https://res.cloudinary.com/kennmasing/image/upload/v1589304996/capstone1/fingerprintwhite_wefl6b.png" class="card-img fingerprint img-fluid w-50 h-75" alt="">
-										</div>
-										<div class="col-sm-8 col-md-8 col-lg-8 d-flex justify-content-start mb-3">
-											<div class="card-body2 halalan-container">
-												<h6 class="card-title halalan-mobile text-center">H A L A L A N</h6>
-												<p class="card-text text-center halalan-mobile mt-n4">2 0 2 2</p>
-												<p class="card-body2 card-text text-center card-footer border-light mt-n3 py-0"><small class="halalan-mobile">MAGPA-REHISTRO, BUMOTO!</small></p>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-		    </section>
-
-		   <!-------------------------------------------------- N A C T O  D E S K T O P ---------------------------------------------------->
-			<section class="nacto-desktop d-flex justify-content-center align-items-center container-fluid regular-wrapper" id="nacto-desktop">
-				<div class="card-body2 d-flex justify-content-center align-items-center p-0 col-lg-12 container-fluid">
-					<div class="col-md-8 col-lg-8 d-flex justify-content-center container-fluid">
-						<div class="col-md-12 col-lg-12 d-flex justify-content-center">	
-							<div class="col-md-3 col-lg-3 d-block">
-								<h5 class="smallheader-nacto card-title my-0 p-0 text-center col-md col-lg">CAR LANE</h5>
-								<div class="d-flex justify-content-center">
-									<img class="col-md col-lg img-fluid w-100" src="https://res.cloudinary.com/kennmasing/image/upload/v1589304907/capstone1/nacto-car_t6wnpf.gif" alt="">
-								</div>
-								<h5 class="smallheader-nacto card-title my-0 p-0 text-center col-md col-lg">1600 PEOPLE PER HOUR</h5>
-							</div>
-							<div class="col-md-3 col-lg-3 d-block">
-								<h5 class="smallheader-nacto card-title my-0 p-0 text-center col-md col-lg">BIKE LANE</h5>
-								<div class="d-flex justify-content-center">
-									<img class="col-md col-lg img-fluid w-100 " src="https://res.cloudinary.com/kennmasing/image/upload/v1589304906/capstone1/nacto-bike_ospf0e.gif" alt="">
-								</div>
-								<h5 class="smallheader-nacto card-title my-0 p-0 text-center col-md col-lg">7500 PEOPLE PER HOUR</h5>
-							</div>
-							<div class="col-md-3 col-lg-3 d-block">
-								<h5 class="smallheader-nacto card-title my-0 p-0 text-center col-md col-lg">SIDEWALK</h5>
-								<div class="d-flex justify-content-center">
-									<img class="col-md col-lg img-fluid w-100" src="https://res.cloudinary.com/kennmasing/image/upload/v1589304928/capstone1/nacto-pedestrian_o8gaml.gif" alt="">
-								</div>
-								<h5 class="smallheader-nacto card-title my-0 p-0 text-center col-md col-lg">9000 PEOPLE PER HOUR</h5>
-							</div>
-							<div class="col-md-3 col-lg-3 d-block">
-								<h5 class="smallheader-nacto card-title my-0 p-0 text-center col-md col-lg">TRANSITWAY</h5>
-								<div class="d-flex justify-content-center">
-									<img class="col-md col-lg img-fluid w-100" src="https://res.cloudinary.com/kennmasing/image/upload/v1589304884/capstone1/nacto-transit_r9f14m.gif" alt="">
-								</div>
-								<h5 class="smallheader-nacto card-title my-0 p-0 text-center col-md col-lg">25000 PEOPLE PER HOUR</h5>
-							</div>
-						</div>
-					</div>
-					<div class="card-body2 col-md-3 col-lg-3 container-fluid">
-						<div class="history-card-container history-container container-fluid ">
-							<div class="card-body d-flex justify-content-center container-fluid col-md-10 col-lg-10 p-0 history-title">
-								<div class="">
-									<p class="nacto-hdr sm-txt1 my-1 text-center">DESIGNING TO MOVE PEOPLE</p>
-								</div>
-							</div>
-							<div class="d-flex justify-content-center">
-								<div class="w-75">
-									<p class="sm-txt2 mb-4">Transit streets are designed to move people, and should be evaluated in part by their ability to do so. Whether in dense urban cores, on conventional arterials, or along neighborhood spines, transit is the most spatially efficient mode.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			 <!-------------------------------------------------- N A C T O  M O B I L E ---------------------------------------------------->
-			<section class="nacto-mobile" id="nacto-mobile">
-				<div class="nacto-title-mobile container-fluid pt-3	">	
-					<div class="d-flex justify-content-center align-items-center container-fluid">	
-						<p class="sm-txt1-mobile p-0 text-center">DESIGNING TO MOVE PEOPLE</p>
-					</div>
-				</div>
-
-				<div class="d-flex justify-content-center col-sm-12 col-md-12 mb-5">
-					<div class="col-sm-6 col-md-6 d-flex justify-content-center container-fluid nacto-desc-mobile mr-n3">
-						<div class="">
-							<h6 class="smallheader-nacto card-title my-0 p-0 col-sm col-md text-center">CAR LANE</h6>
-							<div class="d-flex justify-content-center">	
-								<img class="col-sm col-md img-fluid w-75" src="https://res.cloudinary.com/kennmasing/image/upload/v1589304907/capstone1/nacto-car_t6wnpf.gif" alt="">
-							</div>
-							<h6 class="smallheader-nacto card-title my-0 p-0 col-sm col-md text-center">1600 PEOPLE PER HOUR</h6>
-						</div>
-					</div>
-					<div class="col-sm-6 col-md-6 d-flex justify-content-center container-fluid nacto-desc-mobile ml-n3">
-						<div class="">
-							<h6 class="smallheader-nacto card-title my-0 p-0 col-sm col-md text-center">BIKE LANE</h6>
-							<div class="d-flex justify-content-center">	
-								<img class="col-sm col-md img-fluid w-75" src="https://res.cloudinary.com/kennmasing/image/upload/v1589304906/capstone1/nacto-bike_ospf0e.gif" alt="">
-							</div>
-							<h6 class="smallheader-nacto card-title my-0 p-0 col-sm col-md text-center">7500 PEOPLE PER HOUR</h6>
-						</div>
-					</div>
-				</div>
-
-				<div class="d-flex justify-content-center col-sm-12 col-md-12 my-5">	
-					<div class="col-sm-6 col-md-6 d-flex justify-content-center container-fluid nacto-desc-mobile mr-n3">
-						<div class="">
-							<h6 class="smallheader-nacto card-title my-0 p-0 col-sm col-md text-center">SIDEWALK</h6>	
-							<div class="d-flex justify-content-center">	
-								<img class="col-sm col-md img-fluid w-75" src="https://res.cloudinary.com/kennmasing/image/upload/v1589304928/capstone1/nacto-pedestrian_o8gaml.gif" alt="">
-							</div>
-							<h6 class="smallheader-nacto card-title my-0 p-0 col-sm col-md text-center">9000 PEOPLE PER HOUR</h6>
-						</div>
-					</div>
-					<div class="col-sm-6 col-md-6 d-flex justify-content-center container-fluid nacto-desc-mobile ml-n3">
-						<div class="">
-							<h6 class="smallheader-nacto card-title my-0 p-0 col-sm col-md text-center">TRANSITWAY</h6>
-							<div class="d-flex justify-content-center">	
-								<img class="col-sm col-md img-fluid w-75" src="https://res.cloudinary.com/kennmasing/image/upload/v1589304884/capstone1/nacto-transit_r9f14m.gif" alt="">
-							</div>
-							<h6 class="smallheader-nacto card-title my-0 p-0 col-sm col-md text-center">25000 PEOPLE PER HOUR</h6>
-						</div>
-					</div>
-				</div>
-			</section>
-
-		</section>
-		<!-------- B O D Y  S E C T I O N  E N D --------->
-
-		<!-------------------------------------------------- C O N T A C T ---------------------------------------------------->
-
-		<section class="contact container-fluid d-flex justify-content-center align-items-center no-gutters" id="contact">
-			<div class="col-sm col-md col-lg inner-container">
-				<div class="parallax-window" data-parallax="scroll" data-z-index="-50" data-image-src="https://res.cloudinary.com/kennmasing/image/upload/v1589305801/capstone1/contacts-bg_z60djz.png">
-					<div class="d-flex flex-wrap align-items-start col-md-12 col-lg-12 py-5" data-z-index="4">
-						<div class="col-sm col-md col-lg d-flex justify-content-center pt-1 contact-desktop">
-							<div class="col-sm-10 col-md-10 col-lg-10">
-								<form >
-									<div class="form-row">
-										<div class="form-group col-md">
-											<h5 class="contact-hdr">SIGN-UP FOR OUR NEWSLETTER</h5>
-											<h5 class="contact-sub">Be updated on all our events.</h5>
-											<input type="email" class="form-control" placeholder="Email *">
-										</div>
-									</div>
-									<button type="submit" class="btn btn-outline-light rounded-pill px-5">Submit</button>
-								</form>
-								<div class="row col-sm-10 col-md-10 col-lg-10 py-2">
-									<div class="form-group pt-5">
-										<h3 class="contact-hdr">FOLLOW-US!</h3>
-										<div class="socialmedia d-flex justify-content-right">
-											<a href="https://www.facebook.com/AltMobilityPH/" class="socialmedia" target="_blank" rel="noopener"><i class="fab fa-facebook-f ml-1 mr-2 fa-2x d-flex justify-content-center align-items-center"></i></a>
-											<a href="https://twitter.com/AltMobilityPH" class="socialmedia" target="_blank" rel="noopener"> <i class="fab fa-twitter mx-2 fa-2x d-flex justify-content-center align-items-center"></i></a>
-											<a href="https://www.instagram.com/explore/tags/altmobilityph/" class="socialmedia" target="_blank" rel="noopener"><i class="fab fa-instagram mx-2 fa-2x d-flex justify-content-center d-flex align-items-center"></i></a>
-											<a href="https://www.linkedin.com/" class="socialmedia" target="_blank" rel="noopener"><i class="fab fa-linkedin-in mx-2 fa-2x d-flex justify-content-center d-flex align-items-center"></i></a>
-										</div>
-									</div>
-								</div>
-								<div class="row col-sm-10 col-md-10 col-lg-10 pt-4 pb-3">
-									<div>
-										<h3 class="contact-hdr">ENQURIES</h3>
-										<p class="contact-txt p-0 m-0">For Business Enquiries</p>
-										<p class="contact-txt p-0 m-0">cd_bd@altmobility.com.ph</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-sm col-md col-lg d-flex justify-content-center pt-1 contact-form">
-							<form class="d-block col-md-10 col-lg-10">
-								<h5 class="contact-hdr">SEND US A MESSAGE</h5>
-								<h5 class="contact-sub">We'd love to hear from you.</h5>
-
-								<div class="form-row">
-									<div class="form-group col-md-6">
-										<input type="text" class="form-control" id="inputFirstName4" placeholder="First Name *">
-									</div>
-									<div class="form-group col-md-6">
-										<input type="text" class="form-control" id="inputLastName4" placeholder="Last Name *">
-									</div>
-								</div>
-								<div class="form-group">
-									<select id="inputState" class="form-control">
-										<option selected>Affiliation *</option>
-										<option value="1">Civil Society or non-government organization</option>
-										<option value="2">Government</option>
-										<option value="3">Media</option>
-										<option value="4">Private sector enterprise/business</option>
-										<option value="5">Student/Academic/Research organization</option>
-										<option value="6">Multilateral organization or development agency</option>
-										<option value="6">Others</option>
-									</select>
-								</div>
-								<div class="form-row">
-									<div class="form-group col-md">
-										<input type="email" class="form-control" placeholder="Email *">
-									</div>
-								</div>
-								<div class="form-group">
-									<textarea class="form-control inputField" id="inputMessage" rows="6" placeholder="Message *"></textarea>
-								</div>
-
-								<h5 class="captcha-hdr">CAPTCHA</h5>
-								<h6 class="captcha-sub">This question is for testing whether or not you are a human visitor and to prevent automated spam submissions.</h6>
-
-								<div class="form-group container-fluid col-sm-12 col-md-12 col-lg-8 ml-n3 card-body2">
-									<div class="card card-body">
-										<div class="d-flex align-items-center">
-											<div class="d-flex justify-content-start">
-												<div class="form-check">
-													<input class="form-check-input" type="checkbox" id="gridCheck">
-													<label class="form-check-label robot-disclaimer" for="gridCheck">
-														I'm not a robot
-													</label>
-												</div>
-											</div>
-											<div class="d-flex justify-content-end ml-auto">
-												<img class="img-fluid captcha-img" src="https://res.cloudinary.com/kennmasing/image/upload/v1589304809/capstone1/captcha_ssudqu.png" alt="CAPTCHA (demo)">
-											</div>
-										</div>	
-									</div>
-								</div>
-								<button type="submit" class="btn btn-outline-light rounded-pill px-5">Send Message</button>
-							</form>
-						</div>		
-					</div>	
-				</div>	
-			</div>
-		 </section>	
-
-		<!-------------------------------------------------- F O O T E R ---------------------------------------------------->
-	    <section class="footer-desktop no-gutters">
-			<div class="d-flex justify-content-between align-items-center pt-3 container-fluid">
-				<div class="d-flex col-sm-3 container-fluid">
-					<div class="">
-						<a href="#home">
-							<img class="nav-logo small-logo pl-0 w-10" src="https://res.cloudinary.com/kennmasing/image/upload/v1589304754/capstone1/altmobility2_j1errk.png" alt="AltMobility Philippines">
-						</a>
-					</div>
-				</div>
-				<div class="col-sm-6 d-flex justify-content-center align-items-center pt-3 container-fluid">
-					<a href="https://twitter.com/hashtag/commutersnaman?lang=en" target="_blank" rel="noopener" class="calltoaction" id="calltoaction">J O I N &nbsp; T H E &nbsp; C O N V E R S A T I O N</a>
-				</div>
-				<div class="col-sm-3 d-flex justify-content-end mr-4">
-					<button class="btn btn-outline-light rounded-pill px-5 mr-3 pr-3">Contribute</button>
-				</div>	
-			</div>
-
-			<div class="d-flex justify-content-center">
-				<hr class="hrcolor">
-			</div>
-
-			<div class="d-flex justify-content-between">
-				<div class="container-fluid d-flex justify-content-start col-sm-4">
-					<small class="pl-3">&copy; 2019 <strong>AltMobility Philippines</strong> <span>| All rights reserved</span></small>
-				</div>
-				<div class="container-fluid d-flex justify-content-end container-fluid col-sm-8">
-					<ul class="d-flex small-text-ftr mr-4">
-						<li class="list-unstyled">
-							<a href="#" class="px-3">A-Z-SITE INDEX</a> |&nbsp;
-						</li>
-						<li class="list-unstyled">
-							<a href="#" class="px-3">CONTACT</a> |&nbsp;
-						</li>
-						<li class="list-unstyled">
-							<a href="#" class="px-3">COPYRIGHT</a> |&nbsp;
-						</li>
-						<li class="list-unstyled">
-							<a href="#" class="px-3">PRIVACY NOTICE</a> |&nbsp; 
-						</li>
-						<li class="list-unstyled">
-							<a href="#" class="px-3">TERMS OF USE</a> 
-						</li>
-					</ul>
-				</div>
-			</div>
-
-	    </section>
-	   
-	   <!-------------------------------------------------- F O O T E R  M O B I L E ---------------------------------------------------->
-	    <section class="footer-mobile container-fluid no-gutters" data-z-index="100">
-			<div class="d-flex justify-content-between align-items-center col-sm-12 px-5">
-				<div class="footer-container col-sm-10 col-md d-flex align-items-center py-3 pl-0">
-					<a class="ml-0" href="#">
-						<img class="nav-logo img-fluid footer-logo ml-0" src="https://res.cloudinary.com/kennmasing/image/upload/v1589304754/capstone1/altmobility2_j1errk.png" alt="AltMobility Philippines">
-					</a>
-				</div>
-				<div class="col-sm-2 col-md d-flex justify-content-end mr-auto pr-0">
-					<button class="btn btn-outline-light rounded-pill px-3">Contribute</button>
-				</div>	
-			</div>
-	    	
-	    	<div class="container-fluid footer-mobile px-5">
-				<div class="container-fluid">
-					<div class="row container-fluid pl-1">
-						<h6 class="smallheader-footer">JOIN THE CONVERSATION</h6>
-					</div>
-
-					<div class="socialmedia row d-flex justify-content-end">
-						<a href="https://www.facebook.com/AltMobilityPH/" class="socialmedia px-2" target="_blank" rel="noopener"><i class="fab fa-facebook-f ml-1 mr-2 fa-2x d-flex justify-content-center align-items-center"></i></a>
-						<a href="https://twitter.com/AltMobilityPH" class="socialmedia px-2" target="_blank" rel="noopener"> <i class="fab fa-twitter mx-2 fa-2x d-flex justify-content-center align-items-center"></i></a>
-						<a href="https://www.instagram.com/explore/tags/altmobilityph/" class="socialmedia px-2" target="_blank" rel="noopener"><i class="fab fa-instagram mx-2 fa-2x d-flex justify-content-center d-flex align-items-center"></i></a>
-						<a href="https://www.linkedin.com/" class="socialmedia pl-2" target="_blank" rel="noopener"><i class="fab fa-linkedin-in mx-2 fa-2x d-flex justify-content-center d-flex align-items-center"></i></a>
-					</div>
-				</div>
-	    	</div>
-
-			<div class="card card-body footer-mobile">
-				<div class="d-flex justify-content-center card-body2">
-					<hr class="hrcolor card-body2 py-0">
-				</div>
-				<div class="container-fluid d-flex justify-content-center container-fluid col-12 col-sm-12 col-md-12 card-body2 copyright-nextline">
-					<ul class="d-flex justify-content-center mr-0 col-12 col-sm-12 col-md-12 card-body2">
-						<li class="list-unstyled">
-							<a href="#" class="px-0 smalltxt-ftr-mobile">A-Z-SITE INDEX |</a>&nbsp;
-						</li>
-						<li class="list-unstyled">
-							<a href="#" class="px-0 smalltxt-ftr-mobile">CONTACT |</a>&nbsp;
-						</li>
-						<li class="list-unstyled">
-							<a href="#" class="px-0 smalltxt-ftr-mobile">COPYRIGHT |</a>&nbsp;
-						</li>
-						<li class="list-unstyled">
-							<a href="#" class="px-0 smalltxt-ftr-mobile">PRIVACY NOTICE |</a>&nbsp;
-						</li>
-						<li class="list-unstyled">
-							<a href="#" class="px-0 smalltxt-ftr-mobile">TERMS OF USE</a>&nbsp;
-						</li>
-					</ul>
-				</div>
-				<div class="container-fluid d-flex justify-content-center col-12 col-sm-12 col-md-12 card-body2 copyright-nextline">
-					<small class="text-center">&copy; 2019 <strong>AltMobility Philippines</strong> <span>| All rights reserved</span></small>
-				</div>
-			</div>
-	    </section>
-
-		<div class="overlay"></div>
-
-		<!-------------------------------------------------- J A V A S C R I P T ---------------------------------------------------->
-		<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha384-vk5WoKIaW/vJyUAd9n/wmopsmNhiy+L2Z+SBxGYnUkunIxVxAv/UtMOhba/xskxh" crossorigin="anonymous"></script>
-		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-		<script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js" integrity="sha384-wziAfh6b/qT+3LrqebF9WeK4+J5sehS6FA10J1t3a866kJ/fvU5UwofWnQyzLtwu" crossorigin="anonymous"></script>
-		<script>
-			AOS.init();
-		</script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax.js/1.5.0/parallax.min.js" integrity="sha384-MiVIO3889z2c94b4vZgB1j7gjtbP/QhaI27ZWTZvs9VM2AmqjLOYJ2ABcu/pZObG" crossorigin="anonymous"></script>
-
-	    <!-- jQuery Custom Scroller CDN -->
-	    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js" integrity="sha384-QHPBqENOg6UKmsoXiXjrEEu2W4rJZaCHDTqIOI9JqSg6dI3chbQ+0kXAYUQLEDYn" crossorigin="anonymous"></script>
-
-	    <script type="text/javascript">
-	        $(document).ready(function () {
-	            $("#sidebar").mCustomScrollbar({
-	                theme: "minimal"
-	            });
-
-	            $('#dismiss, .overlay').on('click', function () {
-	                $('#sidebar').removeClass('active');
-	                $('.overlay').removeClass('active');
-	            });
-
-	            $('.dismiss2, .overlay').on('click', function () {
-	                $('#sidebar').removeClass('active');
-	                $('.overlay').removeClass('active');
-	            });
-
-	            $('#sidebarCollapse').on('click', function () {
-	                $('#sidebar').addClass('active');
-	                $('.overlay').addClass('active');
-	                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
-	            });
-	        });
-	    </script>
-	</body>
-
+        <!-- ==================== SCRIPTS ==================== -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js" integrity="sha384-wziAfh6b/qT+3LrqebF9WeK4+J5sehS6FA10J1t3a866kJ/fvU5UwofWnQyzLtwu" crossorigin="anonymous"></script>
+        <script>
+            // Mobile menu: taps are ignored while it slides; a link closes it first (the open menu locks page scrolling), then goes to the section
+            const sidebar = document.getElementById("sidebar");
+            const menu = () => bootstrap.Offcanvas.getOrCreateInstance(sidebar);
+            const desktop = matchMedia("(min-width: 992px)");
+            let sliding = false;
+            let pendingHash = null;
+            for (const step of ["show", "hide"]) sidebar.addEventListener(`${step}.bs.offcanvas`, (event) => (sliding ? event.preventDefault() : (sliding = true)));
+            sidebar.addEventListener("shown.bs.offcanvas", () => {
+                sliding = false;
+                if (desktop.matches) menu().hide();
+            });
+            sidebar.addEventListener("hidden.bs.offcanvas", () => {
+                sliding = false;
+                if (!pendingHash) return;
+                const hash = pendingHash;
+                const target = document.querySelector(hash);
+                if (location.hash !== hash) history.pushState(null, "", hash);
+                pendingHash = null;
+                // After Bootstrap has handed focus back to the menu button: focus the section, then scroll to it (unless Back/Forward moved on meanwhile)
+                setTimeout(() => {
+                    if (location.hash !== hash) return;
+                    target.tabIndex = -1;
+                    target.focus({ preventScroll: true });
+                    target.scrollIntoView();
+                });
+            });
+            sidebar.querySelectorAll(".sidebar-link").forEach((link) =>
+                link.addEventListener("click", (event) => {
+                    if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+                    event.preventDefault();
+                    if (sliding) return;
+                    pendingHash = link.hash;
+                    menu().hide();
+                }),
+            );
+            // The menu button disappears at desktop width, so close the menu if the window is widened while it is open
+            desktop.addEventListener("change", () => desktop.matches && sidebar.classList.contains("show") && menu().hide());
+            if (window.AOS) AOS.init();
+        </script>
+    </body>
 </html>
