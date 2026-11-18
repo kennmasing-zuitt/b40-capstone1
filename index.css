@@ -1,0 +1,3611 @@
+:root {
+    --color-base: #30506e;
+    --color-white: #ffffff;
+    --color-dark-gray: #5c6b73;
+    --color-text-gray: #666666;
+    --color-charcoal: #43454a;
+    --color-rights-blue: #72a1b4;
+    --color-sidebar-accent: #47748b;
+    --color-sidebar-hover: #7386d5;
+    --line-pnr: orange;
+    --line-subway: gray;
+    --line-lrt1: #fff23b;
+    --line-lrt2: #924ac2;
+    --line-mrt3: #3f94fc;
+    --line-4: #fa66fa;
+    --line-5: #7acc54;
+    --line-6: #eb9d31;
+    --line-7: #963d27;
+    --line-8: #754e1b;
+    --line-9: #db0000;
+    --line-pnr-north: #126e3d;
+    --line-pnr-south: #0c5b82;
+}
+
+/* ==================== RESET AND BASE ==================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.no-gutters {
+    margin: 0 0 0 0 !important;
+    padding: 0 0 0 0 !important;
+}
+
+body {
+    background-color: var(--color-base);
+}
+
+/* ==================== DESKTOP NAVBAR ==================== */
+
+@media (min-width: 992px) {
+    nav#nav-home {
+        padding: 15px 10px;
+        background: var(--color-base);
+        border: none;
+        border-radius: 0;
+        margin-bottom: 40px;
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    }
+    nav#nav-home div a img.nav-logo {
+        height: 8vh;
+    }
+    nav#nav-home div div ul li a.nav-link {
+        color: var(--color-white);
+        font-family: Calibri;
+    }
+    nav#nav-home div form input.searchbar::placeholder {
+        color: var(--color-white) !important;
+    }
+    nav#nav-home div form input.searchbar:hover::placeholder {
+        color: gray !important;
+    }
+    nav#nav-home div form button.search-btn {
+        color: var(--color-white) !important;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    nav#nav-home {
+        display: none !important;
+        height: 0vh;
+    }
+    nav#nav-home div a img.nav-logo {
+        display: none !important;
+        height: 0vh;
+    }
+    nav#nav-home div div ul li a.nav-link {
+        display: none !important;
+        height: 0vh;
+    }
+    nav#nav-home div form input.searchbar::placeholder {
+        display: none !important;
+        height: 0vh;
+    }
+    nav#nav-home div form button.search-btn {
+        display: none !important;
+        height: 0vh;
+    }
+}
+@media (min-width: 577px) and (max-width: 767px) {
+    nav#nav-home {
+        display: none !important;
+        height: 0vh;
+    }
+    nav#nav-home div a img.nav-logo {
+        display: none !important;
+        height: 0vh;
+    }
+    nav#nav-home div div ul li a.nav-link {
+        display: none !important;
+        height: 0vh;
+    }
+    nav#nav-home div form input.searchbar::placeholder {
+        display: none !important;
+        height: 0vh;
+    }
+    nav#nav-home div form button.search-btn {
+        display: none !important;
+        height: 0vh;
+    }
+}
+@media (min-width: 412px) and (max-width: 576px) {
+    nav#nav-home {
+        display: none !important;
+        height: 0vh;
+    }
+    nav#nav-home div a img.nav-logo {
+        display: none !important;
+        height: 0vh;
+    }
+    nav#nav-home div div ul li a.nav-link {
+        display: none !important;
+        height: 0vh;
+    }
+    nav#nav-home div form input.searchbar::placeholder {
+        display: none !important;
+        height: 0vh;
+    }
+    nav#nav-home div form button.search-btn {
+        display: none !important;
+        height: 0vh;
+    }
+}
+@media (max-width: 411px) {
+    nav#nav-home {
+        display: none !important;
+        height: 0vh;
+    }
+    nav#nav-home div a img.nav-logo {
+        display: none !important;
+        height: 0vh;
+    }
+    nav#nav-home div div ul li a.nav-link {
+        display: none !important;
+        height: 0vh;
+    }
+    nav#nav-home div form input.searchbar::placeholder {
+        display: none !important;
+        height: 0vh;
+    }
+    nav#nav-home div form button.search-btn {
+        display: none !important;
+        height: 0vh;
+    }
+}
+
+/* ==================== MOBILE SIDEBAR ==================== */
+
+@media (min-width: 992px) {
+    section.navbar-mobile#home-mobile div.wrapper nav#sidebar {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.navbar-mobile#home-mobile div.wrapper nav#sidebar.active {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.navbar-mobile#home-mobile div.wrapper nav#sidebar.active div#dismiss {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.navbar-mobile#home-mobile div.wrapper nav#sidebar.active div#dismiss:hover {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.navbar-mobile#home-mobile div.wrapper nav#sidebar.active div.sidebar-header {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.navbar-mobile#home-mobile div.wrapper nav#sidebar.active ul.components {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.navbar-mobile#home-mobile div.wrapper nav#sidebar.active ul.components p {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.navbar-mobile#home-mobile div.wrapper nav#sidebar.active ul.components li {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.navbar-mobile#home-mobile div.wrapper nav#sidebar.active ul.components li a.dismiss2 {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.navbar-mobile#home-mobile div.wrapper nav#sidebar.active ul.components li a#dismiss:hover {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.navbar-mobile#home-mobile div.wrapper nav#sidebar.active ul.components li.active a[aria-expanded=true] {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.navbar-mobile#home-mobile div.wrapper nav#sidebar.active ul.components li.active a[data-toggle=collapse] {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.navbar-mobile#home-mobile div.wrapper nav#sidebar.active ul.components li.active a#dismiss:hover {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.navbar-mobile#home-mobile div.wrapper nav#sidebar.active ul.CTAs {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.navbar-mobile#home-mobile div.wrapper nav#sidebar.active ul.CTAs li form.form-inline input.searchbar::placeholder {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.navbar-mobile#home-mobile div.wrapper nav#sidebar.active ul.CTAs li form.form-inline button.search-btn {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.navbar-mobile#home-mobile div#content {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.navbar-mobile#home-mobile div#content nav.nav-mobile-pg {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.navbar-mobile#home-mobile div#content nav.nav-mobile-pg div div img.nav-logo-lg {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.navbar-mobile#home-mobile div#content nav.nav-mobile-pg div div img.nav-logo-md {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.navbar-mobile#home-mobile div#content nav.nav-mobile-pg div div img.nav-logo-xs {
+        display: none !important;
+        height: 0vh !important;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    section.navbar-mobile#home-mobile div.wrapper nav#sidebar {
+        width: 250px;
+        position: fixed;
+        top: 0;
+        left: -250px;
+        height: 100vh;
+        z-index: 999;
+        background: rgba(0, 0, 0, 0.75);
+        color: var(--color-white);
+        transition: all 0.3s;
+        overflow-y: scroll;
+        box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+    }
+    section.navbar-mobile#home-mobile div.wrapper nav#sidebar.active {
+        left: 0;
+    }
+    section.navbar-mobile#home-mobile div.wrapper nav#sidebar.active div#dismiss {
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        text-align: center;
+        background: var(--color-base);
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+        -webkit-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+    }
+    section.navbar-mobile#home-mobile div.wrapper nav#sidebar.active div#dismiss:hover {
+        background: var(--color-white);
+        color: var(--color-sidebar-hover);
+    }
+    section.navbar-mobile#home-mobile div.wrapper nav#sidebar.active div.sidebar-header {
+        padding: 20px;
+        background: var(--color-base);
+    }
+    section.navbar-mobile#home-mobile div.wrapper nav#sidebar.active ul.components {
+        padding: 20px 0;
+        border-bottom: 1px solid var(--color-sidebar-accent);
+    }
+    section.navbar-mobile#home-mobile div.wrapper nav#sidebar.active ul.components p {
+        color: var(--color-white);
+        padding: 10px;
+    }
+    section.navbar-mobile#home-mobile div.wrapper nav#sidebar.active ul.components li {
+        padding: 0.5rem;
+    }
+    section.navbar-mobile#home-mobile div.wrapper nav#sidebar.active ul.components li a.dismiss2 {
+        cursor: pointer;
+        -webkit-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+        font-size: 1.1em;
+        padding-left: 15px !important;
+        color: var(--color-white);
+    }
+    section.navbar-mobile#home-mobile div.wrapper nav#sidebar.active ul.components li a#dismiss:hover {
+        color: var(--color-sidebar-hover);
+        background: var(--color-white);
+    }
+    section.navbar-mobile#home-mobile div.wrapper nav#sidebar.active ul.components li.active a[aria-expanded=true] {
+        color: var(--color-white);
+        background: var(--color-base);
+        font-size: 0.9em !important;
+        padding-left: 30px !important;
+        background: var(--color-base);
+    }
+    section.navbar-mobile#home-mobile div.wrapper nav#sidebar.active ul.components li.active a[data-toggle=collapse] {
+        position: relative;
+    }
+    section.navbar-mobile#home-mobile div.wrapper nav#sidebar.active ul.components li.active a#dismiss:hover {
+        color: var(--color-sidebar-hover);
+        background: var(--color-white);
+    }
+    section.navbar-mobile#home-mobile div.wrapper nav#sidebar.active ul.CTAs {
+        padding: 20px;
+    }
+    section.navbar-mobile#home-mobile div.wrapper nav#sidebar.active ul.CTAs li form.form-inline input.searchbar::placeholder {
+        color: var(--color-white) !important;
+    }
+    section.navbar-mobile#home-mobile div.wrapper nav#sidebar.active ul.CTAs li form.form-inline button.search-btn {
+        color: var(--color-white) !important;
+    }
+    section.navbar-mobile#home-mobile div#content {
+        width: 100%;
+        min-height: 100vh;
+        transition: all 0.3s;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    section.navbar-mobile#home-mobile div#content nav.nav-mobile-pg {
+        background: var(--color-base);
+    }
+    section.navbar-mobile#home-mobile div#content nav.nav-mobile-pg div div img.nav-logo-lg {
+        display: none !important;
+        height: 0vh;
+    }
+    section.navbar-mobile#home-mobile div#content nav.nav-mobile-pg div div img.nav-logo-xs {
+        display: none !important;
+        height: 0vh;
+    }
+}
+@media (min-width: 577px) and (max-width: 767px) {
+    section.navbar-mobile#home-mobile div.wrapper nav#sidebar {
+        width: 250px;
+        position: fixed;
+        top: 0;
+        left: -250px;
+        height: 100vh;
+        z-index: 999;
+        background: rgba(0, 0, 0, 0.75);
+        color: var(--color-white);
+        transition: all 0.3s;
+        overflow-y: scroll;
+        box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+    }
+    section.navbar-mobile#home-mobile div.wrapper nav#sidebar.active {
+        left: 0;
+    }
+    section.navbar-mobile#home-mobile div.wrapper nav#sidebar.active div#dismiss {
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        text-align: center;
+        background: var(--color-base);
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+        -webkit-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+    }
+    section.navbar-mobile#home-mobile div.wrapper nav#sidebar.active div#dismiss:hover {
+        background: var(--color-white);
+        color: var(--color-sidebar-hover);
+    }
+    section.navbar-mobile#home-mobile div.wrapper nav#sidebar.active div.sidebar-header {
+        padding: 20px;
+        background: var(--color-base);
+    }
+    section.navbar-mobile#home-mobile div.wrapper nav#sidebar.active ul.components {
+        padding: 20px 0;
+        border-bottom: 1px solid var(--color-sidebar-accent);
+    }
+    section.navbar-mobile#home-mobile div.wrapper nav#sidebar.active ul.components p {
+        color: var(--color-white);
+        padding: 10px;
+    }
+    section.navbar-mobile#home-mobile div.wrapper nav#sidebar.active ul.components li {
+        padding: 0.5rem;
+    }
+    section.navbar-mobile#home-mobile div.wrapper nav#sidebar.active ul.components li a.dismiss2 {
+        cursor: pointer;
+        -webkit-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+        font-size: 1.1em;
+        padding-left: 15px !important;
+        color: var(--color-white);
+    }
+    section.navbar-mobile#home-mobile div.wrapper nav#sidebar.active ul.components li a#dismiss:hover {
+        color: var(--color-sidebar-hover);
+        background: var(--color-white);
+    }
+    section.navbar-mobile#home-mobile div.wrapper nav#sidebar.active ul.components li.active a[aria-expanded=true] {
+        color: var(--color-white);
+        background: var(--color-base);
+        font-size: 0.9em !important;
+        padding-left: 30px !important;
+        background: var(--color-base);
+    }
+    section.navbar-mobile#home-mobile div.wrapper nav#sidebar.active ul.components li.active a[data-toggle=collapse] {
+        position: relative;
+    }
+    section.navbar-mobile#home-mobile div.wrapper nav#sidebar.active ul.components li.active a#dismiss:hover {
+        color: var(--color-sidebar-hover);
+        background: var(--color-white);
+    }
+    section.navbar-mobile#home-mobile div.wrapper nav#sidebar.active ul.CTAs {
+        padding: 20px;
+    }
+    section.navbar-mobile#home-mobile div.wrapper nav#sidebar.active ul.CTAs li form.form-inline input.searchbar::placeholder {
+        color: var(--color-white) !important;
+    }
+    section.navbar-mobile#home-mobile div.wrapper nav#sidebar.active ul.CTAs li form.form-inline button.search-btn {
+        color: var(--color-white) !important;
+    }
+    section.navbar-mobile#home-mobile div#content {
+        width: 100%;
+        min-height: 100vh;
+        transition: all 0.3s;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    section.navbar-mobile#home-mobile div#content nav.nav-mobile-pg {
+        background: var(--color-base);
+    }
+    section.navbar-mobile#home-mobile div#content nav.nav-mobile-pg div div img.nav-logo-lg {
+        display: none !important;
+        height: 0vh;
+    }
+    section.navbar-mobile#home-mobile div#content nav.nav-mobile-pg div div img.nav-logo-xs {
+        display: none !important;
+        height: 0vh;
+    }
+}
+@media (min-width: 412px) and (max-width: 576px) {
+    section.navbar-mobile#home-mobile div.wrapper nav#sidebar {
+        width: 250px;
+        position: fixed;
+        top: 0;
+        left: -250px;
+        height: 100vh;
+        z-index: 999;
+        background: rgba(0, 0, 0, 0.75);
+        color: var(--color-white);
+        transition: all 0.3s;
+        overflow-y: scroll;
+        box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+    }
+    section.navbar-mobile#home-mobile div.wrapper nav#sidebar.active {
+        left: 0;
+    }
+    section.navbar-mobile#home-mobile div.wrapper nav#sidebar.active div#dismiss {
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        text-align: center;
+        background: var(--color-base);
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+        -webkit-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+    }
+    section.navbar-mobile#home-mobile div.wrapper nav#sidebar.active div#dismiss:hover {
+        background: var(--color-white);
+        color: var(--color-sidebar-hover);
+    }
+    section.navbar-mobile#home-mobile div.wrapper nav#sidebar.active div.sidebar-header {
+        padding: 20px;
+        background: var(--color-base);
+    }
+    section.navbar-mobile#home-mobile div.wrapper nav#sidebar.active ul.components {
+        padding: 20px 0;
+        border-bottom: 1px solid var(--color-sidebar-accent);
+    }
+    section.navbar-mobile#home-mobile div.wrapper nav#sidebar.active ul.components p {
+        color: var(--color-white);
+        padding: 10px;
+    }
+    section.navbar-mobile#home-mobile div.wrapper nav#sidebar.active ul.components li {
+        padding: 0.5rem;
+    }
+    section.navbar-mobile#home-mobile div.wrapper nav#sidebar.active ul.components li a.dismiss2 {
+        cursor: pointer;
+        -webkit-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+        font-size: 1.1em;
+        padding-left: 15px !important;
+        color: var(--color-white);
+    }
+    section.navbar-mobile#home-mobile div.wrapper nav#sidebar.active ul.components li a#dismiss:hover {
+        color: var(--color-sidebar-hover);
+        background: var(--color-white);
+    }
+    section.navbar-mobile#home-mobile div.wrapper nav#sidebar.active ul.components li.active a[aria-expanded=true] {
+        color: var(--color-white);
+        background: var(--color-base);
+        font-size: 0.9em !important;
+        padding-left: 30px !important;
+        background: var(--color-base);
+    }
+    section.navbar-mobile#home-mobile div.wrapper nav#sidebar.active ul.components li.active a[data-toggle=collapse] {
+        position: relative;
+    }
+    section.navbar-mobile#home-mobile div.wrapper nav#sidebar.active ul.components li.active a#dismiss:hover {
+        color: var(--color-sidebar-hover);
+        background: var(--color-white);
+    }
+    section.navbar-mobile#home-mobile div.wrapper nav#sidebar.active ul.CTAs {
+        padding: 20px;
+    }
+    section.navbar-mobile#home-mobile div.wrapper nav#sidebar.active ul.CTAs li form.form-inline input.searchbar::placeholder {
+        color: var(--color-white) !important;
+    }
+    section.navbar-mobile#home-mobile div.wrapper nav#sidebar.active ul.CTAs li form.form-inline button.search-btn {
+        color: var(--color-white) !important;
+    }
+    section.navbar-mobile#home-mobile div#content {
+        width: 100%;
+        min-height: 100vh;
+        transition: all 0.3s;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    section.navbar-mobile#home-mobile div#content nav.nav-mobile-pg {
+        background: var(--color-base);
+    }
+    section.navbar-mobile#home-mobile div#content nav.nav-mobile-pg div div img.nav-logo-lg {
+        display: none !important;
+        height: 0vh;
+    }
+    section.navbar-mobile#home-mobile div#content nav.nav-mobile-pg div div img.nav-logo-md {
+        display: none !important;
+        height: 0vh;
+    }
+}
+@media (max-width: 411px) {
+    section.navbar-mobile#home-mobile div.wrapper nav#sidebar {
+        width: 250px;
+        position: fixed;
+        top: 0;
+        left: -250px;
+        height: 100vh;
+        z-index: 999;
+        background: rgba(0, 0, 0, 0.75);
+        color: var(--color-white);
+        transition: all 0.3s;
+        overflow-y: scroll;
+        box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+    }
+    section.navbar-mobile#home-mobile div.wrapper nav#sidebar.active {
+        left: 0;
+    }
+    section.navbar-mobile#home-mobile div.wrapper nav#sidebar.active div#dismiss {
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        text-align: center;
+        background: var(--color-base);
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+        -webkit-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+    }
+    section.navbar-mobile#home-mobile div.wrapper nav#sidebar.active div#dismiss:hover {
+        background: var(--color-white);
+        color: var(--color-sidebar-hover);
+    }
+    section.navbar-mobile#home-mobile div.wrapper nav#sidebar.active div.sidebar-header {
+        padding: 20px;
+        background: var(--color-base);
+    }
+    section.navbar-mobile#home-mobile div.wrapper nav#sidebar.active ul.components {
+        padding: 20px 0;
+        border-bottom: 1px solid var(--color-sidebar-accent);
+    }
+    section.navbar-mobile#home-mobile div.wrapper nav#sidebar.active ul.components p {
+        color: var(--color-white);
+        padding: 10px;
+    }
+    section.navbar-mobile#home-mobile div.wrapper nav#sidebar.active ul.components li {
+        padding: 0.5rem;
+    }
+    section.navbar-mobile#home-mobile div.wrapper nav#sidebar.active ul.components li a.dismiss2 {
+        cursor: pointer;
+        -webkit-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+        font-size: 1.1em;
+        padding-left: 15px !important;
+        color: var(--color-white);
+    }
+    section.navbar-mobile#home-mobile div.wrapper nav#sidebar.active ul.components li a#dismiss:hover {
+        color: var(--color-sidebar-hover);
+        background: var(--color-white);
+    }
+    section.navbar-mobile#home-mobile div.wrapper nav#sidebar.active ul.components li.active a[aria-expanded=true] {
+        color: var(--color-white);
+        background: var(--color-base);
+        font-size: 0.9em !important;
+        padding-left: 30px !important;
+        background: var(--color-base);
+    }
+    section.navbar-mobile#home-mobile div.wrapper nav#sidebar.active ul.components li.active a[data-toggle=collapse] {
+        position: relative;
+    }
+    section.navbar-mobile#home-mobile div.wrapper nav#sidebar.active ul.components li.active a#dismiss:hover {
+        color: var(--color-sidebar-hover);
+        background: var(--color-white);
+    }
+    section.navbar-mobile#home-mobile div.wrapper nav#sidebar.active ul.CTAs {
+        padding: 20px;
+    }
+    section.navbar-mobile#home-mobile div.wrapper nav#sidebar.active ul.CTAs li form.form-inline input.searchbar::placeholder {
+        color: var(--color-white) !important;
+    }
+    section.navbar-mobile#home-mobile div.wrapper nav#sidebar.active ul.CTAs li form.form-inline button.search-btn {
+        color: var(--color-white) !important;
+    }
+    section.navbar-mobile#home-mobile div#content {
+        width: 100%;
+        min-height: 100vh;
+        transition: all 0.3s;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    section.navbar-mobile#home-mobile div#content nav.nav-mobile-pg {
+        background: var(--color-base);
+    }
+    section.navbar-mobile#home-mobile div#content nav.nav-mobile-pg div div img.nav-logo-lg {
+        display: none !important;
+        height: 0vh;
+    }
+    section.navbar-mobile#home-mobile div#content nav.nav-mobile-pg div div img.nav-logo-md {
+        display: none !important;
+        height: 0vh;
+    }
+}
+
+/* ==================== HOME / HERO ==================== */
+
+@media (min-width: 992px) {
+    section.home {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        background: url(https://res.cloudinary.com/kennmasing/image/upload/v1589305510/capstone1/homecover_xnerzl.png) center center;
+        background-size: cover;
+    }
+    section.home div div.cto-desktop {
+        position: absolute;
+        top: 45%;
+    }
+    section.home div div.cto-desktop div h2.cto-desktop {
+        color: var(--color-white);
+        font-size: 7rem;
+        font-family: Oswald;
+    }
+    section.home div div.cto-desktop div p.cto-desktop {
+        color: var(--color-white);
+        font-size: 3rem;
+        font-family: Saira Extra Condensed;
+    }
+    section.home div div.cto-tab {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.home div div.cto-tab div h2.cto-tab {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.home div div.cto-tab div p.cto-tab {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.home div div.cto-mobile {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.home div div.cto-mobile div h2.cto-mobile {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.home div div.cto-mobile div p.cto-mobile {
+        display: none !important;
+        height: 0vh !important;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    section.home {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        background: url(https://res.cloudinary.com/kennmasing/image/upload/v1589305510/capstone1/homecover_xnerzl.png) center center;
+        background-size: cover;
+    }
+    section.home div div.cto-desktop {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.home div div.cto-desktop div h2.cto-desktop {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.home div div.cto-desktop div p.cto-desktop {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.home div div.cto-tab {
+        position: absolute;
+        top: 45%;
+    }
+    section.home div div.cto-tab div h2.cto-tab {
+        color: var(--color-white);
+        font-size: 5rem;
+        font-family: Oswald;
+    }
+    section.home div div.cto-tab div p.cto-tab {
+        color: var(--color-white);
+        font-size: 2rem;
+        font-family: Saira Extra Condensed;
+    }
+    section.home div div.cto-mobile {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.home div div.cto-mobile div h2.cto-mobile {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.home div div.cto-mobile div p.cto-mobile {
+        display: none !important;
+        height: 0vh !important;
+    }
+}
+@media (min-width: 577px) and (max-width: 767px) {
+    section.home {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        background: url(https://res.cloudinary.com/kennmasing/image/upload/v1589305510/capstone1/homecover_xnerzl.png) center center;
+        background-size: cover;
+    }
+    section.home div div.cto-desktop {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.home div div.cto-desktop div h2.cto-desktop {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.home div div.cto-desktop div p.cto-desktop {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.home div div.cto-tab {
+        position: absolute;
+        top: 45%;
+    }
+    section.home div div.cto-tab div h2.cto-tab {
+        color: var(--color-white);
+        font-size: 4rem !important;
+        font-family: Oswald;
+    }
+    section.home div div.cto-tab div p.cto-tab {
+        color: var(--color-white);
+        font-size: 2rem !important;
+        font-family: Saira Extra Condensed;
+    }
+    section.home div div.cto-mobile {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.home div div.cto-mobile div h2.cto-mobile {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.home div div.cto-mobile div p.cto-mobile {
+        display: none !important;
+        height: 0vh !important;
+    }
+}
+@media (min-width: 412px) and (max-width: 576px) {
+    section.home {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        background: url(https://res.cloudinary.com/kennmasing/image/upload/v1589305605/capstone1/homecover-mobile02_brswfu.png) no-repeat right center !important;
+        background-size: cover;
+    }
+    section.home div div.cto-desktop {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.home div div.cto-desktop div h2.cto-desktop {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.home div div.cto-desktop div p.cto-desktop {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.home div.cto-mobile div.cto-mobile {
+        position: absolute;
+        top: 45%;
+    }
+    section.home div.cto-mobile div.cto-mobile div h2.cto-mobile {
+        color: var(--color-white);
+        font-size: 3rem;
+        font-family: Oswald;
+    }
+    section.home div.cto-mobile div.cto-mobile div p.cto-mobile {
+        color: var(--color-white);
+        font-size: 1.2rem;
+        font-family: Saira Extra Condensed;
+    }
+    section.home div div.cto-tab {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.home div div.cto-tab div h2.cto-tab {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.home div div.cto-tab div p.cto-tab {
+        display: none !important;
+        height: 0vh !important;
+    }
+}
+@media (max-width: 411px) {
+    section.home {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        background: url(https://res.cloudinary.com/kennmasing/image/upload/v1589305605/capstone1/homecover-mobile02_brswfu.png) no-repeat right center !important;
+        background-size: cover;
+    }
+    section.home div div.cto-desktop {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.home div div.cto-desktop div h2.cto-desktop {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.home div div.cto-desktop div p.cto-desktop {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.home div.cto-mobile div.cto-mobile {
+        position: absolute;
+        top: 45%;
+    }
+    section.home div.cto-mobile div.cto-mobile div h2.cto-mobile {
+        color: var(--color-white);
+        font-size: 2.5rem;
+        font-family: Oswald;
+    }
+    section.home div.cto-mobile div.cto-mobile div p.cto-mobile {
+        color: var(--color-white);
+        font-size: 1.2rem;
+        font-family: Saira Extra Condensed;
+    }
+    section.home div div.cto-tab {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.home div div.cto-tab div h2.cto-tab {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.home div div.cto-tab div p.cto-tab {
+        display: none !important;
+        height: 0vh !important;
+    }
+}
+
+/* ==================== COMMUTER'S BILL OF RIGHTS ==================== */
+
+section.billofrights {
+    height: 100vh;
+    background-color: var(--color-white);
+}
+@media (min-width: 992px) {
+    section.billofrights div.card-body-desktop {
+        padding: 15vh 0 0 0;
+    }
+    section.billofrights div.card-body-desktop div.bor-title div.card-body div div img.billsofrightslogo {
+        width: 150px !important;
+        height: 150px !important;
+    }
+    section.billofrights div.card-body-desktop div.bor-title div.card-body div p.billofrights-hdr {
+        color: var(--color-text-gray);
+        font-size: 2.5rem;
+        font-family: oswald;
+        font-weight: bold;
+        text-align: center;
+    }
+    section.billofrights div.card-body-desktop div.bor-title div.card-body div div.bor-desc-tablet div p.sm-txt2 {
+        text-align: center;
+        font-size: 0.9rem;
+        font-family: arial;
+        color: #5f7053;
+    }
+    section.billofrights div.card-body-desktop div.bor-card-container div.row div.billofrights-card {
+        transition-timing-function: ease-in;
+        transition: 0.3s;
+        display: block;
+        background: var(--color-rights-blue);
+    }
+    section.billofrights div.card-body-desktop div.bor-card-container div.row div.billofrights-card div h4.smallheader-bor {
+        text-align: center;
+        line-height: 50px;
+        color: var(--color-white) !important;
+        font-family: Oswald;
+        font-size: 1.5rem;
+    }
+    section.billofrights div.card-body-desktop div.bor-card-container div.row div.billofrights-card div p.sm-txt-lg-bor {
+        text-align: center;
+        font-size: 0.9rem;
+        font-family: arial;
+        color: var(--color-white);
+        padding: 1rem 0 1rem 0 !important;
+    }
+    section.billofrights div.card-body-desktop div.bor-card-container div.row div.billofrights-card:hover {
+        transition-timing-function: ease-out;
+        transition: 0.3s;
+        transform: scale(1.1);
+    }
+    section.billofrights div.card-body-desktop div.bor-card-container div.row div.billofrights-card:hover {
+        transition-timing-function: ease-out;
+        transition: 0.3s;
+        transform: scale(1.1);
+    }
+    section.billofrights div.card-body-desktop div.bor-card-container div.row div.billofrights-card:hover {
+        transition-timing-function: ease-out;
+        transition: 0.3s;
+        transform: scale(1.1);
+    }
+    section.billofrights div.card-body-desktop div.bor-card-container div.row div.billofrights-card:hover {
+        transition-timing-function: ease-out;
+        transition: 0.3s;
+        transform: scale(1.1);
+    }
+    section.billofrights div.card-body-desktop div.bor-card-container div.row div.billofrights-card:hover {
+        transition-timing-function: ease-out;
+        transition: 0.3s;
+        transform: scale(1.1);
+    }
+    section.billofrights button.billofrights-btn {
+        display: flex;
+        justify-content: center;
+        border: 1.5px solid rgba(148, 148, 148, 0.5);
+        border-radius: 5px;
+        margin: 20px auto 0px auto;
+        padding: 10px 20px;
+        background: none;
+        font-size: 1rem;
+        font-family: arial;
+        transition-timing-function: ease-in;
+        transition: 0.3s;
+    }
+    section.billofrights button.billofrights-btn a {
+        color: var(--color-dark-gray);
+    }
+    section.billofrights button.billofrights-btn:hover {
+        transition-timing-function: ease-out;
+        transition: 0.3s;
+        transform: scale(1.05);
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    section.billofrights div.card-body-desktop {
+        padding: 5vh 0 0 0;
+    }
+    section.billofrights div.card-body-desktop div.bor-title {
+        padding: 0vh 0 2vh 0;
+    }
+    section.billofrights div.card-body-desktop div.bor-title div.card-body div div img.billsofrightslogo {
+        width: 150px !important;
+        height: 150px !important;
+    }
+    section.billofrights div.card-body-desktop div.bor-title div.card-body div p.billofrights-hdr {
+        color: var(--color-text-gray);
+        font-size: 2.5rem;
+        font-family: oswald;
+        font-weight: bold;
+        text-align: center;
+    }
+    section.billofrights div.card-body-desktop div.bor-title div.card-body div div.bor-desc-tablet div {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.billofrights div.card-body-desktop div.bor-card-container div.row div.billofrights-card {
+        transition-timing-function: ease-in;
+        transition: 0.3s;
+        display: block;
+        background: var(--color-rights-blue);
+    }
+    section.billofrights div.card-body-desktop div.bor-card-container div.row div.billofrights-card div h4.smallheader-bor {
+        text-align: center;
+        color: var(--color-white) !important;
+        font-family: Oswald;
+        font-size: 2rem;
+    }
+    section.billofrights div.card-body-desktop div.bor-card-container div.row div.billofrights-card div p.sm-txt-lg-bor {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.billofrights button.billofrights-btn {
+        display: flex;
+        justify-content: center;
+        border: 1.5px solid rgba(148, 148, 148, 0.5);
+        border-radius: 5px;
+        margin: 20px auto 0px auto;
+        padding: 10px 20px;
+        background: none;
+        font-size: 1rem;
+        font-family: arial;
+        transition-timing-function: ease-in;
+        transition: 0.3s;
+    }
+    section.billofrights button.billofrights-btn a {
+        color: var(--color-dark-gray);
+    }
+}
+@media (min-width: 577px) and (max-width: 767px) {
+    section.billofrights div.card-body-desktop {
+        padding: 2vh 0 0 0;
+    }
+    section.billofrights div.card-body-desktop div.bor-title {
+        padding: 0vh 0 2vh 0;
+    }
+    section.billofrights div.card-body-desktop div.bor-title div.card-body div div img.billsofrightslogo {
+        width: 100px !important;
+        height: 100px !important;
+        margin: 0 0 2vh 0;
+    }
+    section.billofrights div.card-body-desktop div.bor-title div.card-body div p.billofrights-hdr {
+        color: var(--color-text-gray);
+        font-size: 1.5rem;
+        font-family: oswald;
+        font-weight: bold;
+        text-align: center;
+    }
+    section.billofrights div.card-body-desktop div.bor-title div.card-body div div.bor-desc-tablet div {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.billofrights div.card-body-desktop div.bor-card-container div.row div.billofrights-card {
+        transition-timing-function: ease-in;
+        transition: 0.3s;
+        display: block;
+        background: var(--color-rights-blue);
+    }
+    section.billofrights div.card-body-desktop div.bor-card-container div.row div.billofrights-card div h4.smallheader-bor {
+        text-align: center;
+        color: var(--color-white) !important;
+        font-family: Oswald;
+        font-size: 1.5rem;
+    }
+    section.billofrights div.card-body-desktop div.bor-card-container div.row div.billofrights-card div p.sm-txt-lg-bor {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.billofrights button.billofrights-btn {
+        display: flex;
+        justify-content: center;
+        border: 1.5px solid rgba(148, 148, 148, 0.5);
+        border-radius: 5px;
+        margin: 20px auto 0px auto;
+        padding: 10px 20px;
+        background: none;
+        font-size: 1rem;
+        font-family: arial;
+        transition-timing-function: ease-in;
+        transition: 0.3s;
+    }
+    section.billofrights button.billofrights-btn a {
+        color: var(--color-dark-gray);
+    }
+}
+@media (min-width: 412px) and (max-width: 576px) {
+    section.billofrights div.card-body-desktop {
+        padding: 2vh 0 0 0;
+    }
+    section.billofrights div.card-body-desktop div.bor-title {
+        padding: 0vh 0 2vh 0;
+    }
+    section.billofrights div.card-body-desktop div.bor-title div.card-body div div img.billsofrightslogo {
+        width: 100px !important;
+        height: 100px !important;
+        margin: 0 0 2vh 0;
+    }
+    section.billofrights div.card-body-desktop div.bor-title div.card-body div p.billofrights-hdr {
+        color: var(--color-text-gray);
+        font-size: 2rem;
+        font-family: oswald;
+        font-weight: bold;
+        text-align: center;
+    }
+    section.billofrights div.card-body-desktop div.bor-title div.card-body div div.bor-desc-tablet div {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.billofrights div.card-body-desktop div.bor-card-container div.row div.billofrights-card {
+        transition-timing-function: ease-in;
+        transition: 0.3s;
+        display: block;
+        background: var(--color-rights-blue);
+    }
+    section.billofrights div.card-body-desktop div.bor-card-container div.row div.billofrights-card div h4.smallheader-bor {
+        text-align: center;
+        color: var(--color-white) !important;
+        font-family: Oswald;
+        font-size: 1.5rem;
+    }
+    section.billofrights div.card-body-desktop div.bor-card-container div.row div.billofrights-card div img.bor-icon-lg {
+        width: 100px !important;
+        height: 100px !important;
+    }
+    section.billofrights div.card-body-desktop div.bor-card-container div.row div.billofrights-card div p.sm-txt-lg-bor {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.billofrights button.billofrights-btn {
+        display: flex;
+        justify-content: center;
+        border: 1.5px solid rgba(148, 148, 148, 0.5);
+        border-radius: 5px;
+        margin: 20px auto 0px auto;
+        padding: 10px 20px;
+        background: none;
+        font-size: 1rem;
+        font-family: arial;
+        transition-timing-function: ease-in;
+        transition: 0.3s;
+    }
+    section.billofrights button.billofrights-btn a {
+        color: var(--color-dark-gray);
+    }
+}
+@media (max-width: 411px) {
+    section.billofrights div.card-body-desktop {
+        padding: 2vh 0 0 0;
+    }
+    section.billofrights div.card-body-desktop div.bor-title {
+        padding: 0vh 0 2vh 0;
+    }
+    section.billofrights div.card-body-desktop div.bor-title div.card-body div div img.billsofrightslogo {
+        width: 100px !important;
+        height: 100px !important;
+        margin: 0 0 2vh 0;
+    }
+    section.billofrights div.card-body-desktop div.bor-title div.card-body div p.billofrights-hdr {
+        color: var(--color-text-gray);
+        font-size: 1.75rem;
+        font-family: oswald;
+        font-weight: bold;
+        text-align: center;
+    }
+    section.billofrights div.card-body-desktop div.bor-title div.card-body div div.bor-desc-tablet div {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.billofrights div.card-body-desktop div.bor-card-container div.row div.billofrights-card {
+        transition-timing-function: ease-in;
+        transition: 0.3s;
+        display: block;
+        background: var(--color-rights-blue);
+    }
+    section.billofrights div.card-body-desktop div.bor-card-container div.row div.billofrights-card div h4.smallheader-bor {
+        text-align: center;
+        color: var(--color-white) !important;
+        font-family: Oswald;
+        font-size: 1.2rem;
+    }
+    section.billofrights div.card-body-desktop div.bor-card-container div.row div.billofrights-card div img.bor-icon-lg {
+        width: 80px !important;
+        height: 90px !important;
+    }
+    section.billofrights div.card-body-desktop div.bor-card-container div.row div.billofrights-card div p.sm-txt-lg-bor {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.billofrights button.billofrights-btn {
+        display: flex;
+        justify-content: center;
+        border: 1.5px solid rgba(148, 148, 148, 0.5);
+        border-radius: 5px;
+        margin: 20px auto 0px auto;
+        padding: 10px 20px;
+        background: none;
+        font-size: 0.9rem;
+        font-family: arial;
+        transition-timing-function: ease-in;
+        transition: 0.3s;
+    }
+    section.billofrights button.billofrights-btn a {
+        color: var(--color-dark-gray);
+    }
+}
+
+/* ==================== MASS TRANSPORT (RAIL LINES) ==================== */
+
+@media (min-width: 992px) {
+    section.history {
+        height: 100vh;
+        padding: 12vh 0 0 0 !important;
+        background-color: var(--color-white);
+    }
+    section.history div.card-body div.history-card-container {
+        margin: 0 0 0 0 !important;
+    }
+    section.history div.card-body div.history-card-container div.history-title div p.history-hdr {
+        color: var(--color-text-gray);
+        font-size: 2.5rem;
+        font-family: oswald;
+        font-weight: bold;
+        text-align: center;
+    }
+    section.history div.card-body div.history-title-mobile div div span.sm-txt1-mobile {
+        display: none !important;
+        height: 0vh;
+    }
+    section.history div.card-body div {
+        padding: -10vh 0 0 0 !important;
+    }
+    section.history div.card-body div div.card-group div h3.history-hdr-1 {
+        font-family: arial narrow;
+        color: var(--color-text-gray);
+    }
+    section.history div.card-body div div.card-group div h3.history-hdr-2 {
+        display: none !important;
+        height: 0vh;
+    }
+    section.history div.card-body div div.card-group div.row div.card {
+        transition-timing-function: ease-in;
+        transition: 0.3s;
+    }
+    section.history div.card-body div div.card-group div.row div.card div.card-body h5.card-title {
+        text-align: center;
+        line-height: 50px;
+        color: var(--color-charcoal);
+        font-family: Oswald;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    section.history div.card-body div div.card-group div.row div.card div.card-body h5.card-title span.ticker-pnr {
+        border-left: 5px solid var(--line-pnr);
+    }
+    section.history div.card-body div div.card-group div.row div.card div.card-body h5.card-title span.ticker-subway {
+        border-left: 5px solid var(--line-subway);
+    }
+    section.history div.card-body div div.card-group div.row div.card div.card-body h5.card-title span.ticker-lrt1 {
+        border-left: 5px solid var(--line-lrt1);
+    }
+    section.history div.card-body div div.card-group div.row div.card div.card-body h5.card-title span.ticker-mrt3 {
+        border-left: 5px solid var(--line-mrt3);
+    }
+    section.history div.card-body div div.card-group div.row div.card div.card-body h5.card-title span.ticker-lrt2 {
+        border-left: 5px solid var(--line-lrt2);
+    }
+    section.history div.card-body div div.card-group div.row div.card div.card-body h5.card-title span.ticker-line4 {
+        border-left: 5px solid var(--line-4);
+    }
+    section.history div.card-body div div.card-group div.row div.card div.card-body h5.card-title span.ticker-line5 {
+        border-left: 5px solid var(--line-5);
+    }
+    section.history div.card-body div div.card-group div.row div.card div.card-body h5.card-title span.ticker-line6 {
+        border-left: 5px solid var(--line-6);
+    }
+    section.history div.card-body div div.card-group div.row div.card div.card-body h5.card-title span.ticker-line7 {
+        border-left: 5px solid var(--line-7);
+    }
+    section.history div.card-body div div.card-group div.row div.card div.card-body h5.card-title span.ticker-line8 {
+        border-left: 5px solid var(--line-8);
+    }
+    section.history div.card-body div div.card-group div.row div.card div.card-body h5.card-title span.ticker-line9 {
+        border-left: 5px solid var(--line-9);
+    }
+    section.history div.card-body div div.card-group div.row div.card div.card-body h5.card-title span.ticker-pnr-north {
+        border-left: 5px solid var(--line-pnr-north);
+    }
+    section.history div.card-body div div.card-group div.row div.card div.card-body h5.card-title span.ticker-pnr-south {
+        border-left: 5px solid var(--line-pnr-south);
+    }
+    section.history div.card-body div div.card-group div.row div.card:hover {
+        transition-timing-function: ease-out;
+        transition: 0.3s;
+        transform: scale(1.1);
+    }
+    section.history div.card-body button.billofrights-btn {
+        display: flex;
+        justify-content: center;
+        border: 1.5px solid rgba(148, 148, 148, 0.5);
+        border-radius: 5px;
+        margin: 0.5rem auto 0px auto;
+        padding: 10px 20px;
+        background: none;
+        font-size: 1rem;
+        font-family: arial;
+        transition-timing-function: ease-in;
+        transition: 0.3s;
+    }
+    section.history div.card-body button.billofrights-btn a {
+        color: var(--color-dark-gray);
+    }
+    section.history div.card-body button.billofrights-btn:hover {
+        transition-timing-function: ease-out;
+        transition: 0.3s;
+        transform: scale(1.05);
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    section.history {
+        height: 200vh;
+        background-color: var(--color-white);
+    }
+    section.history div.card-body div.history-card-container {
+        margin: -10vh 0 0vh 0 !important;
+    }
+    section.history div.card-body div.history-card-container div.history-title div p.history-hdr {
+        color: var(--color-text-gray);
+        font-size: 2.5rem;
+        font-family: oswald;
+        font-weight: bold;
+        text-align: center;
+    }
+    section.history div.card-body div.history-title-mobile div div span.sm-txt1-mobile {
+        display: none !important;
+        height: 0vh;
+    }
+    section.history div.card-body div {
+        padding: -10vh 0 0 0 !important;
+    }
+    section.history div.card-body div div.card-group div h3.history-hdr-1 {
+        display: none !important;
+        height: 0vh;
+    }
+    section.history div.card-body div div.card-group div h3.history-hdr-2 {
+        font-family: arial narrow;
+        color: var(--color-text-gray);
+        font-size: 1.75rem;
+        margin: 0 0 0 2rem;
+    }
+    section.history div.card-body div div.card-group div.row div.card {
+        transition-timing-function: ease-in;
+        transition: 0.3s;
+    }
+    section.history div.card-body div div.card-group div.row div.card div.card-body h5.card-title {
+        text-align: center;
+        line-height: 50px;
+        color: var(--color-charcoal);
+        font-family: Oswald;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    section.history div.card-body div div.card-group div.row div.card div.card-body h5.card-title span.ticker-pnr {
+        border-left: 5px solid var(--line-pnr);
+    }
+    section.history div.card-body div div.card-group div.row div.card div.card-body h5.card-title span.ticker-subway {
+        border-left: 5px solid var(--line-subway);
+    }
+    section.history div.card-body div div.card-group div.row div.card div.card-body h5.card-title span.ticker-lrt1 {
+        border-left: 5px solid var(--line-lrt1);
+    }
+    section.history div.card-body div div.card-group div.row div.card div.card-body h5.card-title span.ticker-mrt3 {
+        border-left: 5px solid var(--line-mrt3);
+    }
+    section.history div.card-body div div.card-group div.row div.card div.card-body h5.card-title span.ticker-lrt2 {
+        border-left: 5px solid var(--line-lrt2);
+    }
+    section.history div.card-body div div.card-group div.row div.card div.card-body h5.card-title span.ticker-line4 {
+        border-left: 5px solid var(--line-4);
+    }
+    section.history div.card-body div div.card-group div.row div.card div.card-body h5.card-title span.ticker-line5 {
+        border-left: 5px solid var(--line-5);
+    }
+    section.history div.card-body div div.card-group div.row div.card div.card-body h5.card-title span.ticker-line6 {
+        border-left: 5px solid var(--line-6);
+    }
+    section.history div.card-body div div.card-group div.row div.card div.card-body h5.card-title span.ticker-line7 {
+        border-left: 5px solid var(--line-7);
+    }
+    section.history div.card-body div div.card-group div.row div.card div.card-body h5.card-title span.ticker-line8 {
+        border-left: 5px solid var(--line-8);
+    }
+    section.history div.card-body div div.card-group div.row div.card div.card-body h5.card-title span.ticker-line9 {
+        border-left: 5px solid var(--line-9);
+    }
+    section.history div.card-body div div.card-group div.row div.card div.card-body h5.card-title span.ticker-pnr-north {
+        border-left: 5px solid var(--line-pnr-north);
+    }
+    section.history div.card-body div div.card-group div.row div.card div.card-body h5.card-title span.ticker-pnr-south {
+        border-left: 5px solid var(--line-pnr-south);
+    }
+    section.history div.card-body div div.card-group div.row div.card:hover {
+        transition-timing-function: ease-out;
+        transition: 0.3s;
+        transform: scale(1.1);
+    }
+    section.history div.card-body button.billofrights-btn {
+        display: flex;
+        justify-content: center;
+        border: 1.5px solid rgba(148, 148, 148, 0.5);
+        border-radius: 5px;
+        margin: 0.5rem auto 0px auto;
+        padding: 10px 20px;
+        background: none;
+        font-size: 1rem;
+        font-family: arial;
+        transition-timing-function: ease-in;
+        transition: 0.3s;
+    }
+    section.history div.card-body button.billofrights-btn a {
+        color: var(--color-dark-gray);
+    }
+    section.history div.card-body button.billofrights-btn:hover {
+        transition-timing-function: ease-out;
+        transition: 0.3s;
+        transform: scale(1.05);
+    }
+    section.history div.railnetwork {
+        display: none !important;
+        height: 0vh;
+    }
+    section.history div.railnetwork img.railnetwork-map {
+        display: none !important;
+        height: 0vh;
+    }
+}
+@media (min-width: 577px) and (max-width: 767px) {
+    section.history {
+        height: 200vh;
+        background-color: var(--color-white);
+    }
+    section.history div.card-body div.history-card-container {
+        margin: -10vh 0 0vh 0 !important;
+    }
+    section.history div.card-body div.history-card-container div.history-title div p.history-hdr {
+        color: var(--color-text-gray);
+        font-size: 2.5rem;
+        font-family: oswald;
+        font-weight: bold;
+        text-align: center;
+    }
+    section.history div.card-body div.history-title-mobile div div span.sm-txt1-mobile {
+        display: none !important;
+        height: 0vh;
+    }
+    section.history div.card-body div {
+        padding: -10vh 0 0 0 !important;
+    }
+    section.history div.card-body div div.card-group {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    section.history div.card-body div div.card-group div h3.history-hdr-1 {
+        display: none !important;
+        height: 0vh;
+    }
+    section.history div.card-body div div.card-group div h3.history-hdr-2 {
+        font-family: arial narrow;
+        color: var(--color-text-gray);
+        font-size: 1.75rem;
+        margin: 0 0 0 2rem;
+    }
+    section.history div.card-body div div.card-group div.row {
+        width: 60vh;
+    }
+    section.history div.card-body div div.card-group div.row div.card {
+        transition-timing-function: ease-in;
+        transition: 0.3s;
+    }
+    section.history div.card-body div div.card-group div.row div.card div.card-body h5.card-title {
+        text-align: center;
+        line-height: 50px;
+        color: var(--color-charcoal);
+        font-family: Oswald;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    section.history div.card-body div div.card-group div.row div.card div.card-body h5.card-title span.ticker-pnr {
+        border-left: 5px solid var(--line-pnr);
+    }
+    section.history div.card-body div div.card-group div.row div.card div.card-body h5.card-title span.ticker-subway {
+        border-left: 5px solid var(--line-subway);
+    }
+    section.history div.card-body div div.card-group div.row div.card div.card-body h5.card-title span.ticker-lrt1 {
+        border-left: 5px solid var(--line-lrt1);
+    }
+    section.history div.card-body div div.card-group div.row div.card div.card-body h5.card-title span.ticker-mrt3 {
+        border-left: 5px solid var(--line-mrt3);
+    }
+    section.history div.card-body div div.card-group div.row div.card div.card-body h5.card-title span.ticker-lrt2 {
+        border-left: 5px solid var(--line-lrt2);
+    }
+    section.history div.card-body div div.card-group div.row div.card div.card-body h5.card-title span.ticker-line4 {
+        border-left: 5px solid var(--line-4);
+    }
+    section.history div.card-body div div.card-group div.row div.card div.card-body h5.card-title span.ticker-line5 {
+        border-left: 5px solid var(--line-5);
+    }
+    section.history div.card-body div div.card-group div.row div.card div.card-body h5.card-title span.ticker-line6 {
+        border-left: 5px solid var(--line-6);
+    }
+    section.history div.card-body div div.card-group div.row div.card div.card-body h5.card-title span.ticker-line7 {
+        border-left: 5px solid var(--line-7);
+    }
+    section.history div.card-body div div.card-group div.row div.card div.card-body h5.card-title span.ticker-line8 {
+        border-left: 5px solid var(--line-8);
+    }
+    section.history div.card-body div div.card-group div.row div.card div.card-body h5.card-title span.ticker-line9 {
+        border-left: 5px solid var(--line-9);
+    }
+    section.history div.card-body div div.card-group div.row div.card div.card-body h5.card-title span.ticker-pnr-north {
+        border-left: 5px solid var(--line-pnr-north);
+    }
+    section.history div.card-body div div.card-group div.row div.card div.card-body h5.card-title span.ticker-pnr-south {
+        border-left: 5px solid var(--line-pnr-south);
+    }
+    section.history div.card-body div div.card-group div.row div.card:hover {
+        transition-timing-function: ease-out;
+        transition: 0.3s;
+        transform: scale(1.1);
+    }
+    section.history div.card-body button.billofrights-btn {
+        display: flex;
+        justify-content: center;
+        border: 1.5px solid rgba(148, 148, 148, 0.5);
+        border-radius: 5px;
+        margin: 0.5rem auto 0px auto;
+        padding: 10px 20px;
+        background: none;
+        font-size: 1rem;
+        font-family: arial;
+        transition-timing-function: ease-in;
+        transition: 0.3s;
+    }
+    section.history div.card-body button.billofrights-btn a {
+        color: var(--color-dark-gray);
+    }
+    section.history div.card-body button.billofrights-btn:hover {
+        transition-timing-function: ease-out;
+        transition: 0.3s;
+        transform: scale(1.05);
+    }
+    section.history div.railnetwork {
+        display: none !important;
+        height: 0vh;
+    }
+    section.history div.railnetwork img.railnetwork-map {
+        display: none !important;
+        height: 0vh;
+    }
+}
+@media (min-width: 412px) and (max-width: 576px) {
+    section.history {
+        height: 170vh;
+        background-color: var(--color-white);
+    }
+    section.history div.card-body div.history-card-container {
+        display: none !important;
+        height: 0vh;
+    }
+    section.history div.card-body div.history-card-container div.history-title {
+        display: none !important;
+        height: 0vh;
+    }
+    section.history div.card-body div.history-card-container div.history-title div p.history-hdr {
+        display: none !important;
+        height: 0vh;
+    }
+    section.history div.card-body div.history-title-mobile div div span.sm-txt1-mobile {
+        color: var(--color-text-gray);
+        font-size: 1.5rem;
+        font-family: oswald;
+        font-weight: bold;
+        text-align: center;
+    }
+    section.history div.card-body div div.card-group div h3.history-hdr-1 {
+        display: none !important;
+        height: 0vh;
+    }
+    section.history div.card-body div div.card-group div h3.history-hdr-2 {
+        font-family: arial narrow;
+        color: var(--color-text-gray);
+        font-size: 1.75rem;
+    }
+    section.history div.card-body div div.card-group div.row div.card {
+        transition-timing-function: ease-in;
+        transition: 0.3s;
+    }
+    section.history div.card-body div div.card-group div.row div.card div.card-body h5.card-title {
+        text-align: center;
+        line-height: 50px;
+        color: var(--color-charcoal);
+        font-family: Oswald;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    section.history div.card-body div div.card-group div.row div.card div.card-body h5.card-title span.ticker-pnr {
+        border-left: 5px solid var(--line-pnr);
+    }
+    section.history div.card-body div div.card-group div.row div.card div.card-body h5.card-title span.ticker-subway {
+        border-left: 5px solid var(--line-subway);
+    }
+    section.history div.card-body div div.card-group div.row div.card div.card-body h5.card-title span.ticker-lrt1 {
+        border-left: 5px solid var(--line-lrt1);
+    }
+    section.history div.card-body div div.card-group div.row div.card div.card-body h5.card-title span.ticker-mrt3 {
+        border-left: 5px solid var(--line-mrt3);
+    }
+    section.history div.card-body div div.card-group div.row div.card div.card-body h5.card-title span.ticker-lrt2 {
+        border-left: 5px solid var(--line-lrt2);
+    }
+    section.history div.card-body div div.card-group div.row div.card div.card-body h5.card-title span.ticker-line4 {
+        border-left: 5px solid var(--line-4);
+    }
+    section.history div.card-body div div.card-group div.row div.card div.card-body h5.card-title span.ticker-line5 {
+        border-left: 5px solid var(--line-5);
+    }
+    section.history div.card-body div div.card-group div.row div.card div.card-body h5.card-title span.ticker-line6 {
+        border-left: 5px solid var(--line-6);
+    }
+    section.history div.card-body div div.card-group div.row div.card div.card-body h5.card-title span.ticker-line7 {
+        border-left: 5px solid var(--line-7);
+    }
+    section.history div.card-body div div.card-group div.row div.card div.card-body h5.card-title span.ticker-line8 {
+        border-left: 5px solid var(--line-8);
+    }
+    section.history div.card-body div div.card-group div.row div.card div.card-body h5.card-title span.ticker-line9 {
+        border-left: 5px solid var(--line-9);
+    }
+    section.history div.card-body div div.card-group div.row div.card div.card-body h5.card-title span.ticker-pnr-north {
+        border-left: 5px solid var(--line-pnr-north);
+    }
+    section.history div.card-body div div.card-group div.row div.card div.card-body h5.card-title span.ticker-pnr-south {
+        border-left: 5px solid var(--line-pnr-south);
+    }
+    section.history div.card-body div div.card-group div.row div.card:hover {
+        transition-timing-function: ease-out;
+        transition: 0.3s;
+        transform: scale(1.1);
+    }
+    section.history div.card-body button.billofrights-btn {
+        display: flex;
+        justify-content: center;
+        border: 1.5px solid rgba(148, 148, 148, 0.5);
+        border-radius: 5px;
+        margin: 0.5rem auto 0px auto;
+        padding: 10px 10px 10px 10px;
+        background: none;
+        font-size: 1rem;
+        font-family: arial;
+        transition-timing-function: ease-in;
+        transition: 0.3s;
+    }
+    section.history div.card-body button.billofrights-btn a {
+        color: var(--color-dark-gray);
+    }
+    section.history div.card-body button.billofrights-btn:hover {
+        transition-timing-function: ease-out;
+        transition: 0.3s;
+        transform: scale(1.05);
+    }
+    section.history div.railnetwork {
+        display: none !important;
+        height: 0vh;
+    }
+    section.history div.railnetwork img.railnetwork-map {
+        display: none !important;
+        height: 0vh;
+    }
+}
+@media (max-width: 411px) {
+    section.history {
+        height: 170vh;
+        background-color: var(--color-white);
+    }
+    section.history div.card-body div.history-card-container {
+        display: none !important;
+        height: 0vh;
+    }
+    section.history div.card-body div.history-card-container div.history-title {
+        display: none !important;
+        height: 0vh;
+    }
+    section.history div.card-body div.history-card-container div.history-title div p.history-hdr {
+        display: none !important;
+        height: 0vh;
+    }
+    section.history div.card-body div.history-title-mobile div div span.sm-txt1-mobile {
+        color: var(--color-text-gray);
+        font-size: 1.5rem;
+        font-family: oswald;
+        font-weight: bold;
+        text-align: center;
+    }
+    section.history div.card-body div div.card-group div h3.history-hdr-1 {
+        display: none !important;
+        height: 0vh;
+    }
+    section.history div.card-body div div.card-group div h3.history-hdr-2 {
+        font-family: arial narrow;
+        color: var(--color-text-gray);
+        font-size: 1.5rem;
+    }
+    section.history div.card-body div div.card-group div.row div.card {
+        transition-timing-function: ease-in;
+        transition: 0.3s;
+    }
+    section.history div.card-body div div.card-group div.row div.card div.card-body h5.card-title {
+        text-align: center;
+        line-height: 50px;
+        color: var(--color-charcoal);
+        font-family: Oswald;
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    section.history div.card-body div div.card-group div.row div.card div.card-body h5.card-title span.ticker-pnr {
+        border-left: 5px solid var(--line-pnr);
+    }
+    section.history div.card-body div div.card-group div.row div.card div.card-body h5.card-title span.ticker-subway {
+        border-left: 5px solid var(--line-subway);
+    }
+    section.history div.card-body div div.card-group div.row div.card div.card-body h5.card-title span.ticker-lrt1 {
+        border-left: 5px solid var(--line-lrt1);
+    }
+    section.history div.card-body div div.card-group div.row div.card div.card-body h5.card-title span.ticker-mrt3 {
+        border-left: 5px solid var(--line-mrt3);
+    }
+    section.history div.card-body div div.card-group div.row div.card div.card-body h5.card-title span.ticker-lrt2 {
+        border-left: 5px solid var(--line-lrt2);
+    }
+    section.history div.card-body div div.card-group div.row div.card div.card-body h5.card-title span.ticker-line4 {
+        border-left: 5px solid var(--line-4);
+    }
+    section.history div.card-body div div.card-group div.row div.card div.card-body h5.card-title span.ticker-line5 {
+        border-left: 5px solid var(--line-5);
+    }
+    section.history div.card-body div div.card-group div.row div.card div.card-body h5.card-title span.ticker-line6 {
+        border-left: 5px solid var(--line-6);
+    }
+    section.history div.card-body div div.card-group div.row div.card div.card-body h5.card-title span.ticker-line7 {
+        border-left: 5px solid var(--line-7);
+    }
+    section.history div.card-body div div.card-group div.row div.card div.card-body h5.card-title span.ticker-line8 {
+        border-left: 5px solid var(--line-8);
+    }
+    section.history div.card-body div div.card-group div.row div.card div.card-body h5.card-title span.ticker-line9 {
+        border-left: 5px solid var(--line-9);
+    }
+    section.history div.card-body div div.card-group div.row div.card div.card-body h5.card-title span.ticker-pnr-north {
+        border-left: 5px solid var(--line-pnr-north);
+    }
+    section.history div.card-body div div.card-group div.row div.card div.card-body h5.card-title span.ticker-pnr-south {
+        border-left: 5px solid var(--line-pnr-south);
+    }
+    section.history div.card-body div div.card-group div.row div.card:hover {
+        transition-timing-function: ease-out;
+        transition: 0.3s;
+        transform: scale(1.1);
+    }
+    section.history div.card-body button.billofrights-btn {
+        display: flex;
+        justify-content: center;
+        border: 1.5px solid rgba(148, 148, 148, 0.5);
+        border-radius: 5px;
+        margin: 0.5rem auto 0px auto;
+        padding: 10px 10px 10px 10px;
+        background: none;
+        font-size: 0.8rem;
+        font-family: arial;
+        transition-timing-function: ease-in;
+        transition: 0.3s;
+    }
+    section.history div.card-body button.billofrights-btn a {
+        color: var(--color-dark-gray);
+    }
+    section.history div.card-body button.billofrights-btn:hover {
+        transition-timing-function: ease-out;
+        transition: 0.3s;
+        transform: scale(1.05);
+    }
+    section.history div.railnetwork {
+        display: none !important;
+        height: 0vh;
+    }
+    section.history div.railnetwork img.railnetwork-map {
+        display: none !important;
+        height: 0vh;
+    }
+}
+
+/* ==================== JOIN US / HALALAN 2022 ==================== */
+
+section.joinus {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: url(https://res.cloudinary.com/kennmasing/image/upload/v1589305564/capstone1/edsatraffic_c5exgh.jpg) center center;
+    background-size: cover;
+}
+
+@media (min-width: 992px) {
+    div.joinus-desktop div.row div div.d-block div.joinus-cto {
+        margin-top: 15vh;
+        background: none !important;
+        border: none !important;
+    }
+    div.joinus-desktop div.row div div.d-block div.joinus-cto div.card-header small {
+        color: var(--color-white);
+    }
+    div.joinus-desktop div.row div div.d-block div.joinus-cto div.text-success h5.card-title {
+        font-size: 2.5rem;
+        font-family: arial;
+        color: var(--color-white);
+        font-weight: bold;
+    }
+    div.joinus-desktop div.row div div.d-block div.joinus-cto div.card-footer small a.readmore {
+        color: var(--color-white);
+    }
+    div.joinus-desktop div.row div.halalanrow div.halalan {
+        background: none !important;
+        border: none !important;
+    }
+    div.joinus-desktop div.row div.halalanrow div.halalan div.row div div.card-body2 {
+        padding: 0 !important;
+    }
+    div.joinus-desktop div.row div.halalanrow div.halalan div.row div div.card-body2 img.fingerprint {
+        width: 175px;
+        height: 175px;
+    }
+    div.joinus-desktop div.row div.halalanrow div.halalan div.row div div div.halalan-container {
+        padding: 0 !important;
+    }
+    div.joinus-desktop div.row div.halalanrow div.halalan div.row div div div.halalan-container h5.halalan-desktop {
+        font-size: 2.5rem;
+        font-family: oswald;
+        color: var(--color-white);
+        font-weight: bold;
+    }
+    div.joinus-desktop div.row div.halalanrow div.halalan div.row div div div.halalan-container p.halalan-desktop {
+        font-size: 2.3rem;
+        font-family: Saira Extra Condensed;
+        color: var(--color-white);
+        font-weight: bold;
+    }
+    div.joinus-desktop div.row div.halalanrow div.halalan div.row div div div.halalan-container hr.hrcolor {
+        border: 0.5px solid var(--color-white);
+        width: 95%;
+    }
+    div.joinus-desktop div.row div.halalanrow div.halalan div.row div div div.halalan-container p small.halalan {
+        color: var(--color-white);
+    }
+    div.joinus-mobile {
+        display: none !important;
+        height: 0vh !important;
+    }
+    div.joinus-mobile div.row {
+        display: none !important;
+        height: 0vh !important;
+    }
+    div.joinus-mobile div.row div {
+        display: none !important;
+        height: 0vh !important;
+    }
+    div.joinus-mobile div.row div div.d-block {
+        display: none !important;
+        height: 0vh !important;
+    }
+    div.joinus-mobile div.row div div.d-block div.joinus-cto {
+        display: none !important;
+        height: 0vh !important;
+    }
+    div.joinus-mobile div.row div div.d-block div.joinus-cto div.card-header small {
+        display: none !important;
+        height: 0vh !important;
+    }
+    div.joinus-mobile div.row div div.d-block div.joinus-cto div.text-success h5.card-title {
+        display: none !important;
+        height: 0vh !important;
+    }
+    div.joinus-mobile div.row div div.d-block div.joinus-cto div.card-footer small a.readmore {
+        display: none !important;
+        height: 0vh !important;
+    }
+    div.joinus-mobile div.row div.halalanrow div.halalan div.row div div div.halalan-container h5.halalan-desktop {
+        display: none !important;
+        height: 0vh !important;
+    }
+    div.joinus-mobile div.row div.halalanrow div.halalan div.row div div div.halalan-container p.halalan-desktop {
+        display: none !important;
+        height: 0vh !important;
+    }
+    div.joinus-mobile div.row div.halalanrow div.halalan div.row div div div.halalan-container p small.halalan {
+        display: none !important;
+        height: 0vh !important;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    div.joinus-desktop div.row div div.d-block div.joinus-cto {
+        margin-top: 5vh;
+        background: none !important;
+        border: none !important;
+    }
+    div.joinus-desktop div.row div div.d-block div.joinus-cto div.card-header small {
+        color: var(--color-white);
+    }
+    div.joinus-desktop div.row div div.d-block div.joinus-cto div.text-success h5.card-title {
+        font-size: 2.5rem;
+        font-family: arial;
+        color: var(--color-white);
+        font-weight: bold;
+    }
+    div.joinus-desktop div.row div div.d-block div.joinus-cto div.card-footer small a.readmore {
+        color: var(--color-white);
+    }
+    div.joinus-desktop div.row div.halalanrow div.halalan {
+        background: none !important;
+        border: none !important;
+    }
+    div.joinus-desktop div.row div.halalanrow div.halalan div.row div div.card-body2 {
+        padding: 0 !important;
+    }
+    div.joinus-desktop div.row div.halalanrow div.halalan div.row div div.card-body2 img.fingerprint {
+        width: 175px;
+        height: 175px;
+    }
+    div.joinus-desktop div.row div.halalanrow div.halalan div.row div div div.halalan-container {
+        padding: 0 !important;
+    }
+    div.joinus-desktop div.row div.halalanrow div.halalan div.row div div div.halalan-container h5.halalan-desktop {
+        font-size: 2.5rem;
+        font-family: oswald;
+        color: var(--color-white);
+        font-weight: bold;
+    }
+    div.joinus-desktop div.row div.halalanrow div.halalan div.row div div div.halalan-container p.halalan-desktop {
+        font-size: 2.3rem;
+        font-family: Saira Extra Condensed;
+        color: var(--color-white);
+        font-weight: bold;
+    }
+    div.joinus-desktop div.row div.halalanrow div.halalan div.row div div div.halalan-container hr.hrcolor {
+        border: 0.5px solid var(--color-white);
+        width: 95%;
+    }
+    div.joinus-desktop div.row div.halalanrow div.halalan div.row div div div.halalan-container p small.halalan {
+        color: var(--color-white);
+    }
+    div.joinus-mobile {
+        display: none !important;
+        height: 0vh !important;
+    }
+    div.joinus-mobile div.row {
+        display: none !important;
+        height: 0vh !important;
+    }
+    div.joinus-mobile div.row div {
+        display: none !important;
+        height: 0vh !important;
+    }
+    div.joinus-mobile div.row div div.d-block {
+        display: none !important;
+        height: 0vh !important;
+    }
+    div.joinus-mobile div.row div div.d-block div.joinus-cto {
+        display: none !important;
+        height: 0vh !important;
+    }
+    div.joinus-mobile div.row div div.d-block div.joinus-cto div.card-header small {
+        display: none !important;
+        height: 0vh !important;
+    }
+    div.joinus-mobile div.row div div.d-block div.joinus-cto div.text-success h5.card-title {
+        display: none !important;
+        height: 0vh !important;
+    }
+    div.joinus-mobile div.row div div.d-block div.joinus-cto div.card-footer small a.readmore {
+        display: none !important;
+        height: 0vh !important;
+    }
+    div.joinus-mobile div.row div.halalanrow div.halalan div.row div div div.halalan-container h5.halalan-desktop {
+        display: none !important;
+        height: 0vh !important;
+    }
+    div.joinus-mobile div.row div.halalanrow div.halalan div.row div div div.halalan-container p.halalan-desktop {
+        display: none !important;
+        height: 0vh !important;
+    }
+    div.joinus-mobile div.row div.halalanrow div.halalan div.row div div div.halalan-container p small.halalan {
+        display: none !important;
+        height: 0vh !important;
+    }
+}
+@media (min-width: 577px) and (max-width: 767px) {
+    div.joinus-desktop {
+        display: none !important;
+        height: 0vh !important;
+    }
+    div.joinus-desktop div.row div div.d-block div.joinus-cto {
+        display: none !important;
+        height: 0vh !important;
+    }
+    div.joinus-desktop div.row div div.d-block div.joinus-cto div.card-header small {
+        display: none !important;
+        height: 0vh !important;
+    }
+    div.joinus-desktop div.row div div.d-block div.joinus-cto div.text-success h5.card-title {
+        display: none !important;
+        height: 0vh !important;
+    }
+    div.joinus-desktop div.row div div.d-block div.joinus-cto div.card-footer small a.readmore {
+        display: none !important;
+        height: 0vh !important;
+    }
+    div.joinus-desktop div.row div.halalanrow div.halalan {
+        display: none !important;
+        height: 0vh !important;
+    }
+    div.joinus-desktop div.row div.halalanrow div.halalan div.row div div.card-body2 {
+        display: none !important;
+        height: 0vh !important;
+    }
+    div.joinus-desktop div.row div.halalanrow div.halalan div.row div div.card-body2 img.fingerprint {
+        display: none !important;
+        height: 0vh !important;
+    }
+    div.joinus-desktop div.row div.halalanrow div.halalan div.row div div div.halalan-container {
+        display: none !important;
+        height: 0vh !important;
+    }
+    div.joinus-desktop div.row div.halalanrow div.halalan div.row div div div.halalan-container h5.halalan-desktop {
+        display: none !important;
+        height: 0vh !important;
+    }
+    div.joinus-desktop div.row div.halalanrow div.halalan div.row div div div.halalan-container p.halalan-desktop {
+        display: none !important;
+        height: 0vh !important;
+    }
+    div.joinus-desktop div.row div.halalanrow div.halalan div.row div div div.halalan-container p small.halalan {
+        display: none !important;
+        height: 0vh !important;
+    }
+    div.joinus-mobile div.row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    div.joinus-mobile div.row div div.d-block div.joinus-cto {
+        margin-top: 5vh;
+        background: none !important;
+        border: none !important;
+    }
+    div.joinus-mobile div.row div div.d-block div.joinus-cto div.card-header small {
+        color: var(--color-white);
+    }
+    div.joinus-mobile div.row div div.d-block div.joinus-cto div.text-success h5 {
+        font-size: 1.5rem !important;
+        font-family: arial;
+        color: var(--color-white) !important;
+        font-weight: bold;
+    }
+    div.joinus-mobile div.row div div.d-block div.joinus-cto div.card-footer small a.readmore {
+        color: var(--color-white);
+    }
+    div.joinus-mobile div.row div.halalanrow div.halalan {
+        background: none !important;
+        border: none !important;
+    }
+    div.joinus-mobile div.row div.halalanrow div.halalan div.row div div.card-body2 {
+        padding: 0 !important;
+    }
+    div.joinus-mobile div.row div.halalanrow div.halalan div.row div div.card-body2 img.fingerprint {
+        width: 175px;
+        height: 175px;
+    }
+    div.joinus-mobile div.row div.halalanrow div.halalan div.row div div div.halalan-container {
+        padding: 0 !important;
+    }
+    div.joinus-mobile div.row div.halalanrow div.halalan div.row div div div.halalan-container h6.halalan-mobile {
+        font-size: 2rem;
+        font-family: oswald;
+        color: var(--color-white);
+        font-weight: bold;
+    }
+    div.joinus-mobile div.row div.halalanrow div.halalan div.row div div div.halalan-container p.halalan-mobile {
+        font-size: 2rem;
+        font-family: Saira Extra Condensed;
+        color: var(--color-white);
+        font-weight: bold;
+    }
+    div.joinus-mobile div.row div.halalanrow div.halalan div.row div div div.halalan-container p small.halalan-mobile {
+        font-size: 0.5rem;
+        color: var(--color-white);
+    }
+}
+@media (min-width: 412px) and (max-width: 576px) {
+    div.joinus-desktop {
+        display: none !important;
+        height: 0vh !important;
+    }
+    div.joinus-desktop div.row div div.d-block div.joinus-cto {
+        display: none !important;
+        height: 0vh !important;
+    }
+    div.joinus-desktop div.row div div.d-block div.joinus-cto div.card-header small {
+        display: none !important;
+        height: 0vh !important;
+    }
+    div.joinus-desktop div.row div div.d-block div.joinus-cto div.text-success h5.card-title {
+        display: none !important;
+        height: 0vh !important;
+    }
+    div.joinus-desktop div.row div div.d-block div.joinus-cto div.card-footer small a.readmore {
+        display: none !important;
+        height: 0vh !important;
+    }
+    div.joinus-desktop div.row div.halalanrow div.halalan {
+        display: none !important;
+        height: 0vh !important;
+    }
+    div.joinus-desktop div.row div.halalanrow div.halalan div.row div div.card-body2 {
+        display: none !important;
+        height: 0vh !important;
+    }
+    div.joinus-desktop div.row div.halalanrow div.halalan div.row div div.card-body2 img.fingerprint {
+        display: none !important;
+        height: 0vh !important;
+    }
+    div.joinus-desktop div.row div.halalanrow div.halalan div.row div div div.halalan-container {
+        display: none !important;
+        height: 0vh !important;
+    }
+    div.joinus-desktop div.row div.halalanrow div.halalan div.row div div div.halalan-container h5.halalan-desktop {
+        display: none !important;
+        height: 0vh !important;
+    }
+    div.joinus-desktop div.row div.halalanrow div.halalan div.row div div div.halalan-container p.halalan-desktop {
+        display: none !important;
+        height: 0vh !important;
+    }
+    div.joinus-desktop div.row div.halalanrow div.halalan div.row div div div.halalan-container p small.halalan {
+        display: none !important;
+        height: 0vh !important;
+    }
+    div.joinus-mobile div.row div div.d-block div.joinus-cto {
+        margin-top: 5vh;
+        background: none !important;
+        border: none !important;
+    }
+    div.joinus-mobile div.row div div.d-block div.joinus-cto div.card-header small {
+        color: var(--color-white);
+    }
+    div.joinus-mobile div.row div div.d-block div.joinus-cto div.text-success h5 {
+        font-size: 2.5rem !important;
+        font-family: arial;
+        color: var(--color-white) !important;
+        font-weight: bold;
+    }
+    div.joinus-mobile div.row div div.d-block div.joinus-cto div.card-footer small a.readmore {
+        color: var(--color-white);
+    }
+    div.joinus-mobile div.row div.halalanrow div.halalan {
+        background: none !important;
+        border: none !important;
+    }
+    div.joinus-mobile div.row div.halalanrow div.halalan div.row div div.card-body2 {
+        padding: 0 !important;
+    }
+    div.joinus-mobile div.row div.halalanrow div.halalan div.row div div.card-body2 img.fingerprint {
+        width: 175px;
+        height: 175px;
+    }
+    div.joinus-mobile div.row div.halalanrow div.halalan div.row div div div.halalan-container {
+        padding: 0 !important;
+    }
+    div.joinus-mobile div.row div.halalanrow div.halalan div.row div div div.halalan-container h6.halalan-mobile {
+        font-size: 2rem;
+        font-family: oswald;
+        color: var(--color-white);
+        font-weight: bold;
+    }
+    div.joinus-mobile div.row div.halalanrow div.halalan div.row div div div.halalan-container p.halalan-mobile {
+        font-size: 2rem;
+        font-family: Saira Extra Condensed;
+        color: var(--color-white);
+        font-weight: bold;
+    }
+    div.joinus-mobile div.row div.halalanrow div.halalan div.row div div div.halalan-container p small.halalan-mobile {
+        font-size: 0.5rem;
+        color: var(--color-white);
+    }
+}
+@media (max-width: 411px) {
+    div.joinus-desktop {
+        display: none !important;
+        height: 0vh !important;
+    }
+    div.joinus-desktop div.row div div.d-block div.joinus-cto {
+        display: none !important;
+        height: 0vh !important;
+    }
+    div.joinus-desktop div.row div div.d-block div.joinus-cto div.card-header small {
+        display: none !important;
+        height: 0vh !important;
+    }
+    div.joinus-desktop div.row div div.d-block div.joinus-cto div.text-success h5.card-title {
+        display: none !important;
+        height: 0vh !important;
+    }
+    div.joinus-desktop div.row div div.d-block div.joinus-cto div.card-footer small a.readmore {
+        display: none !important;
+        height: 0vh !important;
+    }
+    div.joinus-desktop div.row div.halalanrow div.halalan {
+        display: none !important;
+        height: 0vh !important;
+    }
+    div.joinus-desktop div.row div.halalanrow div.halalan div.row div div.card-body2 {
+        display: none !important;
+        height: 0vh !important;
+    }
+    div.joinus-desktop div.row div.halalanrow div.halalan div.row div div.card-body2 img.fingerprint {
+        display: none !important;
+        height: 0vh !important;
+    }
+    div.joinus-desktop div.row div.halalanrow div.halalan div.row div div div.halalan-container {
+        display: none !important;
+        height: 0vh !important;
+    }
+    div.joinus-desktop div.row div.halalanrow div.halalan div.row div div div.halalan-container h5.halalan-desktop {
+        display: none !important;
+        height: 0vh !important;
+    }
+    div.joinus-desktop div.row div.halalanrow div.halalan div.row div div div.halalan-container p.halalan-desktop {
+        display: none !important;
+        height: 0vh !important;
+    }
+    div.joinus-desktop div.row div.halalanrow div.halalan div.row div div div.halalan-container p small.halalan {
+        display: none !important;
+        height: 0vh !important;
+    }
+    div.joinus-mobile div.row div div.d-block div.joinus-cto {
+        margin-top: 5vh;
+        background: none !important;
+        border: none !important;
+    }
+    div.joinus-mobile div.row div div.d-block div.joinus-cto div.card-header small {
+        color: var(--color-white);
+    }
+    div.joinus-mobile div.row div div.d-block div.joinus-cto div.text-success h5 {
+        font-size: 2rem !important;
+        font-family: arial;
+        color: var(--color-white) !important;
+        font-weight: bold;
+    }
+    div.joinus-mobile div.row div div.d-block div.joinus-cto div.card-footer small a.readmore {
+        color: var(--color-white);
+    }
+    div.joinus-mobile div.row div.halalanrow div.halalan {
+        background: none !important;
+        border: none !important;
+    }
+    div.joinus-mobile div.row div.halalanrow div.halalan div.row div div.card-body2 {
+        padding: 0 !important;
+    }
+    div.joinus-mobile div.row div.halalanrow div.halalan div.row div div.card-body2 img.fingerprint {
+        width: 175px;
+        height: 175px;
+    }
+    div.joinus-mobile div.row div.halalanrow div.halalan div.row div div div.halalan-container {
+        padding: 0 !important;
+    }
+    div.joinus-mobile div.row div.halalanrow div.halalan div.row div div div.halalan-container h6.halalan-mobile {
+        font-size: 1.75rem;
+        font-family: oswald;
+        color: var(--color-white);
+        font-weight: bold;
+    }
+    div.joinus-mobile div.row div.halalanrow div.halalan div.row div div div.halalan-container p.halalan-mobile {
+        font-size: 1.75rem;
+        font-family: Saira Extra Condensed;
+        color: var(--color-white);
+        font-weight: bold;
+    }
+    div.joinus-mobile div.row div.halalanrow div.halalan div.row div div div.halalan-container p small.halalan-mobile {
+        font-size: 0.5rem;
+        color: var(--color-white);
+    }
+}
+
+/* ==================== NACTO COMPARISON (DESKTOP) ==================== */
+
+@media (min-width: 992px) {
+    section.nacto-desktop {
+        height: 100vh !important;
+        background-color: var(--color-white);
+    }
+    section.nacto-desktop div.card-body2 {
+        margin: 10vh 0 0 -10vh;
+    }
+    section.nacto-desktop div.card-body2 div div div.d-block h5.smallheader-nacto {
+        font-family: Oswald;
+        font-weight: bold;
+        font-size: 1.25rem;
+        color: var(--color-charcoal);
+    }
+    section.nacto-desktop div.card-body2 div div.history-card-container div.card-body div p.nacto-hdr {
+        font-size: 2.5rem;
+        color: var(--color-charcoal);
+        font-family: Oswald;
+        font-weight: bold;
+    }
+    section.nacto-desktop div.card-body2 div div.history-card-container div div p.sm-txt2 {
+        font-size: 1rem;
+        color: #5f7053;
+        font-family: Arial;
+        text-align: center;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    section.nacto-desktop {
+        display: none !important;
+        height: 0vh !important;
+        background-color: var(--color-white);
+    }
+    section.nacto-desktop div.card-body2 {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.nacto-desktop div.card-body2 div div div.d-block h5.smallheader-nacto {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.nacto-desktop div.card-body2 div div.history-card-container div.card-body div p.nacto-hdr {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.nacto-desktop div.card-body2 div div.history-card-container div div p.sm-txt2 {
+        display: none !important;
+        height: 0vh !important;
+    }
+}
+@media (min-width: 577px) and (max-width: 767px) {
+    section.nacto-desktop {
+        display: none !important;
+        height: 0vh !important;
+        background-color: var(--color-white);
+    }
+    section.nacto-desktop div.card-body2 {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.nacto-desktop div.card-body2 div div div.d-block h5.smallheader-nacto {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.nacto-desktop div.card-body2 div div.history-card-container div.card-body div p.nacto-hdr {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.nacto-desktop div.card-body2 div div.history-card-container div div p.sm-txt2 {
+        display: none !important;
+        height: 0vh !important;
+    }
+}
+@media (min-width: 412px) and (max-width: 576px) {
+    section.nacto-desktop {
+        display: none !important;
+        height: 0vh !important;
+        background-color: var(--color-white);
+    }
+    section.nacto-desktop div.card-body2 {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.nacto-desktop div.card-body2 div div div.d-block h5.smallheader-nacto {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.nacto-desktop div.card-body2 div div.history-card-container div.card-body div p.nacto-hdr {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.nacto-desktop div.card-body2 div div.history-card-container div div p.sm-txt2 {
+        display: none !important;
+        height: 0vh !important;
+    }
+}
+@media (max-width: 411px) {
+    section.nacto-desktop {
+        display: none !important;
+        height: 0vh !important;
+        background-color: var(--color-white);
+    }
+    section.nacto-desktop div.card-body2 {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.nacto-desktop div.card-body2 div div div.d-block h5.smallheader-nacto {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.nacto-desktop div.card-body2 div div.history-card-container div.card-body div p.nacto-hdr {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.nacto-desktop div.card-body2 div div.history-card-container div div p.sm-txt2 {
+        display: none !important;
+        height: 0vh !important;
+    }
+}
+
+/* ==================== NACTO COMPARISON (MOBILE) ==================== */
+
+@media (min-width: 992px) {
+    section.nacto-mobile {
+        display: none !important;
+        height: 0vh !important;
+        background-color: var(--color-white);
+    }
+    section.nacto-mobile div.nacto-title-mobile div p.sm-txt1-mobile {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.nacto-mobile div div div h6.card-title {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.nacto-mobile div div div div img {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.nacto-mobile div div div h6.card-title {
+        display: none !important;
+        height: 0vh !important;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    section.nacto-mobile {
+        height: 100vh;
+        background-color: var(--color-white);
+    }
+    section.nacto-mobile div.nacto-title-mobile div p.sm-txt1-mobile {
+        color: var(--color-text-gray);
+        font-size: 2rem;
+        font-family: oswald;
+        font-weight: bold;
+        text-align: center;
+    }
+    section.nacto-mobile div div div h6.card-title {
+        color: var(--color-text-gray);
+        font-size: 1.75rem;
+        font-family: oswald;
+        font-weight: bold;
+        text-align: center;
+    }
+    section.nacto-mobile div div div div img {
+        height: 35vh;
+    }
+    section.nacto-mobile div div div h6.card-title {
+        color: var(--color-text-gray);
+        font-size: 1rem;
+        font-family: oswald;
+        font-weight: bold;
+        text-align: center;
+    }
+}
+@media (min-width: 577px) and (max-width: 767px) {
+    section.nacto-mobile {
+        height: 100vh;
+        background-color: var(--color-white);
+    }
+    section.nacto-mobile div.nacto-title-mobile div p.sm-txt1-mobile {
+        color: var(--color-text-gray);
+        font-size: 2rem;
+        font-family: oswald;
+        font-weight: bold;
+        text-align: center;
+    }
+    section.nacto-mobile div div div h6.card-title {
+        color: var(--color-text-gray);
+        font-size: 1.75rem;
+        font-family: oswald;
+        font-weight: bold;
+        text-align: center;
+    }
+    section.nacto-mobile div div div div img {
+        height: 35vh;
+    }
+    section.nacto-mobile div div div h6.card-title {
+        color: var(--color-text-gray);
+        font-size: 1rem;
+        font-family: oswald;
+        font-weight: bold;
+        text-align: center;
+    }
+}
+@media (min-width: 412px) and (max-width: 576px) {
+    section.nacto-mobile {
+        height: 100vh;
+        background-color: var(--color-white);
+    }
+    section.nacto-mobile div.nacto-title-mobile div p.sm-txt1-mobile {
+        color: var(--color-text-gray);
+        font-size: 2rem;
+        font-family: oswald;
+        font-weight: bold;
+        text-align: center;
+    }
+    section.nacto-mobile div div div h6.card-title {
+        color: var(--color-text-gray);
+        font-size: 1.75rem;
+        font-family: oswald;
+        font-weight: bold;
+        text-align: center;
+    }
+    section.nacto-mobile div div div div img {
+        height: 35vh;
+    }
+    section.nacto-mobile div div div h6.card-title {
+        color: var(--color-text-gray);
+        font-size: 1rem;
+        font-family: oswald;
+        font-weight: bold;
+        text-align: center;
+    }
+}
+@media (max-width: 411px) {
+    section.nacto-mobile {
+        height: 100vh;
+        background-color: var(--color-white);
+    }
+    section.nacto-mobile div.nacto-title-mobile div p.sm-txt1-mobile {
+        color: var(--color-text-gray);
+        font-size: 1.5rem;
+        font-family: oswald;
+        font-weight: bold;
+        text-align: center;
+    }
+    section.nacto-mobile div div div h6.card-title {
+        color: var(--color-text-gray);
+        font-size: 0.9rem;
+        font-family: oswald;
+        font-weight: bold;
+        text-align: center;
+    }
+    section.nacto-mobile div div div div img {
+        height: 35vh;
+    }
+    section.nacto-mobile div div div h6.card-title {
+        color: var(--color-text-gray);
+        font-size: 0.9rem;
+        font-family: oswald;
+        font-weight: bold;
+        text-align: center;
+    }
+}
+
+/* ==================== CONTACT ==================== */
+
+@media (min-width: 992px) {
+    section.contact {
+        height: auto;
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
+        height: 80vh;
+    }
+    section.contact div div.parallax-window {
+        height: auto;
+        background: transparent;
+        position: relative;
+    }
+    section.contact div div.parallax-window div div.contact-desktop div form div.form-row div.form-group h5.contact-hdr {
+        font-size: 2rem !important;
+        font-family: Oswald;
+        color: var(--color-white);
+    }
+    section.contact div div.parallax-window div div.contact-desktop div form div.form-row div.form-group h5.contact-sub {
+        font-size: 1.5rem;
+        font-family: Saira Extra Condensed;
+        font-weight: normal;
+        color: var(--color-white);
+    }
+    section.contact div div.parallax-window div div.contact-desktop div div.row div.form-group h3.contact-hdr {
+        font-size: 1.25rem;
+        font-family: oswald;
+        color: var(--color-white);
+    }
+    section.contact div div.parallax-window div div.contact-desktop div div.row div.form-group div.socialmedia a {
+        color: var(--color-white);
+    }
+    section.contact div div.parallax-window div div.contact-desktop div div.row div h3.contact-hdr {
+        font-size: 1.25rem;
+        font-family: oswald;
+        color: var(--color-white);
+    }
+    section.contact div div.parallax-window div div.contact-desktop div div.row div p.contact-txt {
+        font-size: 1rem;
+        font-family: arial;
+        color: var(--color-white);
+    }
+    section.contact div div.parallax-window div div.contact-desktop div div.row div p.contact-txt {
+        font-size: 1rem;
+        font-family: arial;
+        color: var(--color-white);
+    }
+    section.contact div div.parallax-window div div.contact-form form.d-block h5.contact-hdr {
+        font-size: 2rem !important;
+        font-family: Oswald;
+        color: var(--color-white);
+    }
+    section.contact div div.parallax-window div div.contact-form form.d-block h5.contact-sub {
+        font-size: 1.5rem;
+        font-family: Saira Extra Condensed;
+        font-weight: normal;
+        color: var(--color-white);
+    }
+    section.contact div div.parallax-window div div.contact-form form.d-block h5.captcha-hdr {
+        font-size: 1.5rem;
+        font-family: arial;
+        font-weight: normal;
+        color: var(--color-white);
+    }
+    section.contact div div.parallax-window div div.contact-form form.d-block h6.captcha-sub {
+        font-size: 1rem;
+        font-family: arial narrow;
+        font-weight: normal;
+        color: var(--color-white);
+    }
+    section.contact div div.parallax-window div div.contact-form form.d-block div.form-group div.card-body div img.captcha-img {
+        width: 50px;
+        height: 50px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    section.contact {
+        height: auto;
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
+        height: 70vh;
+    }
+    section.contact div div.parallax-window {
+        height: auto;
+        background: transparent;
+        position: relative;
+        height: 70vh;
+    }
+    section.contact div div.parallax-window div div.contact-desktop div form div.form-row div.form-group h5.contact-hdr {
+        font-size: 1.5rem !important;
+        font-family: Oswald;
+        color: var(--color-white);
+    }
+    section.contact div div.parallax-window div div.contact-desktop div form div.form-row div.form-group h5.contact-sub {
+        font-size: 1.2rem;
+        font-family: Saira Extra Condensed;
+        font-weight: normal;
+        color: var(--color-white);
+    }
+    section.contact div div.parallax-window div div.contact-desktop div div.row div.form-group h3.contact-hdr {
+        font-size: 1rem;
+        font-family: oswald;
+        color: var(--color-white);
+    }
+    section.contact div div.parallax-window div div.contact-desktop div div.row div.form-group div.socialmedia a {
+        color: var(--color-white);
+    }
+    section.contact div div.parallax-window div div.contact-desktop div div.row div h3.contact-hdr {
+        font-size: 1rem;
+        font-family: oswald;
+        color: var(--color-white);
+    }
+    section.contact div div.parallax-window div div.contact-desktop div div.row div p.contact-txt {
+        font-size: 0.7rem;
+        font-family: arial;
+        color: var(--color-white);
+    }
+    section.contact div div.parallax-window div div.contact-desktop div div.row div p.contact-txt {
+        font-size: 0.7rem;
+        font-family: arial;
+        color: var(--color-white);
+    }
+    section.contact div div.parallax-window div div form.d-block h5.contact-hdr {
+        font-size: 1.5rem !important;
+        font-family: Oswald;
+        color: var(--color-white);
+    }
+    section.contact div div.parallax-window div div form.d-block h5.contact-sub {
+        font-size: 1.2rem;
+        font-family: Saira Extra Condensed;
+        font-weight: normal;
+        color: var(--color-white);
+    }
+    section.contact div div.parallax-window div div form.d-block h5.captcha-hdr {
+        font-size: 1.2rem;
+        font-family: arial;
+        font-weight: normal;
+        color: var(--color-white);
+    }
+    section.contact div div.parallax-window div div form.d-block h6.captcha-sub {
+        font-size: 0.7rem;
+        font-family: arial narrow;
+        font-weight: normal;
+        color: var(--color-white);
+    }
+    section.contact div div.parallax-window div div form.d-block div.form-group div.card-body div img.captcha-img {
+        width: 50px;
+        height: 50px;
+    }
+}
+@media (min-width: 577px) and (max-width: 767px) {
+    section.contact {
+        height: auto;
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
+        height: 100vh;
+    }
+    section.contact div div.parallax-window {
+        height: auto;
+        background: transparent;
+        position: relative;
+        height: 100vh;
+    }
+    section.contact div div.parallax-window div div.contact-desktop div form div.form-row div.form-group h5.contact-hdr {
+        font-size: 1.5rem !important;
+        font-family: Oswald;
+        color: var(--color-white);
+    }
+    section.contact div div.parallax-window div div.contact-desktop div form div.form-row div.form-group h5.contact-sub {
+        font-size: 1.2rem;
+        font-family: Saira Extra Condensed;
+        font-weight: normal;
+        color: var(--color-white);
+    }
+    section.contact div div.parallax-window div div.contact-desktop div div.row div.form-group h3.contact-hdr {
+        font-size: 1rem;
+        font-family: oswald;
+        color: var(--color-white);
+    }
+    section.contact div div.parallax-window div div.contact-desktop div div.row div.form-group div.socialmedia a {
+        color: var(--color-white);
+    }
+    section.contact div div.parallax-window div div.contact-desktop div div.row div h3.contact-hdr {
+        font-size: 1rem;
+        font-family: oswald;
+        color: var(--color-white);
+    }
+    section.contact div div.parallax-window div div.contact-desktop div div.row div p.contact-txt {
+        font-size: 0.7rem;
+        font-family: arial;
+        color: var(--color-white);
+    }
+    section.contact div div.parallax-window div div.contact-desktop div div.row div p.contact-txt {
+        font-size: 0.7rem;
+        font-family: arial;
+        color: var(--color-white);
+    }
+    section.contact div div.parallax-window div div form.d-block h5.contact-hdr {
+        font-size: 1.5rem !important;
+        font-family: Oswald;
+        color: var(--color-white);
+    }
+    section.contact div div.parallax-window div div form.d-block h5.contact-sub {
+        font-size: 1.2rem;
+        font-family: Saira Extra Condensed;
+        font-weight: normal;
+        color: var(--color-white);
+    }
+    section.contact div div.parallax-window div div form.d-block h5.captcha-hdr {
+        font-size: 1.2rem;
+        font-family: arial;
+        font-weight: normal;
+        color: var(--color-white);
+    }
+    section.contact div div.parallax-window div div form.d-block h6.captcha-sub {
+        font-size: 0.7rem;
+        font-family: arial narrow;
+        font-weight: normal;
+        color: var(--color-white);
+    }
+    section.contact div div.parallax-window div div form.d-block div.form-group div.card-body div img.captcha-img {
+        width: 50px;
+        height: 50px;
+    }
+}
+@media (min-width: 412px) and (max-width: 576px) {
+    section.contact {
+        height: auto;
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
+        height: 170vh;
+    }
+    section.contact div div.parallax-window {
+        height: 170vh;
+        background: transparent;
+        position: relative;
+    }
+    section.contact div div.parallax-window div div.contact-desktop div form div.form-row div.form-group h5.contact-hdr {
+        font-size: 2rem !important;
+        font-family: Oswald;
+        color: var(--color-white);
+    }
+    section.contact div div.parallax-window div div.contact-desktop div form div.form-row div.form-group h5.contact-sub {
+        font-size: 1.5rem;
+        font-family: Saira Extra Condensed;
+        font-weight: normal;
+        color: var(--color-white);
+    }
+    section.contact div div.parallax-window div div.contact-desktop div div.row div.form-group h3.contact-hdr {
+        font-size: 1.25rem;
+        font-family: oswald;
+        color: var(--color-white);
+    }
+    section.contact div div.parallax-window div div.contact-desktop div div.row div.form-group div.socialmedia a {
+        color: var(--color-white);
+    }
+    section.contact div div.parallax-window div div.contact-desktop div div.row div h3.contact-hdr {
+        font-size: 1.25rem;
+        font-family: oswald;
+        color: var(--color-white);
+    }
+    section.contact div div.parallax-window div div.contact-desktop div div.row div p.contact-txt {
+        font-size: 1rem;
+        font-family: arial;
+        color: var(--color-white);
+    }
+    section.contact div div.parallax-window div div.contact-desktop div div.row div p.contact-txt {
+        font-size: 1rem;
+        font-family: arial;
+        color: var(--color-white);
+    }
+    section.contact div div.parallax-window div div form.d-block h5.contact-hdr {
+        font-size: 2rem !important;
+        font-family: Oswald;
+        color: var(--color-white);
+    }
+    section.contact div div.parallax-window div div form.d-block h5.contact-sub {
+        font-size: 1.5rem;
+        font-family: Saira Extra Condensed;
+        font-weight: normal;
+        color: var(--color-white);
+    }
+    section.contact div div.parallax-window div div form.d-block h5.captcha-hdr {
+        font-size: 1.5rem;
+        font-family: arial;
+        font-weight: normal;
+        color: var(--color-white);
+    }
+    section.contact div div.parallax-window div div form.d-block h6.captcha-sub {
+        font-size: 1rem;
+        font-family: arial narrow;
+        font-weight: normal;
+        color: var(--color-white);
+    }
+    section.contact div div.parallax-window div div form.d-block div.form-group div.card-body div img.captcha-img {
+        width: 50px;
+        height: 50px;
+    }
+}
+@media (max-width: 411px) {
+    section.contact {
+        height: auto;
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
+        height: 180vh;
+    }
+    section.contact div div.parallax-window {
+        height: 180vh;
+        background: transparent;
+        position: relative;
+    }
+    section.contact div div.parallax-window div div.contact-desktop div form div.form-row div.form-group h5.contact-hdr {
+        font-size: 2rem !important;
+        font-family: Oswald;
+        color: var(--color-white);
+    }
+    section.contact div div.parallax-window div div.contact-desktop div form div.form-row div.form-group h5.contact-sub {
+        font-size: 1.5rem;
+        font-family: Saira Extra Condensed;
+        font-weight: normal;
+        color: var(--color-white);
+    }
+    section.contact div div.parallax-window div div.contact-desktop div div.row div.form-group h3.contact-hdr {
+        font-size: 1.25rem;
+        font-family: oswald;
+        color: var(--color-white);
+    }
+    section.contact div div.parallax-window div div.contact-desktop div div.row div.form-group div.socialmedia a {
+        color: var(--color-white);
+    }
+    section.contact div div.parallax-window div div.contact-desktop div div.row div h3.contact-hdr {
+        font-size: 1.25rem;
+        font-family: oswald;
+        color: var(--color-white);
+    }
+    section.contact div div.parallax-window div div.contact-desktop div div.row div p.contact-txt {
+        font-size: 1rem;
+        font-family: arial;
+        color: var(--color-white);
+    }
+    section.contact div div.parallax-window div div.contact-desktop div div.row div p.contact-txt {
+        font-size: 1rem;
+        font-family: arial;
+        color: var(--color-white);
+    }
+    section.contact div div.parallax-window div div form.d-block h5.contact-hdr {
+        font-size: 2rem !important;
+        font-family: Oswald;
+        color: var(--color-white);
+    }
+    section.contact div div.parallax-window div div form.d-block h5.contact-sub {
+        font-size: 1.5rem;
+        font-family: Saira Extra Condensed;
+        font-weight: normal;
+        color: var(--color-white);
+    }
+    section.contact div div.parallax-window div div form.d-block h5.captcha-hdr {
+        font-size: 1.5rem;
+        font-family: arial;
+        font-weight: normal;
+        color: var(--color-white);
+    }
+    section.contact div div.parallax-window div div form.d-block h6.captcha-sub {
+        font-size: 1rem;
+        font-family: arial narrow;
+        font-weight: normal;
+        color: var(--color-white);
+    }
+    section.contact div div.parallax-window div div form.d-block div.form-group div.card-body div img.captcha-img {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+/* ==================== FOOTER (DESKTOP) ==================== */
+
+@media (min-width: 992px) {
+    section.footer-desktop {
+        height: 20vh;
+        background-color: var(--color-base);
+    }
+    section.footer-desktop div div div a img.nav-logo {
+        width: 240px;
+        height: 71px;
+    }
+    section.footer-desktop div div a.calltoaction {
+        font-family: Oswald;
+        font-size: 1.2rem;
+        color: var(--color-white);
+    }
+    section.footer-desktop div hr.hrcolor {
+        border: 0.5px solid var(--color-white);
+        width: 95%;
+    }
+    section.footer-desktop div div small {
+        color: var(--color-white);
+        font-size: 0.8rem;
+    }
+    section.footer-desktop div div ul li {
+        color: var(--color-white);
+    }
+    section.footer-desktop div div ul li a {
+        color: var(--color-white);
+        font-family: Oswald;
+        font-size: 0.9rem;
+    }
+    section.footer-mobile {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.footer-mobile div div.footer-container {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.footer-mobile div div.footer-container a img.footer-logo {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.footer-mobile div.footer-mobile div.row h6.smallheader-footer {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.footer-mobile div.footer-mobile div.row a {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.footer-mobile div {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.footer-mobile div div.card-body2 hr.hrcolor {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.footer-mobile div div.copyright-nextline ul.card-body2 li {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.footer-mobile div div.copyright-nextline ul.card-body2 li a {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.footer-mobile div div.copyright-nextline small {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.footer-mobile div div.copyright-nextline small strong {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.footer-mobile div div.copyright-nextline small span {
+        display: none !important;
+        height: 0vh !important;
+    }
+}
+
+/* ==================== FOOTER (MOBILE) ==================== */
+
+@media (min-width: 768px) and (max-width: 991px) {
+    section.footer-desktop {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.footer-desktop div {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.footer-desktop div div {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.footer-desktop div div div {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.footer-desktop div div div a {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.footer-desktop div div div a img.nav-logo {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.footer-desktop div div {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.footer-desktop div div a.calltoaction {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.footer-desktop div div {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.footer-desktop div div button {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.footer-desktop div {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.footer-desktop div hr.hrcolor {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.footer-desktop div {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.footer-desktop div div {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.footer-desktop div div small {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.footer-desktop div div small strong {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.footer-desktop div div small span {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.footer-desktop div div {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.footer-desktop div div ul {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.footer-desktop div div ul li {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.footer-desktop div div ul li a {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.footer-mobile {
+        height: 30vh;
+        margin: 0vh 0 0 0 !important;
+        background-color: var(--color-base);
+    }
+    section.footer-mobile div div.footer-container {
+        background: var(--color-base) !important;
+    }
+    section.footer-mobile div div.footer-container a img.footer-logo {
+        width: 240px;
+        height: 71px;
+        background: var(--color-base) !important;
+    }
+    section.footer-mobile div.footer-mobile div.row h6.smallheader-footer {
+        color: var(--color-white);
+        font-family: Oswald;
+    }
+    section.footer-mobile div.footer-mobile div.row a {
+        color: var(--color-white);
+    }
+    section.footer-mobile div {
+        background-color: var(--color-base);
+        border: none;
+    }
+    section.footer-mobile div div.card-body2 hr.hrcolor {
+        border: 0.5px solid var(--color-white);
+        width: 95%;
+    }
+    section.footer-mobile div div.copyright-nextline ul.card-body2 li {
+        color: var(--color-white);
+        font-size: 0.8rem;
+    }
+    section.footer-mobile div div.copyright-nextline ul.card-body2 li a {
+        color: var(--color-white);
+        font-size: 0.8rem;
+    }
+    section.footer-mobile div div.copyright-nextline small {
+        color: var(--color-white);
+    }
+    section.footer-mobile div div.copyright-nextline small strong {
+        color: var(--color-white);
+    }
+    section.footer-mobile div div.copyright-nextline small span {
+        color: var(--color-white);
+    }
+}
+@media (min-width: 577px) and (max-width: 767px) {
+    section.footer-desktop {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.footer-desktop div {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.footer-desktop div div {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.footer-desktop div div div {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.footer-desktop div div div a {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.footer-desktop div div div a img.nav-logo {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.footer-desktop div div {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.footer-desktop div div a.calltoaction {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.footer-desktop div div {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.footer-desktop div div button {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.footer-desktop div {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.footer-desktop div hr.hrcolor {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.footer-desktop div {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.footer-desktop div div {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.footer-desktop div div small {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.footer-desktop div div small strong {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.footer-desktop div div small span {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.footer-desktop div div {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.footer-desktop div div ul {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.footer-desktop div div ul li {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.footer-desktop div div ul li a {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.footer-mobile {
+        height: 30vh;
+        margin: 0vh 0 0 0 !important;
+        background-color: var(--color-base);
+    }
+    section.footer-mobile div div.footer-container {
+        background: var(--color-base) !important;
+    }
+    section.footer-mobile div div.footer-container a img.footer-logo {
+        width: 240px;
+        height: 71px;
+        background: var(--color-base) !important;
+    }
+    section.footer-mobile div.footer-mobile div.row h6.smallheader-footer {
+        color: var(--color-white);
+        font-family: Oswald;
+    }
+    section.footer-mobile div.footer-mobile div.row a {
+        color: var(--color-white);
+    }
+    section.footer-mobile div {
+        background-color: var(--color-base);
+        border: none;
+    }
+    section.footer-mobile div div.card-body2 hr.hrcolor {
+        border: 0.5px solid var(--color-white);
+        width: 95%;
+    }
+    section.footer-mobile div div.copyright-nextline ul.card-body2 li {
+        color: var(--color-white);
+        font-size: 0.8rem;
+    }
+    section.footer-mobile div div.copyright-nextline ul.card-body2 li a {
+        color: var(--color-white);
+        font-size: 0.8rem;
+    }
+    section.footer-mobile div div.copyright-nextline small {
+        color: var(--color-white);
+    }
+    section.footer-mobile div div.copyright-nextline small strong {
+        color: var(--color-white);
+    }
+    section.footer-mobile div div.copyright-nextline small span {
+        color: var(--color-white);
+    }
+}
+@media (min-width: 412px) and (max-width: 576px) {
+    section.footer-desktop {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.footer-desktop div {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.footer-desktop div div {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.footer-desktop div div div {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.footer-desktop div div div a {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.footer-desktop div div div a img.nav-logo {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.footer-desktop div div {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.footer-desktop div div a.calltoaction {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.footer-desktop div div {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.footer-desktop div div button {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.footer-desktop div {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.footer-desktop div hr.hrcolor {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.footer-desktop div {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.footer-desktop div div {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.footer-desktop div div small {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.footer-desktop div div small strong {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.footer-desktop div div small span {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.footer-desktop div div {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.footer-desktop div div ul {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.footer-desktop div div ul li {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.footer-desktop div div ul li a {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.footer-mobile {
+        height: 30vh;
+        background-color: var(--color-base);
+    }
+    section.footer-mobile div div.footer-container {
+        background: var(--color-base) !important;
+    }
+    section.footer-mobile div div.footer-container a img.footer-logo {
+        width: 180px;
+        height: 53px;
+        background: var(--color-base) !important;
+    }
+    section.footer-mobile div.footer-mobile div.row h6.smallheader-footer {
+        color: var(--color-white);
+        font-family: Oswald;
+    }
+    section.footer-mobile div.footer-mobile div.row a {
+        color: var(--color-white);
+    }
+    section.footer-mobile div {
+        background-color: var(--color-base);
+        border: none;
+    }
+    section.footer-mobile div div.card-body2 hr.hrcolor {
+        border: 0.5px solid var(--color-white);
+        width: 95%;
+    }
+    section.footer-mobile div div.copyright-nextline ul.card-body2 li {
+        color: var(--color-white);
+        font-size: 0.5rem;
+    }
+    section.footer-mobile div div.copyright-nextline ul.card-body2 li a {
+        color: var(--color-white);
+        font-size: 0.5rem;
+    }
+    section.footer-mobile div div.copyright-nextline small {
+        color: var(--color-white);
+    }
+    section.footer-mobile div div.copyright-nextline small strong {
+        color: var(--color-white);
+    }
+    section.footer-mobile div div.copyright-nextline small span {
+        color: var(--color-white);
+    }
+}
+@media (max-width: 411px) {
+    section.footer-desktop {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.footer-desktop div {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.footer-desktop div div {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.footer-desktop div div div {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.footer-desktop div div div a {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.footer-desktop div div div a img.nav-logo {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.footer-desktop div div {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.footer-desktop div div a.calltoaction {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.footer-desktop div div {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.footer-desktop div div button {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.footer-desktop div {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.footer-desktop div hr.hrcolor {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.footer-desktop div {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.footer-desktop div div {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.footer-desktop div div small {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.footer-desktop div div small strong {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.footer-desktop div div small span {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.footer-desktop div div {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.footer-desktop div div ul {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.footer-desktop div div ul li {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.footer-desktop div div ul li a {
+        display: none !important;
+        height: 0vh !important;
+    }
+    section.footer-mobile {
+        height: 30vh;
+        background-color: var(--color-base);
+    }
+    section.footer-mobile div div.footer-container {
+        background: var(--color-base) !important;
+    }
+    section.footer-mobile div div.footer-container a img.footer-logo {
+        width: 180px;
+        height: 53px;
+        background: var(--color-base) !important;
+    }
+    section.footer-mobile div.footer-mobile div.row h6.smallheader-footer {
+        color: var(--color-white);
+        font-family: Oswald;
+    }
+    section.footer-mobile div.footer-mobile div.row a {
+        color: var(--color-white);
+    }
+    section.footer-mobile div {
+        background-color: var(--color-base);
+        border: none;
+    }
+    section.footer-mobile div div.card-body2 hr.hrcolor {
+        border: 0.5px solid var(--color-white);
+        width: 95%;
+    }
+    section.footer-mobile div div.copyright-nextline ul.card-body2 li {
+        color: var(--color-white);
+        font-size: 0.5rem;
+    }
+    section.footer-mobile div div.copyright-nextline ul.card-body2 li a {
+        color: var(--color-white);
+        font-size: 0.5rem;
+    }
+    section.footer-mobile div div.copyright-nextline small {
+        color: var(--color-white);
+    }
+    section.footer-mobile div div.copyright-nextline small strong {
+        color: var(--color-white);
+    }
+    section.footer-mobile div div.copyright-nextline small span {
+        color: var(--color-white);
+    }
+}
+
+/* ==================== SIDEBAR OVERLAY ==================== */
+
+div.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 998;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+div.overlay.active {
+    display: block;
+    opacity: 1;
+}
