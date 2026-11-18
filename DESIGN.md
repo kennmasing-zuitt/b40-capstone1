@@ -143,7 +143,7 @@ Every site colour above is a custom property in the `:root` block of `index.css`
 
 ## Typography
 
-- **Display & Section Titles (Oswald):** Sizes scale with the screen width (`clamp()`). The hero headline goes from 40px on phones to 62px at 800px, and is 112px on desktop (from 992px). Section titles go from 24px (390px) to 33px at 800px and 40px bold from about 1150px. Card titles: Bill of Rights 19.2px below desktop and 24px on desktop; rail lines 16px and 24px; NACTO captions 14.4px and 20px. The hero and Bill of Rights titles wrap long words rather than overflow if the web font hasn't loaded. Mostly uppercase in the markup.
+- **Display & Section Titles (Oswald):** Sizes scale with the screen width (`clamp()`). The hero headline goes from 40px on phones to 62px at 800px, and is 112px on desktop (from 992px). Section titles go from 24px (390px) to 33px at 800px and 40px bold from about 1150px. Card titles: Bill of Rights 19.2px below desktop and 24px on desktop; rail lines 16px and 24px; NACTO captions 14.4px and 20px. The hero headline and the Bill of Rights card titles wrap long words rather than overflow if the web font hasn't loaded. Mostly uppercase in the markup.
 - **Condensed Subheads (Saira Extra Condensed):** Letter-spaced hero subtitles, the `2 0 2 2` Halalan year and contact subheads. The spacing is typed into the text, so keep it when editing copy.
 - **Body (Arial):** Descriptions, card text, the "Know more" buttons and the featured quote (40px bold on desktop, 32px below).
 - **List Headings (Arial Narrow):** "EXISTING LINES"-style headings in the rail section.
@@ -160,7 +160,7 @@ The font stacks are `--font-display`, `--font-condensed`, `--font-body` and `--f
 - **Sticky navbar:** anchor links scroll the section to just under the navbar (`scroll-padding-top: var(--nav-height)`, 60px below desktop and 94px on desktop, where the logo is a fixed 64px tall).
 - **Grid:** the Bill of Rights and rail cards sit in Bootstrap rows (`col-5 col-lg`): one row on desktop, two per row below, with a `1rem` gap (`0.5rem` margin on each card). The NACTO GIFs are four columns on desktop and two below (`col-6 col-lg-3`).
 - **Hidden below desktop:** the Bill of Rights intro and card descriptions, the NACTO description and the rail network map.
-- **Images below the hero load lazily** (`loading="lazy"`) and carry their real `width`/`height`, with `height: auto` in the CSS, so nothing moves while they load and anchor links land in the right place. Phones never download the hidden rail map.
+- **Images below the hero load lazily** (`loading="lazy"`) and carry their real `width`/`height`, so their space is reserved before they load and anchor links land in the right place. The CSS sets their display width with `height: auto`, except the NACTO GIFs (`35vh` tall below desktop) and the CAPTCHA (50px square). The logos stay eager. In Chrome, phones don't download the hidden rail map.
 
 ## Elevation & Depth
 
@@ -178,7 +178,7 @@ The site is flat. Depth comes from photography, not shadows: on desktop the cont
 - Sticky Base Blue bar. Desktop: the AltMobility logo on the left, Calibri links to each section in the middle and a pill search field on the right. Below desktop: a menu button on the left and the logo centred. The search field is a placeholder: searching reloads the page.
 
 ### Mobile Menu
-- Bootstrap's offcanvas panel (`#sidebar`, 250px) slides in from the left: a Base Blue header with the logo and close button, the section links and a search field on a 75% black panel. Tapping a link closes the menu, adds the section to the URL and Back history (unless it is already there), moves keyboard focus to the section and scrolls it under the navbar. Taps are ignored while the panel is still sliding, and the menu closes by itself if the window is widened to desktop. The close button, the backdrop and Esc also close it. The panel scrolls when it is taller than the screen. No jQuery.
+- Bootstrap's offcanvas panel (`#sidebar`, 250px) slides in from the left: a Base Blue header with the logo and close button, the section links and a search field on a 75% black panel. Tapping a link closes the menu, adds the section to the URL and Back history (if it differs from the current one), moves keyboard focus to the section and scrolls it under the navbar. Taps are ignored while the panel is still sliding, and the menu closes by itself if the window is widened to desktop. The close button, the backdrop and Esc also close it. The panel scrolls when it is taller than the screen. No jQuery.
 
 ### Hero
 - Full-screen photo with the `#COMMUTERSNAMAN` headline in Oswald and a spaced-out Saira subtitle.

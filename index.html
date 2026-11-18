@@ -335,11 +335,13 @@
             sidebar.addEventListener("hidden.bs.offcanvas", () => {
                 sliding = false;
                 if (!pendingHash) return;
-                const target = document.querySelector(pendingHash);
-                if (location.hash !== pendingHash) history.pushState(null, "", pendingHash);
+                const hash = pendingHash;
+                const target = document.querySelector(hash);
+                if (location.hash !== hash) history.pushState(null, "", hash);
                 pendingHash = null;
-                // After Bootstrap has handed focus back to the menu button: focus the section, then scroll to it
+                // After Bootstrap has handed focus back to the menu button: focus the section, then scroll to it (unless Back/Forward moved on meanwhile)
                 setTimeout(() => {
+                    if (location.hash !== hash) return;
                     target.tabIndex = -1;
                     target.focus({ preventScroll: true });
                     target.scrollIntoView();
