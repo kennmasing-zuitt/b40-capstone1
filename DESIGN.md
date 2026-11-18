@@ -54,9 +54,9 @@ typography:
     lineHeight: 60px
   section-title-mobile:
     fontFamily: Oswald
-    fontSize: 28px
+    fontSize: 24px
     fontWeight: '700'
-    lineHeight: 42px
+    lineHeight: 36px
   headline-md:
     fontFamily: Oswald
     fontSize: 32px
@@ -107,13 +107,13 @@ rounded:
   button: 5px
   full: 50rem
 spacing:
-  section-height: 100vh
+  section-min-height: 100vh
   card-gap: 1rem
-  breakpoint-small-phone: 411px
-  breakpoint-phone: 576px
-  breakpoint-small-tablet: 767px
-  breakpoint-tablet: 991px
+  nav-height: 60px
+  nav-height-desktop: 94px
+  breakpoint-tablet: 768px
   breakpoint-desktop: 992px
+  breakpoint-wide: 1400px
 ---
 
 ## Brand & Style
@@ -127,56 +127,57 @@ The look is a **campaign poster on a calm blue base**:
 
 ## Colors
 
-- **Base Blue (`#30506e`):** Page background, desktop navbar, footers, and the mobile sidebar's header and close button. The single brand colour; every dark band on the page uses it.
+- **Base Blue (`#30506e`):** Page background, the navbar, the footer, and the mobile menu's header and close button. The single brand colour; every dark band on the page uses it.
 - **White (`#ffffff`):** Display type over photos, text on blue, and the background of the fact sections.
 - **Rights Blue (`#72a1b4`):** Fill of the five Commuter's Bill of Rights cards, with white text. It only reaches 2.81:1 contrast with white, which is below WCAG AA; fix it before relying on it for body text.
-- **Text Gray (`#666666`) and Charcoal (`#43454a`):** Headings inside white sections. Gray: section titles, rail-network headings and the mobile NACTO captions. Charcoal: rail-line card titles, the desktop NACTO title and its captions.
+- **Text Gray (`#666666`) and Charcoal (`#43454a`):** Headings inside white sections. Gray: section titles, rail line-group headings, and the NACTO title and captions below desktop. Charcoal: rail-line card titles, and the NACTO title and captions on desktop.
 - **Body Olive (`#5f7053`):** Description paragraphs in the white sections.
-- **Dark Gray (`#5c6b73`):** The "Know more" button links. Navbar, sidebar, "Read more", social and footer links are white; the few unstyled links keep Bootstrap's default blue.
-- **Sidebar Accent (`#47748b`) and Sidebar Hover (`#7386d5`):** Mobile sidebar list rules and the close-button hover.
+- **Dark Gray (`#5c6b73`):** The "Know more" buttons. Every other link is white; links have no underline.
+- **Sidebar Accent (`#47748b`) and Sidebar Hover (`#7386d5`):** The rule under the mobile menu links, and the hover colour of its links and close button.
 - **Rail line colours (`--line-*`):** Each line card has a 5px left marker in that line's colour, for example LRT-1 yellow `#fff23b`, LRT-2 purple `#924ac2` and MRT-3 blue `#3f94fc`. They identify lines only; don't reuse them for UI.
 - **Button Border (`rgba(148, 148, 148, 0.5)`):** Outline of the "Know more" buttons.
-- **Sidebar Panel (`rgba(0, 0, 0, 0.75)`):** Background of the mobile sidebar's link list.
-- **Overlay (`rgba(0, 0, 0, 0.7)`):** Dims the page while the mobile sidebar is open.
+- **Sidebar Panel (`rgba(0, 0, 0, 0.75)`):** Background of the mobile menu.
+- **Overlay (`rgba(0, 0, 0, 0.7)`):** The value of `--color-overlay`; the open mobile menu dims the page with Bootstrap's backdrop set to the same 70% black.
 
 Every site colour above is a custom property in the `:root` block of `index.css` (`--color-*` and `--line-*`). Use the variable, not the literal, when adding rules. Shadows and a few one-off greys stay literal.
 
 ## Typography
 
-- **Display & Section Titles (Oswald):** The hero headline is 112px on desktop, 80px at 768–991px, 64px at 577–767px, 48px at 412–576px and 40px at 411px and below. Section titles are 40px bold on desktop. On phones the Bill of Rights title is 32px (412–576px) or 28px (411px and below), the NACTO title 32px or 24px, and the rail title 24px. Mostly uppercase in the markup.
+- **Display & Section Titles (Oswald):** Sizes scale with the screen width (`clamp()`). The hero headline goes from 40px on phones to 112px at 1440px and wider (62px at 800px). Section titles go from 24px (390px) to 40px bold from about 1150px (33px at 800px). Mostly uppercase in the markup.
 - **Condensed Subheads (Saira Extra Condensed):** Letter-spaced hero subtitles, the `2 0 2 2` Halalan year and contact subheads. The spacing is typed into the text, so keep it when editing copy.
-- **Body (Arial):** Descriptions, card text, the "Know more" buttons and the featured quote (40px bold on desktop).
+- **Body (Arial):** Descriptions, card text, the "Know more" buttons and the featured quote (40px bold on desktop, 32px below).
 - **List Headings (Arial Narrow):** "EXISTING LINES"-style headings in the rail section.
 - **Navigation (Calibri):** Desktop navbar links.
-- **System font (Bootstrap default):** Forms, the pill buttons, the Halalan call to action and small print.
+- **System font (Bootstrap default):** Forms, the pill buttons, the Halalan call to action, the article labels and small print.
 
-Fonts load from one Google Fonts stylesheet (`Oswald` and `Saira Extra Condensed`, `display=swap`), which then fetches the font files. Arial, Arial Narrow and Calibri are system fonts.
+The font stacks are `--font-display`, `--font-condensed`, `--font-body` and `--font-narrow` in `:root`. Fonts load from one Google Fonts stylesheet (`Oswald` and `Saira Extra Condensed`, `display=swap`), which then fetches the font files. Arial, Arial Narrow and Calibri are system fonts.
 
 ## Layout & Spacing
 
-- **Fixed section heights:** on desktop most sections are `100vh`, contact is `80vh` and the footer `20vh`. Below desktop some sections grow to fixed heights instead of sizing to content: the rail section is `200vh` at 577–991px and `170vh` on phones, and contact is `170vh`–`180vh` on phones.
-- **Bootstrap 4 grid:** the Bill of Rights and rail cards are Bootstrap `card` elements in rows (`col-5 col-lg`), wrapping to two per row below desktop where the row is wide enough (one per row otherwise), with a `1rem` gap (`mx-2 my-2` on each card).
-- **Breakpoints:** `index.css` uses its own closed ranges: ≤411px, 412–576px, 577–767px, 768–991px and ≥992px. They don't match Bootstrap's breakpoints.
-- **Copies per screen size:** `index.html` has a desktop navbar plus a mobile sidebar, three versions of the hero text, desktop and mobile versions of the Join Us cards (inside one section), two NACTO sections and two footers. CSS hides the copies that don't fit the screen. Edit every copy until they are merged.
-- **Hidden below desktop:** the Bill of Rights card descriptions and the rail network map.
+- **One page for every screen:** each section exists once in `index.html` and adapts with Bootstrap 5 classes (`d-none d-lg-block`, `col-5 col-lg`) plus mobile-first media queries in `index.css`.
+- **Section heights follow content:** desktop sections have `min-height: 100vh` (contact `80vh`) and grow when their content needs more room. Nothing has a fixed height.
+- **Breakpoints:** Bootstrap's, mobile first: tablet from `768px` (desktop hero photo), desktop from `992px` (full navbar, side-by-side layouts), wide from `1400px` (roomier navbar).
+- **Sticky navbar:** anchor links scroll the section to just under the navbar (`scroll-padding-top: var(--nav-height)`, 60px below desktop and 94px on desktop).
+- **Grid:** the Bill of Rights and rail cards sit in Bootstrap rows (`col-5 col-lg`): one row on desktop, two per row below, with a `1rem` gap (`0.5rem` margin on each card). The NACTO GIFs are four columns on desktop and two below (`col-6 col-lg-3`).
+- **Hidden below desktop:** the Bill of Rights intro and card descriptions, the NACTO description and the rail network map.
 
 ## Elevation & Depth
 
-The site is flat. Depth comes from photography and the parallax background in the contact section, not from shadows. The only shadows are the navbar's `1px 1px 3px rgba(0, 0, 0, 0.1)` and the mobile sidebar's drop shadow. The sidebar slides in over a 70% black overlay.
+The site is flat. Depth comes from photography, not shadows: on desktop the contact photo stays fixed while the page scrolls over it (`background-attachment: fixed`). The only shadows are the navbar's `1px 1px 3px rgba(0, 0, 0, 0.1)` and the mobile menu's drop shadow. The menu slides in over a 70% black backdrop.
 
 ## Shapes
 
 - **Cards:** Bootstrap's default `0.25rem` corners.
 - **Buttons:** "Know more" buttons use `5px` corners with a `1.5px solid rgba(148, 148, 148, 0.5)` border on a transparent background.
-- **Pills:** the search field and the newsletter Submit button are fully rounded (Bootstrap `rounded-pill`) with a light outline.
+- **Pills:** the search field and the outline buttons (Submit, Send Message, Contribute) are fully rounded with a light outline.
 
 ## Components
 
-### Desktop Navbar
-- Sticky Base Blue bar: the AltMobility logo on the left, Calibri links to each section in the middle column, and a pill search field on the right.
+### Navbar
+- Sticky Base Blue bar. Desktop: the AltMobility logo on the left, Calibri links to each section in the middle and a pill search field on the right. Below desktop: a menu button on the left and the logo centred.
 
-### Mobile Sidebar
-- A hamburger button opens a sidebar from the left: a Base Blue header with the logo and close button, and the section links on a 75% black panel. Tapping a link or the dark overlay closes it.
+### Mobile Menu
+- Bootstrap's offcanvas panel (`#sidebar`, 250px) slides in from the left: a Base Blue header with the logo and close button, the section links and a search field on a 75% black panel. Tapping a link closes the menu and then scrolls to the section; the close button, the backdrop and Esc also close it. No jQuery.
 
 ### Hero
 - Full-screen photo with the `#COMMUTERSNAMAN` headline in Oswald and a spaced-out Saira subtitle.
@@ -188,13 +189,13 @@ The site is flat. Depth comes from photography and the parallax background in th
 - White cards with a coloured line marker (`--line-*`) before the line name and the line's logo below. Existing and future lines are grouped, next to the rail network map on desktop.
 
 ### Halalan Panel
-- A card over the Join Us photo: a fingerprint icon, `H A L A L A N` in Oswald, `2 0 2 2` in Saira and a "Magpa-rehistro, bumoto!" call to action.
+- Bottom right of the Join Us photo, under the featured-article quote: a fingerprint icon, `H A L A L A N` in Oswald, `2 0 2 2` in Saira and a "Magpa-rehistro, bumoto!" call to action.
 
 ### NACTO Comparison
-- Four animated GIFs (car lane, bike lane, sidewalk, transit) with Oswald captions and people-per-hour figures.
+- Four animated GIFs (car lane, bike lane, sidewalk, transitway) with Oswald captions and people-per-hour figures; the title and description sit to the right on desktop and above the GIFs below.
 
 ### Contact
-- Newsletter signup, social icons (Font Awesome), contact details and a demo CAPTCHA over a parallax photo. The forms are demo content: they have no backend, so submitting reloads the page without sending anything.
+- Newsletter signup, social icons (Font Awesome), contact details and a demo CAPTCHA over a photo, in two columns on desktop and one below. The forms are demo content: they have no backend, so submitting reloads the page without sending anything.
 
 ### Footer
-- Base Blue band with the logo, a Contribute button, placeholder legal links (`#`) and the copyright line.
+- Base Blue band with the logo, the `J O I N   T H E   C O N V E R S A T I O N` link, a Contribute button, social icons (below desktop), placeholder legal links (`#`) and the copyright line.
