@@ -7,6 +7,10 @@
     --color-rights-blue: #72a1b4;
     --color-sidebar-accent: #47748b;
     --color-sidebar-hover: #7386d5;
+    --color-body-olive: #5f7053;
+    --color-button-border: rgba(148, 148, 148, 0.5);
+    --color-sidebar-panel: rgba(0, 0, 0, 0.75);
+    --color-overlay: rgba(0, 0, 0, 0.7);
     --line-pnr: orange;
     --line-subway: gray;
     --line-lrt1: #fff23b;
@@ -256,7 +260,7 @@ body {
         left: -250px;
         height: 100vh;
         z-index: 999;
-        background: rgba(0, 0, 0, 0.75);
+        background: var(--color-sidebar-panel);
         color: var(--color-white);
         transition: all 0.3s;
         overflow-y: scroll;
@@ -362,7 +366,7 @@ body {
         left: -250px;
         height: 100vh;
         z-index: 999;
-        background: rgba(0, 0, 0, 0.75);
+        background: var(--color-sidebar-panel);
         color: var(--color-white);
         transition: all 0.3s;
         overflow-y: scroll;
@@ -468,7 +472,7 @@ body {
         left: -250px;
         height: 100vh;
         z-index: 999;
-        background: rgba(0, 0, 0, 0.75);
+        background: var(--color-sidebar-panel);
         color: var(--color-white);
         transition: all 0.3s;
         overflow-y: scroll;
@@ -574,7 +578,7 @@ body {
         left: -250px;
         height: 100vh;
         z-index: 999;
-        background: rgba(0, 0, 0, 0.75);
+        background: var(--color-sidebar-panel);
         color: var(--color-white);
         transition: all 0.3s;
         overflow-y: scroll;
@@ -936,7 +940,7 @@ section.billofrights {
         text-align: center;
         font-size: 0.9rem;
         font-family: arial;
-        color: #5f7053;
+        color: var(--color-body-olive);
     }
     section.billofrights div.card-body-desktop div.bor-card-container div.row div.billofrights-card {
         transition-timing-function: ease-in;
@@ -986,7 +990,7 @@ section.billofrights {
     section.billofrights button.billofrights-btn {
         display: flex;
         justify-content: center;
-        border: 1.5px solid rgba(148, 148, 148, 0.5);
+        border: 1.5px solid var(--color-button-border);
         border-radius: 5px;
         margin: 20px auto 0px auto;
         padding: 10px 20px;
@@ -1046,7 +1050,7 @@ section.billofrights {
     section.billofrights button.billofrights-btn {
         display: flex;
         justify-content: center;
-        border: 1.5px solid rgba(148, 148, 148, 0.5);
+        border: 1.5px solid var(--color-button-border);
         border-radius: 5px;
         margin: 20px auto 0px auto;
         padding: 10px 20px;
@@ -1102,7 +1106,7 @@ section.billofrights {
     section.billofrights button.billofrights-btn {
         display: flex;
         justify-content: center;
-        border: 1.5px solid rgba(148, 148, 148, 0.5);
+        border: 1.5px solid var(--color-button-border);
         border-radius: 5px;
         margin: 20px auto 0px auto;
         padding: 10px 20px;
@@ -1162,7 +1166,7 @@ section.billofrights {
     section.billofrights button.billofrights-btn {
         display: flex;
         justify-content: center;
-        border: 1.5px solid rgba(148, 148, 148, 0.5);
+        border: 1.5px solid var(--color-button-border);
         border-radius: 5px;
         margin: 20px auto 0px auto;
         padding: 10px 20px;
@@ -1222,7 +1226,7 @@ section.billofrights {
     section.billofrights button.billofrights-btn {
         display: flex;
         justify-content: center;
-        border: 1.5px solid rgba(148, 148, 148, 0.5);
+        border: 1.5px solid var(--color-button-border);
         border-radius: 5px;
         margin: 20px auto 0px auto;
         padding: 10px 20px;
@@ -1329,7 +1333,7 @@ section.billofrights {
     section.history div.card-body button.billofrights-btn {
         display: flex;
         justify-content: center;
-        border: 1.5px solid rgba(148, 148, 148, 0.5);
+        border: 1.5px solid var(--color-button-border);
         border-radius: 5px;
         margin: 0.5rem auto 0px auto;
         padding: 10px 20px;
@@ -1439,7 +1443,7 @@ section.billofrights {
     section.history div.card-body button.billofrights-btn {
         display: flex;
         justify-content: center;
-        border: 1.5px solid rgba(148, 148, 148, 0.5);
+        border: 1.5px solid var(--color-button-border);
         border-radius: 5px;
         margin: 0.5rem auto 0px auto;
         padding: 10px 20px;
@@ -1565,7 +1569,7 @@ section.billofrights {
     section.history div.card-body button.billofrights-btn {
         display: flex;
         justify-content: center;
-        border: 1.5px solid rgba(148, 148, 148, 0.5);
+        border: 1.5px solid var(--color-button-border);
         border-radius: 5px;
         margin: 0.5rem auto 0px auto;
         padding: 10px 20px;
@@ -1684,7 +1688,7 @@ section.billofrights {
     section.history div.card-body button.billofrights-btn {
         display: flex;
         justify-content: center;
-        border: 1.5px solid rgba(148, 148, 148, 0.5);
+        border: 1.5px solid var(--color-button-border);
         border-radius: 5px;
         margin: 0.5rem auto 0px auto;
         padding: 10px 10px 10px 10px;
@@ -1803,7 +1807,7 @@ section.billofrights {
     section.history div.card-body button.billofrights-btn {
         display: flex;
         justify-content: center;
-        border: 1.5px solid rgba(148, 148, 148, 0.5);
+        border: 1.5px solid var(--color-button-border);
         border-radius: 5px;
         margin: 0.5rem auto 0px auto;
         padding: 10px 10px 10px 10px;
@@ -2354,7 +2358,7 @@ section.joinus {
     }
     section.nacto-desktop div.card-body2 div div.history-card-container div div p.sm-txt2 {
         font-size: 1rem;
-        color: #5f7053;
+        color: var(--color-body-olive);
         font-family: Arial;
         text-align: center;
     }
@@ -3599,7 +3603,7 @@ div.overlay {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: rgba(0, 0, 0, 0.7);
+    background: var(--color-overlay);
     z-index: 998;
     opacity: 0;
     transition: all 0.5s ease-in-out;
